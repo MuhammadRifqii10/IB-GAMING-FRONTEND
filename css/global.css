@@ -1,0 +1,249 @@
+/* ============================================
+   IB GAMING
+   GLOBAL CSS
+============================================ */
+
+
+/* ============================================
+   1. FONT
+============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+
+/* ============================================
+   2. GLOBAL VARIABLES
+============================================ */
+
+:root {
+
+    /* Primary Color */
+    --primary-color: #AD7E46;
+    --primary-dark: #98703B;
+
+    /* Background */
+    --background-color: #F7F1E8;
+    --container-color: #F8F3EB;
+    --card-color: #FFFEFA;
+
+    /* Text */
+    --text-primary: #29231F;
+    --text-secondary: #857D74;
+    --text-muted: #A69E93;
+
+    /* Border */
+    --border-color: #E5DCD0;
+
+    /* Fonts */
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+
+}
+
+
+/* ============================================
+   3. RESET
+============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ============================================
+   4. HTML
+============================================ */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* ============================================
+   5. BODY
+============================================ */
+
+body {
+    min-height: 100vh;
+
+    font-family: var(--font-body);
+
+    color: var(--text-primary);
+
+    background-color: var(--background-color);
+
+    line-height: 1.5;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* ============================================
+   6. LINKS
+============================================ */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ============================================
+   7. BUTTON & FORM ELEMENT
+============================================ */
+
+button,
+input,
+textarea,
+select {
+    font-family: var(--font-body);
+}
+
+button {
+    cursor: pointer;
+}
+
+input,
+textarea,
+select {
+    outline: none;
+}
+
+
+/* ============================================
+   8. IMAGE
+============================================ */
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* ============================================
+   9. LIST
+============================================ */
+
+ul,
+ol {
+    list-style: none;
+}
+
+
+/* ============================================
+   10. HEADINGS
+============================================ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+
+    font-family: var(--font-heading);
+
+    color: var(--text-primary);
+}
+
+
+/* ============================================
+   11. PARAGRAPH
+============================================ */
+
+p {
+    margin: 0;
+}
+
+
+/* ============================================
+   12. CONTAINER
+============================================ */
+
+.container {
+    width: 100%;
+
+    max-width: 1480px;
+
+    margin: 0 auto;
+
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+
+/* ============================================
+   13. RESPONSIVE CONTAINER
+============================================ */
+
+@media (max-width: 768px) {
+
+    .container {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+}
+
+
+/* ============================================
+   14. MOBILE TAP / TOUCH
+============================================ */
+
+button,
+a,
+input,
+select,
+textarea {
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+/* ============================================
+   15. ACCESSIBILITY
+============================================ */
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+
+/* ============================================
+   16. SELECTION
+============================================ */
+
+::selection {
+    background-color: rgba(173, 126, 70, 0.20);
+    color: var(--text-primary);
+}
+
+
+/* ============================================
+   17. SCROLLBAR
+============================================ */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--background-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #D1C0AA;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--primary-color);
+}

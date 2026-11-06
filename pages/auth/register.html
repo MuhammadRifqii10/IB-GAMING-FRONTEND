@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register - IB Gaming</title>
+
+     <!-- Global CSS -->
+    <link rel="stylesheet" href="../../css/global.css">
+
+    <!-- Register CSS -->
+    <link rel="stylesheet" href="../../css/auth/register.css">
+</head>
+
+<body>
+
+    <main class="register-page">
+
+        <div class="register-container">
+
+            <!-- ==========================
+                 LEFT SECTION / HERO
+            =========================== -->
+            <section class="register-hero">
+
+                <!-- Branding -->
+                <header class="hero-header">
+
+                    <a href="../../index.html" class="brand-logo">
+
+                        <img
+                            src="../../assets/Icon/Logo.svg"
+                            alt="IB Gaming Logo"
+                        >
+
+                        <div class="brand-text">
+                            <h2>IB GAMING</h2>
+                            <p>PLAY · EAT · ENJOY</p>
+                        </div>
+
+                    </a>
+
+                </header>
+
+
+                <!-- Hero Content -->
+                <div class="hero-content">
+
+                    <h1 class="hero-title">
+                        Create Your<br>
+                        <span>Account</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Nikmati pengalaman bermain game dan lezatnya makanan
+                        favoritmu, semuanya dalam satu tempat.
+                    </p>
+
+                    <div class="hero-spacer"></div>
+
+                </div>
+
+
+                <!-- Feature Points -->
+                <div class="hero-features">
+
+                    <article class="feature-item">
+
+                        <img
+                            src="../../assets/Icon/Food Icon.svg"
+                            alt=""
+                            class="feature-icon"
+                        >
+
+                        <div class="feature-info">
+                            <h3>Food &amp; Beverages</h3>
+                            <p>Tasty and fresh</p>
+                        </div>
+
+                    </article>
+
+
+                    <article class="feature-item">
+
+                        <img
+                            src="../../assets/Icon/PlayStation Logo.svg"
+                            alt=""
+                            class="feature-icon"
+                        >
+
+                        <div class="feature-info">
+                            <h3>PlayStation Rental</h3>
+                            <p>Play anytime</p>
+                        </div>
+
+                    </article>
+
+
+                    <article class="feature-item">
+
+                        <img
+                            src="../../assets/Icon/Bintang.svg"
+                            alt=""
+                            class="feature-icon"
+                        >
+
+                        <div class="feature-info">
+                            <h3>Comfortable Space</h3>
+                            <p>Relax and enjoy</p>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==========================
+                 RIGHT SECTION / REGISTER
+            =========================== -->
+            <section class="register-section">
+
+                <div class="register-card">
+
+                    <!-- Register Header -->
+                    <header class="register-header">
+
+                        <p class="register-label">
+                            REGISTER
+                        </p>
+
+                        <p class="register-description">
+                            Buat akunmu sekarang dan nikmati semua layanan IB
+                            Gaming dengan mudah.
+                        </p>
+
+                    </header>
+
+
+                    <!-- Register Form -->
+                    <form
+                        class="register-form"
+                        id="registerForm"
+                    >
+
+                        <!-- Full Name & Username -->
+                        <div class="form-row">
+
+                            <!-- Full Name -->
+                            <div class="form-group">
+
+                                <label for="fullname">
+                                    Full Name
+                                </label>
+
+                                <div class="input-wrapper">
+
+                                    <span class="input-icon">
+
+                                        <img
+                                            src="../../assets/Icon/User.svg"
+                                            alt=""
+                                        >
+
+                                    </span>
+
+                                    <input
+                                        type="text"
+                                        id="fullname"
+                                        name="fullname"
+                                        placeholder="Masukkan nama lengkap"
+                                        autocomplete="name"
+                                        required
+                                    >
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Username -->
+                            <div class="form-group">
+
+                                <label for="username">
+                                    Username
+                                </label>
+
+                                <div class="input-wrapper">
+
+                                    <span class="input-icon">
+
+                                        <img
+                                            src="../../assets/Icon/User.svg"
+                                            alt=""
+                                        >
+
+                                    </span>
+
+                                    <input
+                                        type="text"
+                                        id="username"
+                                        name="username"
+                                        placeholder="Pilih username"
+                                        autocomplete="username"
+                                        required
+                                    >
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Email Address -->
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email Address
+                            </label>
+
+                            <div class="input-wrapper">
+
+                                <span class="input-icon">
+
+                                    <img
+                                        src="../../assets/Icon/Email.svg"
+                                        alt=""
+                                    >
+
+                                </span>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Masukkan email aktif"
+                                    autocomplete="email"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Phone Number -->
+                        <div class="form-group">
+
+                            <label for="phone">
+                                Phone Number
+                            </label>
+
+                            <div class="input-wrapper">
+
+                                <span class="input-icon">
+
+                                    <img
+                                        src="../../assets/Icon/Telpon.svg"
+                                        alt=""
+                                    >
+
+                                </span>
+
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    placeholder="Masukkan nomor handphone"
+                                    autocomplete="tel"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Password & Confirm Password -->
+                        <div class="form-row">
+
+                            <!-- Password -->
+                            <div class="form-group">
+
+                                <label for="password">
+                                    Password
+                                </label>
+
+                                <div class="input-wrapper">
+
+                                    <span class="input-icon">
+
+                                        <img
+                                            src="../../assets/Icon/Password.svg"
+                                            alt=""
+                                        >
+
+                                    </span>
+
+                                    <input
+                                        type="password"
+                                        id="password"
+                                        name="password"
+                                        placeholder="Password"
+                                        autocomplete="new-password"
+                                        required
+                                    >
+
+                                    <button
+                                        type="button"
+                                        class="toggle-password"
+                                        data-target="password"
+                                        aria-label="Tampilkan password"
+                                        aria-pressed="false"
+                                    >
+
+                                        <img
+                                            src="../../assets/Icon/Mata.svg"
+                                            alt=""
+                                        >
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Confirm Password -->
+                            <div class="form-group">
+
+                                <label for="confirmPassword">
+                                    Confirm Password
+                                </label>
+
+                                <div class="input-wrapper">
+
+                                    <span class="input-icon">
+
+                                        <img
+                                            src="../../assets/Icon/Password.svg"
+                                            alt=""
+                                        >
+
+                                    </span>
+
+                                    <input
+                                        type="password"
+                                        id="confirmPassword"
+                                        name="confirmPassword"
+                                        placeholder="Ulangi Password"
+                                        autocomplete="new-password"
+                                        required
+                                    >
+
+                                    <button
+                                        type="button"
+                                        class="toggle-password"
+                                        data-target="confirmPassword"
+                                        aria-label="Tampilkan konfirmasi password"
+                                        aria-pressed="false"
+                                    >
+
+                                        <img
+                                            src="../../assets/Icon/Mata.svg"
+                                            alt=""
+                                        >
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Register Button -->
+                        <button
+                            type="submit"
+                            class="register-button"
+                        >
+
+                            <span>Register</span>
+
+                            <img
+                                src="../../assets/Icon/Panah.svg"
+                                alt=""
+                                class="button-arrow"
+                            >
+
+                        </button>
+
+
+                        <!-- Login Link -->
+                        <div class="register-footer">
+
+                            <p>
+                                Sudah punya akun?
+                            </p>
+
+                            <a href="login.html">
+                                Login di sini
+                            </a>
+
+                        </div>
+
+                    </form>
+
+
+                    <!-- Register Success Modal -->
+                    <div
+                        class="success-modal"
+                        id="successModal"
+                    >
+
+                        <div class="success-modal-card">
+
+                            <div class="success-icon">
+                                <span>✓</span>
+                            </div>
+
+                            <h2>
+                                Registrasi Berhasil!
+                            </h2>
+
+                            <p>
+                                Akun IB Gaming kamu berhasil dibuat.
+                                Silakan login untuk menikmati layanan kami.
+                            </p>
+
+                            <button
+                                type="button"
+                                id="successLoginButton"
+                            >
+                                Login Sekarang
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- JavaScript -->
+    <script src="../../js/auth/register.js"></script>
+
+</body>
+
+</html>
