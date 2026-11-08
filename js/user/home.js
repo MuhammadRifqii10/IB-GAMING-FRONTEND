@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded", function () {
                  */
 
                 window.location.href =
-                    "../auth/login.html";
+                    "../index.html";
 
             }
         );

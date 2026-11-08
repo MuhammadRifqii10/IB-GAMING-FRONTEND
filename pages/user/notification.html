@@ -1,11 +1,407 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Notifikasi - IB Gaming</title>
+
+    <!-- ============================================
+         GLOBAL CSS
+    ============================================= -->
+
+    <link
+        rel="stylesheet"
+        href="../../css/global.css"
+    >
+
+    <!-- ============================================
+         NOTIFICATION CSS
+    ============================================= -->
+
+    <link
+        rel="stylesheet"
+        href="../../css/user/notification.css"
+    >
+
 </head>
-<body>
-    <h1>Notifikasi</h1>
+
+
+<body class="notification-page">
+
+
+    <!-- ============================================
+         BACKGROUND PAGE
+         Background akan ditentukan berdasarkan
+         parameter ?from=index atau ?from=home
+    ============================================= -->
+
+    <main
+    id="notificationBackground"
+    class="notification-background"
+>
+    <iframe
+        id="backgroundFrame"
+        class="background-frame"
+        title="Halaman utama IB Gaming"
+    ></iframe>
+</main>
+
+
+
+    <!-- ============================================
+         DARK OVERLAY
+    ============================================= -->
+
+    <div
+        class="notification-overlay"
+        id="notificationOverlay"
+    ></div>
+
+
+
+    <!-- ============================================
+         NOTIFICATION MODAL
+    ============================================= -->
+
+    <section
+        class="notification-modal"
+        id="notificationModal"
+        aria-label="Notifikasi"
+    >
+
+
+        <!-- ========================================
+             NOTIFICATION HEADER
+        ========================================= -->
+
+        <header class="notification-header">
+
+            <h1 class="notification-title">
+                Notifikasi
+            </h1>
+
+            <button
+                type="button"
+                class="notification-close"
+                id="notificationClose"
+                aria-label="Tutup notifikasi"
+            >
+                ×
+            </button>
+
+        </header>
+
+
+
+        <!-- ========================================
+             NOTIFICATION LIST
+        ========================================= -->
+
+        <div class="notification-list">
+
+
+            <!-- ====================================
+                 1. AKUN TELAH DIVERIFIKASI
+            ===================================== -->
+
+            <article
+                class="notification-item unread"
+            >
+
+                <!-- ICON -->
+                <div class="notification-icon">
+
+                    <img
+                        src="../../assets/Icon/User.svg"
+                        alt=""
+                    >
+
+                </div>
+
+
+                <!-- CONTENT -->
+                <div class="notification-content">
+
+                    <h2>
+                        Akun Telah Diverifikasi
+                    </h2>
+
+                    <p>
+                        Akun anda telah berhasil diverifikasi
+                    </p>
+
+                </div>
+
+
+                <!-- TIME -->
+                <span class="notification-time">
+                    7 Menit lalu
+                </span>
+
+
+                <!-- ARROW -->
+                <span class="notification-arrow">
+
+                    <img
+                        src="../../assets/Icon/Arrow.svg"
+                        alt=""
+                    >
+
+                </span>
+
+            </article>
+
+
+
+            <!-- ====================================
+                 2. BOOKING DISETUJUI
+            ===================================== -->
+
+            <article
+                class="notification-item unread"
+            >
+
+                <!-- ICON -->
+                <div class="notification-icon">
+
+                    <img
+                        src="../../assets/Icon/Game.svg"
+                        alt=""
+                    >
+
+                </div>
+
+
+                <!-- CONTENT -->
+                <div class="notification-content">
+
+                    <h2>
+                        Booking Disetujui
+                    </h2>
+
+                    <p>
+                        Booking Anda telah disetujui
+                    </p>
+
+                </div>
+
+
+                <!-- TIME -->
+                <span class="notification-time">
+                    8 Menit lalu
+                </span>
+
+
+                <!-- ARROW -->
+                <span class="notification-arrow">
+
+                    <img
+                        src="../../assets/Icon/Arrow.svg"
+                        alt=""
+                    >
+
+                </span>
+
+            </article>
+
+
+
+            <!-- ====================================
+                 3. PESANAN F&B
+            ===================================== -->
+
+            <article
+                class="notification-item"
+            >
+
+                <!-- ICON -->
+                <div class="notification-icon">
+
+                    <img
+                        src="../../assets/Icon/FNB.svg"
+                        alt=""
+                    >
+
+                </div>
+
+
+                <!-- CONTENT -->
+                <div class="notification-content">
+
+                    <h2>
+                        Pesanan F&amp;B
+                    </h2>
+
+                    <p>
+                        Pesanan anda sedang diproses
+                    </p>
+
+                </div>
+
+
+                <!-- TIME -->
+                <span class="notification-time">
+                    10 Menit lalu
+                </span>
+
+
+                <!-- ARROW -->
+                <span class="notification-arrow">
+
+                    <img
+                        src="../../assets/Icon/Arrow.svg"
+                        alt=""
+                    >
+
+                </span>
+
+            </article>
+
+
+
+            <!-- ====================================
+                 4. PEMBAYARAN BOOKING
+            ===================================== -->
+
+            <article
+                class="notification-item"
+            >
+
+                <!-- ICON -->
+                <div class="notification-icon">
+
+                    <img
+                        src="../../assets/Icon/Qris.svg"
+                        alt=""
+                    >
+
+                </div>
+
+
+                <!-- CONTENT -->
+                <div class="notification-content">
+
+                    <h2>
+                        Pembayaran Baru
+                    </h2>
+
+                    <p>
+                        Pembayaran untuk booking telah berhasil
+                    </p>
+
+                </div>
+
+
+                <!-- TIME -->
+                <span class="notification-time">
+                    20 Menit lalu
+                </span>
+
+
+                <!-- ARROW -->
+                <span class="notification-arrow">
+
+                    <img
+                        src="../../assets/Icon/Arrow.svg"
+                        alt=""
+                    >
+
+                </span>
+
+            </article>
+
+
+
+            <!-- ====================================
+                 5. PEMBAYARAN F&B
+            ===================================== -->
+
+            <article
+                class="notification-item"
+            >
+
+                <!-- ICON -->
+                <div class="notification-icon">
+
+                    <img
+                        src="../../assets/Icon/Qris.svg"
+                        alt=""
+                    >
+
+                </div>
+
+
+                <!-- CONTENT -->
+                <div class="notification-content">
+
+                    <h2>
+                        Pembayaran Baru
+                    </h2>
+
+                    <p>
+                        Pembayaran untuk F&amp;B telah berhasil
+                    </p>
+
+                </div>
+
+
+                <!-- TIME -->
+                <span class="notification-time">
+                    30 Menit lalu
+                </span>
+
+
+                <!-- ARROW -->
+                <span class="notification-arrow">
+
+                    <img
+                        src="../../assets/Icon/Arrow.svg"
+                        alt=""
+                    >
+
+                </span>
+
+            </article>
+
+
+        </div>
+
+
+
+        <!-- ========================================
+             BACK BUTTON
+        ========================================= -->
+
+        <div class="notification-footer">
+
+            <button
+                type="button"
+                class="notification-back"
+                id="notificationBack"
+            >
+                Kembali
+            </button>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ============================================
+         JAVASCRIPT
+    ============================================= -->
+
+    <script
+        src="../../js/user/notification.js"
+    ></script>
+
 </body>
+
 </html>
