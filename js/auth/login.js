@@ -176,24 +176,54 @@ document.addEventListener("DOMContentLoaded", function () {
        INPUT EVENTS
     ======================================== */
 
+    /* ==============================
+       EMAIL
+    ============================== */
+
     if (emailInput) {
 
         emailInput.addEventListener(
             "input",
             function () {
-                removeError(emailInput);
+
+                /*
+                 * Error email langsung dihapus
+                 * ketika user mulai memperbaiki
+                 */
+                if (emailInput.value.trim() !== "") {
+                    removeError(emailInput);
+                }
+
             }
         );
 
     }
 
 
+    /* ==============================
+       PASSWORD
+    ============================== */
+
     if (passwordInput) {
 
         passwordInput.addEventListener(
             "input",
             function () {
-                removeError(passwordInput);
+
+                const password =
+                    passwordInput.value;
+
+                /*
+                 * Jika password sudah mencapai
+                 * minimal 6 karakter,
+                 * hapus pesan error.
+                 */
+                if (password.length >= 6) {
+
+                    removeError(passwordInput);
+
+                }
+
             }
         );
 
@@ -256,7 +286,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
                     isValid = false;
 
-                } else if (password.length < 6) {
+                }
+
+                else if (password.length < 6) {
 
                     showError(
                         passwordInput,
@@ -268,14 +300,18 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
 
 
+                /* ==============================
+                   STOP LOGIN JIKA VALIDASI GAGAL
+                ============================== */
+
                 if (!isValid) {
                     return;
                 }
 
 
-                /* ==============================
+                /* ==================================
                    REMEMBER ME
-                ============================== */
+                ================================== */
 
                 if (
                     rememberMe &&
@@ -287,7 +323,9 @@ document.addEventListener("DOMContentLoaded", function () {
                         email
                     );
 
-                } else {
+                }
+
+                else {
 
                     localStorage.removeItem(
                         "ibGamingRememberedUser"
@@ -296,9 +334,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
 
 
-                /* ==============================
+                /* ==================================
                    LOGIN BUTTON
-                ============================== */
+                ================================== */
 
                 const loginButton =
                     loginForm.querySelector(
@@ -317,9 +355,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
 
 
-                /* ==============================
+                /* ==================================
                    SIMULASI LOGIN
-                ============================== */
+                ================================== */
 
                 setTimeout(function () {
 
@@ -345,7 +383,7 @@ document.addEventListener("DOMContentLoaded", function () {
                      * Sementara redirect ke halaman utama
                      */
                     window.location.href =
-                        "../../index.html";
+                        "../../pages/user/home.html";
 
                 }, 800);
 
