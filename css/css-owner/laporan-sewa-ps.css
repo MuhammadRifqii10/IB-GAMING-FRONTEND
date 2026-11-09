@@ -1,0 +1,800 @@
+/* =========================================================
+   DASHBOARD OWNER - ENTERPRISE RESPONSIVE STYLING
+   File: css/dashboard/owner.css
+========================================================= */
+
+:root {
+    --bg-page: #fbf7ee;
+    --bg-sidebar: #f6efe2;
+    --bg-white: #ffffff;
+    --text-primary: #1e1e1e;
+    --text-muted: #8c857b;
+    --gold-main: #b38856;
+    --gold-hover: #9c7344;
+    --gold-box: #f4ecdf;
+    --border-light: #eee5d8;
+    
+    --color-bar-1: #d8cebe;
+    --color-bar-2: #cbb07a;
+    --color-bar-3: #c29548;
+    --color-bar-4: #976527;
+
+    --font-heading: 'Playfair Display', serif;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+    
+    --sidebar-width: 260px;
+    --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ----------------- Reset Dasar ----------------- */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--bg-page);
+    font-family: var(--font-sans);
+    color: var(--text-primary);
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+img, svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* ----------------- Layout Dasar ----------------- */
+.dashboard-layout {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* =========================================================
+   1. SIDEBAR (DESKTOP DEFAULT)
+========================================================= */
+.sidebar {
+    width: var(--sidebar-width);
+    min-width: var(--sidebar-width);
+    background-color: var(--bg-sidebar);
+    border-right: 1px solid var(--border-light);
+    padding: 2.2rem 1.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: var(--transition);
+}
+
+.brand-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+}
+
+.brand-link {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.brand-logo {
+    width: 32px;
+    height: auto;
+}
+
+.brand-text h2 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+}
+
+.brand-text p {
+    font-size: 0.55rem;
+    letter-spacing: 0.2em;
+    color: var(--text-muted);
+}
+
+.btn-close-sidebar {
+    display: none;
+    background: transparent;
+    border: none;
+    font-size: 1.8rem;
+    color: var(--text-muted);
+    cursor: pointer;
+    line-height: 1;
+}
+
+.nav-category {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    display: block;
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    padding: 0.75rem 1rem;
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--text-muted);
+    font-size: 0.82rem;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.nav-link:hover {
+    color: var(--text-primary);
+    background-color: rgba(179, 136, 86, 0.08);
+}
+
+.nav-link.active {
+    background-color: var(--gold-main);
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(179, 136, 86, 0.3);
+}
+
+.nav-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+.nav-link.active .nav-icon {
+    filter: brightness(0) invert(1);
+}
+
+.logout-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    color: var(--gold-main);
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 12px;
+    transition: var(--transition);
+}
+
+.logout-link:hover {
+    background-color: rgba(179, 136, 86, 0.08);
+}
+
+.logout-icon {
+    width: 18px;
+    height: 18px;
+}
+
+/* Sidebar Overlay di Mobile */
+.sidebar-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(2px);
+    z-index: 95;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+/* =========================================================
+   2. MAIN WRAPPER & TOPBAR PUTIH
+========================================================= */
+.main-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-page);
+    min-width: 0;
+    min-height: 100vh;
+}
+
+.topbar {
+    background-color: var(--bg-white);
+    width: 100%;
+    padding: 1rem 3.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 1px solid var(--border-light);
+    position: sticky;
+    top: 0;
+    z-index: 90;
+}
+
+/* Hamburger Menu Button */
+.btn-hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    margin-right: auto;
+}
+
+.hamburger-bar {
+    width: 22px;
+    height: 2px;
+    background-color: var(--text-primary);
+    border-radius: 2px;
+}
+
+.topbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.btn-notif {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+}
+
+.btn-notif img {
+    width: 20px;
+    height: 20px;
+}
+
+.owner-pill {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+}
+
+.owner-avatar img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.owner-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.owner-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.owner-role {
+    font-size: 0.68rem;
+    color: var(--text-muted);
+}
+
+.owner-dropdown {
+    width: 10px;
+    height: 10px;
+    opacity: 0.6;
+}
+
+/* =========================================================
+   3. KONTEN HALAMAN
+========================================================= */
+.page-content {
+    padding: 2rem 3.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    flex: 1;
+}
+
+.banner-heading {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.banner-icon {
+    width: 48px;
+    height: 48px;
+    background-color: var(--gold-box);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.banner-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.banner-info h1 {
+    font-family: var(--font-heading);
+    font-size: 1.95rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.2;
+}
+
+.banner-info p {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    margin-top: 0.2rem;
+}
+
+/* =========================================================
+   4. KARTU KPI STATISTIK
+========================================================= */
+.summary-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.stat-card {
+    background-color: var(--bg-white);
+    border-radius: 20px;
+    padding: 1.4rem 1.6rem;
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.02);
+    border: 1px solid var(--border-light);
+    min-width: 0;
+}
+
+.stat-icon-box {
+    width: 46px;
+    height: 46px;
+    background-color: var(--gold-box);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.stat-icon-box img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.stat-meta {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+    white-space: nowrap;
+}
+
+.stat-number {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.25;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0.35rem;
+}
+
+.stat-badge {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: #43a047;
+    white-space: nowrap;
+}
+
+/* =========================================================
+   5. CONTENT BOX (GRAFIK & TABEL)
+========================================================= */
+.content-box {
+    background-color: var(--bg-white);
+    border-radius: 20px;
+    padding: 1.8rem 2.2rem;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.02);
+    border: 1px solid var(--border-light);
+}
+
+.box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.8rem;
+    flex-wrap: wrap;
+}
+
+.box-title-wrap {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.box-ico {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+.box-title-wrap h2 {
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.box-title-wrap p {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.box-select select {
+    background-color: var(--bg-page);
+    border: 1px solid var(--border-light);
+    border-radius: 10px;
+    padding: 0.5rem 0.9rem;
+    font-family: inherit;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    cursor: pointer;
+    outline: none;
+}
+
+/* Grafik Tiang Batang */
+.chart-canvas {
+    padding-top: 1rem;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    -webkit-overflow-scrolling: touch;
+}
+
+.bars-flex {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    align-items: end;
+    height: 220px;
+    min-width: 520px;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px dashed var(--border-light);
+}
+
+.bar-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: flex-end;
+    gap: 0.65rem;
+}
+
+.bar-price {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+
+.bar-fill {
+    width: 100%;
+    max-width: 140px;
+    border-radius: 6px 6px 2px 2px;
+    transition: var(--transition);
+}
+
+.bar-1 { height: 90px; background-color: var(--color-bar-1); }
+.bar-2 { height: 130px; background-color: var(--color-bar-2); }
+.bar-3 { height: 165px; background-color: var(--color-bar-3); }
+.bar-4 { height: 120px; background-color: var(--color-bar-4); }
+
+.bar-date {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+/* Tabel Transaksi */
+.btn-pdf-export {
+    background: transparent;
+    color: var(--gold-main);
+    border: 1px solid var(--gold-main);
+    border-radius: 10px;
+    padding: 0.45rem 1.2rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    white-space: nowrap;
+}
+
+.btn-pdf-export:hover {
+    background-color: var(--gold-main);
+    color: #ffffff;
+}
+
+.table-scroll {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.report-table {
+    width: 100%;
+    min-width: 680px;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.report-table thead tr th {
+    background-color: var(--bg-page);
+    color: var(--text-muted);
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 0.95rem 1rem;
+    border-bottom: 1px solid var(--border-light);
+    white-space: nowrap;
+}
+
+.report-table thead tr th:first-child {
+    border-radius: 10px 0 0 10px;
+}
+
+.report-table thead tr th:last-child {
+    border-radius: 0 10px 10px 0;
+}
+
+.report-table tbody tr td {
+    padding: 1.05rem 1rem;
+    font-size: 0.82rem;
+    border-bottom: 1px solid var(--border-light);
+    white-space: nowrap;
+}
+
+.status-pill {
+    background-color: #eaf1fb;
+    color: #3b74cc;
+    padding: 0.35rem 0.9rem;
+    border-radius: 20px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+/* =========================================================
+   6. FOOTER BADGES
+========================================================= */
+.footer-badges {
+    margin: 0 3.5rem 2.5rem 3.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-light);
+}
+
+.badge-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.badge-item img {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+}
+
+.badge-item h4 {
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.badge-item p {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+}
+
+/* =========================================================
+   7. MULTI-DEVICE RESPONSIVENESS
+========================================================= */
+
+/* --- Layar Laptop / Medium Display (≤ 1200px) --- */
+@media (max-width: 1200px) {
+    :root {
+        --sidebar-width: 230px;
+    }
+    
+    .topbar {
+        padding: 1rem 2.2rem;
+    }
+    
+    .page-content {
+        padding: 1.8rem 2.2rem;
+    }
+    
+    .footer-badges {
+        margin: 0 2.2rem 2rem 2.2rem;
+    }
+    
+    .stat-number {
+        font-size: 1.2rem;
+    }
+    
+    .stat-card {
+        padding: 1.2rem;
+        gap: 0.85rem;
+    }
+}
+
+/* --- Layar Tablet (≤ 992px) --- */
+@media (max-width: 992px) {
+    /* Aktifkan Sidebar Model Drawer / Slide-in */
+    .sidebar {
+        position: fixed;
+        left: calc(var(--sidebar-width) * -1);
+        top: 0;
+        z-index: 100;
+        box-shadow: 10px 0 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .sidebar.active {
+        left: 0;
+    }
+
+    .sidebar-overlay.active {
+        display: block;
+        opacity: 1;
+    }
+
+    .btn-close-sidebar {
+        display: block;
+    }
+
+    .btn-hamburger {
+        display: flex;
+    }
+
+    .topbar {
+        padding: 0.9rem 1.8rem;
+    }
+
+    .page-content {
+        padding: 1.8rem 1.8rem;
+    }
+
+    .footer-badges {
+        margin: 0 1.8rem 2rem 1.8rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .summary-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* --- Layar Smartphone & Mobile Lebar (≤ 640px) --- */
+@media (max-width: 640px) {
+    .topbar {
+        padding: 0.85rem 1.2rem;
+    }
+
+    .topbar-actions {
+        gap: 1rem;
+    }
+
+    .owner-role {
+        display: none;
+    }
+
+    .page-content {
+        padding: 1.2rem 1rem;
+        gap: 1.4rem;
+    }
+
+    .banner-heading {
+        gap: 0.85rem;
+    }
+
+    .banner-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .banner-icon img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .banner-info h1 {
+        font-size: 1.45rem;
+    }
+
+    .banner-info p {
+        font-size: 0.75rem;
+    }
+
+    /* Kartu KPI: Di HP ditumpuk vertikal dengan rapi */
+    .summary-cards {
+        grid-template-columns: 1fr;
+        gap: 0.85rem;
+    }
+
+    .stat-card {
+        padding: 1.2rem 1.3rem;
+    }
+
+    .stat-number {
+        font-size: 1.3rem;
+    }
+
+    .content-box {
+        padding: 1.4rem 1.1rem;
+        border-radius: 16px;
+    }
+
+    .box-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.85rem;
+    }
+
+    .box-select, .btn-pdf-export {
+        width: 100%;
+    }
+
+    .box-select select {
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn-pdf-export {
+        text-align: center;
+    }
+
+    .footer-badges {
+        margin: 0 1rem 1.8rem 1rem;
+        grid-template-columns: 1fr;
+        gap: 1.1rem;
+    }
+}
