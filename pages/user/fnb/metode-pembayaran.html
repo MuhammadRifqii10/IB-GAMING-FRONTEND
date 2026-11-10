@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard Pelanggan - Pesan F&B (Metode Pembayaran)</title>
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="../../../css/global.css">
+
+    <!-- Shared Header & Footer -->
+    <link rel="stylesheet" href="../../../css/user/shared.css">
+
+    <!-- Metode Pembayaran CSS -->
+    <link rel="stylesheet" href="../../../css/user/fnb/metode-pembayaran.css">
+
+</head>
+
+
+<body>
+
+<div class="dashboard-pelanggan">
+
+
+    <!-- =====================================================
+         HEADER
+         Header sama dengan halaman Pesan F&B
+         dan Lanjut Pemesanan
+    ====================================================== -->
+
+    <header class="header">
+
+
+        <!-- =================================================
+             BRAND
+        ================================================== -->
+
+        <a
+            href="../home.html"
+            class="brand-logo"
+        >
+
+            <img
+                class="link-logo-branding"
+                src="../../../assets/Icon/Logo.svg"
+                alt="IB Gaming"
+            >
+
+            <div class="brand-text">
+
+                <span class="brand-name">
+                    IB GAMING
+                </span>
+
+                <span class="brand-tagline">
+                    PLAY · EAT · ENJOY
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <!-- =================================================
+             NAVIGATION
+        ================================================== -->
+
+        <nav
+            class="main-navigation-menu"
+            aria-label="Navigasi utama"
+        >
+
+
+            <!-- Beranda -->
+
+            <a
+                class="link"
+                href="../home.html"
+            >
+
+                <span class="text-wrapper">
+                    Beranda
+                </span>
+
+                <img
+                    class="akar-icons-home"
+                    src="../../../assets/Icon/Home.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+
+            </a>
+
+
+            <!-- Booking PS -->
+
+            <a
+                class="div"
+                href="../booking/booking-member.html"
+            >
+
+                <span class="text-wrapper">
+                    Booking PS
+                </span>
+
+                <img
+                    class="carbon-game-console"
+                    src="../../../assets/Icon/PlayStation Logo.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+
+            </a>
+
+
+            <!-- Pesan F&B -->
+
+            <a
+                class="link-2"
+                href="pesan-fnb.html"
+                aria-current="page"
+            >
+
+                <span class="text-wrapper">
+                    Pesan FNB
+                </span>
+
+                <img
+                    class="img"
+                    src="../../../assets/Icon/Food Icon.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+
+            </a>
+
+        </nav>
+
+
+        <!-- =================================================
+             HEADER ACTIONS
+
+             Diisi otomatis oleh global.js
+        ================================================== -->
+
+        <div
+            class="auth-action-buttons"
+            id="authActionButtons"
+        ></div>
+
+
+    </header>
+
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <main class="fnb-content">
+
+
+        <!-- =================================================
+             HERO SECTION
+        ================================================== -->
+
+        <section
+            class="fnb-hero"
+            aria-labelledby="fnb-hero-title"
+        >
+
+
+            <!-- Hero Text -->
+
+            <div class="fnb-hero-content">
+
+                <span class="fnb-hero-label">
+                    F&amp;B IB GAMING
+                </span>
+
+
+                <h1 id="fnb-hero-title">
+                    Metode
+                    <br>
+                    Pembayaran
+                </h1>
+
+
+                <p>
+                    Nikmati berbagai pilihan makanan dan minuman
+                    untuk menemani sesi bermainmu.
+                </p>
+
+            </div>
+
+
+            <!-- Hero Image -->
+
+            <div class="fnb-hero-image">
+
+                <img
+                    src="../../../assets/Images/FNB.png"
+                    alt="Makanan dan minuman IB Gaming"
+                >
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             PAYMENT AREA
+        ================================================== -->
+
+        <section
+            class="payment-section"
+            aria-label="Metode pembayaran"
+        >
+
+
+            <!-- =================================================
+                 PAYMENT METHOD CARD
+            ================================================== -->
+
+            <div class="payment-method-card">
+
+
+                <!-- Header -->
+
+                <div class="payment-card-header">
+
+                    <div class="payment-card-title-icon">
+
+                        <span class="payment-document-icon">
+                            <img
+                                src="../../../assets/Icon/Note.svg"
+                                alt=""
+                                aria-hidden="true"
+                            >
+                        </span>
+
+                    </div>
+
+
+                    <div class="payment-card-heading">
+
+                        <h2>
+                            Pilih Metode Pembayaran
+                        </h2>
+
+                        <p>
+                            Silahkan Pilih Metode Pembayaran yang kamu inginkan
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     QRIS
+                ================================================== -->
+
+                <label
+                    class="payment-option qris-option"
+                    for="paymentQris"
+                >
+
+                    <div class="payment-option-header">
+
+                        <input
+                            type="radio"
+                            id="paymentQris"
+                            name="paymentMethod"
+                            value="qris"
+                            checked
+                        >
+
+
+                        <div class="payment-option-icon">
+
+                            <img
+                                src="../../../assets/Icon/Qris.svg"
+                                alt=""
+                                aria-hidden="true"
+                            >
+
+                        </div>
+
+
+                        <div class="payment-option-text">
+
+                            <strong>
+                                QRIS
+                            </strong>
+
+                            <span>
+                                Lakukan Pembayaran melalui e-wallet atau mobile banking
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- QRIS Detail -->
+
+                    <div
+                        class="qris-payment-detail"
+                        id="qrisPaymentDetail"
+                    >
+
+                        <div class="qris-code-wrapper">
+
+                            <img
+                                src="../../../assets/Icon/QR.svg"
+                                alt="QRIS"
+                                class="qris-code-image"
+                            >
+
+                        </div>
+
+
+                        <div class="qris-instruction">
+
+                            <h3>
+                                Scan Qris
+                            </h3>
+
+                            <p>
+                                Gunakan aplikasi e-wallet atau mobile banking
+                                yang mendukung QRIS.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </label>
+
+
+
+                <!-- =================================================
+                     CASH
+                ================================================== -->
+
+                <label
+                    class="payment-option cash-option"
+                    for="paymentCash"
+                >
+
+                    <div class="payment-option-header">
+
+                        <input
+                            type="radio"
+                            id="paymentCash"
+                            name="paymentMethod"
+                            value="cash"
+                        >
+
+
+                        <div class="payment-option-icon">
+
+                            <img
+                                src="../../../assets/Icon/Note.svg"
+                                alt=""
+                                aria-hidden="true"
+                            >
+
+                        </div>
+
+
+                        <div class="payment-option-text">
+
+                            <strong>
+                                Tunai (Cash)
+                            </strong>
+
+                            <span>
+                                Pembayaran dilakukan saat pengambilan unit di IB Gaming
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Cash Information -->
+
+                    <div class="cash-payment-detail">
+
+                        <div class="cash-note">
+
+                            <img
+                                src="../../../assets/Icon/Note.svg"
+                                alt=""
+                                aria-hidden="true"
+                            >
+
+                            <span>
+                                Pastikan membawa uang tunai dengan nominal yang sesuai
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </label>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 ORDER SUMMARY
+            ================================================== -->
+
+            <aside
+                class="payment-order-summary"
+                aria-label="Ringkasan pesanan"
+            >
+
+
+                <div class="payment-summary-card">
+
+
+                    <!-- Summary Header -->
+
+                    <div class="payment-summary-header">
+
+                        <div>
+
+                            <span class="payment-summary-label">
+                                RINGKASAN
+                            </span>
+
+                            <h2>
+                                Pesanan Saya
+                            </h2>
+
+                        </div>
+
+
+                        <img
+                            src="../../../assets/Icon/FNB.svg"
+                            alt=""
+                            aria-hidden="true"
+                        >
+
+                    </div>
+
+
+
+                    <!-- Dynamic Orders -->
+
+                    <div
+                        class="payment-summary-items"
+                        id="paymentSummaryItems"
+                    >
+
+                        <!--
+                            Data pesanan akan dimasukkan
+                            melalui metode-pembayaran.js
+                        -->
+
+                    </div>
+
+
+
+                    <!-- Empty State -->
+
+                    <div
+                        class="payment-summary-empty"
+                        id="paymentSummaryEmpty"
+                    >
+
+                        <img
+                            src="../../../assets/Icon/FNB.svg"
+                            alt=""
+                            aria-hidden="true"
+                        >
+
+                        <p>
+                            Belum ada pesanan.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- Subtotal -->
+
+                    <div class="payment-summary-subtotal">
+
+                        <span>
+                            Sub Total
+                        </span>
+
+                        <strong id="paymentSummarySubtotal">
+                            Rp 0
+                        </strong>
+
+                    </div>
+
+
+
+                    <!-- Confirmation Button -->
+
+                    <button
+                        type="button"
+                        class="confirm-payment-button"
+                        id="confirmPaymentButton"
+                    >
+
+                        <span>
+                            Konfirmasi Pembayaran
+                        </span>
+
+                    </button>
+
+
+                </div>
+
+
+            </aside>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         Footer sama dengan halaman lainnya
+    ====================================================== -->
+
+    <footer class="footer-value">
+
+
+        <!-- Feature 1 -->
+
+        <article class="div-2">
+
+            <div class="background">
+
+                <img
+                    src="../../../assets/Icon/Controller Icon.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+
+            </div>
+
+            <div>
+
+                <p class="text">
+                    Premium Equipment
+                </p>
+
+                <p class="text-2">
+                    PlayStation terbaru &amp; berkualitas
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- Feature 2 -->
+
+        <article class="div-2">
+
+            <div class="background">
+
+                <img
+                    src="../../../assets/Icon/FNB.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+
+            </div>
+
+            <div>
+
+                <p class="text">
+                    Delicious Food &amp; Drinks
+                </p>
+
+                <p class="text-2">
+                    Pilihan menu terbaik
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- Feature 3 -->
+
+        <article class="div-2">
+
+            <div class="background">
+
+                <img
+                    src="../../../assets/Icon/Bintang.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+
+            </div>
+
+            <div>
+
+                <p class="text">
+                    Comfortable Space
+                </p>
+
+                <p class="text-2">
+                    Suasana nyaman &amp; modern
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- Feature 4 -->
+
+        <article class="div-2">
+
+            <div class="background">
+
+                <img
+                    src="../../../assets/Icon/People Icon.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+
+            </div>
+
+            <div>
+
+                <p class="text">
+                    Friendly Support
+                </p>
+
+                <p class="text-2">
+                    Selalu siap membantu
+                </p>
+
+            </div>
+
+        </article>
+
+
+    </footer>
+
+
+</div>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+====================================================== -->
+
+<script src="../../../js/global.js"></script>
+
+<script src="../../../js/user/fnb/metode-pembayaran.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,1241 @@
+/* =========================================================
+   PEMBAYARAN QRIS - IB GAMING
+   ========================================================= */
+
+.dashboard-pelanggan {
+    min-height: 100vh;
+    background: #fcf9f7;
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+   ========================================================= */
+
+.fnb-content {
+    width: calc(100% - 110px);
+    max-width: none;
+    margin: 0 auto;
+    padding-top: 28px;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HERO
+   Tetap mengikuti halaman F&B sebelumnya
+   ========================================================= */
+
+.fnb-hero {
+    width: 100%;
+    height: 235px;
+    min-height: 235px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+
+    position: relative;
+    overflow: hidden;
+
+    background: #f7eee4;
+    border-radius: 14px;
+
+    box-sizing: border-box;
+    margin-bottom: 32px;
+}
+
+.fnb-hero-content {
+    flex: 0 0 50%;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 30px 0 30px 40px;
+
+    position: relative;
+    z-index: 2;
+
+    box-sizing: border-box;
+}
+
+.fnb-hero-label {
+    margin-bottom: 7px;
+
+    color: #b58a4a;
+
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+    line-height: 1.3;
+
+    text-transform: uppercase;
+}
+
+.fnb-hero-content h1 {
+    margin: 0;
+
+    color: #b58a4a;
+
+    font-family: var(--font-heading);
+    font-size: 40px;
+    font-weight: 700;
+
+    line-height: 0.98;
+    letter-spacing: -0.7px;
+}
+
+.fnb-hero-content p {
+    max-width: 310px;
+
+    margin: 13px 0 0;
+
+    color: #998f82;
+
+    font-family: var(--font-body);
+    font-size: 9px;
+    font-weight: 400;
+
+    line-height: 1.5;
+}
+
+.fnb-hero-image {
+    flex: 0 0 50%;
+    width: 50%;
+    height: 100%;
+
+    position: relative;
+    display: block;
+
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.fnb-hero-image::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            #f7eee4 0%,
+            rgba(247, 238, 228, 0.65) 13%,
+            rgba(247, 238, 228, 0) 38%
+        );
+
+    z-index: 2;
+    pointer-events: none;
+}
+
+.fnb-hero-image img {
+    width: 100% !important;
+    height: 100% !important;
+
+    max-width: none !important;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================================================
+   QRIS PAYMENT SECTION
+   ========================================================= */
+
+.qris-payment-section {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        400px;
+
+    align-items: start;
+
+    gap: 30px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   MAIN QRIS CARD
+   ========================================================= */
+
+.qris-payment-card {
+    width: 100%;
+
+    padding: 24px 26px 26px;
+
+    background: #fffefa;
+
+    border: 1px solid #dcc9af;
+    border-radius: 14px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   QRIS CARD HEADER
+   ========================================================= */
+
+.qris-payment-header {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 13px;
+
+    margin-bottom: 20px;
+}
+
+.qris-payment-title-icon {
+    width: 36px;
+    height: 36px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 7px;
+
+    background: #b58a4a;
+}
+
+.qris-payment-title-icon img {
+    width: 21px;
+    height: 21px;
+
+    display: block;
+
+    object-fit: contain;
+
+    filter: brightness(0) invert(1);
+}
+
+.qris-payment-heading {
+    min-width: 0;
+}
+
+.qris-payment-heading h2 {
+    margin: 0;
+
+    color: #29231f;
+
+    font-family: var(--font-body);
+    font-size: 20px;
+    font-weight: 600;
+
+    line-height: 1.3;
+}
+
+.qris-payment-heading p {
+    margin: 4px 0 0;
+
+    color: #a69e93;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 400;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   QRIS PAYMENT CONTENT
+   ========================================================= */
+
+.qris-payment-content {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        205px
+        minmax(0, 1fr);
+
+    align-items: stretch;
+
+    gap: 20px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   QR CODE CARD
+   ========================================================= */
+
+.qris-code-card {
+    width: 100%;
+
+    min-height: 280px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 10px 12px 13px;
+
+    background: #ffffff;
+
+    border: 1px solid #dedede;
+    border-radius: 11px;
+
+    box-shadow:
+        0 2px 6px rgba(0, 0, 0, 0.12);
+
+    box-sizing: border-box;
+}
+
+
+/* QRIS text */
+
+.qris-brand {
+    width: 100%;
+
+    margin-bottom: 7px;
+
+    color: #171717;
+
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+
+    line-height: 1;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   QR CODE
+   ========================================================= */
+
+.qris-code-wrapper {
+    width: 166px;
+    height: 166px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 5px;
+
+    background: #ffffff;
+
+    border: 1px solid #d5d5d5;
+    border-radius: 4px;
+
+    box-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.10);
+
+    box-sizing: border-box;
+}
+
+.qris-code-image {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   MERCHANT
+   ========================================================= */
+
+.qris-merchant-name {
+    margin-top: 8px;
+
+    color: #29231f;
+
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+
+    line-height: 1.2;
+}
+
+.qris-merchant-id {
+    margin-top: 2px;
+
+    color: #777;
+
+    font-family: Arial, sans-serif;
+    font-size: 8px;
+    font-weight: 400;
+
+    line-height: 1.2;
+}
+
+
+/* =========================================================
+   PAYMENT INFORMATION CARD
+   ========================================================= */
+
+.payment-information-card {
+    width: 100%;
+
+    min-width: 0;
+
+    padding: 11px 12px 10px;
+
+    background: #fffdfa;
+
+    border: 1px solid #dcc9af;
+    border-radius: 11px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   TIMER
+   ========================================================= */
+
+.payment-timer-box {
+    width: 100%;
+
+    min-height: 66px;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 9px;
+
+    padding: 9px 11px;
+
+    background: #f5ecdf;
+
+    border-radius: 8px;
+
+    box-sizing: border-box;
+}
+
+.payment-timer-icon {
+    width: 20px;
+    height: 20px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 2px;
+}
+
+.payment-timer-icon img {
+    width: 18px;
+    height: 18px;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+.payment-timer-content {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-timer-label {
+    color: #7d6b56;
+
+    font-family: var(--font-body);
+    font-size: 9px;
+    font-weight: 500;
+
+    line-height: 1.3;
+}
+
+.payment-timer {
+    margin-top: 1px;
+
+    color: #29231f;
+
+    font-family: Arial, sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+
+    line-height: 1.05;
+    letter-spacing: 1.5px;
+}
+
+.payment-timer-description {
+    margin-top: 3px;
+
+    color: #a69e93;
+
+    font-family: var(--font-body);
+    font-size: 8px;
+    font-weight: 400;
+
+    line-height: 1.3;
+}
+
+
+/* =========================================================
+   PAYMENT DETAIL LIST
+   ========================================================= */
+
+.payment-detail-list {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 7px;
+}
+
+.payment-detail-row {
+    min-height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding: 6px 0;
+
+    border-bottom: 1px solid #e5dcd0;
+
+    box-sizing: border-box;
+}
+
+.payment-detail-row:last-child {
+    border-bottom: none;
+}
+
+.payment-detail-row > span:first-child {
+    color: #857d74;
+
+    font-family: var(--font-body);
+    font-size: 9px;
+    font-weight: 400;
+
+    line-height: 1.3;
+}
+
+.payment-detail-row > strong,
+.payment-detail-row > span:last-child {
+    max-width: 65%;
+
+    overflow: hidden;
+
+    color: #29231f;
+
+    font-family: var(--font-body);
+    font-size: 9px;
+    font-weight: 500;
+
+    line-height: 1.3;
+
+    text-align: right;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   PAYMENT STATUS
+   ========================================================= */
+
+.payment-status-row {
+    border-bottom: none;
+}
+
+.payment-status {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 5px;
+
+    color: #857d74 !important;
+
+    font-size: 9px !important;
+}
+
+.payment-status-dot {
+    width: 9px;
+    height: 9px;
+
+    flex-shrink: 0;
+
+    display: inline-block;
+
+    border-radius: 50%;
+
+    background: #bd9658;
+
+    box-shadow:
+        0 0 0 1px rgba(189, 150, 88, 0.15);
+}
+
+.payment-status.pending .payment-status-dot {
+    background: #bd9658;
+}
+
+.payment-status.success {
+    color: #6f8b5d !important;
+}
+
+.payment-status.success .payment-status-dot {
+    background: #6f8b5d;
+}
+
+.payment-status.failed {
+    color: #a85f55 !important;
+}
+
+.payment-status.failed .payment-status-dot {
+    background: #a85f55;
+}
+
+.payment-status.expired {
+    color: #9b7560 !important;
+}
+
+.payment-status.expired .payment-status-dot {
+    background: #9b7560;
+}
+
+
+/* =========================================================
+   ORDER SUMMARY
+   ========================================================= */
+
+.qris-order-summary {
+    width: 100%;
+
+    position: sticky;
+    top: 120px;
+
+    box-sizing: border-box;
+}
+
+.qris-summary-card {
+    width: 100%;
+
+    padding: 18px 20px 17px;
+
+    background: #fffefa;
+
+    border: 1px solid #dcc9af;
+    border-radius: 12px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   SUMMARY HEADER
+   ========================================================= */
+
+.qris-summary-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+
+    padding-bottom: 13px;
+
+    border-bottom: 1px solid #e5dcd0;
+}
+
+.qris-summary-label {
+    display: block;
+
+    margin-bottom: 2px;
+
+    color: #b58a4a;
+
+    font-family: var(--font-body);
+    font-size: 8px;
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+}
+
+.qris-summary-header h2 {
+    margin: 0;
+
+    color: #29231f;
+
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 600;
+
+    line-height: 1.3;
+}
+
+.qris-summary-header > img {
+    width: 22px;
+    height: 22px;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   SUMMARY ITEMS
+   ========================================================= */
+
+.qris-summary-items {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 11px;
+
+    margin-top: 14px;
+}
+
+.qris-summary-item {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    box-sizing: border-box;
+}
+
+.qris-summary-item-image {
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 6px;
+
+    background: #f7f1e8;
+}
+
+.qris-summary-item-info {
+    min-width: 0;
+
+    flex: 1;
+}
+
+.qris-summary-item-name {
+    margin: 0;
+
+    overflow: hidden;
+
+    color: #29231f;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 600;
+
+    line-height: 1.3;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.qris-summary-item-price {
+    margin: 2px 0 0;
+
+    color: #857d74;
+
+    font-family: var(--font-body);
+    font-size: 9px;
+    font-weight: 400;
+
+    line-height: 1.3;
+}
+
+.qris-summary-item-quantity {
+    flex-shrink: 0;
+
+    color: #29231f;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 500;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   EMPTY SUMMARY
+   ========================================================= */
+
+.qris-summary-empty {
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    gap: 6px;
+
+    padding: 20px 0;
+
+    text-align: center;
+}
+
+.qris-summary-empty.active {
+    display: flex;
+}
+
+.qris-summary-empty img {
+    width: 28px;
+    height: 28px;
+
+    opacity: 0.6;
+}
+
+.qris-summary-empty p {
+    margin: 0;
+
+    color: #a69e93;
+
+    font-family: var(--font-body);
+    font-size: 9px;
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   SUMMARY SUBTOTAL
+   ========================================================= */
+
+.qris-summary-subtotal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 14px;
+    padding-top: 11px;
+
+    border-top: 1px solid #e5dcd0;
+}
+
+.qris-summary-subtotal span {
+    color: #857d74;
+
+    font-family: var(--font-body);
+    font-size: 9px;
+    font-weight: 400;
+}
+
+.qris-summary-subtotal strong {
+    color: #29231f;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   SUMMARY TOTAL
+   ========================================================= */
+
+.qris-summary-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 9px;
+
+    padding: 9px 10px;
+
+    background: #eee4d8;
+
+    border-radius: 4px;
+
+    box-sizing: border-box;
+}
+
+.qris-summary-total span {
+    color: #29231f;
+
+    font-family: var(--font-body);
+    font-size: 9px;
+    font-weight: 600;
+}
+
+.qris-summary-total strong {
+    color: #29231f;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   AFTER PAYMENT NOTE
+   ========================================================= */
+
+.payment-after-note {
+    width: calc(100% - 430px);
+
+    min-height: 70px;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 10px;
+
+    margin-top: 15px;
+
+    padding: 11px 14px;
+
+    background: #bd9658;
+
+    border-radius: 9px;
+
+    box-sizing: border-box;
+}
+
+.payment-after-note-icon {
+    width: 20px;
+    height: 20px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 1px;
+
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+
+    color: #ffffff;
+
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+
+    line-height: 1;
+}
+
+.payment-after-note-content {
+    min-width: 0;
+}
+
+.payment-after-note-content h3 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 600;
+
+    line-height: 1.3;
+}
+
+.payment-after-note-content ol {
+    margin: 4px 0 0;
+    padding-left: 15px;
+
+    color: rgba(255, 255, 255, 0.95);
+
+    font-family: var(--font-body);
+    font-size: 8px;
+    font-weight: 400;
+
+    line-height: 1.5;
+
+    list-style: decimal;
+}
+
+.payment-after-note-content li {
+    padding-left: 2px;
+}
+
+
+/* =========================================================
+   BACK BUTTON
+   ========================================================= */
+
+.qris-back-wrapper {
+    width: calc(100% - 430px);
+
+    display: flex;
+    justify-content: flex-end;
+
+    margin-top: 38px;
+}
+
+.qris-back-button {
+    width: 120px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #dcc9af;
+    border-radius: 7px;
+
+    background: #fffefa;
+
+    color: #b58a4a;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 500;
+
+    box-sizing: border-box;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.qris-back-button:hover {
+    background: #f7f1e8;
+
+    border-color: #b58a4a;
+
+    color: #98703b;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.footer-value {
+    margin-top: 110px !important;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .fnb-content {
+        width: calc(100% - 70px);
+    }
+
+    .qris-payment-section {
+        grid-template-columns:
+            minmax(0, 1fr)
+            340px;
+
+        gap: 22px;
+    }
+
+    .qris-payment-content {
+        grid-template-columns:
+            185px
+            minmax(0, 1fr);
+
+        gap: 16px;
+    }
+
+    .qris-code-wrapper {
+        width: 150px;
+        height: 150px;
+    }
+
+    .payment-after-note,
+    .qris-back-wrapper {
+        width: calc(100% - 362px);
+    }
+}
+
+
+@media (max-width: 900px) {
+
+    .fnb-content {
+        width: calc(100% - 48px);
+    }
+
+    .qris-payment-section {
+        grid-template-columns: 1fr;
+    }
+
+    .qris-order-summary {
+        position: static;
+    }
+
+    .payment-after-note,
+    .qris-back-wrapper {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .fnb-content {
+        width: calc(100% - 36px);
+        padding-top: 18px;
+    }
+
+    .fnb-hero {
+        height: 200px;
+        min-height: 200px;
+
+        margin-bottom: 22px;
+    }
+
+    .fnb-hero-content {
+        padding-left: 24px;
+    }
+
+    .fnb-hero-content h1 {
+        font-size: 34px;
+    }
+
+    .qris-payment-card {
+        padding: 20px;
+    }
+
+    .qris-payment-content {
+        grid-template-columns: 1fr;
+    }
+
+    .qris-code-card {
+        max-width: 230px;
+
+        margin: 0 auto;
+    }
+
+    .payment-information-card {
+        width: 100%;
+    }
+
+    .qris-order-summary {
+        width: 100%;
+    }
+
+    .payment-after-note {
+        margin-top: 14px;
+    }
+
+    .qris-back-wrapper {
+        justify-content: center;
+
+        margin-top: 24px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .fnb-content {
+        width: calc(100% - 24px);
+
+        padding-top: 14px;
+    }
+
+    .fnb-hero {
+        height: 180px;
+        min-height: 180px;
+
+        border-radius: 10px;
+    }
+
+    .fnb-hero-content {
+        width: 55%;
+        flex: 0 0 55%;
+
+        padding-left: 18px;
+    }
+
+    .fnb-hero-image {
+        width: 45%;
+        flex: 0 0 45%;
+    }
+
+    .fnb-hero-content h1 {
+        font-size: 28px;
+    }
+
+    .fnb-hero-label {
+        font-size: 9px;
+        letter-spacing: 1.5px;
+    }
+
+    .fnb-hero-content p {
+        max-width: 180px;
+
+        margin-top: 9px;
+
+        font-size: 7px;
+    }
+
+    .qris-payment-heading h2 {
+        font-size: 16px;
+    }
+
+    .qris-payment-heading p {
+        font-size: 8px;
+    }
+
+    .qris-payment-card {
+        padding: 16px;
+    }
+
+    .qris-code-card {
+        max-width: 210px;
+    }
+
+    .payment-detail-row > span:first-child {
+        font-size: 8px;
+    }
+
+    .payment-detail-row > strong,
+    .payment-detail-row > span:last-child {
+        font-size: 8px;
+    }
+
+    .payment-after-note {
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .qris-back-button {
+        width: 105px;
+        height: 34px;
+    }
+}

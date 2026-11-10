@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Form booking PlayStation IB Gaming."
+    >
+
+    <title>Booking PlayStation - IB Gaming</title>
+
+
+    <!-- =====================================================
+         GLOBAL CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="../../../css/global.css"
+    >
+
+
+    <!-- =====================================================
+         SHARED CSS
+         Header & Footer
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="../../../css/user/shared.css"
+    >
+
+
+    <!-- =====================================================
+         BOOKING CSS
+         Hanya untuk isi halaman booking
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="../../../css/user/booking/booking-form.css"
+    >
+
+</head>
+
+
+<body>
+
+<div class="dashboard-pelanggan">
+
+
+    <!-- =====================================================
+         HEADER
+         COPY DARI booking-member.html
+         Jangan diubah
+    ====================================================== -->
+
+    <header class="header">
+
+
+        <!-- =================================================
+             LOGO
+        ================================================== -->
+
+        <a
+            href="../home.html"
+            class="brand-logo"
+        >
+
+            <img
+                class="link-logo-branding"
+                src="../../../assets/Icon/Logo.svg"
+                alt="IB Gaming"
+            >
+
+            <div class="brand-text">
+
+                <span class="brand-name">
+                    IB GAMING
+                </span>
+
+                <span class="brand-tagline">
+                    PLAY · EAT · ENJOY
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <!-- =================================================
+             NAVIGATION
+        ================================================== -->
+
+        <nav
+            class="main-navigation-menu"
+            aria-label="Navigasi utama"
+        >
+
+
+            <!-- Beranda -->
+
+            <a
+                class="link"
+                href="../home.html"
+            >
+
+                <span class="text-wrapper">
+                    Beranda
+                </span>
+
+                <img
+                    class="akar-icons-home"
+                    src="../../../assets/Icon/Home.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+
+            </a>
+
+
+            <!-- Booking PS - ACTIVE -->
+
+            <a
+                class="div"
+                href="booking-form.html"
+                aria-current="page"
+            >
+
+                <span class="text-wrapper">
+                    Booking PS
+                </span>
+
+                <img
+                    class="carbon-game-console"
+                    src="../../../assets/Icon/PlayStation Logo.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+
+            </a>
+
+
+            <!-- Pesan F&B -->
+
+            <a
+                class="link-2"
+                href="../fnb/pesan-fnb.html"
+            >
+
+                <span class="text-wrapper">
+                    Pesan FNB
+                </span>
+
+                <img
+                    class="img"
+                    src="../../../assets/Icon/Food Icon.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+
+            </a>
+
+        </nav>
+
+
+        <!-- =================================================
+             HEADER ACTIONS
+        ================================================== -->
+
+        <div class="auth-action-buttons">
+
+
+            <!-- =================================================
+                 KERANJANG
+            ================================================== -->
+
+            <a
+                class="vector-wrapper"
+                href="../cart.html"
+                aria-label="Keranjang pesanan"
+            >
+
+                <img
+                    class="vector"
+                    src="../../../assets/Icon/Keranjang.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+
+            </a>
+
+
+            <!-- =================================================
+                 NOTIFIKASI
+            ================================================== -->
+
+            <a
+                class="vector-wrapper"
+                href="../notification.html"
+                aria-label="Notifikasi"
+            >
+
+                <img
+                    class="vector-2"
+                    src="../../../assets/Icon/Notif.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+
+            </a>
+
+
+            <!-- =================================================
+                 PROFILE
+            ================================================== -->
+
+            <div class="profile-menu">
+
+
+                <!-- Profile Button -->
+
+                <button
+                    type="button"
+                    class="profile-button"
+                    id="profileButton"
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                    aria-label="Buka menu profil"
+                >
+
+                    <!-- Profile Image -->
+
+                    <img
+                        class="profile-image"
+                        src="../../../assets/Images/Elon.jpg"
+                        alt="Kimi"
+                    >
+
+
+                    <!-- Profile Name -->
+
+                    <span class="profile-name">
+                        Kimi
+                    </span>
+
+
+                    <!-- Arrow -->
+
+                    <img
+                        class="profile-arrow"
+                        src="../../../assets/Icon/Arrow.svg"
+                        alt=""
+                        aria-hidden="true"
+                    >
+
+                </button>
+
+
+                <!-- =================================================
+                     PROFILE DROPDOWN
+                ================================================== -->
+
+                <div
+                    class="profile-dropdown"
+                    id="profileDropdown"
+                    role="menu"
+                >
+
+
+                    <!-- Profile Information -->
+
+                    <div class="profile-dropdown-header">
+
+                        <img
+                            class="dropdown-profile-image"
+                            src="../../../assets/Images/Elon.jpg"
+                            alt="Kimi Antonelli"
+                        >
+
+                        <div class="dropdown-profile-info">
+
+                            <span class="dropdown-profile-name">
+                                Kimi Antonelli
+                            </span>
+
+                            <span class="dropdown-profile-email">
+                                kimi@gmail.com
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="dropdown-divider"></div>
+
+
+                    <!-- Profile Saya -->
+
+                    <a
+                        href="../profile.html"
+                        class="dropdown-item"
+                        role="menuitem"
+                    >
+
+                        <span class="dropdown-item-icon">
+
+                            <img
+                                src="../../../assets/Icon/User-gold.svg"
+                                alt=""
+                            >
+
+                        </span>
+
+                        <span>
+                            Profile Saya
+                        </span>
+
+                    </a>
+
+
+                    <!-- Logout -->
+
+                    <a
+                        href="../../../index.html"
+                        class="dropdown-item logout-button"
+                        role="menuitem"
+                    >
+
+                        <span class="dropdown-item-icon">
+
+                            <img
+                                src="../../../assets/Icon/Logout.svg"
+                                alt=""
+                            >
+
+                        </span>
+
+                        <span>
+                            Logout
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         MAIN
+         HANYA BAGIAN INI YANG BERUBAH
+    ====================================================== -->
+
+    <main class="booking-content">
+
+
+        <!-- =================================================
+             HERO
+             Struktur mengikuti booking-member.html
+        ================================================== -->
+
+        <section
+            class="booking-hero"
+            aria-labelledby="booking-hero-title"
+        >
+
+
+            <!-- Hero Text -->
+
+            <div class="booking-hero-content">
+
+                <span class="booking-hero-label">
+                    PlayStation
+                </span>
+
+
+                <h1 id="booking-hero-title">
+                    Booking<br>
+                    PlayStation
+                </h1>
+
+
+                <p>
+                    Pilih perangkat dan tentukan jadwal
+                    penyewaan PlayStation sesuai kebutuhanmu.
+                </p>
+
+            </div>
+
+
+            <!-- Hero Image -->
+
+            <div class="booking-hero-image">
+
+                <img
+                    src="../../../assets/Images/Booking.png"
+                    alt="Suasana ruang PlayStation IB Gaming"
+                >
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             BOOKING BODY
+        ================================================== -->
+
+        <section class="booking-layout">
+
+
+            <!-- =================================================
+                 KOLOM UTAMA
+            ================================================== -->
+
+            <div class="booking-main">
+
+
+                <!-- =================================================
+                     PILIH PERANGKAT
+                ================================================== -->
+
+                <section class="booking-card device-card">
+
+
+                    <!-- Card Header -->
+
+                    <div class="booking-card-header">
+
+                        <div class="booking-card-icon">
+
+                            <img
+                                src="../../../assets/Icon/User.svg"
+                                alt=""
+                                aria-hidden="true"
+                            >
+
+                        </div>
+
+
+                        <div class="booking-card-heading">
+
+                            <h2>
+                                Pilih Perangkat
+                            </h2>
+
+                            <p>
+                                Pilih PlayStation dan TV yang
+                                ingin kamu gunakan.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         PLAYSTATION
+                    ================================================== -->
+
+                    <div class="booking-form-group">
+
+                        <div class="form-label-row">
+
+                            <label>
+                                PlayStation
+                            </label>
+
+                            <span class="required-label">
+                                Wajib dipilih
+                            </span>
+
+                        </div>
+
+
+                        <div class="device-grid">
+
+
+                            <!-- PS4 -->
+
+                            <label class="device-option">
+
+                                <input
+                                    type="radio"
+                                    name="playstation"
+                                    value="PS4"
+                                    data-price="30000"
+                                >
+
+                                <div class="device-option-content">
+
+                                    <div class="device-image">
+
+                                        <img
+                                            src="../../../assets/Images/PS4.png"
+                                            alt="PlayStation 4"
+                                        >
+
+                                    </div>
+
+
+                                    <div class="device-information">
+
+                                        <h3>
+                                            PS4
+                                        </h3>
+
+                                        <p>
+                                            Rp30.000
+                                            <span>/hari</span>
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                            </label>
+
+
+
+                            <!-- PS3 -->
+
+                            <label class="device-option">
+
+                                <input
+                                    type="radio"
+                                    name="playstation"
+                                    value="PS3"
+                                    data-price="20000"
+                                >
+
+                                <div class="device-option-content">
+
+                                    <div class="device-image">
+
+                                        <img
+                                            src="../../../assets/Images/PS3.png"
+                                            alt="PlayStation 3"
+                                        >
+
+                                    </div>
+
+
+                                    <div class="device-information">
+
+                                        <h3>
+                                            PS3
+                                        </h3>
+
+                                        <p>
+                                            Rp20.000
+                                            <span>/hari</span>
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         TV
+                    ================================================== -->
+
+                    <div class="booking-form-group">
+
+                        <div class="form-label-row">
+
+                            <label>
+                                TV
+                            </label>
+
+                            <span class="optional-label">
+                                Opsional
+                            </span>
+
+                        </div>
+
+
+                        <div class="device-grid tv-grid">
+
+
+                            <!-- Tidak Menggunakan TV -->
+
+                            <label class="device-option no-tv-option">
+
+                                <input
+                                    type="radio"
+                                    name="tv"
+                                    value="none"
+                                    data-price="0"
+                                    checked
+                                >
+
+                                <div class="device-option-content">
+
+                                    <div class="device-information">
+
+                                        <h3>
+                                            Tidak menggunakan TV
+                                        </h3>
+
+                                        <p>
+                                            Rp0
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                            </label>
+
+
+
+                            <!-- TV55 -->
+
+                            <label class="device-option">
+
+                                <input
+                                    type="radio"
+                                    name="tv"
+                                    value="TV55"
+                                    data-price="40000"
+                                >
+
+                                <div class="device-option-content">
+
+                                    <div class="device-image">
+
+                                        <img
+                                            src="../../../assets/Images/Tv55.png"
+                                            alt="TV 55 Inch"
+                                        >
+
+                                    </div>
+
+
+                                    <div class="device-information">
+
+                                        <h3>
+                                            TV55
+                                        </h3>
+
+                                        <p>
+                                            Rp40.000
+                                            <span>/hari</span>
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                            </label>
+
+
+
+                            <!-- TV43 -->
+
+                            <label class="device-option">
+
+                                <input
+                                    type="radio"
+                                    name="tv"
+                                    value="TV43"
+                                    data-price="30000"
+                                >
+
+                                <div class="device-option-content">
+
+                                    <div class="device-image">
+
+                                        <img
+                                            src="../../../assets/Images/Tv43.png"
+                                            alt="TV 43 Inch"
+                                        >
+
+                                    </div>
+
+
+                                    <div class="device-information">
+
+                                        <h3>
+                                            TV43
+                                        </h3>
+
+                                        <p>
+                                            Rp30.000
+                                            <span>/hari</span>
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                            </label>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================================
+                     JADWAL PENYEWAAN
+                ================================================== -->
+
+                <section class="booking-card schedule-card">
+
+
+                    <!-- Card Header -->
+
+                    <div class="booking-card-header">
+
+                        <div class="booking-card-icon">
+
+                            <img
+                                src="../../../assets/Icon/Note.svg"
+                                alt=""
+                                aria-hidden="true"
+                            >
+
+                        </div>
+
+
+                        <div class="booking-card-heading">
+
+                            <h2>
+                                Jadwal Penyewaan
+                            </h2>
+
+                            <p>
+                                Tentukan tanggal dan waktu
+                                pengambilan serta pengembalian.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         TANGGAL PENGAMBILAN
+                    ================================================== -->
+
+                    <div class="booking-form-group">
+
+                        <label
+                            for="pickupDate"
+                            class="form-input-label"
+                        >
+                            Tanggal Pengambilan
+                        </label>
+
+
+                        <div class="form-input-wrapper">
+
+                            <input
+                                type="date"
+                                id="pickupDate"
+                                name="pickupDate"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         JAM PENGAMBILAN
+                    ================================================== -->
+
+                   <!-- =================================================
+     JAM PENGAMBILAN
+================================================== -->
+
+                    <div class="booking-form-group">
+
+                        <label
+                            for="pickupTime"
+                            class="form-input-label"
+                        >
+                            Jam Pengambilan
+                        </label>
+
+                        <div class="form-input-wrapper">
+
+                            <input
+                                type="time"
+                                id="pickupTime"
+                                name="pickupTime"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         TANGGAL PENGEMBALIAN
+                    ================================================== -->
+
+                    <div class="booking-form-group">
+
+                        <label
+                            for="returnDate"
+                            class="form-input-label"
+                        >
+                            Tanggal Pengembalian
+                        </label>
+
+
+                        <div class="form-input-wrapper">
+
+                            <input
+                                type="date"
+                                id="returnDate"
+                                name="returnDate"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         INFORMATION
+                    ================================================== -->
+
+                    <div class="schedule-information">
+
+                        <span class="information-icon">
+                            i
+                        </span>
+
+                        <p>
+                            Durasi penyewaan dihitung berdasarkan
+                            tanggal pengambilan dan tanggal
+                            pengembalian.
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================================
+                     BUTTON
+                ================================================== -->
+
+                <div class="booking-submit-wrapper">
+
+                    <a
+                        href="booking-member.html"
+                        class="booking-back-button"
+                    >
+                        Kembali
+                    </a>
+
+
+                    <button
+                        type="button"
+                        class="booking-submit-button"
+                        id="continueBookingButton"
+                    >
+                        Lanjutkan Ke Metode Pembayaran
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 SIDEBAR / RINGKASAN BOOKING
+            ================================================== -->
+
+            <aside
+                class="booking-information"
+                aria-label="Ringkasan booking"
+            >
+
+                <div class="information-card">
+
+
+                    <h2>
+                        Ringkasan Booking
+                    </h2>
+
+
+
+                    <!-- =================================================
+                         PERANGKAT
+                    ================================================== -->
+
+                  <!-- =================================================
+     PERANGKAT
+================================================== -->
+
+<div class="summary-section">
+
+    <h3>Perangkat</h3>
+
+    <!-- PLAYSTATION -->
+    <div class="summary-device">
+
+        <div class="summary-device-image">
+            <img
+                id="summaryPlayStationImage"
+                src=""
+                alt=""
+            >
+        </div>
+
+        <div class="summary-device-info">
+
+            <span>PlayStation</span>
+
+            <strong id="summaryPlayStation">
+                Belum dipilih
+            </strong>
+
+            <small id="summaryPlayStationPrice">
+                -
+            </small>
+
+        </div>
+
+    </div>
+
+
+    <!-- TV -->
+    <div
+        class="summary-device"
+        id="summaryTVDevice"
+    >
+
+        <div class="summary-device-image">
+            <img
+                id="summaryTVImage"
+                src=""
+                alt=""
+            >
+        </div>
+
+        <div class="summary-device-info">
+
+            <span>TV</span>
+
+            <strong id="summaryTV">
+                Tidak digunakan
+            </strong>
+
+            <small id="summaryTVPrice">
+                -
+            </small>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+                    <!-- =================================================
+                         JADWAL
+                    ================================================== -->
+
+                    <div class="summary-section">
+
+                        <h3>
+                            Jadwal
+                        </h3>
+
+
+                        <!-- Tanggal Pengambilan -->
+
+                        <div class="summary-row">
+
+                            <span>
+                                Pengambilan
+                            </span>
+
+                            <strong id="summaryPickupDate">
+                                -
+                            </strong>
+
+                        </div>
+
+
+                        <!-- Jam -->
+
+                        <div class="summary-row">
+
+                            <span>
+                                Jam
+                            </span>
+
+                            <strong id="summaryPickupTime">
+                                -
+                            </strong>
+
+                        </div>
+
+
+                        <!-- Tanggal Pengembalian -->
+
+                        <div class="summary-row">
+
+                            <span>
+                                Pengembalian
+                            </span>
+
+                            <strong id="summaryReturnDate">
+                                -
+                            </strong>
+
+                        </div>
+
+
+                        <!-- Durasi -->
+
+                        <div class="summary-row duration-row">
+
+                            <span>
+                                Durasi
+                            </span>
+
+                            <strong id="summaryDuration">
+                                0 hari
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         TOTAL
+                    ================================================== -->
+
+                    <div class="summary-total">
+
+                        <span>
+                            Total
+                        </span>
+
+                        <strong id="summaryTotal">
+                            Rp0
+                        </strong>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         NOTE
+                    ================================================== -->
+
+                    <p class="summary-note">
+                        Harga penyewaan dihitung berdasarkan
+                        jumlah hari dan perangkat yang dipilih.
+                    </p>
+
+                </div>
+
+            </aside>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         COPY 100% DARI booking-member.html
+         JANGAN DIUBAH
+    ====================================================== -->
+
+    <footer class="footer-value">
+
+
+        <!-- Premium Equipment -->
+
+        <article class="div-2">
+
+            <div class="background">
+
+                <img
+                    src="../../../assets/Icon/Controller Icon.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+
+            </div>
+
+
+            <div>
+
+                <p class="text">
+                    Premium Equipment
+                </p>
+
+                <p class="text-2">
+                    PlayStation terbaru &amp; berkualitas
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- Delicious Food & Drinks -->
+
+        <article class="div-2">
+
+            <div class="background">
+
+                <img
+                    src="../../../assets/Icon/FNB.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+
+            </div>
+
+
+            <div>
+
+                <p class="text">
+                    Delicious Food &amp; Drinks
+                </p>
+
+                <p class="text-2">
+                    Pilihan menu terbaik
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- Comfortable Space -->
+
+        <article class="div-2">
+
+            <div class="background">
+
+                <img
+                    src="../../../assets/Icon/Bintang.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+
+            </div>
+
+
+            <div>
+
+                <p class="text">
+                    Comfortable Space
+                </p>
+
+                <p class="text-2">
+                    Suasana nyaman &amp; modern
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- Friendly Support -->
+
+        <article class="div-2">
+
+            <div class="background">
+
+                <img
+                    src="../../../assets/Icon/People Icon.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+
+            </div>
+
+
+            <div>
+
+                <p class="text">
+                    Friendly Support
+                </p>
+
+                <p class="text-2">
+                    Selalu siap membantu
+                </p>
+
+            </div>
+
+        </article>
+
+    </footer>
+
+</div>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+====================================================== -->
+
+<script src="../../../js/global.js"></script>
+
+<script src="../../../js/user/booking/booking-form.js"></script>
+
+
+</body>
+
+</html>

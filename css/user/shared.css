@@ -1,0 +1,835 @@
+/* =========================================================
+   IB GAMING - USER SHARED
+   HEADER + PROFILE + FOOTER
+========================================================= */
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.dashboard-pelanggan .header {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100px;
+
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+
+    padding: 0 65px;
+
+    background: #ffffff;
+    border-radius: 0;
+
+    box-shadow:
+        0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+
+/* =========================================================
+   BRAND
+========================================================= */
+
+.dashboard-pelanggan .brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    justify-self: start;
+
+    text-decoration: none;
+}
+
+
+/* LOGO */
+
+.dashboard-pelanggan .link-logo-branding {
+    width: 42px;
+    height: 42px;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+
+/* BRAND TEXT */
+
+.dashboard-pelanggan .brand-text {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+
+.dashboard-pelanggan .brand-name {
+    color: #29231f;
+
+    font-family: var(--font-heading);
+
+    font-size: 18px;
+    font-weight: 700;
+
+    line-height: 1;
+    letter-spacing: 0.3px;
+}
+
+
+.dashboard-pelanggan .brand-tagline {
+    color: #b58a4a;
+
+    font-family: var(--font-body);
+
+    font-size: 6px;
+    font-weight: 600;
+
+    letter-spacing: 1.8px;
+    line-height: 1;
+}
+
+
+/* =========================================================
+   LOGIN BUTTON
+========================================================= */
+
+.dashboard-pelanggan .link-login-staff {
+    width: 150px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #b58a4a;
+
+    border-radius: 10px;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.dashboard-pelanggan .link-login-staff:hover {
+    background: #9d743d;
+    transform: translateY(-1px);
+}
+
+
+.dashboard-pelanggan .link-login-staff .group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+}
+
+
+/* USER ICON */
+
+.dashboard-pelanggan .login-user-icon,
+.dashboard-pelanggan .link-login-staff .vector-3 {
+    order: -1;
+
+    width: 15px;
+    height: 15px;
+
+    object-fit: contain;
+
+    filter: brightness(0) invert(1);
+}
+
+
+/* LOGIN TEXT */
+
+.dashboard-pelanggan .text-wrapper-2 {
+    color: #ffffff;
+
+    font-family: var(--font-body);
+
+    font-size: 12px;
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.dashboard-pelanggan .main-navigation-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 18px;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+.dashboard-pelanggan .main-navigation-menu > a {
+    height: 38px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    padding: 0 17px;
+
+    border: 1px solid transparent;
+    border-radius: 100px;
+
+    background: transparent;
+
+    color: #a8793f;
+
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 500;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.dashboard-pelanggan .main-navigation-menu > a:hover,
+.dashboard-pelanggan .main-navigation-menu > a[aria-current="page"] {
+    background: #f7f2e9;
+    border-color: #eee4d5;
+}
+
+
+.dashboard-pelanggan .main-navigation-menu img {
+    width: 16px;
+    height: 16px;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   HEADER RIGHT
+========================================================= */
+
+.dashboard-pelanggan .auth-action-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 10px;
+
+    justify-self: end;
+}
+
+
+.dashboard-pelanggan .vector-wrapper {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+
+    border: 1px solid #e5ddd2;
+    border-radius: 9px;
+
+    text-decoration: none;
+
+    transition: background-color 0.2s ease;
+}
+
+
+.dashboard-pelanggan .vector-wrapper:hover {
+    background: #f7f2e9;
+}
+
+
+.dashboard-pelanggan .vector-wrapper img {
+    width: 17px;
+    height: 17px;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   HEADER ACTIONS
+========================================================= */
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/* =========================================================
+   HEADER ACTION
+========================================================= */
+
+.header-action {
+    width: 24px;
+    height: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+}
+
+
+.header-action img {
+    width: 18px;
+    height: 18px;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   PROFILE MENU
+========================================================= */
+
+.profile-menu {
+    position: relative;
+}
+
+
+/* =========================================================
+   PROFILE BUTTON
+========================================================= */
+
+.profile-button {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    border: none;
+    background: transparent;
+
+    padding: 4px 2px;
+
+    cursor: pointer;
+
+    font-family: var(--font-body);
+    color: var(--text-primary);
+}
+
+
+/* =========================================================
+   PROFILE IMAGE
+========================================================= */
+
+.profile-image {
+    width: 28px;
+    height: 28px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================================================
+   PROFILE NAME
+========================================================= */
+
+.profile-name {
+    font-size: 11px;
+    font-weight: 600;
+
+    color: var(--text-primary);
+}
+
+
+/* =========================================================
+   PROFILE ARROW
+========================================================= */
+
+.profile-arrow {
+    width: 10px;
+    height: 10px;
+
+    object-fit: contain;
+
+    transition: transform 0.2s ease;
+}
+
+
+/* Arrow ketika dropdown terbuka */
+
+.profile-button.active .profile-arrow {
+    transform: rotate(180deg);
+}
+
+
+/* =========================================================
+   PROFILE DROPDOWN
+========================================================= */
+
+.dashboard-pelanggan .profile-dropdown {
+    position: absolute;
+
+    top: calc(100% + 12px);
+    right: 0;
+
+    width: max-content;
+    min-width: 270px;
+    max-width: 360px;
+
+    padding: 14px;
+
+    background: #FFFFFF;
+
+    border: 1px solid #E5DCD0;
+    border-radius: 14px;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(-8px);
+
+    transition:
+        opacity 0.2s ease,
+        visibility 0.2s ease,
+        transform 0.2s ease;
+
+    z-index: 10000;
+}
+
+
+/* =========================================================
+   DROPDOWN SHOW
+========================================================= */
+
+.profile-dropdown.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   DROPDOWN HEADER
+========================================================= */
+
+.dashboard-pelanggan .profile-dropdown-header {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 8px;
+
+    white-space: nowrap;
+}
+
+
+
+/* =========================================================
+   DROPDOWN PROFILE IMAGE
+========================================================= */
+
+.dropdown-profile-image {
+    width: 34px;
+    height: 34px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   DROPDOWN PROFILE INFO
+========================================================= */
+
+.dashboard-pelanggan .dropdown-profile-info {
+    min-width: max-content;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+
+.dashboard-pelanggan .dropdown-profile-name {
+    font-size: 14px;
+    font-weight: 600;
+
+    color: var(--text-primary);
+
+    white-space: nowrap;
+}
+
+
+.dashboard-pelanggan .dropdown-profile-email {
+    font-size: 12px;
+
+    color: var(--text-secondary);
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   DROPDOWN DIVIDER
+========================================================= */
+
+.dropdown-divider {
+    height: 1px;
+
+    background: var(--border);
+
+    margin: 2px 0 5px;
+}
+
+
+/* =========================================================
+   DROPDOWN ITEM
+========================================================= */
+
+.dropdown-item {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 8px 7px;
+
+    border: none;
+    border-radius: 6px;
+
+    background: transparent;
+
+    color: var(--text-primary);
+
+    font-family: var(--font-body);
+    font-size: 10px;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    text-align: left;
+
+    box-sizing: border-box;
+}
+
+
+.dropdown-item:hover {
+    background: var(--primary-light);
+}
+
+
+/* =========================================================
+   DROPDOWN ITEM ICON
+========================================================= */
+
+.dropdown-item-icon {
+    width: 18px;
+    height: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+
+.dropdown-item-icon img {
+    width: 16px;
+    height: 16px;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* =========================================================
+   LOGOUT
+========================================================= */
+
+.logout-button {
+    font-family: var(--font-body);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.dashboard-pelanggan .footer-value {
+    width: calc(100% - 110px);
+    max-width: none;
+
+    margin: 160px auto 0;
+
+    padding: 22px 5px 30px;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 30px;
+
+    border-top: 1px solid #e4dbcf;
+}
+
+
+/* Footer item */
+
+.dashboard-pelanggan .div-2 {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+/* Footer icon */
+
+.dashboard-pelanggan .background {
+    width: 38px;
+    height: 38px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f3eadc;
+
+    border-radius: 50%;
+}
+
+
+.dashboard-pelanggan .background img {
+    width: 18px;
+    height: 18px;
+
+    object-fit: contain;
+}
+
+
+/* Footer title */
+
+.dashboard-pelanggan .text {
+    margin: 0 0 3px;
+
+    color: #29231f;
+
+    font-family: var(--font-body);
+
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+/* Footer description */
+
+.dashboard-pelanggan .text-2 {
+    margin: 0;
+
+    color: #968e85;
+
+    font-family: var(--font-body);
+
+    font-size: 9px;
+
+    line-height: 1.3;
+}
+
+
+/* =========================================================
+   RESPONSIVE - SHARED HEADER & FOOTER
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .dashboard-pelanggan .header {
+        padding: 0 35px;
+    }
+
+    .dashboard-pelanggan .footer-value {
+        width: calc(100% - 70px);
+    }
+
+}
+
+
+@media (max-width: 900px) {
+
+    /* HEADER */
+
+    .dashboard-pelanggan .header {
+        min-height: auto;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        padding: 18px 25px;
+
+        gap: 12px;
+    }
+
+
+    .dashboard-pelanggan .brand-logo {
+        order: 1;
+    }
+
+
+    .dashboard-pelanggan .auth-action-buttons {
+        order: 2;
+
+        margin-left: auto;
+    }
+
+
+    .dashboard-pelanggan .main-navigation-menu {
+        order: 3;
+
+        width: 100%;
+
+        justify-content: center;
+
+        gap: 5px;
+    }
+
+
+    /* FOOTER */
+
+    .dashboard-pelanggan .footer-value {
+        width: calc(100% - 50px);
+
+        margin-top: 75px;
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    /* HEADER */
+
+    .dashboard-pelanggan .header {
+        padding: 15px 18px;
+    }
+
+
+    .dashboard-pelanggan .link-logo-branding {
+        width: 45px;
+        height: 45px;
+    }
+
+
+    .dashboard-pelanggan .brand-name {
+        font-size: 17px;
+    }
+
+
+    .dashboard-pelanggan .brand-tagline {
+        font-size: 6px;
+        letter-spacing: 1.5px;
+    }
+
+
+    /* NAVIGATION */
+
+    .dashboard-pelanggan .main-navigation-menu {
+        justify-content: flex-start;
+
+        overflow-x: auto;
+
+        scrollbar-width: none;
+    }
+
+
+    .dashboard-pelanggan .main-navigation-menu::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    .dashboard-pelanggan .main-navigation-menu > a {
+        min-width: max-content;
+
+        padding: 0 12px;
+
+        font-size: 10px;
+    }
+
+
+    /* FOOTER */
+
+    .dashboard-pelanggan .footer-value {
+        width: calc(100% - 30px);
+
+        margin-top: 35px;
+
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+}
+
+
+@media (max-width: 380px) {
+
+    .dashboard-pelanggan .header {
+        padding: 13px 14px;
+    }
+
+
+    .dashboard-pelanggan .link-logo-branding {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .dashboard-pelanggan .brand-name {
+        font-size: 15px;
+    }
+
+
+    .dashboard-pelanggan .link-login-staff {
+        width: 100px;
+        min-width: 100px;
+    }
+
+}

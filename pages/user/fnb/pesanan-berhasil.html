@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pesanan Berhasil - IB Gaming</title>
+
+    <!-- GLOBAL -->
+    <link rel="stylesheet" href="../../../css/global.css">
+
+    <!-- SHARED HEADER & FOOTER -->
+    <link rel="stylesheet" href="../../../css/user/shared.css">
+
+    <!-- PAGE CSS -->
+    <link rel="stylesheet" href="../../../css/user/fnb/pesanan-berhasil.css">
+</head>
+
+<body>
+
+<div class="dashboard-pelanggan">
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="header">
+
+        <a href="../home.html" class="brand-logo">
+
+            <img
+                class="link-logo-branding"
+                src="../../../assets/Icon/Logo.svg"
+                alt="IB Gaming"
+            >
+
+            <div class="brand-text">
+
+                <span class="brand-name">
+                    IB GAMING
+                </span>
+
+                <span class="brand-tagline">
+                    PLAY · EAT · ENJOY
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <nav
+            class="main-navigation-menu"
+            aria-label="Navigasi utama"
+        >
+
+            <a
+                class="link"
+                href="../home.html"
+            >
+
+                <span class="text-wrapper">
+                    Beranda
+                </span>
+
+                <img
+                    class="akar-icons-home"
+                    src="../../../assets/Icon/Home.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+
+            </a>
+
+
+            <a
+                class="div"
+                href="../booking/booking-member.html"
+            >
+
+                <span class="text-wrapper">
+                    Booking PS
+                </span>
+
+                <img
+                    class="carbon-game-console"
+                    src="../../../assets/Icon/PlayStation Logo.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+
+            </a>
+
+
+            <a
+                class="link-2"
+                href="pesan-fnb.html"
+                aria-current="page"
+            >
+
+                <span class="text-wrapper">
+                    Pesan FNB
+                </span>
+
+                <img
+                    class="img"
+                    src="../../../assets/Icon/Food Icon.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+
+            </a>
+
+        </nav>
+
+
+        <div
+            class="auth-action-buttons"
+            id="authActionButtons"
+        ></div>
+
+    </header>
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main class="fnb-content">
+
+        <!-- =================================================
+             HERO
+        ================================================== -->
+
+        <section
+            class="fnb-hero"
+            aria-labelledby="fnb-hero-title"
+        >
+
+            <div class="fnb-hero-content">
+
+                <span class="fnb-hero-label">
+                    F&amp;B IB GAMING
+                </span>
+
+                <h1 id="fnb-hero-title">
+                    Pesanan<br>
+                    Berhasil
+                </h1>
+
+                <p>
+                    Pesananmu telah berhasil dibuat.
+                    Silakan lakukan pembayaran tunai
+                    di kasir IB Gaming.
+                </p>
+
+            </div>
+
+
+            <div class="fnb-hero-image">
+
+                <img
+                    src="../../../assets/Images/FNB.png"
+                    alt="Makanan dan minuman IB Gaming"
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SUCCESS CONTENT
+        ================================================== -->
+
+        <section
+            class="success-section"
+            aria-label="Pesanan berhasil"
+        >
+
+
+            <!-- =============================================
+                 LEFT : SUCCESS CARD
+            ============================================== -->
+
+            <div class="success-main-card">
+
+                <div class="success-icon">
+
+                    <span>
+                        ✓
+                    </span>
+
+                </div>
+
+
+                <div class="success-heading">
+
+                    <span class="success-label">
+                        PESANAN BERHASIL DIBUAT
+                    </span>
+
+                    <h2>
+                        Terima Kasih!
+                    </h2>
+
+                    <p>
+                        Pesanan F&amp;B kamu telah berhasil
+                        dibuat dan sedang menunggu pembayaran.
+                    </p>
+
+                </div>
+
+
+                <!-- =========================================
+                     ORDER INFORMATION
+                ========================================== -->
+
+                <div class="success-order-information">
+
+                    <div class="success-information-row">
+
+                        <span>
+                            Nomor Pesanan
+                        </span>
+
+                        <strong id="successOrderNumber">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div class="success-information-row">
+
+                        <span>
+                            Nomor Meja
+                        </span>
+
+                        <strong id="successTableNumber">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div class="success-information-row">
+
+                        <span>
+                            Metode Pembayaran
+                        </span>
+
+                        <strong>
+                            Tunai (Cash)
+                        </strong>
+
+                    </div>
+
+
+                    <div class="success-information-row success-status-row">
+
+                        <span>
+                            Status
+                        </span>
+
+                        <span class="success-status">
+
+                            <span class="success-status-dot"></span>
+
+                            Menunggu Pembayaran
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================================
+                     PAYMENT NOTE
+                ========================================== -->
+
+                <div class="cash-payment-information">
+
+                    <div class="cash-information-icon">
+                        !
+                    </div>
+
+                    <div class="cash-information-content">
+
+                        <h3>
+                            Pembayaran Tunai
+                        </h3>
+
+                        <p>
+                            Silakan lakukan pembayaran
+                            secara tunai di kasir IB Gaming
+                            sebelum pesanan diproses.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =============================================
+                 RIGHT : ORDER SUMMARY
+            ============================================== -->
+
+            <aside
+                class="success-order-summary"
+                aria-label="Ringkasan pesanan"
+            >
+
+                <div class="success-summary-card">
+
+                    <div class="success-summary-header">
+
+                        <div>
+
+                            <span class="success-summary-label">
+                                RINGKASAN
+                            </span>
+
+                            <h2>
+                                Pesanan Saya
+                            </h2>
+
+                        </div>
+
+
+                        <img
+                            src="../../../assets/Icon/FNB.svg"
+                            alt=""
+                            aria-hidden="true"
+                        >
+
+                    </div>
+
+
+                    <!-- ORDER ITEMS -->
+
+                    <div
+                        class="success-summary-items"
+                        id="successSummaryItems"
+                    >
+                    </div>
+
+
+                    <!-- EMPTY -->
+
+                    <div
+                        class="success-summary-empty"
+                        id="successSummaryEmpty"
+                    >
+
+                        <img
+                            src="../../../assets/Icon/FNB.svg"
+                            alt=""
+                            aria-hidden="true"
+                        >
+
+                        <p>
+                            Belum ada pesanan.
+                        </p>
+
+                    </div>
+
+
+                    <!-- SUBTOTAL -->
+
+                    <div class="success-summary-subtotal">
+
+                        <span>
+                            Sub Total
+                        </span>
+
+                        <strong id="successSummarySubtotal">
+                            Rp 0
+                        </strong>
+
+                    </div>
+
+
+                    <!-- TOTAL -->
+
+                    <div class="success-summary-total">
+
+                        <span>
+                            Total
+                        </span>
+
+                        <strong id="successSummaryTotal">
+                            Rp 0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </section>
+
+
+        <!-- =================================================
+             BACK BUTTON
+        ================================================== -->
+
+        <div class="success-back-wrapper">
+
+            <a
+                href="../home.html"
+                class="success-back-button"
+            >
+
+                <span>
+                    Kembali ke Beranda
+                </span>
+
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer-value">
+
+        <article class="div-2">
+
+            <div class="background">
+
+                <img
+                    src="../../../assets/Icon/Controller.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+
+            </div>
+
+            <div>
+
+                <p class="text">
+                    Premium Equipment
+                </p>
+
+                <p class="text-2">
+                    PlayStation terbaru &amp; berkualitas
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="div-2">
+
+            <div class="background">
+
+                <img
+                    src="../../../assets/Icon/FNB.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+
+            </div>
+
+            <div>
+
+                <p class="text">
+                    Delicious Food &amp; Drinks
+                </p>
+
+                <p class="text-2">
+                    Pilihan menu terbaik
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="div-2">
+
+            <div class="background">
+
+                <img
+                    src="../../../assets/Icon/Bintang.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+
+            </div>
+
+            <div>
+
+                <p class="text">
+                    Comfortable Space
+                </p>
+
+                <p class="text-2">
+                    Suasana nyaman &amp; modern
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="div-2">
+
+            <div class="background">
+
+                <img
+                    src="../../../assets/Icon/People Icon.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+
+            </div>
+
+            <div>
+
+                <p class="text">
+                    Friendly Support
+                </p>
+
+                <p class="text-2">
+                    Selalu siap membantu
+                </p>
+
+            </div>
+
+        </article>
+
+    </footer>
+
+</div>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+====================================================== -->
+
+<script src="../../../js/global.js"></script>
+
+<script src="../../../js/user/fnb/pesanan-berhasil.js"></script>
+
+</body>
+
+</html>

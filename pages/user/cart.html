@@ -1,11 +1,1089 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Dashboard Pelanggan - Keranjang</title>
+
+    <!-- GLOBAL CSS -->
+    <link
+        rel="stylesheet"
+        href="../../css/global.css"
+    >
+
+    <!-- SHARED USER CSS -->
+    <link
+        rel="stylesheet"
+        href="../../css/user/shared.css"
+    >
+
+    <!-- CART CSS -->
+    <link
+        rel="stylesheet"
+        href="../../css/user/cart.css"
+    >
+
 </head>
-<body>
-    <H1>Keranjang</H1>
+
+
+<body class="dashboard-pelanggan">
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="header">
+
+        <!-- LOGO -->
+
+        <a
+            href="home.html"
+            class="brand-logo"
+        >
+
+            <img
+                class="link-logo-branding"
+                src="../../assets/Icon/Logo.svg"
+                alt="IB Gaming"
+            >
+
+            <div class="brand-text">
+
+                <span class="brand-name">
+                    IB GAMING
+                </span>
+
+                <span class="brand-tagline">
+                    PLAY · EAT · ENJOY
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <!-- NAVIGATION -->
+
+        <nav
+            class="main-navigation-menu"
+            aria-label="Navigasi utama"
+        >
+
+            <!-- BERANDA -->
+
+            <a
+                class="link"
+                href="home.html"
+            >
+
+                <span class="text-wrapper">
+                    Beranda
+                </span>
+
+                <img
+                    class="akar-icons-home"
+                    src="../../assets/Icon/Home.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+
+            </a>
+
+
+            <!-- BOOKING PS -->
+
+            <a
+                class="div"
+                href="booking/booking-member.html"
+            >
+
+                <span class="text-wrapper">
+                    Booking PS
+                </span>
+
+                <img
+                    class="carbon-game-console"
+                    src="../../assets/Icon/PlayStation Logo.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+
+            </a>
+
+
+            <!-- PESAN FNB -->
+
+            <a
+                class="link-2"
+                href="fnb/pesan-fnb.html"
+            >
+
+                <span class="text-wrapper">
+                    Pesan FNB
+                </span>
+
+                <img
+                    class="img"
+                    src="../../assets/Icon/Food Icon.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+
+            </a>
+
+        </nav>
+
+
+        <!-- HEADER ACTION -->
+
+        <div class="auth-action-buttons">
+
+
+            <!-- KERANJANG - AKTIF -->
+
+            <a
+                class="vector-wrapper cart-active"
+                href="cart.html"
+                aria-label="Keranjang pesanan"
+                aria-current="page"
+            >
+
+                <img
+                    class="vector"
+                    src="../../assets/Icon/Keranjang.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+
+            </a>
+
+
+            <!-- NOTIFIKASI -->
+
+            <a
+                class="vector-wrapper"
+                href="notification.html"
+                aria-label="Notifikasi"
+            >
+
+                <img
+                    class="vector-2"
+                    src="../../assets/Icon/Notif.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+
+            </a>
+
+
+            <!-- PROFILE -->
+
+            <div class="profile-menu">
+
+                <button
+                    type="button"
+                    class="profile-button"
+                    id="profileButton"
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                    aria-label="Buka menu profil"
+                >
+
+                    <img
+                        class="profile-image"
+                        src="../../assets/Images/Elon.jpg"
+                        alt="Kimi"
+                    >
+
+                    <span class="profile-name">
+                        Kimi
+                    </span>
+
+                    <img
+                        class="profile-arrow"
+                        src="../../assets/Icon/Arrow.svg"
+                        alt=""
+                        aria-hidden="true"
+                    >
+
+                </button>
+
+
+                <!-- PROFILE DROPDOWN -->
+
+                <div
+                    class="profile-dropdown"
+                    id="profileDropdown"
+                    role="menu"
+                >
+
+                    <div class="profile-dropdown-header">
+
+                        <img
+                            class="dropdown-profile-image"
+                            src="../../assets/Images/Elon.jpg"
+                            alt="Kimi Antonelli"
+                        >
+
+                        <div class="dropdown-profile-info">
+
+                            <span class="dropdown-profile-name">
+                                Kimi Antonelli
+                            </span>
+
+                            <span class="dropdown-profile-email">
+                                kimi@gmail.com
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="dropdown-divider"></div>
+
+
+                    <!-- PROFILE SAYA -->
+
+                    <a
+                        href="profile.html"
+                        class="dropdown-item"
+                        role="menuitem"
+                    >
+
+                        <span class="dropdown-item-icon">
+
+                            <img
+                                src="../../assets/Icon/User-gold.svg"
+                                alt=""
+                            >
+
+                        </span>
+
+                        <span>
+                            Profile Saya
+                        </span>
+
+                    </a>
+
+
+                    <!-- LOGOUT -->
+
+                    <a
+                        href="../../index.html"
+                        class="dropdown-item logout-button"
+                        role="menuitem"
+                    >
+
+                        <span class="dropdown-item-icon">
+
+                            <img
+                                src="../../assets/Icon/Logout.svg"
+                                alt=""
+                            >
+
+                        </span>
+
+                        <span>
+                            Logout
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <main class="cart-content">
+
+        <div class="container">
+
+
+            <!-- PAGE INTRO -->
+
+            <section class="cart-heading">
+
+                <span class="cart-eyebrow">
+                    F&B & IB GAMING
+                </span>
+
+                <h1 class="cart-title">
+                    Keranjang
+                </h1>
+
+                <p class="cart-description">
+                    Nikmati berbagai pilihan makanan dan minuman
+                    sebelum melanjutkan pesananmu.
+                </p>
+
+            </section>
+
+
+            <!-- =================================================
+                 CART SECTION
+            ================================================== -->
+
+            <section class="cart-section">
+
+
+                <!-- =============================================
+                     CART MAIN
+                ============================================== -->
+
+                <div class="cart-main">
+
+
+                    <!-- CART HEADER -->
+
+                    <div class="cart-box-header">
+
+                        <div class="cart-box-title">
+
+                            <div class="cart-icon-wrapper">
+
+                                <img
+                                    src="../../assets/Icon/Keranjang.svg"
+                                    alt=""
+                                    aria-hidden="true"
+                                >
+
+                            </div>
+
+                            <div>
+
+                                <span class="cart-box-label">
+                                    KERANJANG
+                                </span>
+
+                                <h2>
+                                    Keranjang Pesanan
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         ORDER TABS
+                    ================================================== -->
+
+                    <div class="cart-tabs">
+
+                        <button
+                            type="button"
+                            class="cart-tab active"
+                            data-tab="fnb"
+                        >
+                            Pesanan F&B
+                            <span class="cart-tab-count">
+                                (3)
+                            </span>
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="cart-tab"
+                            data-tab="booking"
+                        >
+                            Booking PS
+                            <span class="cart-tab-count">
+                                (0)
+                            </span>
+                        </button>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         F&B CART
+                    ================================================== -->
+
+                    <div
+                        class="cart-tab-content active"
+                        id="fnbCartContent"
+                    >
+
+
+                        <!-- INDOMIE GORENG -->
+
+                        <article class="cart-item">
+
+                            <div class="cart-item-image">
+
+                                <img
+                                    src="../../assets/Images/Indomie-Goreng.png"
+                                    alt="Indomie Goreng"
+                                >
+
+                            </div>
+
+
+                            <div class="cart-item-info">
+
+                                <h3 class="cart-item-name">
+                                    Indomie Goreng
+                                </h3>
+
+                                <p class="cart-item-note">
+                                    Catatan:
+                                </p>
+
+                                <span class="cart-item-detail">
+                                    2 Pedas, 2 Piring Pedas
+                                </span>
+
+                            </div>
+
+
+                            <div class="cart-item-right">
+
+                                <div class="cart-quantity">
+
+                                    <button
+                                        type="button"
+                                        class="quantity-button"
+                                        aria-label="Kurangi jumlah"
+                                    >
+                                        −
+                                    </button>
+
+                                    <span class="quantity-value">
+                                        4
+                                    </span>
+
+                                    <button
+                                        type="button"
+                                        class="quantity-button"
+                                        aria-label="Tambah jumlah"
+                                    >
+                                        +
+                                    </button>
+
+                                </div>
+
+
+                                <div class="cart-item-price">
+                                    Rp 20.000
+                                </div>
+
+
+                                <button
+                                    type="button"
+                                    class="cart-delete-button"
+                                    aria-label="Hapus Indomie Goreng"
+                                >
+
+                                    <img
+                                        src="../../assets/Icon/Trash.svg"
+                                        alt=""
+                                        aria-hidden="true"
+                                    >
+
+                                </button>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- INDOMIE RENDANG -->
+
+                        <article class="cart-item">
+
+                            <div class="cart-item-image">
+
+                                <img
+                                    src="../../assets/Images/Indomie-Rendang.png"
+                                    alt="Indomie Rendang"
+                                >
+
+                            </div>
+
+
+                            <div class="cart-item-info">
+
+                                <h3 class="cart-item-name">
+                                    Indomie Rendang
+                                </h3>
+
+                                <p class="cart-item-note">
+                                    Catatan:
+                                </p>
+
+                                <span class="cart-item-detail">
+                                    -
+                                </span>
+
+                            </div>
+
+
+                            <div class="cart-item-right">
+
+                                <div class="cart-quantity">
+
+                                    <button
+                                        type="button"
+                                        class="quantity-button"
+                                        aria-label="Kurangi jumlah"
+                                    >
+                                        −
+                                    </button>
+
+                                    <span class="quantity-value">
+                                        4
+                                    </span>
+
+                                    <button
+                                        type="button"
+                                        class="quantity-button"
+                                        aria-label="Tambah jumlah"
+                                    >
+                                        +
+                                    </button>
+
+                                </div>
+
+
+                                <div class="cart-item-price">
+                                    Rp 20.000
+                                </div>
+
+
+                                <button
+                                    type="button"
+                                    class="cart-delete-button"
+                                    aria-label="Hapus Indomie Rendang"
+                                >
+
+                                    <img
+                                        src="../../assets/Icon/Trash.svg"
+                                        alt=""
+                                        aria-hidden="true"
+                                    >
+
+                                </button>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- TEH PUCUK -->
+
+                        <article class="cart-item">
+
+                            <div class="cart-item-image">
+
+                                <img
+                                    src="../../assets/Images/Teh-Pucuk.png"
+                                    alt="Teh Pucuk"
+                                >
+
+                            </div>
+
+
+                            <div class="cart-item-info">
+
+                                <h3 class="cart-item-name">
+                                    Teh Pucuk
+                                </h3>
+
+                                <p class="cart-item-note">
+                                    Catatan:
+                                </p>
+
+                                <span class="cart-item-detail">
+                                    -
+                                </span>
+
+                            </div>
+
+
+                            <div class="cart-item-right">
+
+                                <div class="cart-quantity">
+
+                                    <button
+                                        type="button"
+                                        class="quantity-button"
+                                        aria-label="Kurangi jumlah"
+                                    >
+                                        −
+                                    </button>
+
+                                    <span class="quantity-value">
+                                        2
+                                    </span>
+
+                                    <button
+                                        type="button"
+                                        class="quantity-button"
+                                        aria-label="Tambah jumlah"
+                                    >
+                                        +
+                                    </button>
+
+                                </div>
+
+
+                                <div class="cart-item-price">
+                                    Rp 10.000
+                                </div>
+
+
+                                <button
+                                    type="button"
+                                    class="cart-delete-button"
+                                    aria-label="Hapus Teh Pucuk"
+                                >
+
+                                    <img
+                                        src="../../assets/Icon/Trash.svg"
+                                        alt=""
+                                        aria-hidden="true"
+                                    >
+
+                                </button>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- TAMBAH MENU -->
+
+                        <button
+                            type="button"
+                            class="add-menu-button"
+                        >
+
+                            <span class="add-menu-icon">
+                                +
+                            </span>
+
+                            <span>
+
+                                <strong>
+                                    Tambah Menu Lain
+                                </strong>
+
+                                <small>
+                                    Masih mau pesan lainnya?
+                                </small>
+
+                            </span>
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         BOOKING PS CART
+                    ================================================== -->
+
+                    <div
+                        class="cart-tab-content"
+                        id="bookingCartContent"
+                    >
+
+                        <div class="cart-empty-state">
+
+                            <img
+                                src="../../assets/Icon/Cart.svg"
+                                alt=""
+                                aria-hidden="true"
+                            >
+
+                            <h3>
+                                Belum Ada Booking PS
+                            </h3>
+
+                            <p>
+                                Booking PlayStation kamu akan muncul
+                                di sini.
+                            </p>
+
+                            <a
+                                href="booking/booking-member.html"
+                                class="empty-state-button"
+                            >
+                                Booking PS
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     ORDER SUMMARY
+                ================================================== -->
+
+                <aside class="cart-summary">
+
+                    <div class="cart-summary-card">
+
+
+                        <div class="cart-summary-header">
+
+                            <div>
+
+                                <span class="cart-summary-label">
+                                    RINGKASAN PESANAN
+                                </span>
+
+                                <h2>
+                                    Pesanan Saya
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- SUMMARY ITEMS -->
+
+                        <div class="cart-summary-items">
+
+
+                            <!-- SUMMARY ITEM 1 -->
+
+                            <div class="cart-summary-item">
+
+                                <div class="cart-summary-item-info">
+
+                                    <span>
+                                        Indomie Goreng
+                                    </span>
+
+                                    <small>
+                                        Rp 5.000 × 4
+                                    </small>
+
+                                </div>
+
+                                <strong>
+                                    Rp 20.000
+                                </strong>
+
+                            </div>
+
+
+                            <!-- SUMMARY ITEM 2 -->
+
+                            <div class="cart-summary-item">
+
+                                <div class="cart-summary-item-info">
+
+                                    <span>
+                                        Indomie Rendang
+                                    </span>
+
+                                    <small>
+                                        Rp 5.000 × 4
+                                    </small>
+
+                                </div>
+
+                                <strong>
+                                    Rp 20.000
+                                </strong>
+
+                            </div>
+
+
+                            <!-- SUMMARY ITEM 3 -->
+
+                            <div class="cart-summary-item">
+
+                                <div class="cart-summary-item-info">
+
+                                    <span>
+                                        Teh Pucuk
+                                    </span>
+
+                                    <small>
+                                        Rp 5.000 × 2
+                                    </small>
+
+                                </div>
+
+                                <strong>
+                                    Rp 10.000
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- SUBTOTAL -->
+
+                        <div class="cart-summary-subtotal">
+
+                            <span>
+                                Sub Total
+                            </span>
+
+                            <strong>
+                                Rp 50.000
+                            </strong>
+
+                        </div>
+
+
+                        <!-- TOTAL -->
+
+                        <div class="cart-summary-total">
+
+                            <span>
+                                Total Pembayaran
+                            </span>
+
+                            <strong>
+                                Rp 50.000
+                            </strong>
+
+                        </div>
+
+
+                        <!-- PAYMENT BUTTON -->
+
+                        <button
+                            type="button"
+                            class="cart-checkout-button"
+                        >
+                            Lanjut ke Pembayaran
+                        </button>
+
+                    </div>
+
+                </aside>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer
+            class="footer-value"
+            aria-label="Keunggulan IB Gaming"
+        >
+
+
+            <!-- ========================================
+                 PREMIUM EQUIPMENT
+            ========================================= -->
+
+            <article class="div-2">
+
+                <div class="background">
+
+                    <img
+                        class="img-3"
+                        src="../../assets/Icon/Controller Icon.svg"
+                        alt=""
+                        aria-hidden="true"
+                    >
+
+                </div>
+
+
+                <div class="container-2">
+
+                    <div class="div-wrapper">
+
+                        <h2 class="text">
+                            Premium Equipment
+                        </h2>
+
+                    </div>
+
+
+                    <div class="container-3">
+
+                        <p class="text-2">
+                            PlayStation terbaru &amp; berkualitas
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ========================================
+                 DELICIOUS FOOD & DRINKS
+            ========================================= -->
+
+            <article class="div-2">
+
+                <div class="background">
+
+                    <span class="img-3">
+
+                        <img
+                            class="vector-11"
+                            src="../../assets/Icon/FNB.svg"
+                            alt=""
+                            aria-hidden="true"
+                        >
+
+                    </span>
+
+                </div>
+
+
+                <div class="container-4">
+
+                    <div class="div-wrapper">
+
+                        <h2 class="text">
+                            Delicious Food &amp; Drinks
+                        </h2>
+
+                    </div>
+
+
+                    <div class="container-3">
+
+                        <p class="text-2">
+                            Pilihan menu terbaik
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ========================================
+                 COMFORTABLE SPACE
+            ========================================= -->
+
+            <article class="div-2">
+
+                <div class="background">
+
+                    <img
+                        class="img-3"
+                        src="../../assets/Icon/Bintang.svg"
+                        alt=""
+                        aria-hidden="true"
+                    >
+
+                </div>
+
+
+                <div class="container-5">
+
+                    <div class="div-wrapper">
+
+                        <h2 class="text">
+                            Comfortable Space
+                        </h2>
+
+                    </div>
+
+
+                    <div class="container-3">
+
+                        <p class="text-2">
+                            Suasana nyaman &amp; modern
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ========================================
+                 FRIENDLY SUPPORT
+            ========================================= -->
+
+            <article class="div-2">
+
+                <div class="background">
+
+                    <img
+                        class="akar-icons-people"
+                        src="../../assets/Icon/People Icon.svg"
+                        alt=""
+                        aria-hidden="true"
+                    >
+
+                </div>
+
+
+                <div class="container-6">
+
+                    <div class="div-wrapper">
+
+                        <h2 class="text">
+                            Friendly Support
+                        </h2>
+
+                    </div>
+
+
+                    <div class="container-3">
+
+                        <p class="text-2">
+                            Selalu siap membantu
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </footer>
+
+
+    <!-- GLOBAL JS -->
+
+    <script src="../../js/global.js"></script>
+
+    <!-- CART JS -->
+
+    <script src="../../js/user/cart.js"></script>
+
 </body>
+
 </html>

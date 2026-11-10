@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Pengajuan anggota IB Gaming untuk melakukan booking PlayStation."
+    >
+
+    <title>Pengajuan Anggota - IB Gaming</title>
+
+
+    <!-- =====================================================
+         GLOBAL CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="../../../css/global.css"
+    >
+
+
+    <!-- =====================================================
+         SHARED CSS
+         Header & Footer
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="../../../css/user/shared.css"
+    >
+
+
+    <!-- =====================================================
+         BOOKING CSS
+         Hanya untuk isi halaman booking
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="../../../css/user/booking/booking-member.css"
+    >
+
+</head>
+
+
+<body>
+
+<div class="dashboard-pelanggan">
+
+
+    <!-- =====================================================
+         HEADER
+         Sama seperti halaman F&B.
+         Hanya Booking PS yang menjadi active.
+    ====================================================== -->
+
+   <header class="header">
+
+    <!-- =================================================
+         LOGO
+    ================================================== -->
+
+    <a
+        href="../home.html"
+        class="brand-logo"
+    >
+
+        <img
+            class="link-logo-branding"
+            src="../../../assets/Icon/Logo.svg"
+            alt="IB Gaming"
+        >
+
+        <div class="brand-text">
+
+            <span class="brand-name">
+                IB GAMING
+            </span>
+
+            <span class="brand-tagline">
+                PLAY · EAT · ENJOY
+            </span>
+
+        </div>
+
+    </a>
+
+
+    <!-- =================================================
+         NAVIGATION
+    ================================================== -->
+
+    <nav
+        class="main-navigation-menu"
+        aria-label="Navigasi utama"
+    >
+
+        <!-- Beranda -->
+        <a
+            class="link"
+            href="../home.html"
+        >
+
+            <span class="text-wrapper">
+                Beranda
+            </span>
+
+            <img
+                class="akar-icons-home"
+                src="../../../assets/Icon/Home.svg"
+                alt=""
+                aria-hidden="true"
+            >
+
+        </a>
+
+
+        <!-- Booking PS - ACTIVE -->
+        <a
+            class="div"
+            href="booking-form.html"
+            aria-current="page"
+        >
+
+            <span class="text-wrapper">
+                Booking PS
+            </span>
+
+            <img
+                class="carbon-game-console"
+                src="../../../assets/Icon/PlayStation Logo.svg"
+                alt=""
+                aria-hidden="true"
+            >
+
+        </a>
+
+
+        <!-- Pesan F&B -->
+        <a
+            class="link-2"
+            href="../fnb/pesan-fnb.html"
+        >
+
+            <span class="text-wrapper">
+                Pesan FNB
+            </span>
+
+            <img
+                class="img"
+                src="../../../assets/Icon/Food Icon.svg"
+                alt=""
+                aria-hidden="true"
+            >
+
+        </a>
+
+    </nav>
+
+
+    <!-- =================================================
+         HEADER ACTIONS
+    ================================================== -->
+
+    <div class="auth-action-buttons">
+
+
+        <!-- =================================================
+             KERANJANG
+        ================================================== -->
+
+        <a
+            class="vector-wrapper"
+            href="../cart.html"
+            aria-label="Keranjang pesanan"
+        >
+
+            <img
+                class="vector"
+                src="../../../assets/Icon/Keranjang.svg"
+                alt=""
+                aria-hidden="true"
+            >
+
+        </a>
+
+
+        <!-- =================================================
+             NOTIFIKASI
+        ================================================== -->
+
+        <a
+            class="vector-wrapper"
+            href="../notification.html"
+            aria-label="Notifikasi"
+        >
+
+            <img
+                class="vector-2"
+                src="../../../assets/Icon/Notif.svg"
+                alt=""
+                aria-hidden="true"
+            >
+
+        </a>
+
+
+        <!-- =================================================
+             PROFILE
+        ================================================== -->
+
+        <div class="profile-menu">
+
+
+            <!-- Profile Button -->
+
+            <button
+                type="button"
+                class="profile-button"
+                id="profileButton"
+                aria-expanded="false"
+                aria-haspopup="true"
+                aria-label="Buka menu profil"
+            >
+
+                <!-- Profile Image -->
+
+                <img
+                    class="profile-image"
+                    src="../../../assets/Images/Elon.jpg"
+                    alt="Kimi"
+                >
+
+
+                <!-- Profile Name -->
+
+                <span class="profile-name">
+                    Kimi
+                </span>
+
+
+                <!-- Arrow -->
+
+                <img
+                    class="profile-arrow"
+                    src="../../../assets/Icon/Arrow.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+
+            </button>
+
+
+            <!-- =================================================
+                 PROFILE DROPDOWN
+            ================================================== -->
+
+            <div
+                class="profile-dropdown"
+                id="profileDropdown"
+                role="menu"
+            >
+
+                <!-- Profile Information -->
+
+                <div class="profile-dropdown-header">
+
+                    <img
+                        class="dropdown-profile-image"
+                        src="../../../assets/Images/Elon.jpg"
+                        alt="Kimi Antonelli"
+                    >
+
+                    <div class="dropdown-profile-info">
+
+                        <span class="dropdown-profile-name">
+                            Kimi Antonelli
+                        </span>
+
+                        <span class="dropdown-profile-email">
+                            kimi@gmail.com
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="dropdown-divider"></div>
+
+
+                <!-- Profile Saya -->
+
+                <a
+                    href="../profile.html"
+                    class="dropdown-item"
+                    role="menuitem"
+                >
+
+                    <span class="dropdown-item-icon">
+
+                        <img
+                            src="../../../assets/Icon/User-gold.svg"
+                            alt=""
+                        >
+
+                    </span>
+
+                    <span>
+                        Profile Saya
+                    </span>
+
+                </a>
+
+
+                <!-- Logout -->
+
+                <a
+                    href="../../../index.html"
+                    class="dropdown-item logout-button"
+                    role="menuitem"
+                >
+
+                    <span class="dropdown-item-icon">
+
+                        <img
+                            src="../../../assets/Icon/Logout.svg"
+                            alt=""
+                        >
+
+                    </span>
+
+                    <span>
+                        Logout
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main class="booking-content">
+
+
+        <!-- =================================================
+             HERO
+             Struktur sama dengan halaman F&B
+             Gambar & teks disesuaikan untuk Booking
+        ================================================== -->
+
+        <section
+            class="booking-hero"
+            aria-labelledby="booking-hero-title"
+        >
+
+            <!-- Hero Text -->
+            <div class="booking-hero-content">
+
+                <span class="booking-hero-label">
+                    PlayStation
+                </span>
+
+
+                <h1 id="booking-hero-title">
+                    Pengajuan<br>
+                    Anggota
+                </h1>
+
+
+                <p>
+                    Isi Data Diri dan unggah dokumen yang diperlukan.
+                    Setelah pengajuan dikirim, admin akan melakukan
+                    verifikasi.
+                </p>
+
+            </div>
+
+
+            <!-- Hero Image -->
+            <div class="booking-hero-image">
+
+                <img
+                    src="../../../assets/Images/Booking.png"
+                    alt="Suasana ruang PlayStation IB Gaming"
+                >
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             BOOKING BODY
+        ================================================== -->
+
+        <section class="booking-layout">
+
+
+            <!-- =================================================
+                 KOLOM UTAMA
+            ================================================== -->
+
+            <div class="booking-main">
+
+
+                <!-- =================================================
+                     DATA DIRI
+                ================================================== -->
+
+                <section class="booking-card personal-data-card">
+
+                    <div class="booking-card-header">
+
+                        <div class="booking-card-icon">
+
+                            <img
+                                src="../../../assets/Icon/User.svg"
+                                alt=""
+                                aria-hidden="true"
+                            >
+
+                        </div>
+
+
+                        <div class="booking-card-heading">
+
+                            <h2>
+                                Data Diri
+                            </h2>
+
+                            <p>
+                                Pastikan Data diri yang dimasukkan
+                                sesuai dengan identitas
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="personal-data-form">
+
+
+                        <!-- Nama Lengkap -->
+                        <div class="form-group">
+
+                            <label for="fullName">
+                                Nama Lengkap
+                            </label>
+
+                            <input
+                                type="text"
+                                id="fullName"
+                                name="fullName"
+                                placeholder="Masukan Nama Lengkap"
+                                autocomplete="name"
+                            >
+
+                        </div>
+
+
+                        <!-- Email -->
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Contoh: namakamu@mail.com"
+                                autocomplete="email"
+                            >
+
+                        </div>
+
+
+                        <!-- Nomor Telepon -->
+                        <div class="form-group phone-field">
+
+                            <label for="phoneNumber">
+                                Nomor Telepon
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phoneNumber"
+                                name="phoneNumber"
+                                placeholder="Contoh: 08123456789"
+                                autocomplete="tel"
+                            >
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================================
+                     DOKUMEN VERIFIKASI
+                ================================================== -->
+
+                <section class="booking-card verification-card">
+
+                    <div class="booking-card-header">
+
+                        <div class="booking-card-icon">
+
+                            <img
+                                src="../../../assets/Icon/Note.svg"
+                                alt=""
+                                aria-hidden="true"
+                            >
+
+                        </div>
+
+
+                        <div class="booking-card-heading">
+
+                            <h2>
+                                Dokumen Verifikasi
+                            </h2>
+
+                            <p>
+                                Unggah Foto KTP dan Foto wajah untuk
+                                proses verifikasi oleh admin
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="verification-grid">
+
+
+                        <!-- =================================================
+                             FOTO KTP
+                        ================================================== -->
+
+                        <div class="document-upload-box">
+
+                            <div class="document-upload-heading">
+
+                                <div class="document-icon">
+
+                                    <img
+                                        src="../../../assets/Icon/Id.svg"
+                                        alt=""
+                                        aria-hidden="true"
+                                    >
+
+                                </div>
+
+
+                                <div>
+
+                                    <h3>
+                                        Foto KTP
+                                    </h3>
+
+                                    <p>
+                                        Upload Foto KTP yang jelas dan
+                                        terbaca.
+                                        <br>
+                                        Format: JPG, PNG (Maks. 5MB)
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <input
+                                type="file"
+                                id="ktpFile"
+                                name="ktpFile"
+                                accept=".jpg,.jpeg,.png"
+                                hidden
+                            >
+
+
+                            <label
+                                for="ktpFile"
+                                class="file-button"
+                            >
+                                Pilih File
+                            </label>
+
+
+                            <span
+                                class="selected-file"
+                                id="ktpFileName"
+                            ></span>
+
+                        </div>
+
+
+
+                        <!-- =================================================
+                             FOTO WAJAH
+                        ================================================== -->
+
+                        <div class="document-upload-box">
+
+                            <div class="document-upload-heading">
+
+                                <div class="document-icon">
+
+                                    <img
+                                        src="../../../assets/Icon/User.svg"
+                                        alt=""
+                                        aria-hidden="true"
+                                    >
+
+                                </div>
+
+
+                                <div>
+
+                                    <h3>
+                                        Foto Wajah
+                                    </h3>
+
+                                    <p>
+                                        Upload Foto Wajah yang jelas.
+                                        <br>
+                                        Format: JPG, PNG (Maks. 5MB)
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <input
+                                type="file"
+                                id="faceFile"
+                                name="faceFile"
+                                accept=".jpg,.jpeg,.png"
+                                hidden
+                            >
+
+
+                            <label
+                                for="faceFile"
+                                class="file-button"
+                            >
+                                Pilih File
+                            </label>
+
+
+                            <span
+                                class="selected-file"
+                                id="faceFileName"
+                            ></span>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================================
+                     PERNYATAAN
+                ================================================== -->
+
+                <section class="booking-card statement-card">
+
+                    <div class="booking-card-header">
+
+                        <div class="booking-card-icon">
+
+                            <img
+                                src="../../../assets/Icon/Note.svg"
+                                alt=""
+                                aria-hidden="true"
+                            >
+
+                        </div>
+
+
+                        <div class="booking-card-heading">
+
+                            <h2>
+                                Pernyataan
+                            </h2>
+
+                            <p>
+                                Unggah Foto KTP dan Foto wajah untuk
+                                proses verifikasi oleh admin
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="statement-content">
+
+                        <label
+                            for="agreement"
+                            class="statement-checkbox"
+                        >
+
+                            <input
+                                type="checkbox"
+                                id="agreement"
+                                name="agreement"
+                            >
+
+                            <span class="custom-checkbox"></span>
+
+                            <span class="statement-text">
+                                Saya menyatakan bahwa data yang saya
+                                berikan adalah benar dan sesuai dengan
+                                identitas asli
+                            </span>
+
+                        </label>
+
+
+                        <p class="statement-description">
+                            Data ini digunakan untuk keperluan
+                            verifikasi dan keamanan penyewaan
+                            PlayStation di IB Gaming
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================================
+                     BUTTON JOIN MEMBER
+                ================================================== -->
+
+                <div class="booking-submit-wrapper">
+
+                    <button
+                        type="button"
+                        class="join-member-button"
+                        id="joinMemberButton"
+                    >
+                        Join Member
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 SIDEBAR INFORMASI
+            ================================================== -->
+
+            <aside
+                class="booking-information"
+                aria-label="Informasi pengajuan booking"
+            >
+
+                <div class="information-card">
+
+
+                    <h2>
+                        Informasi
+                    </h2>
+
+
+                    <!-- =================================================
+                         STEP 1
+                    ================================================== -->
+
+                    <div class="information-step">
+
+                        <div class="step-number">
+                            1
+                        </div>
+
+
+                        <div class="step-content">
+
+                            <h3>
+                                Login Akun
+                            </h3>
+
+                            <p>
+                                Pastikan Sudah Login untuk
+                                mengajukan booking PlayStation
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         STEP 2
+                    ================================================== -->
+
+                    <div class="information-step">
+
+                        <div class="step-number">
+                            2
+                        </div>
+
+
+                        <div class="step-content">
+
+                            <h3>
+                                Isi Data Diri
+                            </h3>
+
+                            <p>
+                                Lengkapi Data Diri sesuai
+                                identitas asli
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         STEP 3
+                    ================================================== -->
+
+                    <div class="information-step">
+
+                        <div class="step-number">
+                            3
+                        </div>
+
+
+                        <div class="step-content">
+
+                            <h3>
+                                Unggah Dokumen
+                            </h3>
+
+                            <p>
+                                Upload foto KTP dan foto wajah
+                                yang jelas
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         STEP 4
+                    ================================================== -->
+
+                    <div class="information-step">
+
+                        <div class="step-number">
+                            4
+                        </div>
+
+
+                        <div class="step-content">
+
+                            <h3>
+                                Verifikasi Admin
+                            </h3>
+
+                            <p>
+                                Admin akan memverifikasi data kamu.
+                                Kamu akan mendapatkan notifikasi
+                                setelah verifikasi selesai
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         STEP 5
+                    ================================================== -->
+
+                    <div class="information-step">
+
+                        <div class="step-number">
+                            5
+                        </div>
+
+
+                        <div class="step-content">
+
+                            <h3>
+                                Lanjut Ke Form Booking
+                            </h3>
+
+                            <p>
+                                Jika disetujui, kamu bisa melanjutkan
+                                ke pemesanan unit
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         Sama seperti halaman F&B
+    ====================================================== -->
+
+    <footer class="footer-value">
+
+
+        <!-- Premium Equipment -->
+        <article class="div-2">
+
+            <div class="background">
+
+                <img
+                    src="../../../assets/Icon/Controller Icon.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+
+            </div>
+
+
+            <div>
+
+                <p class="text">
+                    Premium Equipment
+                </p>
+
+                <p class="text-2">
+                    PlayStation terbaru &amp; berkualitas
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- Delicious Food & Drinks -->
+        <article class="div-2">
+
+            <div class="background">
+
+                <img
+                    src="../../../assets/Icon/FNB.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+
+            </div>
+
+
+            <div>
+
+                <p class="text">
+                    Delicious Food &amp; Drinks
+                </p>
+
+                <p class="text-2">
+                    Pilihan menu terbaik
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- Comfortable Space -->
+        <article class="div-2">
+
+            <div class="background">
+
+                <img
+                    src="../../../assets/Icon/Bintang.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+
+            </div>
+
+
+            <div>
+
+                <p class="text">
+                    Comfortable Space
+                </p>
+
+                <p class="text-2">
+                    Suasana nyaman &amp; modern
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- Friendly Support -->
+        <article class="div-2">
+
+            <div class="background">
+
+                <img
+                    src="../../../assets/Icon/People Icon.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+
+            </div>
+
+
+            <div>
+
+                <p class="text">
+                    Friendly Support
+                </p>
+
+                <p class="text-2">
+                    Selalu siap membantu
+                </p>
+
+            </div>
+
+        </article>
+
+    </footer>
+
+</div>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+====================================================== -->
+
+<script src="../../../js/global.js"></script>
+
+<script src="../../../js/user/booking/booking-member.js"></script>
+
+</body>
+
+</html>

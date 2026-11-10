@@ -1,0 +1,973 @@
+/* =========================================================
+   PESANAN BERHASIL - IB GAMING
+   ========================================================= */
+
+.dashboard-pelanggan {
+    min-height: 100vh;
+    background: #fcf9f7;
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+   ========================================================= */
+
+.fnb-content {
+    width: calc(100% - 110px);
+    max-width: none;
+    margin: 0 auto;
+    padding-top: 28px;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HERO
+   Dibuat sama dengan halaman F&B sebelumnya
+   ========================================================= */
+
+.fnb-hero {
+    width: 100%;
+    height: 235px;
+    min-height: 235px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+
+    position: relative;
+    overflow: hidden;
+
+    background: #f7eee4;
+    border-radius: 14px;
+
+    box-sizing: border-box;
+    margin-bottom: 32px;
+}
+
+.fnb-hero-content {
+    flex: 0 0 50%;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 30px 0 30px 40px;
+
+    position: relative;
+    z-index: 2;
+
+    box-sizing: border-box;
+}
+
+.fnb-hero-label {
+    margin-bottom: 7px;
+
+    color: #b58a4a;
+
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+    line-height: 1.3;
+
+    text-transform: uppercase;
+}
+
+.fnb-hero-content h1 {
+    margin: 0;
+
+    color: #b58a4a;
+
+    font-family: var(--font-heading);
+    font-size: 40px;
+    font-weight: 700;
+
+    line-height: 0.98;
+    letter-spacing: -0.7px;
+}
+
+.fnb-hero-content p {
+    max-width: 330px;
+
+    margin: 13px 0 0;
+
+    color: #998f82;
+
+    font-family: var(--font-body);
+    font-size: 9px;
+    font-weight: 400;
+
+    line-height: 1.5;
+}
+
+.fnb-hero-image {
+    flex: 0 0 50%;
+    width: 50%;
+    height: 100%;
+
+    position: relative;
+    display: block;
+
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.fnb-hero-image::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            #f7eee4 0%,
+            rgba(247, 238, 228, 0.65) 13%,
+            rgba(247, 238, 228, 0) 38%
+        );
+
+    z-index: 2;
+    pointer-events: none;
+}
+
+.fnb-hero-image img {
+    width: 100% !important;
+    height: 100% !important;
+
+    max-width: none !important;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================================================
+   SUCCESS SECTION
+   ========================================================= */
+
+.success-section {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        400px;
+
+    align-items: start;
+
+    gap: 30px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   SUCCESS MAIN CARD
+   ========================================================= */
+
+.success-main-card {
+    width: 100%;
+
+    padding: 27px 28px 25px;
+
+    background: #fffefa;
+
+    border: 1px solid #dcc9af;
+    border-radius: 14px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   SUCCESS ICON
+   ========================================================= */
+
+.success-icon {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 13px;
+
+    border-radius: 50%;
+
+    background: #bd9658;
+
+    box-sizing: border-box;
+}
+
+.success-icon span {
+    color: #ffffff;
+
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+
+    line-height: 1;
+}
+
+
+/* =========================================================
+   SUCCESS HEADING
+   ========================================================= */
+
+.success-heading {
+    width: 100%;
+}
+
+.success-label {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #b58a4a;
+
+    font-family: var(--font-body);
+    font-size: 9px;
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+    line-height: 1.3;
+
+    text-transform: uppercase;
+}
+
+.success-heading h2 {
+    margin: 0;
+
+    color: #29231f;
+
+    font-family: var(--font-heading);
+    font-size: 26px;
+    font-weight: 600;
+
+    line-height: 1.2;
+}
+
+.success-heading p {
+    max-width: 480px;
+
+    margin: 6px 0 0;
+
+    color: #857d74;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 400;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   ORDER INFORMATION
+   ========================================================= */
+
+.success-order-information {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 20px;
+
+    border-top: 1px solid #e5dcd0;
+
+    box-sizing: border-box;
+}
+
+.success-information-row {
+    min-height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 8px 0;
+
+    border-bottom: 1px solid #e5dcd0;
+
+    box-sizing: border-box;
+}
+
+.success-information-row > span:first-child {
+    color: #857d74;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 400;
+
+    line-height: 1.3;
+}
+
+.success-information-row > strong {
+    color: #29231f;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 600;
+
+    line-height: 1.3;
+
+    text-align: right;
+}
+
+
+/* =========================================================
+   PAYMENT STATUS
+   ========================================================= */
+
+.success-status-row {
+    border-bottom: none;
+}
+
+.success-status {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 6px;
+
+    color: #857d74;
+
+    font-family: var(--font-body);
+    font-size: 9px;
+    font-weight: 500;
+
+    line-height: 1.3;
+}
+
+.success-status-dot {
+    width: 9px;
+    height: 9px;
+
+    flex-shrink: 0;
+
+    display: inline-block;
+
+    border-radius: 50%;
+
+    background: #bd9658;
+}
+
+
+/* =========================================================
+   CASH PAYMENT INFORMATION
+   ========================================================= */
+
+.cash-payment-information {
+    width: 100%;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 10px;
+
+    margin-top: 17px;
+
+    padding: 12px 14px;
+
+    background: #f5ecdf;
+
+    border-radius: 8px;
+
+    box-sizing: border-box;
+}
+
+.cash-information-icon {
+    width: 22px;
+    height: 22px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 1px;
+
+    border: 1px solid #b58a4a;
+    border-radius: 50%;
+
+    color: #b58a4a;
+
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+
+    line-height: 1;
+}
+
+.cash-information-content {
+    min-width: 0;
+}
+
+.cash-information-content h3 {
+    margin: 0;
+
+    color: #29231f;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 600;
+
+    line-height: 1.3;
+}
+
+.cash-information-content p {
+    margin: 3px 0 0;
+
+    color: #857d74;
+
+    font-family: var(--font-body);
+    font-size: 8px;
+    font-weight: 400;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   ORDER SUMMARY
+   ========================================================= */
+
+.success-order-summary {
+    width: 100%;
+
+    position: sticky;
+    top: 120px;
+
+    box-sizing: border-box;
+}
+
+.success-summary-card {
+    width: 100%;
+
+    padding: 18px 20px 17px;
+
+    background: #fffefa;
+
+    border: 1px solid #dcc9af;
+    border-radius: 12px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   SUMMARY HEADER
+   ========================================================= */
+
+.success-summary-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+
+    padding-bottom: 13px;
+
+    border-bottom: 1px solid #e5dcd0;
+}
+
+.success-summary-label {
+    display: block;
+
+    margin-bottom: 2px;
+
+    color: #b58a4a;
+
+    font-family: var(--font-body);
+    font-size: 8px;
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+}
+
+.success-summary-header h2 {
+    margin: 0;
+
+    color: #29231f;
+
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 600;
+
+    line-height: 1.3;
+}
+
+.success-summary-header > img {
+    width: 22px;
+    height: 22px;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   SUMMARY ITEMS
+   ========================================================= */
+
+.success-summary-items {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 11px;
+
+    margin-top: 14px;
+}
+
+.success-summary-item {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    box-sizing: border-box;
+}
+
+.success-summary-item-image {
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 6px;
+
+    background: #f7f1e8;
+}
+
+.success-summary-item-info {
+    min-width: 0;
+
+    flex: 1;
+}
+
+.success-summary-item-name {
+    margin: 0;
+
+    overflow: hidden;
+
+    color: #29231f;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 600;
+
+    line-height: 1.3;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.success-summary-item-price {
+    margin: 2px 0 0;
+
+    color: #857d74;
+
+    font-family: var(--font-body);
+    font-size: 9px;
+    font-weight: 400;
+
+    line-height: 1.3;
+}
+
+.success-summary-item-quantity {
+    flex-shrink: 0;
+
+    color: #29231f;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 500;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   EMPTY SUMMARY
+   ========================================================= */
+
+.success-summary-empty {
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    gap: 6px;
+
+    padding: 20px 0;
+
+    text-align: center;
+}
+
+.success-summary-empty.active {
+    display: flex;
+}
+
+.success-summary-empty img {
+    width: 28px;
+    height: 28px;
+
+    opacity: 0.6;
+}
+
+.success-summary-empty p {
+    margin: 0;
+
+    color: #a69e93;
+
+    font-family: var(--font-body);
+    font-size: 9px;
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   SUBTOTAL
+   ========================================================= */
+
+.success-summary-subtotal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 14px;
+    padding-top: 11px;
+
+    border-top: 1px solid #e5dcd0;
+}
+
+.success-summary-subtotal span {
+    color: #857d74;
+
+    font-family: var(--font-body);
+    font-size: 9px;
+    font-weight: 400;
+}
+
+.success-summary-subtotal strong {
+    color: #29231f;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   TOTAL
+   ========================================================= */
+
+.success-summary-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 9px;
+
+    padding: 9px 10px;
+
+    background: #eee4d8;
+
+    border-radius: 4px;
+
+    box-sizing: border-box;
+}
+
+.success-summary-total span {
+    color: #29231f;
+
+    font-family: var(--font-body);
+    font-size: 9px;
+    font-weight: 600;
+}
+
+.success-summary-total strong {
+    color: #29231f;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   BACK TO HOME
+   Tanpa arrow sesuai revisi
+   ========================================================= */
+
+.success-back-wrapper {
+    width: calc(100% - 430px);
+
+    display: flex;
+    justify-content: flex-end;
+
+    margin-top: 38px;
+}
+
+.success-back-button {
+    width: 145px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #dcc9af;
+    border-radius: 7px;
+
+    background: #fffefa;
+
+    color: #b58a4a;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 500;
+
+    text-align: center;
+
+    box-sizing: border-box;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.success-back-button:hover {
+    background: #f7f1e8;
+
+    border-color: #b58a4a;
+
+    color: #98703b;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.footer-value {
+    margin-top: 110px !important;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .fnb-content {
+        width: calc(100% - 70px);
+    }
+
+    .success-section {
+        grid-template-columns:
+            minmax(0, 1fr)
+            340px;
+
+        gap: 22px;
+    }
+
+    .success-back-wrapper {
+        width: calc(100% - 362px);
+    }
+}
+
+
+@media (max-width: 900px) {
+
+    .fnb-content {
+        width: calc(100% - 48px);
+    }
+
+    .success-section {
+        grid-template-columns: 1fr;
+    }
+
+    .success-order-summary {
+        position: static;
+    }
+
+    .success-back-wrapper {
+        width: 100%;
+
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .fnb-content {
+        width: calc(100% - 36px);
+        padding-top: 18px;
+    }
+
+    .fnb-hero {
+        height: 200px;
+        min-height: 200px;
+
+        margin-bottom: 22px;
+    }
+
+    .fnb-hero-content {
+        padding-left: 24px;
+    }
+
+    .fnb-hero-content h1 {
+        font-size: 34px;
+    }
+
+    .success-main-card {
+        padding: 22px 20px;
+    }
+
+    .success-heading h2 {
+        font-size: 24px;
+    }
+
+    .success-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .success-icon span {
+        font-size: 25px;
+    }
+
+    .success-summary-card {
+        padding: 16px 18px;
+    }
+
+    .success-back-wrapper {
+        margin-top: 25px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .fnb-content {
+        width: calc(100% - 24px);
+        padding-top: 14px;
+    }
+
+    .fnb-hero {
+        height: 180px;
+        min-height: 180px;
+
+        border-radius: 10px;
+    }
+
+    .fnb-hero-content {
+        width: 55%;
+        flex: 0 0 55%;
+
+        padding-left: 18px;
+    }
+
+    .fnb-hero-image {
+        width: 45%;
+        flex: 0 0 45%;
+    }
+
+    .fnb-hero-content h1 {
+        font-size: 28px;
+    }
+
+    .fnb-hero-label {
+        font-size: 9px;
+        letter-spacing: 1.5px;
+    }
+
+    .fnb-hero-content p {
+        max-width: 180px;
+
+        margin-top: 9px;
+
+        font-size: 7px;
+    }
+
+    .success-main-card {
+        padding: 18px 16px;
+    }
+
+    .success-label {
+        font-size: 8px;
+    }
+
+    .success-heading h2 {
+        font-size: 22px;
+    }
+
+    .success-heading p {
+        font-size: 9px;
+    }
+
+    .success-information-row > span:first-child,
+    .success-information-row > strong {
+        font-size: 9px;
+    }
+
+    .success-status {
+        font-size: 8px;
+    }
+
+    .cash-information-content p {
+        font-size: 8px;
+    }
+
+    .success-summary-header h2 {
+        font-size: 15px;
+    }
+
+    .success-summary-item-image {
+        width: 42px;
+        height: 42px;
+    }
+
+    .success-summary-item-name {
+        font-size: 9px;
+    }
+
+    .success-summary-item-price {
+        font-size: 8px;
+    }
+
+    .success-back-button {
+        width: 135px;
+        height: 36px;
+    }
+}

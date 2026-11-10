@@ -1,0 +1,1774 @@
+/* =========================================================
+   BOOKING FORM - IB GAMING
+   Header & Footer TETAP di shared.css
+   Hero mengikuti booking-member.css
+   ========================================================= */
+
+
+/* =========================================================
+   PAGE
+   ========================================================= */
+
+.dashboard-pelanggan {
+    min-height: 100vh;
+    background: #fcf9f7;
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+   ========================================================= */
+
+.booking-content {
+    width: calc(100% - 110px);
+    max-width: none;
+    margin: 0 auto;
+    padding-top: 28px;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HERO
+   SAMA DENGAN BOOKING-MEMBER.CSS
+   ========================================================= */
+
+.booking-hero {
+    width: 100%;
+    height: 250px;
+    min-height: 250px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+
+    position: relative;
+    overflow: hidden;
+
+    background: #f7eee4;
+    border-radius: 14px;
+
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+
+.booking-hero-content {
+    flex: 0 0 50%;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 35px 0 35px 40px;
+
+    position: relative;
+    z-index: 2;
+
+    box-sizing: border-box;
+}
+
+
+.booking-hero-label {
+    margin-bottom: 8px;
+
+    color: #b58a4a;
+
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 500;
+
+    letter-spacing: 1.5px;
+    line-height: 1.3;
+}
+
+
+.booking-hero-content h1 {
+    margin: 0;
+
+    color: #b58a4a;
+
+    font-family: var(--font-heading);
+    font-size: 48px;
+    font-weight: 700;
+
+    line-height: 0.98;
+    letter-spacing: -0.8px;
+}
+
+
+.booking-hero-content p {
+    max-width: 390px;
+
+    margin: 15px 0 0;
+
+    color: #998f82;
+
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 400;
+
+    line-height: 1.55;
+}
+
+
+.booking-hero-image {
+    flex: 0 0 50%;
+    width: 50%;
+    height: 100%;
+
+    position: relative;
+    display: block;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+}
+
+
+.booking-hero-image::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            #f7eee4 0%,
+            rgba(247, 238, 228, 0.65) 12%,
+            rgba(247, 238, 228, 0) 38%
+        );
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+
+.booking-hero-image img {
+    width: 100% !important;
+    height: 100% !important;
+
+    max-width: none !important;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================================================
+   BOOKING LAYOUT
+   ========================================================= */
+
+.booking-layout {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        320px;
+
+    align-items: start;
+
+    gap: 28px;
+
+    box-sizing: border-box;
+}
+
+
+.booking-main {
+    width: 100%;
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+/* =========================================================
+   GENERIC BOOKING CARD
+   ========================================================= */
+
+.booking-card {
+    width: 100%;
+
+    background: #fffefa;
+
+    border: 1px solid #d9b984;
+    border-radius: 14px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CARD HEADER
+   ========================================================= */
+
+.booking-card-header {
+    width: 100%;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 13px;
+
+    box-sizing: border-box;
+}
+
+
+.device-card {
+    padding: 22px 30px 25px;
+}
+
+
+.schedule-card {
+    padding: 22px 30px 25px;
+}
+
+
+/* =========================================================
+   CARD ICON
+   ========================================================= */
+
+.booking-card-icon {
+    width: 32px;
+    height: 32px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #bd9658;
+
+    border-radius: 7px;
+}
+
+
+.booking-card-icon img {
+    width: 18px;
+    height: 18px;
+
+    display: block;
+
+    object-fit: contain;
+
+    filter: brightness(0) invert(1);
+}
+
+
+/* =========================================================
+   CARD HEADING
+   ========================================================= */
+
+.booking-card-heading {
+    min-width: 0;
+}
+
+
+.booking-card-heading h2 {
+    margin: 0;
+
+    color: #29231f;
+
+    font-family: var(--font-body);
+    font-size: 22px;
+    font-weight: 700;
+
+    line-height: 1.25;
+}
+
+
+.booking-card-heading p {
+    margin: 4px 0 0;
+
+    color: #857d74;
+
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 400;
+
+    line-height: 1.45;
+}
+
+
+/* =========================================================
+   FORM GROUP
+   ========================================================= */
+
+.booking-form-group {
+    width: 100%;
+
+    margin-top: 20px;
+}
+
+
+.booking-form-group:first-of-type {
+    margin-top: 18px;
+}
+
+
+/* =========================================================
+   FORM LABEL ROW
+   ========================================================= */
+
+.form-label-row {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+
+    gap: 10px;
+}
+
+
+.form-label-row > label {
+    color: #29231f;
+
+    font-family: var(--font-body);
+    font-size: 18px;
+    font-weight: 600;
+
+    line-height: 1.4;
+}
+
+
+.required-label,
+.optional-label {
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.required-label {
+    color: #b58a4a;
+}
+
+
+.optional-label {
+    color: #a69e93;
+}
+
+
+/* =========================================================
+   DEVICE GRID
+   ========================================================= */
+
+.device-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 16px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   TV GRID
+   ========================================================= */
+
+.tv-grid {
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+}
+
+
+/* =========================================================
+   DEVICE OPTION
+   HTML:
+   <label class="device-option">
+       <input ...>
+       <div class="device-option-content">
+           ...
+       </div>
+   </label>
+   ========================================================= */
+
+.device-option {
+    position: relative;
+
+    width: 100%;
+    min-width: 0;
+    min-height: 125px;
+
+    display: block;
+
+    background: #fffdfa;
+
+    border: 1px solid #d8d0c6;
+    border-radius: 9px;
+
+    box-sizing: border-box;
+
+    cursor: pointer;
+
+    overflow: hidden;
+
+    transition:
+        border-color 0.2s ease,
+        background-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.15s ease;
+}
+
+
+.device-option:hover {
+    border-color: #d3b37e;
+
+    background: #fffefa;
+}
+
+
+.device-option:has(input:checked) {
+    border-color: #b58a4a;
+
+    background: #fffaf2;
+
+    box-shadow:
+        0 0 0 2px rgba(181, 138, 74, 0.10);
+}
+
+
+/* =========================================================
+   HIDE RADIO
+   ========================================================= */
+
+.device-option > input[type="radio"] {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+
+    opacity: 0;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   DEVICE OPTION CONTENT
+   ========================================================= */
+
+.device-option-content {
+    width: 100%;
+    height: 100%;
+
+    min-height: 125px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 14px 18px;
+
+    box-sizing: border-box;
+
+    gap: 18px;
+}
+
+
+/* =========================================================
+   DEVICE IMAGE
+   ========================================================= */
+
+.device-image {
+    width: 125px;
+    height: 90px;
+
+    flex: 0 0 125px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+
+.device-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   DEVICE INFORMATION
+   ========================================================= */
+
+.device-information {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+.device-information h3 {
+    margin: 0;
+
+    color: #29231f;
+
+    font-family: var(--font-heading);
+    font-size: 17px;
+    font-weight: 600;
+
+    line-height: 1.25;
+}
+
+
+.device-information p {
+    margin: 6px 0 0;
+
+    color: #29231f;
+
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 500;
+
+    line-height: 1.3;
+}
+
+
+.device-information p span {
+    color: #857d74;
+
+    font-size: 9px;
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   SELECTED CHECK INDICATOR
+   ========================================================= */
+
+.device-option::after {
+    content: "";
+
+    position: absolute;
+
+    top: 12px;
+    right: 12px;
+
+    width: 15px;
+    height: 15px;
+
+    border: 1px solid #cfc5b8;
+    border-radius: 50%;
+
+    background: #fffefa;
+
+    box-sizing: border-box;
+}
+
+
+.device-option:has(input:checked)::after {
+    border-color: #b58a4a;
+
+    background:
+        radial-gradient(
+            circle,
+            #b58a4a 0 4px,
+            transparent 4.5px
+        );
+}
+
+
+/* =========================================================
+   TV OPTION
+   ========================================================= */
+
+.tv-grid .device-option {
+    min-height: 135px;
+}
+
+
+.tv-grid .device-option-content {
+    min-height: 135px;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 16px 12px;
+
+    gap: 5px;
+
+    text-align: center;
+}
+
+
+.tv-grid .device-image {
+    width: 120px;
+    height: 65px;
+
+    flex: 0 0 65px;
+}
+
+
+.tv-grid .device-information {
+    align-items: center;
+
+    text-align: center;
+}
+
+
+.tv-grid .device-information h3 {
+    font-family: var(--font-body);
+
+    font-size: 11px;
+    font-weight: 600;
+
+    line-height: 1.3;
+}
+
+
+.tv-grid .device-information p {
+    margin-top: 4px;
+
+    color: #b58a4a;
+
+    font-size: 9px;
+    font-weight: 600;
+}
+
+
+.tv-grid .device-information p span {
+    color: #857d74;
+
+    font-size: 8px;
+}
+
+
+/* =========================================================
+   NO TV OPTION
+   ========================================================= */
+
+.no-tv-option .device-option-content {
+    justify-content: center;
+}
+
+
+.no-tv-option .device-information h3 {
+    max-width: 150px;
+
+    color: #29231f;
+
+    font-size: 11px;
+}
+
+
+.no-tv-option .device-information p {
+    color: #b58a4a;
+
+    font-size: 9px;
+}
+
+
+/* =========================================================
+   SCHEDULE FORM
+   ========================================================= */
+
+.schedule-card .booking-form-group {
+    margin-top: 18px;
+}
+
+
+.schedule-card .booking-form-group:first-of-type {
+    margin-top: 20px;
+}
+
+
+/* =========================================================
+   FORM INPUT LABEL
+   ========================================================= */
+
+.form-input-label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #29231f;
+
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 600;
+
+    line-height: 1.3;
+}
+
+
+/* =========================================================
+   INPUT WRAPPER
+   ========================================================= */
+
+.form-input-wrapper {
+    width: 100%;
+
+    position: relative;
+}
+
+
+/* =========================================================
+   INPUT & SELECT
+   ========================================================= */
+
+.form-input-wrapper input,
+.form-input-wrapper select {
+    width: 100%;
+    height: 39px;
+
+    padding: 0 13px;
+
+    border: 1px solid #d8d0c6;
+    border-radius: 7px;
+
+    background: #fffefa;
+
+    color: #29231f;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 400;
+
+    box-sizing: border-box;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.form-input-wrapper input:focus,
+.form-input-wrapper select:focus {
+    border-color: #b58a4a;
+
+    box-shadow:
+        0 0 0 3px rgba(181, 138, 74, 0.10);
+}
+
+
+.form-input-wrapper select {
+    cursor: pointer;
+}
+
+
+.form-input-wrapper input[type="date"] {
+    cursor: pointer;
+    color-scheme: light;
+}
+
+
+.form-input-wrapper input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    opacity: 0.55;
+}
+
+
+/* =========================================================
+   SCHEDULE INFORMATION
+   ========================================================= */
+
+/* =========================================================
+   INFORMATION DURASI
+   ========================================================= */
+
+.schedule-information {
+    width: 100%;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 10px;
+
+    margin-top: 18px;
+
+    padding: 13px 15px;
+
+    background: #f8f1e8;
+
+    border-radius: 8px;
+
+    box-sizing: border-box;
+}
+
+
+.information-icon {
+    width: 18px;
+    height: 18px;
+
+    flex: 0 0 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #bd9658;
+    border-radius: 50%;
+
+    color: #b58a4a;
+
+    font-family: Georgia, serif;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+
+.schedule-information p {
+    margin: 0;
+
+    color: #857d74;
+
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 500;
+
+    line-height: 1.55;
+}
+
+
+/* =========================================================
+   SUBMIT BUTTON AREA
+   ========================================================= */
+
+.booking-submit-wrapper {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 10px;
+
+    margin-top: 4px;
+}
+
+
+/* =========================================================
+   BACK BUTTON
+   ========================================================= */
+
+.booking-back-button {
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 20px;
+
+    border: 1px solid #d3b37e;
+    border-radius: 7px;
+
+    background: #fffefa;
+
+    color: #b58a4a;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 600;
+
+    line-height: 1;
+
+    box-sizing: border-box;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.15s ease;
+}
+
+
+.booking-back-button:hover {
+    background: #f8f1e8;
+
+    border-color: #b58a4a;
+}
+
+
+.booking-back-button:active {
+    transform: scale(0.98);
+}
+
+
+/* =========================================================
+   CONTINUE BUTTON
+   ========================================================= */
+
+.booking-submit-button {
+    min-width: 250px;
+    height: 40px;
+
+    padding: 0 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #b58a4a;
+    border-radius: 7px;
+
+    background: #b58a4a;
+
+    color: #ffffff;
+
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.15s ease;
+}
+
+
+.booking-submit-button:hover {
+    background: #98703b;
+    border-color: #98703b;
+}
+
+
+.booking-submit-button:active {
+    transform: scale(0.98);
+}
+
+
+/* =========================================================
+   INFORMATION SIDEBAR
+   ========================================================= */
+
+.booking-information {
+    width: 100%;
+
+    position: sticky;
+    top: 120px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   SUMMARY BOOKING
+   ========================================================= */
+
+.information-card {
+    width: 100%;
+
+    padding: 22px 20px 24px;
+
+    background: #fffefa;
+
+    border: 1px solid #d9b984;
+    border-radius: 14px;
+
+    box-sizing: border-box;
+
+    font-family: var(--font-body);
+}
+
+
+/* =========================================================
+   SUMMARY TITLE
+   ========================================================= */
+
+.information-card > h2 {
+    margin: 0 0 22px;
+
+    color: #29231f;
+
+    font-family: var(--font-body);
+    font-size: 21px;
+    font-weight: 600;
+
+    line-height: 1.3;
+}
+
+
+/* =========================================================
+   SUMMARY SECTION
+   SEMUA PLUS JAKARTA SANS
+   ========================================================= */
+
+.summary-section {
+    width: 100%;
+
+    margin-bottom: 20px;
+
+    font-family: var(--font-body);
+}
+
+
+.summary-section h3 {
+    margin: 0 0 10px;
+
+    color: #29231f;
+
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-weight: 700;
+
+    line-height: 1.3;
+}
+
+
+/* =========================================================
+   SUMMARY DEVICE
+   ========================================================= */
+
+/* =========================================================
+   SUMMARY DEVICE
+   ========================================================= */
+
+.summary-device {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 13px;
+
+    margin-bottom: 14px;
+
+    font-family: var(--font-body);
+}
+
+
+/* =========================================================
+   IMAGE
+   ========================================================= */
+
+.summary-device-image {
+    width: 76px;
+    height: 60px;
+
+    flex: 0 0 76px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f8f1e8;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+}
+
+
+.summary-device-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* Jangan tampilkan area gambar
+   kalau belum ada gambar */
+
+.summary-device-image img[src=""] {
+    display: none;
+}
+
+
+/* =========================================================
+   INFO
+   ========================================================= */
+
+.summary-device-info {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 2px;
+
+    font-family: var(--font-body);
+}
+
+
+.summary-device-info span {
+    color: #857d74;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 400;
+
+    line-height: 1.3;
+}
+
+
+.summary-device-info strong {
+    color: #29231f;
+
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 700;
+
+    line-height: 1.3;
+}
+
+
+.summary-device-info small {
+    color: #b58a4a;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 600;
+
+    line-height: 1.3;
+}
+
+
+.summary-device-info strong {
+    color: #29231f;
+
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 600;
+
+    line-height: 1.3;
+}
+
+
+/* =========================================================
+   SUMMARY ROW
+   ========================================================= */
+
+.summary-row {
+    width: 100%;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 12px;
+
+    margin-top: 7px;
+
+    font-family: var(--font-body);
+}
+
+
+.summary-row > span {
+    color: #857d74;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 400;
+
+    line-height: 1.4;
+}
+
+
+.summary-row > strong {
+    max-width: 170px;
+
+    color: #29231f;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 600;
+
+    line-height: 1.4;
+
+    text-align: right;
+}
+
+
+/* =========================================================
+   DURASI
+   ========================================================= */
+
+.summary-row.duration-row {
+    margin-top: 10px;
+
+    padding: 10px 11px;
+
+    background: #f8f1e8;
+
+    border-radius: 7px;
+}
+
+
+.summary-row.duration-row > span {
+    color: #857d74;
+
+    font-size: 11px;
+    font-weight: 500;
+}
+
+
+.summary-row.duration-row > strong {
+    color: #b58a4a;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   TOTAL
+   ========================================================= */
+
+.summary-total {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-top: 7px;
+    padding-top: 18px;
+
+    border-top: 1px solid #e1d6c8;
+
+    font-family: var(--font-body);
+}
+
+
+.summary-total > span {
+    color: #29231f;
+
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+.summary-total > strong {
+    color: #29231f;
+
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 700;
+
+    line-height: 1.3;
+
+    text-align: right;
+}
+
+
+.summary-note {
+    margin: 9px 0 0;
+
+    color: #8f877d;
+
+    font-family: var(--font-body);
+    font-size: 9px;
+    font-weight: 400;
+
+    line-height: 1.55;
+}
+
+
+/* =========================================================
+   FOOTER SPACING
+   Hanya margin, styling footer tetap shared.css
+   ========================================================= */
+
+.booking-content + .footer-value {
+    margin-top: 90px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .booking-content {
+        width: calc(100% - 70px);
+    }
+
+
+    .booking-layout {
+        grid-template-columns:
+            minmax(0, 1fr)
+            350px;
+
+        gap: 22px;
+    }
+
+
+    .booking-hero-content h1 {
+        font-size: 44px;
+    }
+
+
+    .booking-card-heading h2 {
+        font-size: 18px;
+    }
+
+
+    .device-option-content {
+        padding-left: 14px;
+        padding-right: 14px;
+
+        gap: 12px;
+    }
+
+
+    .device-image {
+        width: 105px;
+        height: 80px;
+
+        flex-basis: 105px;
+    }
+
+
+    .device-information h3 {
+        font-size: 15px;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .booking-content {
+        width: calc(100% - 48px);
+    }
+
+
+    .booking-layout {
+        grid-template-columns: 1fr;
+    }
+
+
+    .booking-information {
+        position: static;
+    }
+
+
+    .booking-hero {
+        height: 230px;
+        min-height: 230px;
+    }
+
+
+    .booking-hero-content {
+        padding-left: 30px;
+    }
+
+
+    .booking-hero-content h1 {
+        font-size: 42px;
+    }
+
+
+    .information-card {
+        width: 100%;
+    }
+
+
+    .device-grid {
+        gap: 14px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .booking-content {
+        width: calc(100% - 36px);
+        padding-top: 20px;
+    }
+
+
+    /* HERO */
+
+    .booking-hero {
+        height: auto;
+        min-height: 0;
+
+        flex-direction: column;
+    }
+
+
+    .booking-hero-content {
+        width: 100%;
+        flex: none;
+
+        min-height: 190px;
+
+        padding: 30px 24px;
+    }
+
+
+    .booking-hero-content h1 {
+        font-size: 40px;
+    }
+
+
+    .booking-hero-content p {
+        max-width: 340px;
+    }
+
+
+    .booking-hero-image {
+        width: 100%;
+        flex: none;
+
+        height: 200px;
+    }
+
+
+    .booking-hero-image::before {
+        background:
+            linear-gradient(
+                180deg,
+                #f7eee4 0%,
+                rgba(247, 238, 228, 0) 35%
+            );
+    }
+
+
+    /* CARD */
+
+    .device-card,
+    .schedule-card {
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+
+    /* PLAYSTATION */
+
+    .device-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .device-option {
+        min-height: 115px;
+    }
+
+
+    .device-option-content {
+        min-height: 115px;
+
+        padding: 12px 15px;
+    }
+
+
+    .device-image {
+        width: 105px;
+        height: 75px;
+
+        flex-basis: 105px;
+    }
+
+
+    /* TV */
+
+    .tv-grid {
+        grid-template-columns:
+            1fr
+            1fr;
+    }
+
+
+    .tv-grid .device-option {
+        min-height: 125px;
+    }
+
+
+    .tv-grid .device-option-content {
+        min-height: 125px;
+    }
+
+
+    /* SCHEDULE */
+
+    .schedule-card .booking-form-group {
+        margin-top: 14px;
+    }
+
+
+    /* BUTTON */
+
+    .booking-submit-wrapper {
+        flex-direction: column-reverse;
+        align-items: stretch;
+
+        gap: 8px;
+    }
+
+
+    .booking-back-button,
+    .booking-submit-button {
+        width: 100%;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .booking-content {
+        width: calc(100% - 28px);
+        padding-top: 16px;
+    }
+
+
+    /* HERO */
+
+    .booking-hero-content {
+        min-height: 175px;
+
+        padding: 26px 20px;
+    }
+
+
+    .booking-hero-label {
+        font-size: 12px;
+    }
+
+
+    .booking-hero-content h1 {
+        font-size: 36px;
+    }
+
+
+    .booking-hero-content p {
+        margin-top: 10px;
+        font-size: 9px;
+    }
+
+
+    .booking-hero-image {
+        height: 175px;
+    }
+
+
+    /* CARD */
+
+    .booking-card-header {
+        gap: 10px;
+    }
+
+
+    .booking-card-icon {
+        width: 29px;
+        height: 29px;
+    }
+
+
+    .booking-card-icon img {
+        width: 16px;
+        height: 16px;
+    }
+
+
+    .booking-card-heading h2 {
+        font-size: 16px;
+    }
+
+
+    .booking-card-heading p {
+        font-size: 8px;
+    }
+
+
+    /* PLAYSTATION */
+
+    .device-option {
+        min-height: 105px;
+    }
+
+
+    .device-option-content {
+        min-height: 105px;
+
+        padding: 10px 12px;
+
+        gap: 10px;
+    }
+
+
+    .device-image {
+        width: 90px;
+        height: 68px;
+
+        flex-basis: 90px;
+    }
+
+
+    .device-information h3 {
+        font-size: 14px;
+    }
+
+
+    .device-information p {
+        font-size: 9px;
+    }
+
+
+    /* TV */
+
+    .tv-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .tv-grid .device-option {
+        min-height: 105px;
+    }
+
+
+    .tv-grid .device-option-content {
+        min-height: 105px;
+
+        flex-direction: row;
+
+        justify-content: flex-start;
+
+        padding: 10px 15px;
+
+        gap: 14px;
+
+        text-align: left;
+    }
+
+
+    .tv-grid .device-image {
+        width: 95px;
+        height: 55px;
+
+        flex-basis: 95px;
+    }
+
+
+    .tv-grid .device-information {
+        align-items: flex-start;
+
+        text-align: left;
+    }
+
+
+    /* SUMMARY */
+
+    .information-card {
+        padding: 15px;
+    }
+
+
+    .information-card > h2 {
+        font-size: 16px;
+    }
+
+
+    .summary-section h3 {
+        font-size: 16px;
+    }
+
+
+    .summary-row > span,
+    .summary-row > strong {
+        font-size: 9px;
+    }
+
+
+    .summary-total > strong {
+        font-size: 12px;
+    }
+}
+
+/* =========================================================
+   TIME INPUT
+   ========================================================= */
+
+.form-input-wrapper input[type="time"] {
+    width: 100%;
+    height: 39px;
+
+    padding: 0 13px;
+
+    border: 1px solid #d8d0c6;
+    border-radius: 7px;
+
+    background: #fffefa;
+
+    color: #29231f;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 400;
+
+    box-sizing: border-box;
+
+    cursor: pointer;
+
+    outline: none;
+
+    color-scheme: light;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.form-input-wrapper input[type="time"]:focus {
+    border-color: #b58a4a;
+
+    box-shadow:
+        0 0 0 3px rgba(181, 138, 74, 0.10);
+}
+
+
+.form-input-wrapper input[type="time"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    opacity: 0.55;
+}

@@ -1,0 +1,1208 @@
+/* =========================================================
+   METODE PEMBAYARAN - IB GAMING
+========================================================= */
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.dashboard-pelanggan {
+    min-height: 100vh;
+    background: #fcf9f7;
+}
+
+.fnb-content {
+    width: calc(100% - 110px);
+    max-width: none;
+    margin: 0 auto;
+    padding-top: 28px;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HERO
+   Mengikuti hero pada halaman lanjut-pemesanan
+========================================================= */
+
+.fnb-hero {
+    width: 100%;
+    height: 235px;
+    min-height: 235px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+
+    position: relative;
+    overflow: hidden;
+
+    background: #f7eee4;
+    border-radius: 14px;
+
+    box-sizing: border-box;
+    margin-bottom: 32px;
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.fnb-hero-content {
+    flex: 0 0 50%;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 30px 0 30px 40px;
+
+    position: relative;
+    z-index: 2;
+
+    box-sizing: border-box;
+}
+
+.fnb-hero-label {
+    margin-bottom: 7px;
+
+    color: #b58a4a;
+
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+    line-height: 1.3;
+
+    text-transform: uppercase;
+}
+
+.fnb-hero-content h1 {
+    margin: 0;
+
+    color: #b58a4a;
+
+    font-family: var(--font-heading);
+    font-size: 40px;
+    font-weight: 700;
+
+    line-height: 0.98;
+    letter-spacing: -0.7px;
+}
+
+.fnb-hero-content p {
+    max-width: 310px;
+
+    margin: 13px 0 0;
+
+    color: #998f82;
+
+    font-family: var(--font-body);
+    font-size: 9px;
+    font-weight: 400;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   HERO IMAGE
+========================================================= */
+
+.fnb-hero-image {
+    flex: 0 0 50%;
+    width: 50%;
+    height: 100%;
+
+    position: relative;
+
+    display: block;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+}
+
+.fnb-hero-image::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        90deg,
+        #f7eee4 0%,
+        rgba(247, 238, 228, 0.65) 13%,
+        rgba(247, 238, 228, 0) 38%
+    );
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+.fnb-hero-image img {
+    width: 100% !important;
+    height: 100% !important;
+
+    max-width: none !important;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================================================
+   PAYMENT SECTION
+========================================================= */
+
+.payment-section {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: minmax(0, 1fr) 320px;
+
+    align-items: start;
+
+    gap: 24px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   PAYMENT METHOD CARD
+========================================================= */
+
+.payment-method-card {
+    width: 100%;
+
+    padding: 22px 25px 24px;
+
+    background: #fffefa;
+
+    border: 1px solid #dcc9af;
+    border-radius: 14px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   PAYMENT CARD HEADER
+========================================================= */
+
+.payment-card-header {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 12px;
+
+    margin-bottom: 18px;
+}
+
+.payment-card-title-icon {
+    width: 30px;
+    height: 30px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 6px;
+
+    background: #b58a4a;
+}
+
+.payment-document-icon {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.payment-document-icon img {
+    width: 17px;
+    height: 17px;
+
+    display: block;
+
+    object-fit: contain;
+
+    filter: brightness(0) invert(1);
+}
+
+.payment-card-heading {
+    min-width: 0;
+}
+
+.payment-card-heading h2 {
+    margin: 0;
+
+    color: #29231f;
+
+    font-family: var(--font-body);
+    font-size: 17px;
+    font-weight: 600;
+
+    line-height: 1.3;
+}
+
+.payment-card-heading p {
+    margin: 2px 0 0;
+
+    color: #a69e93;
+
+    font-family: var(--font-body);
+    font-size: 9px;
+    font-weight: 400;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   PAYMENT OPTION
+========================================================= */
+
+.payment-option {
+    width: 100%;
+
+    display: block;
+
+    margin-top: 16px;
+
+    padding: 15px 16px;
+
+    border: 1px solid #dfc9a9;
+    border-radius: 12px;
+
+    background: #fffdfa;
+
+    box-sizing: border-box;
+
+    cursor: pointer;
+
+    transition:
+        border-color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.payment-option:hover {
+    border-color: #c8a36d;
+}
+
+
+/* =========================================================
+   PAYMENT OPTION HEADER
+========================================================= */
+
+.payment-option-header {
+    width: 100%;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 10px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   RADIO
+========================================================= */
+
+.payment-option-header input[type="radio"] {
+    width: 14px;
+    height: 14px;
+
+    flex-shrink: 0;
+
+    margin: 2px 0 0;
+
+    accent-color: #b58a4a;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   PAYMENT OPTION ICON
+========================================================= */
+
+.payment-option-icon {
+    width: 18px;
+    height: 18px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.payment-option-icon img {
+    width: 18px;
+    height: 18px;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   PAYMENT OPTION TEXT
+========================================================= */
+
+.payment-option-text {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 1px;
+}
+
+.payment-option-text strong {
+    color: #29231f;
+
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 600;
+
+    line-height: 1.3;
+}
+
+.payment-option-text span {
+    margin-top: 1px;
+
+    color: #857d74;
+
+    font-family: var(--font-body);
+    font-size: 8px;
+    font-weight: 400;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   QRIS DETAIL
+========================================================= */
+
+.qris-payment-detail {
+    width: calc(100% - 21px);
+
+    min-height: 118px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    margin: 12px 0 0 21px;
+
+    padding: 8px;
+
+    border-radius: 6px;
+
+    background: #bd9658;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   QR CODE
+========================================================= */
+
+.qris-code-wrapper {
+    width: 104px;
+    height: 104px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 6px;
+
+    border-radius: 5px;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+}
+
+.qris-code-image {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   QRIS INSTRUCTION
+========================================================= */
+
+.qris-instruction {
+    min-width: 0;
+
+    padding-right: 10px;
+}
+
+.qris-instruction h3 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 600;
+
+    line-height: 1.4;
+}
+
+.qris-instruction p {
+    max-width: 300px;
+
+    margin: 3px 0 0;
+
+    color: #ffffff;
+
+    font-family: var(--font-body);
+    font-size: 8px;
+    font-weight: 400;
+
+    line-height: 1.45;
+}
+
+
+/* =========================================================
+   CASH DETAIL
+========================================================= */
+
+.cash-payment-detail {
+    width: calc(100% - 21px);
+
+    margin: 12px 0 0 21px;
+}
+
+.cash-note {
+    min-height: 32px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 7px 10px;
+
+    border-radius: 6px;
+
+    background: #bd9658;
+
+    box-sizing: border-box;
+}
+
+.cash-note img {
+    width: 16px;
+    height: 16px;
+
+    flex-shrink: 0;
+
+    display: block;
+
+    object-fit: contain;
+
+    filter: brightness(0) invert(1);
+}
+
+.cash-note span {
+    color: #ffffff;
+
+    font-family: var(--font-body);
+    font-size: 8px;
+    font-weight: 400;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   ORDER SUMMARY
+========================================================= */
+
+.payment-order-summary {
+    width: 100%;
+
+    position: sticky;
+    top: 120px;
+
+    box-sizing: border-box;
+}
+
+.payment-summary-card {
+    width: 100%;
+
+    padding: 14px 16px 13px;
+
+    background: #fffefa;
+
+    border: 1px solid #dcc9af;
+    border-radius: 10px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   SUMMARY HEADER
+========================================================= */
+
+.payment-summary-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid #e5dcd0;
+}
+
+.payment-summary-label {
+    display: block;
+
+    margin-bottom: 1px;
+
+    color: #b58a4a;
+
+    font-family: var(--font-body);
+    font-size: 6px;
+    font-weight: 600;
+
+    letter-spacing: 1.2px;
+}
+
+.payment-summary-header h2 {
+    margin: 0;
+
+    color: #29231f;
+
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 600;
+
+    line-height: 1.3;
+}
+
+.payment-summary-header > img {
+    width: 18px;
+    height: 18px;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   SUMMARY ITEMS
+========================================================= */
+
+.payment-summary-items {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+
+    margin-top: 10px;
+}
+
+
+/* =========================================================
+   INDIVIDUAL SUMMARY ITEM
+
+   Akan dibuat oleh JS
+========================================================= */
+
+.payment-summary-item {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    box-sizing: border-box;
+}
+
+.payment-summary-item-image {
+    width: 35px;
+    height: 35px;
+
+    flex-shrink: 0;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 5px;
+
+    background: #f7f1e8;
+}
+
+.payment-summary-item-info {
+    min-width: 0;
+
+    flex: 1;
+}
+
+.payment-summary-item-name {
+    margin: 0;
+
+    overflow: hidden;
+
+    color: #29231f;
+
+    font-family: var(--font-body);
+    font-size: 7px;
+    font-weight: 600;
+
+    line-height: 1.3;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.payment-summary-item-price {
+    margin: 1px 0 0;
+
+    color: #857d74;
+
+    font-family: var(--font-body);
+    font-size: 6px;
+    font-weight: 400;
+
+    line-height: 1.3;
+}
+
+.payment-summary-item-quantity {
+    display: flex;
+    align-items: center;
+
+    gap: 3px;
+
+    flex-shrink: 0;
+}
+
+.payment-summary-item-quantity button {
+    width: 13px;
+    height: 13px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: 1px solid #e5dcd0;
+    border-radius: 3px;
+
+    background: #fffefa;
+
+    color: #29231f;
+
+    font-family: Arial, sans-serif;
+    font-size: 8px;
+    font-weight: 400;
+
+    line-height: 1;
+
+    cursor: pointer;
+}
+
+.payment-summary-item-quantity button:hover {
+    background: #f7f1e8;
+}
+
+.payment-summary-item-quantity span {
+    min-width: 10px;
+
+    color: #29231f;
+
+    font-family: var(--font-body);
+    font-size: 6px;
+    font-weight: 500;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   EMPTY STATE
+========================================================= */
+
+.payment-summary-empty {
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    gap: 5px;
+
+    padding: 15px 0;
+
+    text-align: center;
+}
+
+.payment-summary-empty.active {
+    display: flex;
+}
+
+.payment-summary-empty img {
+    width: 22px;
+    height: 22px;
+
+    opacity: 0.6;
+}
+
+.payment-summary-empty p {
+    margin: 0;
+
+    color: #a69e93;
+
+    font-size: 7px;
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   SUBTOTAL
+========================================================= */
+
+.payment-summary-subtotal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 11px;
+    padding-top: 9px;
+
+    border-top: 1px solid #e5dcd0;
+}
+
+.payment-summary-subtotal span {
+    color: #857d74;
+
+    font-family: var(--font-body);
+    font-size: 7px;
+    font-weight: 400;
+}
+
+.payment-summary-subtotal strong {
+    color: #29231f;
+
+    font-family: var(--font-body);
+    font-size: 8px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   CONFIRM PAYMENT BUTTON
+========================================================= */
+
+.confirm-payment-button {
+    width: 100%;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    margin-top: 14px;
+    padding: 0 16px;
+
+    border: 1px solid #ad7e46;
+    border-radius: 6px;
+
+    background: #ad7e46;
+    color: #ffffff;
+
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.15s ease;
+}
+
+.confirm-payment-button:hover {
+    background: #98703b;
+    border-color: #98703b;
+}
+
+.confirm-payment-button:active {
+    transform: scale(0.98);
+}
+
+.confirm-payment-button span:first-child {
+    text-align: center;
+}
+
+.confirm-payment-arrow {
+    position: absolute;
+
+    right: 15px;
+
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+
+    line-height: 1;
+}
+
+
+/* =========================================================
+   FOOTER SPACING
+========================================================= */
+
+.footer-value {
+    margin-top: 110px !important;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .fnb-content {
+        width: calc(100% - 70px);
+    }
+
+    .payment-section {
+        grid-template-columns: minmax(0, 1fr) 290px;
+        gap: 18px;
+    }
+
+    .qris-payment-detail {
+        width: calc(100% - 12px);
+        margin-left: 12px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .fnb-content {
+        width: calc(100% - 40px);
+    }
+
+    .fnb-hero {
+        height: 220px;
+        min-height: 220px;
+    }
+
+    .fnb-hero-content {
+        padding-left: 30px;
+    }
+
+    .fnb-hero-content h1 {
+        font-size: 34px;
+    }
+
+    .payment-section {
+        grid-template-columns: 1fr;
+    }
+
+    .payment-order-summary {
+        position: static;
+    }
+
+    .payment-summary-card {
+        max-width: none;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .fnb-content {
+        width: calc(100% - 30px);
+        padding-top: 20px;
+    }
+
+    .fnb-hero {
+        height: 200px;
+        min-height: 200px;
+
+        margin-bottom: 22px;
+    }
+
+    .fnb-hero-content {
+        flex-basis: 55%;
+        width: 55%;
+
+        padding: 24px 0 24px 22px;
+    }
+
+    .fnb-hero-image {
+        flex-basis: 45%;
+        width: 45%;
+    }
+
+    .fnb-hero-content h1 {
+        font-size: 30px;
+    }
+}
+
+/* =========================================================
+   BOOKING SUMMARY
+========================================================= */
+
+.booking-summary-list {
+    width: 100%;
+    margin-top: 0;
+}
+
+
+/* =========================================================
+   PRODUCT ITEM
+========================================================= */
+
+.booking-summary-product {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    min-height: 125px;
+
+    padding: 12px 0;
+
+    border-bottom: 1px solid #c99758;
+}
+
+
+.booking-summary-product-image {
+    width: 105px;
+    height: 90px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 15px;
+}
+
+
+.booking-summary-product-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+.booking-summary-product-info {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    min-width: 0;
+}
+
+
+.booking-summary-product-name {
+    margin: 0;
+
+    color: #171717;
+
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 700;
+
+    line-height: 1.3;
+}
+
+
+.booking-summary-product-price {
+    margin-top: 5px;
+
+    color: #b58a4a;
+
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 600;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   SCHEDULE
+========================================================= */
+
+.booking-summary-schedule {
+    width: 100%;
+
+    padding: 12px 0;
+
+    border-bottom: 0;
+}
+
+
+.booking-summary-schedule-row {
+    display: grid;
+
+    grid-template-columns: 1fr auto;
+
+    align-items: center;
+
+    width: 100%;
+
+    padding: 4px 0;
+}
+
+
+.booking-summary-schedule-label {
+    color: #29231f;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 400;
+
+    line-height: 1.5;
+}
+
+
+.booking-summary-schedule-value {
+    color: #29231f;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 400;
+
+    line-height: 1.5;
+
+    text-align: right;
+}
+
+
+/* =========================================================
+   TOTAL
+========================================================= */
+
+.booking-summary-total {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 10px;
+    padding: 12px 15px;
+
+    border-radius: 6px;
+
+    background: #eadfd4;
+}
+
+
+.booking-summary-total-label {
+    color: #171717;
+
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+.booking-summary-total-value {
+    color: #171717;
+
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   CONFIRM BUTTON
+========================================================= */
+
+.confirm-payment-button {
+    width: 100%;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 14px;
+
+    border: none;
+    border-radius: 7px;
+
+    background: #b58a4a;
+    color: #ffffff;
+
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: background 0.2s ease;
+}
+
+
+.confirm-payment-button:hover {
+    background: #98703b;
+}

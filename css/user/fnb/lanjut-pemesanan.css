@@ -1,0 +1,1112 @@
+/* =========================================================
+   LANJUT PEMESANAN - IB GAMING
+   ========================================================= */
+
+.dashboard-pelanggan {
+    min-height: 100vh;
+    background: #fcf9f7;
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+   ========================================================= */
+
+
+
+.fnb-content {
+    width: calc(100% - 110px);
+    max-width: none;
+    margin: 0 auto;
+    padding-top: 28px;
+    padding-bottom: 40px;
+}
+
+
+/* =========================================================
+   HERO SECTION
+   Mengikuti gaya hero pada pesan-fnb.html
+   ========================================================= */
+
+.fnb-hero {
+    width: 100%;
+    height: 235px;
+    min-height: 235px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: #f7eee4;
+    border-radius: 14px;
+
+    box-sizing: border-box;
+    margin-bottom: 32px;
+}
+
+
+/* =========================================================
+   HERO CONTENT - KIRI
+   ========================================================= */
+
+.fnb-hero-content {
+    flex: 0 0 50%;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 30px 0 30px 40px;
+
+    position: relative;
+    z-index: 2;
+
+    box-sizing: border-box;
+    
+}
+
+
+/* Label */
+
+.fnb-hero-label {
+    margin-bottom: 7px;
+
+    color: #b58a4a;
+
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+    line-height: 1.3;
+
+    text-transform: uppercase;
+}
+
+
+/* Judul */
+
+.fnb-hero-content h1 {
+    margin: 0;
+
+    color: #b58a4a;
+
+    font-family: var(--font-heading);
+    font-size: 40px;
+    font-weight: 700;
+
+    line-height: 0.98;
+    letter-spacing: -0.7px;
+}
+
+
+/* Deskripsi */
+
+.fnb-hero-content p {
+    max-width: 300px;
+
+    margin: 13px 0 0;
+
+    color: #998f82;
+
+    font-family: var(--font-body);
+    font-size: 9px;
+    font-weight: 400;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   HERO IMAGE - KANAN
+   ========================================================= */
+
+.fnb-hero-image {
+    flex: 0 0 50%;
+    width: 50%;
+    height: 100%;
+
+    position: relative;
+
+    display: block;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+}
+
+
+/* Gradient */
+
+.fnb-hero-image::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            #f7eee4 0%,
+            rgba(247, 238, 228, 0.65) 13%,
+            rgba(247, 238, 228, 0) 38%
+        );
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+
+/* Gambar */
+
+.fnb-hero-image img {
+    width: 100% !important;
+    height: 100% !important;
+
+    max-width: none !important;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================================================
+   PAGE HEADER
+   ========================================================= */
+
+.order-page-header {
+    width: 100%;
+    margin-bottom: 22px;
+}
+
+.order-page-heading {
+    padding: 0 2px;
+}
+
+.order-page-label {
+    display: block;
+    margin-bottom: 6px;
+
+    color: #AD7E46;
+
+    font-family: var(--font-body);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+.order-page-heading h1 {
+    margin: 0;
+
+    color: #29231F;
+
+    font-family: var(--font-heading);
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.order-page-heading p {
+    margin-top: 7px;
+
+    color: #857D74;
+
+    font-family: var(--font-body);
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   ORDER DETAIL SECTION
+   ========================================================= */
+
+.order-detail-section {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 320px;
+    align-items: start;
+    gap: 24px;
+}
+
+
+/* =========================================================
+   ORDER LIST
+   ========================================================= */
+
+.order-detail-list {
+    min-width: 0;
+
+    padding: 24px;
+
+    background: #FFFEFA;
+    border: 1px solid #E5DCD0;
+    border-radius: 12px;
+}
+
+
+/* Header */
+
+.order-detail-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    padding-bottom: 18px;
+    border-bottom: 1px solid #E5DCD0;
+}
+
+.order-detail-header h2 {
+    margin: 0;
+
+    color: #29231F;
+
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.order-detail-header p {
+    margin-top: 4px;
+
+    color: #A69E93;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+.order-detail-count {
+    flex-shrink: 0;
+
+    padding: 5px 9px;
+
+    color: #AD7E46;
+
+    background: #F7F1E8;
+    border-radius: 20px;
+
+    font-family: var(--font-body);
+    font-size: 9px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   CHECKOUT ORDER ITEMS
+   ========================================================= */
+
+.checkout-order-items {
+    width: 100%;
+}
+
+
+/* Individual Order */
+
+.checkout-order-item {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    min-height: 94px;
+    padding: 16px 0;
+
+    border-bottom: 1px solid #E5DCD0;
+}
+
+.checkout-order-item:last-child {
+    border-bottom: none;
+}
+
+
+/* Product Image */
+
+.checkout-order-image {
+    width: 76px;
+    height: 76px;
+
+    flex-shrink: 0;
+
+    object-fit: cover;
+
+    background: #F8F5F1;
+    border-radius: 9px;
+}
+
+
+/* Product Information */
+
+.checkout-order-info {
+    min-width: 0;
+    flex: 1;
+}
+
+.checkout-order-info h3 {
+    margin: 0;
+
+    overflow: hidden;
+
+    color: #29231F;
+
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.4;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.checkout-order-price {
+    margin-top: 4px;
+
+    color: #857D74;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 500;
+}
+
+
+/* Note */
+
+.checkout-order-note {
+    margin-top: 5px;
+
+    color: #A69E93;
+
+    font-family: var(--font-body);
+    font-size: 9px;
+    line-height: 1.4;
+
+    font-style: italic;
+}
+
+
+/* =========================================================
+   QUANTITY CONTROL
+   ========================================================= */
+
+.checkout-quantity-control {
+    display: flex;
+    align-items: center;
+
+    width: fit-content;
+    height: 24px;
+
+    margin-top: 8px;
+
+    border: 1px solid #E5DCD0;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.checkout-quantity-control button {
+    width: 24px;
+    height: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: none;
+    background: #FFFEFA;
+
+    color: #29231F;
+
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1;
+
+    cursor: pointer;
+}
+
+.checkout-quantity-control button:hover {
+    background: #F7F1E8;
+}
+
+.checkout-quantity-value {
+    width: 26px;
+    height: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-left: 1px solid #E5DCD0;
+    border-right: 1px solid #E5DCD0;
+
+    color: #29231F;
+
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   DELETE BUTTON
+   ========================================================= */
+
+.checkout-delete-button {
+    width: 28px;
+    height: 28px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+}
+
+.checkout-delete-button img {
+    width: 15px;
+    height: 15px;
+
+    object-fit: contain;
+
+    opacity: 0.65;
+}
+
+.checkout-delete-button:hover {
+    background: #F7F1E8;
+    border-radius: 5px;
+}
+
+.checkout-delete-button:hover img {
+    opacity: 1;
+}
+
+
+/* =========================================================
+   EMPTY STATE
+   ========================================================= */
+
+.checkout-empty {
+    display: none;
+
+    padding: 45px 20px;
+
+    text-align: center;
+}
+
+.checkout-empty.active {
+    display: block;
+}
+
+.checkout-empty img {
+    width: 38px;
+    height: 38px;
+
+    margin: 0 auto 12px;
+
+    opacity: 0.55;
+}
+
+.checkout-empty h3 {
+    margin: 0;
+
+    color: #29231F;
+
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.checkout-empty p {
+    margin-top: 5px;
+
+    color: #A69E93;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   TAMBAH MENU LAIN
+   ========================================================= */
+
+.add-more-menu-button {
+    width: 100%;
+    min-height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+
+    margin-top: 18px;
+
+    border: 1px dashed #D8CFC3;
+    border-radius: 7px;
+
+    background: transparent;
+
+    color: #AD7E46;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 600;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.add-more-menu-button:hover {
+    background: #F7F1E8;
+    border-color: #AD7E46;
+}
+
+.add-more-menu-icon {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+
+/* Empty State Button */
+
+.empty-add-menu-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 110px;
+    height: 32px;
+
+    margin-top: 14px;
+    padding: 0 14px;
+
+    border: 1px solid #AD7E46;
+    border-radius: 6px;
+
+    background: #AD7E46;
+
+    color: #FFFFFF;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.empty-add-menu-button:hover {
+    background: #98703B;
+    border-color: #98703B;
+}
+
+
+/* =========================================================
+   SUMMARY
+   ========================================================= */
+
+.order-detail-summary {
+    width: 100%;
+
+    position: sticky;
+    top: 120px;
+}
+
+.summary-card {
+    width: 100%;
+
+    padding: 22px;
+
+    background: #FFFEFA;
+    border: 1px solid #E5DCD0;
+    border-radius: 12px;
+}
+
+
+/* Summary Header */
+
+.summary-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-bottom: 16px;
+
+    border-bottom: 1px solid #E5DCD0;
+}
+
+.summary-label {
+    display: block;
+    margin-bottom: 4px;
+
+    color: #AD7E46;
+
+    font-family: var(--font-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.summary-card-header h2 {
+    margin: 0;
+
+    color: #29231F;
+
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.summary-card-header img {
+    width: 24px;
+    height: 24px;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   NOMOR MEJA
+   ========================================================= */
+
+.table-number-field {
+    padding: 17px 0;
+
+    border-bottom: 1px solid #E5DCD0;
+}
+
+.table-number-field label {
+    display: block;
+    margin-bottom: 7px;
+
+    color: #29231F;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.table-number-field input {
+    width: 100%;
+    height: 36px;
+
+    padding: 0 11px;
+
+    border: 1px solid #E5DCD0;
+    border-radius: 6px;
+
+    background: #FFFEFA;
+
+    color: #29231F;
+
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 500;
+
+    outline: none;
+
+    transition: border-color 0.2s ease;
+}
+
+.table-number-field input::placeholder {
+    color: #B1A89D;
+}
+
+.table-number-field input:focus {
+    border-color: #AD7E46;
+}
+
+.table-number-field p {
+    margin-top: 6px;
+
+    color: #A69E93;
+
+    font-family: var(--font-body);
+    font-size: 8px;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   SUMMARY ITEMS
+   ========================================================= */
+
+.summary-items {
+    padding: 15px 0;
+
+    border-bottom: 1px solid #E5DCD0;
+}
+
+.summary-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+}
+
+.summary-row + .summary-row {
+    margin-top: 9px;
+}
+
+.summary-row span {
+    color: #857D74;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.summary-row strong {
+    color: #29231F;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   TOTAL
+   ========================================================= */
+
+.summary-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding: 16px 0;
+}
+
+.summary-total span {
+    color: #29231F;
+
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.summary-total strong {
+    color: #AD7E46;
+
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   PAYMENT BUTTON
+   ========================================================= */
+
+.continue-payment-button {
+    width: 100%;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    padding: 0 13px;
+
+    border: 1px solid #AD7E46;
+    border-radius: 6px;
+
+    background: #AD7E46;
+
+    color: #FFFFFF;
+
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.continue-payment-button:hover {
+    background: #98703B;
+    border-color: #98703B;
+}
+
+.continue-payment-button span:first-child {
+    text-align: center;
+}
+
+.continue-payment-arrow {
+    position: absolute;
+    right: 13px;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+/* =========================================================
+   FOOTER
+   Footer menggunakan struktur dan class yang sama dengan
+   pesan-fnb.html sehingga shared.css tetap bekerja.
+   ========================================================= */
+
+.footer-value {
+    width: calc(100% - 110px);
+    max-width: none;
+    margin: 120px auto 0;
+    padding: 22px 5px 30px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+
+    border-top: 1px solid #E4DBCF;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .fnb-content {
+        width: calc(100% - 70px);
+    }
+
+    .fnb-hero {
+        padding: 32px 36px;
+    }
+
+    .fnb-hero-image {
+        width: 320px;
+        height: 200px;
+    }
+
+    .order-detail-section {
+        grid-template-columns: minmax(0, 1fr) 290px;
+        gap: 18px;
+    }
+
+    .summary-card {
+        padding: 19px;
+    }
+
+    .footer-value {
+        width: calc(100% - 70px);
+    }
+}
+
+
+@media (max-width: 900px) {
+
+    .fnb-content {
+        width: calc(100% - 50px);
+    }
+
+    .fnb-hero {
+        min-height: 240px;
+        padding: 28px 30px;
+    }
+
+    .fnb-hero-content h1 {
+        font-size: 32px;
+    }
+
+    .fnb-hero-image {
+        width: 280px;
+        height: 180px;
+    }
+
+    .order-detail-section {
+        grid-template-columns: 1fr;
+    }
+
+    .order-detail-summary {
+        position: static;
+    }
+
+    .summary-card {
+        max-width: none;
+    }
+
+    .footer-value {
+        width: calc(100% - 50px);
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 25px;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .fnb-content {
+        width: calc(100% - 36px);
+        padding-top: 20px;
+    }
+
+    .fnb-hero {
+        min-height: auto;
+
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 20px;
+
+        padding: 25px;
+    }
+
+    .fnb-hero-content {
+        max-width: none;
+    }
+
+    .fnb-hero-content h1 {
+        font-size: 29px;
+    }
+
+    .fnb-hero-content p {
+        font-size: 11px;
+    }
+
+    .fnb-hero-image {
+        width: 100%;
+        height: 190px;
+    }
+
+    .order-page-heading h1 {
+        font-size: 24px;
+    }
+
+    .order-detail-list {
+        padding: 18px;
+    }
+
+    .checkout-order-image {
+        width: 68px;
+        height: 68px;
+    }
+
+    .footer-value {
+        width: calc(100% - 36px);
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .fnb-content {
+        width: calc(100% - 24px);
+        padding-top: 15px;
+    }
+
+    .fnb-hero {
+        padding: 20px;
+        border-radius: 11px;
+    }
+
+    .fnb-hero-label {
+        font-size: 8px;
+    }
+
+    .fnb-hero-content h1 {
+        font-size: 25px;
+    }
+
+    .fnb-hero-content p {
+        font-size: 10px;
+        line-height: 1.6;
+    }
+
+    .fnb-hero-image {
+        height: 160px;
+    }
+
+    .order-page-heading h1 {
+        font-size: 22px;
+    }
+
+    .order-page-heading p {
+        font-size: 10px;
+    }
+
+    .order-detail-list {
+        padding: 15px;
+        border-radius: 9px;
+    }
+
+    .order-detail-header h2 {
+        font-size: 13px;
+    }
+
+    .order-detail-header p {
+        font-size: 9px;
+    }
+
+    .checkout-order-item {
+        gap: 10px;
+        padding: 13px 0;
+    }
+
+    .checkout-order-image {
+        width: 60px;
+        height: 60px;
+    }
+
+    .checkout-order-info h3 {
+        font-size: 11px;
+    }
+
+    .checkout-order-price {
+        font-size: 9px;
+    }
+
+    .checkout-delete-button {
+        width: 25px;
+        height: 25px;
+    }
+
+    .checkout-delete-button img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .summary-card {
+        padding: 17px;
+        border-radius: 9px;
+    }
+
+    .footer-value {
+        width: calc(100% - 24px);
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-top: 80px;
+    }
+}
