@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Owner - Laporan Booking | IB Gaming</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Dashboard -->
+    <link rel="stylesheet" href="../../css/css-owner/laporan-boking.css">
+</head>
+<body class="dashboard-body">
+
+    <!-- Overlay Gelap Menu Mobile -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="dashboard-layout">
+
+        <!-- ==============================================
+             SIDEBAR NAVIGASI
+        =============================================== -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-top">
+                <div class="brand-wrapper">
+                    <a href="../../index.html" class="brand-link">
+                        <img src="../../assets/Icon/Logo.svg" alt="IB Gaming" class="brand-logo">
+                        <div class="brand-text">
+                            <h2>IB GAMING</h2>
+                            <p>PLAY &bull; EAT &bull; ENJOY</p>
+                        </div>
+                    </a>
+                    <!-- Tombol Tutup Sidebar di HP -->
+                    <button type="button" class="btn-close-sidebar" id="btnCloseSidebar" aria-label="Tutup Menu">
+                        &times;
+                    </button>
+                </div>
+
+                <nav class="sidebar-nav">
+                    <span class="nav-category">Laporan Operasional PlayStation</span>
+                    <ul class="nav-list">
+                        <li>
+                            <a href="../html-owner/laporan-sewa-ps.html" class="nav-link">
+                                <img src="../../assets/Icon/Game.svg" alt="" class="nav-icon">
+                                <span>Laporan Sewa PS</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../html-owner/laporan-fnb.html" class="nav-link">
+                                <img src="../../assets/Icon/Food Icon.svg" alt="" class="nav-icon">
+                                <span>Laporan F &amp; B</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../html-owner/laporan-booking.html" class="nav-link active">
+                                <img src="../../assets/Icon/Controller Icon.svg" alt="" class="nav-icon">
+                                <span>Laporan Booking</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../html-owner/laporan-denda.html" class="nav-link">
+                                <img src="../../assets/Icon/Notif.svg" alt="" class="nav-icon">
+                                <span>Laporan Denda</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="sidebar-bottom">
+                <a href="../auth/login.html" class="logout-link">
+                    <img src="../../assets/Icon/Logout.svg" alt="" class="logout-icon">
+                    <span>Logout</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- ==============================================
+             MAIN WRAPPER (AREA KANAN)
+        =============================================== -->
+        <div class="main-wrapper">
+
+            <!-- Topbar Header Putih Bersih -->
+            <header class="topbar">
+                <button type="button" class="btn-hamburger" id="btnOpenSidebar" aria-label="Buka Menu">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+
+                <div class="topbar-actions">
+                    <button type="button" class="btn-notif" aria-label="Notifikasi">
+                        <img src="../../assets/Icon/Notif.svg" alt="Notifikasi">
+                    </button>
+
+                    <div class="owner-pill">
+                        <div class="owner-avatar">
+                            <img src="../../assets/Icon/User-gold.svg" alt="Foto Profil">
+                        </div>
+                        <div class="owner-details">
+                            <span class="owner-name">Owner</span>
+                            <span class="owner-role">Business Owner</span>
+                        </div>
+                        <img src="../../assets/Icon/Panah.svg" alt="" class="owner-dropdown">
+                    </div>
+                </div>
+            </header>
+
+            <!-- Konten Halaman -->
+            <main class="page-content">
+
+                <!-- Heading Judul Halaman -->
+                <section class="banner-heading">
+                    <div class="banner-icon">
+                        <img src="../../assets/Icon/Keranjang.svg" alt="Icon Booking">
+                    </div>
+                    <div class="banner-info">
+                        <h1>Laporan Booking</h1>
+                        <p>Ringkasan Data pemesanan Playstation IB Gaming</p>
+                    </div>
+                </section>
+
+                <!-- 4 Kartu Metrik KPI Sesuai Desain Booking -->
+                <section class="summary-cards booking-grid">
+                    <!-- Kartu 1: Total Pendapatan Booking -->
+                    <article class="stat-card">
+                        <div class="stat-icon-box">
+                            <img src="../../assets/Icon/Keranjang.svg" alt="">
+                        </div>
+                        <div class="stat-meta">
+                            <span class="stat-label">Total Pendapatan Booking</span>
+                            <strong class="stat-number">Rp 3.250.000</strong>
+                            <span class="stat-badge">+12% dari bulan lalu</span>
+                        </div>
+                    </article>
+
+                    <!-- Kartu 2: Jumlah Booking -->
+                    <article class="stat-card">
+                        <div class="stat-icon-box">
+                            <img src="../../assets/Icon/Keranjang.svg" alt="">
+                        </div>
+                        <div class="stat-meta">
+                            <span class="stat-label">Jumlah Booking</span>
+                            <strong class="stat-number">33</strong>
+                            <span class="stat-badge">+8% dari bulan lalu</span>
+                        </div>
+                    </article>
+
+                    <!-- Kartu 3: Booking Disetujui -->
+                    <article class="stat-card">
+                        <div class="stat-icon-box border-icon-success">
+                            <span class="symbol-icon check">&#10003;</span>
+                        </div>
+                        <div class="stat-meta">
+                            <span class="stat-label">Booking Disetujui</span>
+                            <strong class="stat-number">28</strong>
+                        </div>
+                    </article>
+
+                    <!-- Kartu 4: Booking Ditolak -->
+                    <article class="stat-card">
+                        <div class="stat-icon-box border-icon-danger">
+                            <span class="symbol-icon times">&#10005;</span>
+                        </div>
+                        <div class="stat-meta">
+                            <span class="stat-label">Booking Ditolak</span>
+                            <strong class="stat-number">5</strong>
+                        </div>
+                    </article>
+                </section>
+
+                <!-- Section Grafik Pendapatan Booking -->
+                <section class="content-box chart-box">
+                    <header class="box-header">
+                        <div class="box-title-wrap">
+                            <img src="../../assets/Icon/Bintang.svg" alt="" class="box-ico">
+                            <div>
+                                <h2>Grafik Pendapatan Booking</h2>
+                                <p>Pendapatan Booking per minggu pada bulan yang dipilih</p>
+                            </div>
+                        </div>
+
+                        <div class="box-select">
+                            <select id="filterBulan" aria-label="Pilih Periode Bulan">
+                                <option value="2026-10" selected>Oktober 2026</option>
+                                <option value="2026-09">September 2026</option>
+                            </select>
+                        </div>
+                    </header>
+
+                    <div class="chart-canvas">
+                        <div class="bars-flex">
+                            <div class="bar-col">
+                                <span class="bar-price">Rp 500.000</span>
+                                <div class="bar-fill bar-booking-1"></div>
+                                <span class="bar-date">Minggu 1</span>
+                            </div>
+
+                            <div class="bar-col">
+                                <span class="bar-price">Rp 650.000</span>
+                                <div class="bar-fill bar-booking-2"></div>
+                                <span class="bar-date">Minggu 2</span>
+                            </div>
+
+                            <div class="bar-col">
+                                <span class="bar-price">Rp 800.000</span>
+                                <div class="bar-fill bar-booking-3"></div>
+                                <span class="bar-date">Minggu 3</span>
+                            </div>
+
+                            <div class="bar-col">
+                                <span class="bar-price">Rp 550.000</span>
+                                <div class="bar-fill bar-booking-4"></div>
+                                <span class="bar-date">Minggu 4</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section Tabel Data Transaksi Booking -->
+                <section class="content-box table-box">
+                    <header class="box-header">
+                        <div class="box-title-wrap">
+                            <img src="../../assets/Icon/Bintang.svg" alt="" class="box-ico">
+                            <h2>Data Transaksi Booking</h2>
+                        </div>
+                        <button type="button" class="btn-pdf-export">Export PDF</button>
+                    </header>
+
+                    <div class="table-scroll">
+                        <table class="report-table">
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>Tanggal Booking</th>
+                                    <th>Nama Pelanggan</th>
+                                    <th>Unit</th>
+                                    <th>Jenis Unit</th>
+                                    <th>Harga</th>
+                                    <th>Total</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>10 Okt 2026, 10:15</td>
+                                    <td>Kimi Antonelli</td>
+                                    <td>PS 01</td>
+                                    <td>PS 3</td>
+                                    <td>Rp 30.000</td>
+                                    <td>Rp 30.000</td>
+                                    <td><span class="status-pill">Selesai</span></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>10 Okt 2026, 10:15</td>
+                                    <td>Lyry Antonelli</td>
+                                    <td>PS &amp; TV 02</td>
+                                    <td>PS 4</td>
+                                    <td>Rp 40.000 + Rp 40.000</td>
+                                    <td>Rp 80.000</td>
+                                    <td><span class="status-pill">Selesai</span></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>11 Okt 2026, 10:15</td>
+                                    <td>Maxi Antonelli</td>
+                                    <td>PS 03</td>
+                                    <td>PS 3</td>
+                                    <td>Rp 30.000</td>
+                                    <td>Rp 30.000</td>
+                                    <td><span class="status-pill">Selesai</span></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>12 Okt 2026, 10:15</td>
+                                    <td>Marcel Nestle</td>
+                                    <td>PS 04</td>
+                                    <td>PS 4</td>
+                                    <td>Rp 40.000</td>
+                                    <td>Rp 40.000</td>
+                                    <td><span class="status-pill">Selesai</span></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>12 Okt 2026, 10:15</td>
+                                    <td>Lucien Moreau</td>
+                                    <td>PS &amp; TV 05</td>
+                                    <td>PS 4</td>
+                                    <td>Rp 40.000 + Rp 40.000</td>
+                                    <td>Rp 80.000</td>
+                                    <td><span class="status-pill">Selesai</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+            </main>
+
+            <!-- Footer Fitur Highlight -->
+            <footer class="footer-badges">
+                <div class="badge-item">
+                    <img src="../../assets/Icon/Game.svg" alt="">
+                    <div>
+                        <h4>Premium Equipment</h4>
+                        <p>PlayStation terbaru &amp; berkualitas</p>
+                    </div>
+                </div>
+
+                <div class="badge-item">
+                    <img src="../../assets/Icon/Food Icon.svg" alt="">
+                    <div>
+                        <h4>Delicious Food &amp; Drinks</h4>
+                        <p>Pilihan menu terbaik</p>
+                    </div>
+                </div>
+
+                <div class="badge-item">
+                    <img src="../../assets/Icon/Bintang.svg" alt="">
+                    <div>
+                        <h4>Comfortable Space</h4>
+                        <p>Suasana nyaman &amp; modern</p>
+                    </div>
+                </div>
+
+                <div class="badge-item">
+                    <img src="../../assets/Icon/People Icon.svg" alt="">
+                    <div>
+                        <h4>Friendly Support</h4>
+                        <p>Selalu siap membantu</p>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+    <!-- Toggle Drawer Sidebar di HP -->
+    <script>
+        const btnOpen = document.getElementById('btnOpenSidebar');
+        const btnClose = document.getElementById('btnCloseSidebar');
+        const sidebar = document.getElementById('sidebar');
+        const overlay = document.getElementById('sidebarOverlay');
+
+        function toggleMenu() {
+            sidebar.classList.toggle('active');
+            overlay.classList.toggle('active');
+            document.body.classList.toggle('no-scroll');
+        }
+
+        if (btnOpen) btnOpen.addEventListener('click', toggleMenu);
+        if (btnClose) btnClose.addEventListener('click', toggleMenu);
+        if (overlay) overlay.addEventListener('click', toggleMenu);
+    </script>
+</body>
+</html>
