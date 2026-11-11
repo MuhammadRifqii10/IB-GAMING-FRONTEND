@@ -1,1439 +1,436 @@
-/* ============================================
-   REGISTER PAGE
-============================================ */
+/* =========================================================
+   REGISTER PAGE - IB GAMING (EXACT DESIGN & FULL RESPONSIVE)
+   File: css/auth/register.css
+========================================================= */
 
-.register-page {
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+    --bg-page: #fbf7ee;          /* Warna krem latar belakang */
+    --bg-outer-card: #f6efe2;    /* Warna krem wadah kartu */
+    --bg-white: #ffffff;
+    --text-primary: #1e1e1e;
+    --text-muted: #8c857b;
+    --gold-main: #b38856;        /* Warna cokelat keemasan */
+    --gold-hover: #9c7344;
+    --border-input: #ebe4d5;
+    
+    --font-heading: 'Playfair Display', serif;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+    
+    --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ----------------- Reset Dasar ----------------- */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body.register-body {
     width: 100%;
     min-height: 100vh;
-
+    background-color: var(--bg-page);
+    font-family: var(--font-sans);
+    color: var(--text-primary);
     display: flex;
     align-items: center;
     justify-content: center;
-
-    padding: 48px;
+    padding: 2.5rem 1.5rem;
+    -webkit-font-smoothing: antialiased;
 }
 
+img, svg {
+    display: block;
+    max-width: 100%;
+}
 
-/* ============================================
-   REGISTER CONTAINER
-============================================ */
-
-.register-container {
+/* ----------------- Layout Container Utama ----------------- */
+.register-wrapper {
     width: 100%;
-    max-width: 1480px;
-
-    display: grid;
-    grid-template-columns: 56.7% 43.3%;
-
-    background-color: var(--container-color);
-
-    border: 1px solid #EDE3D3;
-    border-radius: 40px;
-
-    overflow: hidden;
-
-    box-shadow:
-        0 30px 90px -20px rgba(145, 124, 96, 0.18);
+    max-width: 1220px;
+    margin: 0 auto;
 }
 
+.register-card {
+    background-color: var(--bg-outer-card);
+    border-radius: 40px;
+    padding: 3.5rem 4.5rem;
+    display: grid;
+    grid-template-columns: 1.15fr 1.05fr;
+    gap: 3.5rem;
+    align-items: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03);
+}
 
-/* ============================================
-   LEFT SECTION / HERO
-============================================ */
-
-.register-hero {
-    min-width: 0;
-
+/* =========================================================
+   SISI KIRI: BRANDING & HEADLINE
+========================================================= */
+.brand-side {
     display: flex;
     flex-direction: column;
-
-    padding: 64px;
-
-    background-color: var(--container-color);
+    justify-content: space-between;
+    min-height: 520px; /* Posisi terkunci rapi agar judul naik ke atas */
+    padding-top: 0.5rem;
 }
 
+/* Logo */
+.brand-top {
+    margin-bottom: 2rem;
+}
 
-/* ============================================
-   BRANDING
-============================================ */
-
-.hero-header {
-    display: flex;
+.brand-link {
+    display: inline-flex;
     align-items: center;
+    gap: 0.85rem;
+    text-decoration: none;
+    color: inherit;
 }
 
 .brand-logo {
-    display: inline-flex;
-    align-items: center;
-
-    gap: 14px;
-}
-
-.brand-logo img {
-    width: 40px;
-    height: 40px;
-
-    object-fit: contain;
+    width: 32px;
+    height: auto;
 }
 
 .brand-text h2 {
-    font-family: var(--font-heading);
-
-    font-size: 24px;
+    font-size: 0.95rem;
     font-weight: 700;
-
-    letter-spacing: 5.28px;
-    line-height: 1;
-
-    color: #231F1C;
+    letter-spacing: 0.18em;
+    color: #1e1e1e;
 }
 
 .brand-text p {
-    margin-top: 7px;
-
-    font-family: var(--font-body);
-
-    font-size: 9px;
-    font-weight: 600;
-
-    letter-spacing: 3.42px;
-
-    color: var(--primary-color);
+    font-size: 0.58rem;
+    letter-spacing: 0.22em;
+    color: var(--text-muted);
 }
 
-
-/* ============================================
-   HERO CONTENT
-============================================ */
-
+/* Headline Hero (Create Your Account) */
 .hero-content {
-    width: 100%;
-    max-width: 512px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    gap: 16px;
-
-    padding-top: 16px;
-
-    margin-top: 45px;
+    margin: 0 0 auto 0; /* Menempel dekat dengan logo atas */
+    padding-top: 0.5rem;
 }
 
 .hero-title {
     font-family: var(--font-heading);
-
-    font-size: 56px;
-    font-weight: 500;
-
-    line-height: 1;
-
-    letter-spacing: -1.4px;
-
-    color: #221E1A;
+    font-size: 2.85rem;    /* Ukuran seimbang, tidak terlalu raksasa */
+    font-weight: 600;       /* Semi-bold elegan, tidak terlalu tebal */
+    line-height: 1.15;
+    color: var(--text-primary);
+    letter-spacing: -0.02em;
+    margin-bottom: 1.1rem;
 }
 
-.hero-title span {
+.highlight-italic {
+    font-family: var(--font-heading);
     font-style: italic;
-    font-weight: 400;
-
-    color: var(--primary-color);
+    font-weight: 400;       /* Ramping dan halus sesuai desain */
+    color: var(--gold-main);
+    display: inline-block;
+    margin-top: 0.2rem;
 }
 
 .hero-description {
-    max-width: 448px;
-
-    font-family: var(--font-body);
-
-    font-size: 16px;
-    font-weight: 400;
-
-    line-height: 24px;
-
-    color: #6D665E;
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    max-width: 380px;
 }
 
-
-/* ============================================
-   HERO SPACER
-============================================ */
-
-.hero-spacer {
-    width: 100%;
-    min-height: 280px;
-}
-
-
-/* ============================================
-   FEATURE FOOTER
-============================================ */
-
-.hero-features {
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    gap: 25px;
-
-    padding-top: 12px;
-
-    margin-top: auto;
+/* 3 Fitur Bawah */
+.features-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding-top: 2rem;
 }
 
 .feature-item {
-    min-width: 0;
-
     display: flex;
     align-items: flex-start;
-
-    gap: 10px;
-
-    flex: 1;
+    gap: 0.65rem;
 }
 
 .feature-icon {
-    width: 28px;
-    height: 30px;
-
+    width: 18px;
+    height: 18px;
     object-fit: contain;
-
-    flex-shrink: 0;
-}
-
-.feature-info {
-    min-width: 0;
-
-    display: flex;
-    flex-direction: column;
-
-    gap: 1px;
+    margin-top: 2px;
 }
 
 .feature-info h3 {
-    font-family: var(--font-body);
-
-    font-size: 12px;
-    font-weight: 600;
-
-    line-height: 15px;
-
-    white-space: nowrap;
-
-    color: #292522;
+    font-size: 0.76rem;
+    font-weight: 700;
+    margin-bottom: 0.15rem;
+    color: var(--text-primary);
 }
 
 .feature-info p {
-    font-family: var(--font-body);
-
-    font-size: 11px;
-    font-weight: 400;
-
-    line-height: 16px;
-
-    white-space: nowrap;
-
-    color: #857D74;
+    font-size: 0.68rem;
+    color: var(--text-muted);
 }
 
-
-/* ============================================
-   RIGHT SECTION / REGISTER
-============================================ */
-
-.register-section {
-    min-width: 0;
-
+/* =========================================================
+   SISI KANAN: AUTH CARD FORM PUTIH
+========================================================= */
+.form-side {
     display: flex;
-    align-items: center;
-    justify-content: center;
-
-    padding: 48px;
-
-    background-color: var(--container-color);
+    justify-content: flex-end;
 }
 
-
-/* ============================================
-   REGISTER CARD
-============================================ */
-
-.register-card {
-    width: 100%;
-    max-width: 560px;
-
-    display: flex;
-    flex-direction: column;
-
-    gap: 28px;
-
-    padding: 40px;
-
-    background-color: var(--card-color);
-
-    border: 1px solid rgba(237, 227, 211, 0.9);
+.auth-box {
+    background-color: var(--bg-white);
     border-radius: 32px;
-
-    box-shadow:
-        0 20px 60px -15px rgba(150, 130, 105, 0.15);
+    padding: 3rem 2.6rem;
+    width: 100%;
+    max-width: 480px;
+    box-shadow: 0 15px 45px rgba(179, 136, 86, 0.08);
 }
 
-
-/* ============================================
-   REGISTER HEADER
-============================================ */
-
-.register-header {
-    display: flex;
-    flex-direction: column;
-
-    gap: 4px;
+/* Header Form */
+.auth-header {
+    margin-bottom: 1.6rem;
 }
 
-.register-label {
-    font-family: var(--font-body);
-
-    font-size: 12px;
+.auth-badge {
+    display: inline-block;
+    font-size: 0.75rem;
     font-weight: 700;
-
-    line-height: 16px;
-
-    letter-spacing: 3.12px;
-
-    color: var(--primary-color);
+    letter-spacing: 0.18em;
+    color: var(--gold-main);
+    margin-bottom: 0.4rem;
 }
 
-.register-description {
-    font-family: var(--font-body);
-
-    font-size: 14px;
-    font-weight: 400;
-
-    line-height: 20px;
-
-    color: #736C63;
+.auth-subtitle {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    line-height: 1.45;
 }
 
-
-/* ============================================
-   REGISTER FORM
-============================================ */
-
-.register-form {
-    width: 100%;
-
-    display: flex;
-    flex-direction: column;
-
-    gap: 16px;
-}
-
+/* Grid Baris Input (2 Kolom) */
 .form-row {
-    width: 100%;
-
-    display: flex;
-    align-items: flex-start;
-
-    gap: 14px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.9rem;
 }
 
 .form-group {
-    min-width: 0;
-
-    flex: 1;
-
-    display: flex;
-    flex-direction: column;
-
-    gap: 5px;
+    margin-bottom: 1.1rem;
 }
 
 .form-group label {
-    font-family: var(--font-body);
-
-    font-size: 11px;
-    font-weight: 500;
-
-    line-height: 16px;
-
-    color: #7D756C;
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #4b4742;
+    margin-bottom: 0.4rem;
 }
 
-
-/* ============================================
-   INPUT WRAPPER
-============================================ */
-
-.input-wrapper {
-    position: relative;
-
-    width: 100%;
-    min-width: 0;
-
-    height: 64px;
-
+.input-field {
     display: flex;
     align-items: center;
-
-    padding: 0 12px;
-
-    background-color: rgba(250, 247, 242, 0.8);
-
-    border: 1px solid var(--border-color);
+    background-color: #faf7f2;
+    border: 1px solid var(--border-input);
     border-radius: 12px;
-
-    transition: all 0.3s ease;
+    padding: 0.72rem 0.95rem;
+    gap: 0.65rem;
+    transition: var(--transition);
 }
 
-.input-wrapper:focus-within {
-    border-color: var(--primary-color);
-
-    box-shadow:
-        0 0 0 3px rgba(173, 126, 70, 0.10);
+.input-field:focus-within {
+    border-color: var(--gold-main);
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(179, 136, 86, 0.12);
 }
 
-
-/* ============================================
-   INPUT ICON
-============================================ */
-
-.input-icon {
-    width: 16px;
-    height: 16px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    flex-shrink: 0;
-
-    margin-right: 8px;
-}
-
-.input-icon img {
-    width: 16px;
-    height: 16px;
-
-    object-fit: contain;
-}
-
-
-/* ============================================
-   INPUT FIELD
-============================================ */
-
-.input-wrapper input {
-    width: 100%;
-    min-width: 0;
-    height: 100%;
-
-    border: none;
-    outline: none;
-
-    background: transparent;
-
-    font-family: var(--font-body);
-
-    font-size: 12px;
-    font-weight: 400;
-
-    color: var(--text-primary);
-}
-
-.input-wrapper input::placeholder {
-    color: var(--text-muted);
-    opacity: 1;
-}
-
-
-/* ============================================
-   PASSWORD TOGGLE
-============================================ */
-
-.toggle-password {
-    width: 22px;
-    height: 22px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    flex-shrink: 0;
-
-    margin-left: 5px;
-
-    padding: 0;
-
-    border: none;
-
-    background: transparent;
-
-    cursor: pointer;
-}
-
-.toggle-password img {
+.field-icon {
     width: 15px;
     height: 15px;
-
-    object-fit: contain;
+    opacity: 0.6;
+    flex-shrink: 0;
 }
 
-.toggle-password:hover {
-    opacity: 0.7;
-}
-
-
-/* ============================================
-   REGISTER BUTTON
-============================================ */
-
-.register-button {
+.input-field input {
     width: 100%;
-    min-height: 52px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    gap: 10px;
-
     border: none;
-    border-radius: 999px;
-
-    background-color: #A97945;
-    color: #FFFFFF;
-
-    font-family: var(--font-body);
-
-    font-size: 16px;
-    font-weight: 500;
-
-    cursor: pointer;
-
-    box-shadow:
-        0 4px 6px -4px rgba(173, 126, 70, 0.25),
-        0 10px 15px -3px rgba(173, 126, 70, 0.25);
-
-    transition: all 0.3s ease;
-}
-
-.register-button:hover {
-    background-color: var(--primary-dark);
-
-    transform: translateY(-2px);
-}
-
-.register-button:active {
-    transform: translateY(0);
-}
-
-.button-arrow {
-    width: 16px;
-    height: 16px;
-
-    object-fit: contain;
-}
-
-
-/* ============================================
-   REGISTER FOOTER
-============================================ */
-
-.register-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    gap: 4px;
-
-    padding-top: 11px;
-}
-
-.register-footer p {
-    font-family: var(--font-body);
-
-    font-size: 12px;
-    font-weight: 400;
-
-    line-height: 16px;
-
-    color: #7D756B;
-}
-
-.register-footer a {
-    font-family: var(--font-body);
-
-    font-size: 12px;
-    font-weight: 600;
-
-    line-height: 16px;
-
-    color: var(--primary-color);
-
-    transition: color 0.3s ease;
-}
-
-.register-footer a:hover {
-    color: var(--primary-dark);
-}
-
-
-/* ==================================================
-   RESPONSIVE
-   LARGE LAPTOP
-================================================== */
-
-@media screen and (max-width: 1200px) {
-
-    .register-page {
-        padding: 30px;
-    }
-
-    .register-container {
-        grid-template-columns: 52% 48%;
-    }
-
-    .register-hero {
-        padding: 48px;
-    }
-
-    .register-section {
-        padding: 35px;
-    }
-
-    .register-card {
-        padding: 35px 30px;
-    }
-
-    .hero-title {
-        font-size: 48px;
-    }
-
-    .hero-spacer {
-        min-height: 220px;
-    }
-
-    .hero-features {
-        gap: 15px;
-    }
-
-    .feature-info h3 {
-        font-size: 10px;
-    }
-
-    .feature-info p {
-        font-size: 9px;
-    }
-}
-
-
-/* ==================================================
-   TABLET
-================================================== */
-
-@media screen and (max-width: 900px) {
-
-    .register-page {
-        width: 100%;
-
-        padding: 20px;
-    }
-
-    .register-container {
-        width: 100%;
-
-        display: flex;
-        flex-direction: column;
-
-        border-radius: 28px;
-    }
-
-
-    /* ------------------------------------------
-       HERO
-    ------------------------------------------ */
-
-    .register-hero {
-        width: 100%;
-
-        padding: 40px 35px 35px;
-    }
-
-    .hero-content {
-        max-width: 600px;
-
-        margin-top: 35px;
-
-        padding-top: 0;
-    }
-
-    .hero-title {
-        font-size: 42px;
-    }
-
-    .hero-description {
-        max-width: 550px;
-
-        font-size: 14px;
-        line-height: 22px;
-    }
-
-    .hero-spacer {
-        min-height: 120px;
-    }
-
-    .hero-features {
-        display: grid;
-
-        grid-template-columns: repeat(3, 1fr);
-
-        gap: 15px;
-
-        padding-top: 15px;
-    }
-
-    .feature-item {
-        width: 100%;
-
-        min-width: 0;
-    }
-
-    .feature-info h3 {
-        font-size: 10px;
-
-        white-space: normal;
-    }
-
-    .feature-info p {
-        font-size: 9px;
-
-        white-space: normal;
-    }
-
-
-    /* ------------------------------------------
-       REGISTER
-    ------------------------------------------ */
-
-    .register-section {
-        width: 100%;
-
-        padding: 35px;
-    }
-
-    .register-card {
-        width: 100%;
-        max-width: 650px;
-
-        padding: 40px;
-    }
-}
-
-
-/* ==================================================
-   MOBILE
-================================================== */
-
-@media screen and (max-width: 600px) {
-
-    /* ------------------------------------------
-       PAGE
-    ------------------------------------------ */
-
-    .register-page {
-        width: 100%;
-        min-width: 0;
-
-        min-height: 100vh;
-
-        padding: 0;
-
-        display: block;
-    }
-
-
-    /* ------------------------------------------
-       CONTAINER
-    ------------------------------------------ */
-
-    .register-container {
-        width: 100%;
-        min-width: 0;
-
-        min-height: 100vh;
-
-        display: flex;
-        flex-direction: column;
-
-        border: none;
-        border-radius: 0;
-
-        overflow: visible;
-
-        box-shadow: none;
-    }
-
-
-    /* ------------------------------------------
-       HERO
-    ------------------------------------------ */
-
-    .register-hero {
-        width: 100%;
-        min-width: 0;
-
-        padding: 28px 20px 30px;
-
-        display: block;
-    }
-
-
-    /* Logo */
-
-    .hero-header {
-        width: 100%;
-    }
-
-    .brand-logo {
-        gap: 9px;
-    }
-
-    .brand-logo img {
-        width: 34px;
-        height: 34px;
-    }
-
-    .brand-text h2 {
-        font-size: 18px;
-
-        letter-spacing: 3.5px;
-    }
-
-    .brand-text p {
-        margin-top: 5px;
-
-        font-size: 7px;
-
-        letter-spacing: 2.3px;
-    }
-
-
-    /* Hero Content */
-
-    .hero-content {
-        width: 100%;
-        max-width: none;
-
-        margin-top: 30px;
-
-        padding-top: 0;
-
-        gap: 13px;
-    }
-
-    .hero-title {
-        font-size: 32px;
-
-        line-height: 1.1;
-
-        letter-spacing: -0.5px;
-    }
-
-    .hero-description {
-        width: 100%;
-        max-width: none;
-
-        font-size: 12px;
-
-        line-height: 20px;
-    }
-
-
-    /* Spacer */
-
-    .hero-spacer {
-        width: 100%;
-
-        min-height: 60px;
-    }
-
-
-    /* Features */
-
-    .hero-features {
-        width: 100%;
-
-        display: grid;
-
-        grid-template-columns: 1fr 1fr;
-
-        gap: 16px 10px;
-
-        margin-top: 20px;
-
-        padding-top: 0;
-    }
-
-    .feature-item {
-        width: 100%;
-        min-width: 0;
-
-        display: flex;
-        align-items: center;
-
-        gap: 7px;
-    }
-
-    .feature-icon {
-        width: 32px;
-        height: 32px;
-    }
-
-    .feature-info {
-        min-width: 0;
-    }
-
-    .feature-info h3 {
-        font-size: 9px;
-
-        line-height: 12px;
-
-        white-space: normal;
-    }
-
-    .feature-info p {
-        font-size: 8px;
-
-        line-height: 12px;
-
-        white-space: normal;
-    }
-
-
-    /* ------------------------------------------
-       REGISTER SECTION
-    ------------------------------------------ */
-
-    .register-section {
-        width: 100%;
-        min-width: 0;
-
-        padding: 20px 16px 35px;
-
-        display: block;
-    }
-
-
-    /* ------------------------------------------
-       REGISTER CARD
-    ------------------------------------------ */
-
-    .register-card {
-        width: 100%;
-        max-width: none;
-        min-width: 0;
-
-        padding: 30px 20px;
-
-        gap: 24px;
-
-        border-radius: 22px;
-
-        box-shadow:
-            0 10px 30px -10px rgba(150, 130, 105, 0.15);
-    }
-
-
-    /* ------------------------------------------
-       HEADER
-    ------------------------------------------ */
-
-    .register-header {
-        width: 100%;
-
-        gap: 5px;
-    }
-
-    .register-label {
-        font-size: 10px;
-
-        letter-spacing: 2.5px;
-    }
-
-    .register-description {
-        font-size: 11px;
-
-        line-height: 18px;
-    }
-
-
-    /* ------------------------------------------
-       FORM
-    ------------------------------------------ */
-
-    .register-form {
-        width: 100%;
-
-        gap: 16px;
-    }
-
-    .form-row {
-        width: 100%;
-
-        display: flex;
-        flex-direction: column;
-
-        gap: 16px;
-    }
-
-    .form-group {
-        width: 100%;
-        min-width: 0;
-    }
-
-    .form-group label {
-        font-size: 10px;
-    }
-
-
-    /* ------------------------------------------
-       INPUT
-    ------------------------------------------ */
-
-    .input-wrapper {
-        width: 100%;
-
-        height: 54px;
-
-        padding: 0 11px;
-
-        border-radius: 10px;
-    }
-
-    .input-icon {
-        width: 16px;
-        height: 16px;
-
-        margin-right: 8px;
-    }
-
-    .input-icon img {
-        width: 15px;
-        height: 15px;
-    }
-
-    .input-wrapper input {
-        width: 100%;
-        min-width: 0;
-
-        font-size: 11px;
-    }
-
-
-    /* Password eye */
-
-    .toggle-password {
-        width: 21px;
-        height: 21px;
-
-        margin-left: 4px;
-    }
-
-    .toggle-password img {
-        width: 15px;
-        height: 15px;
-    }
-
-
-    /* ------------------------------------------
-       BUTTON
-    ------------------------------------------ */
-
-    .register-button {
-        width: 100%;
-
-        min-height: 52px;
-
-        font-size: 13px;
-    }
-
-    .button-arrow {
-        width: 15px;
-        height: 15px;
-    }
-
-
-    /* ------------------------------------------
-       FOOTER
-    ------------------------------------------ */
-
-    .register-footer {
-        flex-wrap: wrap;
-
-        gap: 3px;
-
-        padding-top: 7px;
-    }
-
-    .register-footer p,
-    .register-footer a {
-        font-size: 10px;
-    }
-}
-
-
-/* ==================================================
-   VERY SMALL MOBILE
-================================================== */
-
-@media screen and (max-width: 380px) {
-
-    .register-hero {
-        padding: 24px 16px 26px;
-    }
-
-    .brand-logo {
-        gap: 8px;
-    }
-
-    .brand-logo img {
-        width: 31px;
-        height: 31px;
-    }
-
-    .brand-text h2 {
-        font-size: 16px;
-
-        letter-spacing: 3px;
-    }
-
-    .brand-text p {
-        font-size: 6px;
-
-        letter-spacing: 2px;
-    }
-
-
-    .hero-content {
-        margin-top: 25px;
-    }
-
-    .hero-title {
-        font-size: 28px;
-    }
-
-    .hero-description {
-        font-size: 11px;
-
-        line-height: 18px;
-    }
-
-    .hero-spacer {
-        min-height: 45px;
-    }
-
-
-    .hero-features {
-        gap: 13px 7px;
-    }
-
-    .feature-item {
-        gap: 6px;
-    }
-
-    .feature-icon {
-        width: 28px;
-        height: 28px;
-    }
-
-    .feature-icon img {
-        width: 19px;
-        height: 19px;
-    }
-
-    .feature-info h3 {
-        font-size: 8px;
-
-        line-height: 11px;
-    }
-
-    .feature-info p {
-        font-size: 7px;
-
-        line-height: 10px;
-    }
-
-
-    /* Register */
-
-    .register-section {
-        padding: 16px 12px 28px;
-    }
-
-    .register-card {
-        padding: 27px 16px;
-
-        gap: 22px;
-
-        border-radius: 19px;
-    }
-
-    .register-label {
-        font-size: 9px;
-
-        letter-spacing: 2.2px;
-    }
-
-    .register-description {
-        font-size: 10px;
-
-        line-height: 17px;
-    }
-
-    .register-form {
-        gap: 14px;
-    }
-
-    .form-row {
-        gap: 14px;
-    }
-
-    .form-group label {
-        font-size: 9px;
-    }
-
-    .input-wrapper {
-        height: 51px;
-    }
-
-    .input-wrapper input {
-        font-size: 10px;
-    }
-
-    .register-button {
-        min-height: 50px;
-
-        font-size: 12px;
-    }
-
-    .register-footer p,
-    .register-footer a {
-        font-size: 9px;
-    }
-}
-
-
-/* ==================================================
-   FORM VALIDATION
-================================================== */
-
-.input-error {
-    border-color: #D9534F !important;
-}
-
-.error-message {
-    display: block;
-
-    margin-top: 4px;
-
-    font-family: var(--font-body);
-
-    font-size: 10px;
-    font-weight: 400;
-
-    line-height: 15px;
-
-    color: #D9534F;
-}
-
-
-/* ==================================================
-   SUCCESS NOTIFICATION MODAL
-================================================== */
-
-.success-modal {
-    position: fixed;
-
-    inset: 0;
-
-    z-index: 9999;
-
-    display: none;
-
-    align-items: center;
-    justify-content: center;
-
-    padding: 20px;
-
-    background-color: rgba(41, 35, 31, 0.45);
-
-    backdrop-filter: blur(4px);
-}
-
-.success-modal.show {
-    display: flex;
-}
-
-.success-modal-card {
-    width: 100%;
-    max-width: 400px;
-
-    padding: 40px 32px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    text-align: center;
-
-    background-color: var(--card-color);
-
-    border: 1px solid #EDE3D3;
-    border-radius: 28px;
-
-    box-shadow:
-        0 20px 60px rgba(80, 60, 40, 0.15);
-
-    animation: modalAppear 0.3s ease;
-}
-
-.success-icon {
-    width: 70px;
-    height: 70px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    margin-bottom: 22px;
-
-    border-radius: 50%;
-
-    background-color: #F5EBDD;
-
-    color: var(--primary-color);
-
-    font-size: 35px;
-    font-weight: 600;
-}
-
-.success-modal-card h2 {
-    margin-bottom: 12px;
-
-    font-family: var(--font-heading);
-
-    font-size: 25px;
-    font-weight: 700;
-
+    background: transparent;
+    outline: none;
+    font-family: var(--font-sans);
+    font-size: 0.82rem;
     color: var(--text-primary);
 }
 
-.success-modal-card p {
-    margin-bottom: 25px;
-
-    font-family: var(--font-body);
-
-    font-size: 13px;
-
-    line-height: 22px;
-
-    color: var(--text-secondary);
+.input-field input::placeholder {
+    color: #b0aba2;
+    font-size: 0.8rem;
 }
 
-.success-modal-card button {
-    width: 100%;
-
-    min-height: 50px;
-
+.btn-eye {
+    background: transparent;
     border: none;
-    border-radius: 999px;
-
-    background-color: #A97945;
-    color: #FFFFFF;
-
-    font-family: var(--font-body);
-
-    font-size: 14px;
-    font-weight: 600;
-
     cursor: pointer;
-
-    transition: all 0.3s ease;
+    padding: 0;
+    display: flex;
+    align-items: center;
 }
 
-.success-modal-card button:hover {
-    background-color: var(--primary-dark);
-
-    transform: translateY(-2px);
+.eye-icon {
+    width: 15px;
+    height: 15px;
+    opacity: 0.5;
+    transition: var(--transition);
 }
 
+.btn-eye:hover .eye-icon,
+.btn-eye.active .eye-icon {
+    opacity: 0.9;
+}
 
-/* ==================================================
-   MODAL ANIMATION
-================================================== */
+/* Tombol Submit */
+.btn-submit {
+    width: 100%;
+    background-color: var(--gold-main);
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    padding: 0.88rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    box-shadow: 0 6px 18px rgba(179, 136, 86, 0.35);
+    margin-top: 0.4rem;
+    transition: var(--transition);
+}
 
-@keyframes modalAppear {
+.btn-submit:hover {
+    background-color: var(--gold-hover);
+    transform: translateY(-1px);
+}
 
-    from {
-        opacity: 0;
+.btn-submit:active {
+    transform: translateY(1px);
+}
 
-        transform:
-            translateY(15px)
-            scale(0.96);
+.submit-arrow {
+    width: 14px;
+    height: 14px;
+    filter: brightness(0) invert(1);
+}
+
+/* Footer Link Login */
+.login-footer {
+    text-align: center;
+    margin-top: 1.4rem;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+}
+
+.login-footer a {
+    color: var(--gold-main);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+    color: var(--gold-hover);
+}
+
+/* =========================================================
+   RESPONSIF MULTI-DEVICE
+========================================================= */
+
+/* Layar Laptop / Komputer Sedang (≤ 1150px) */
+@media (max-width: 1150px) {
+    .register-card {
+        padding: 3rem 2.8rem;
+        gap: 2.5rem;
     }
 
-    to {
-        opacity: 1;
-
-        transform:
-            translateY(0)
-            scale(1);
+    .hero-title {
+        font-size: 2.5rem;
     }
 }
 
-
-/* ==================================================
-   MODAL MOBILE
-================================================== */
-
-@media screen and (max-width: 600px) {
-
-    .success-modal {
-        padding: 16px;
+/* Layar Tablet Portrait (≤ 900px) */
+@media (max-width: 900px) {
+    body.register-body {
+        padding: 1.5rem 1rem;
     }
 
-    .success-modal-card {
+    .register-card {
+        grid-template-columns: 1fr;
+        padding: 2.5rem 2rem;
+        gap: 2.5rem;
+        border-radius: 32px;
+    }
+
+    .brand-side {
+        min-height: auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-content {
+        margin: 1.5rem 0 2rem 0;
+    }
+
+    .hero-description {
+        margin: 0 auto;
+    }
+
+    .features-list {
+        text-align: left;
         width: 100%;
-
-        padding: 32px 22px;
-
-        border-radius: 22px;
+        max-width: 480px;
     }
 
-    .success-icon {
-        width: 60px;
-        height: 60px;
-
-        margin-bottom: 18px;
-
-        font-size: 30px;
+    .form-side {
+        justify-content: center;
     }
 
-    .success-modal-card h2 {
-        font-size: 22px;
+    .auth-box {
+        max-width: 500px;
+        padding: 2.4rem 2rem;
+    }
+}
+
+/* Layar Handphone (≤ 540px) */
+@media (max-width: 540px) {
+    body.register-body {
+        padding: 0.8rem;
     }
 
-    .success-modal-card p {
-        font-size: 11px;
-
-        line-height: 19px;
+    .register-card {
+        padding: 2rem 1.2rem;
+        border-radius: 24px;
+        gap: 2rem;
     }
 
-    .success-modal-card button {
-        min-height: 48px;
+    .hero-title {
+        font-size: 2.2rem;
+    }
 
-        font-size: 13px;
+    .features-list {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+        padding-top: 1rem;
+    }
+
+    .auth-box {
+        padding: 2rem 1.2rem;
+        border-radius: 20px;
+    }
+
+    /* Grid 2 kolom berubah otomatis ke 1 kolom di layar HP */
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
     }
 }

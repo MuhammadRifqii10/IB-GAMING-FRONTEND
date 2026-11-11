@@ -1,319 +1,171 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Login - IB Gaming</title>
 
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="../../css/global.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Login CSS -->
+    <!-- CSS (sesuaikan path relatif sesuai letak file login.html Anda) -->
     <link rel="stylesheet" href="../../css/auth/login.css">
-    
 </head>
+<body class="login-body">
 
-<body>
+    <main class="login-wrapper">
+        <!-- Card Wadah Luar Krem -->
+        <section class="login-card">
 
-    <main class="login-page">
-
-        <div class="login-container">
-
-            <!-- ==========================
-                 LEFT SECTION / HERO
-            =========================== -->
-            <section class="hero-section">
-
-                <!-- Branding -->
-                <header class="hero-header">
-
-                    <a href="../../index.html" class="brand-logo">
-
-                        <img
-                            src="../../assets/Icon/Logo.svg"
-                            alt="IB Gaming Logo"
-                            class="brand-logo-img"
-                        >
-
+            <!-- ==============================================
+                 SISI KIRI: BRANDING & ILUSTRASI
+            =============================================== -->
+            <article class="brand-side">
+                
+                <!-- Logo & Brand Header -->
+                <header class="brand-top">
+                    <a href="../../index.html" class="brand-link">
+                        <img src="../../assets/Icon/Logo.svg" alt="IB Gaming Logo" class="brand-logo">
                         <div class="brand-text">
                             <h2>IB GAMING</h2>
-                            <p>PLAY · EAT · ENJOY</p>
+                            <p>PLAY &bull; EAT &bull; ENJOY</p>
                         </div>
-
                     </a>
-
                 </header>
-
 
                 <!-- Hero Content -->
                 <div class="hero-content">
-
-                    <p class="hero-subtitle">
-                        MORE THAN JUST A GAME
-                    </p>
-
-                    <h1 class="hero-title">
-                        Play, Eat, Enjoyy
-                    </h1>
-
-                    <!-- Ilustrasi Gamepad -->
-                    <div class="hero-illustration">
-
-                        <img
-                            src="../../assets/Icon/Login Icon.svg"
-                            alt="Ilustrasi Login IB Gaming"
-                            class="login-illustration"
-                        >
-
+                    <span class="hero-badge">MORE THAN JUST A GAME</span>
+                    <h1 class="hero-title">Play, Eat, Enjoyy</h1>
+                    
+                    <!-- Menggunakan file Login Icon.svg dari folder assets/Icon/ -->
+                    <div class="illustration-box">
+                        <img src="../../assets/Icon/Login Icon.svg" alt="Ilustrasi Controller IB Gaming" class="hero-illustration">
                     </div>
-
                 </div>
 
-
-                <!-- Feature Points -->
-                <div class="hero-features">
-
-                    <article class="feature-item">
-
-                        <div class="feature-icon">
-                            <img
-                                src="../../assets/Icon/PlayStation Logo.svg"
-                                alt="PlayStation"
-                            >
-                        </div>
-
+                <!-- 3 Fitur Bawah -->
+                <footer class="features-list">
+                    <div class="feature-item">
+                        <img src="../../assets/Icon/PlayStation Logo.svg" alt="" class="feature-icon">
                         <div class="feature-info">
-                            <h2>PlayStation Rental</h2>
+                            <h3>PlayStation Rental</h3>
                             <p>Play anytime</p>
                         </div>
+                    </div>
 
-                    </article>
-
-
-                    <article class="feature-item">
-
-                        <div class="feature-icon">
-                            <img
-                                src="../../assets/Icon/Food Icon.svg"
-                                alt="Food and Beverages"
-                            >
-                        </div>
-
+                    <div class="feature-item">
+                        <img src="../../assets/Icon/Food Icon.svg" alt="" class="feature-icon">
                         <div class="feature-info">
-                            <h2>Food &amp; Beverages</h2>
+                            <h3>Food &amp; Beverages</h3>
                             <p>Tasty and fresh</p>
                         </div>
+                    </div>
 
-                    </article>
-
-
-                    <article class="feature-item">
-
-                        <div class="feature-icon">
-                            <img
-                                src="../../assets/Icon/Bintang.svg"
-                                alt="Comfortable Space"
-                            >
-                        </div>
-
+                    <div class="feature-item">
+                        <img src="../../assets/Icon/Bintang.svg" alt="" class="feature-icon">
                         <div class="feature-info">
-                            <h2>Comfortable Space</h2>
+                            <h3>Comfortable Space</h3>
                             <p>Relax and enjoy</p>
                         </div>
+                    </div>
+                </footer>
 
-                    </article>
+            </article>
 
-                </div>
-
-            </section>
-
-
-            <!-- RIGHT SECTION / LOGIN -->
-            <section class="login-section">
-
-                <div class="login-card">
-
-                    <!-- Login Header -->
-                    <header class="login-header">
-
-                        <div class="login-brand">
-
-                            <div class="login-brand-icon">
-
-                                <img
-                                    src="../../assets/Icon/Logo.svg"
-                                    alt="IB Gaming Logo"
-                                >
-
-                            </div>
-
-                            <h2>IB GAMING</h2>
-                            <p>PLAY · EAT · ENJOY</p>
-
-                        </div>
-
-
-                        <div class="login-heading">
-                            <h1>Welcome Back</h1>
-                        </div>
-
+            <!-- ==============================================
+                 SISI KANAN: FORM LOGIN PUTIH
+            =============================================== -->
+            <aside class="form-side">
+                <div class="auth-box">
+                    
+                    <!-- Header Form -->
+                    <header class="auth-header">
+                        <img src="../../assets/Icon/Logo.svg" alt="IB Gaming" class="auth-logo">
+                        <span class="auth-brand-name">IB GAMING</span>
+                        <span class="auth-brand-tagline">PLAY &bull; EAT &bull; ENJOY</span>
+                        <h2 class="auth-heading">Welcome Back</h2>
                     </header>
 
-
-                    <!-- Login Form -->
-                    <form class="login-form" id="loginForm">
-
-                        <!-- Email / Username -->
+                    <!-- Form Login -->
+                    <form action="#" method="POST" class="auth-form" id="loginForm">
+                        
+                        <!-- Input Username / Email -->
                         <div class="form-group">
-
-                            <label for="identity">
-                                Email or Username
-                            </label>
-
-                            <div class="input-wrapper">
-
-                                <span class="input-icon-left">
-
-                                    <img
-                                        src="../../assets/Icon/Email.svg"
-                                        alt=""
-                                    >
-
-                                </span>
-
-                                <input
-                                    type="text"
-                                    id="email"
-                                    name="email"
-                                    placeholder="Enter your email or username"
-                                    autocomplete="username"
+                            <label for="username">Email or Username</label>
+                            <div class="input-field">
+                                <img src="../../assets/Icon/Email.svg" alt="" class="field-icon">
+                                <input 
+                                    type="text" 
+                                    id="username" 
+                                    name="username" 
+                                    placeholder="Enter your email or username" 
+                                    autocomplete="username" 
                                     required
                                 >
-
                             </div>
-
                         </div>
 
-
-                        <!-- Password -->
+                        <!-- Input Password -->
                         <div class="form-group">
-
-                            <label for="password">
-                                Password
-                            </label>
-
-                            <div class="input-wrapper">
-
-                                <span class="input-icon-left">
-
-                                    <img
-                                        src="../../assets/Icon/Password.svg"
-                                        alt=""
-                                    >
-
-                                </span>
-
-                                <input
-                                    type="password"
-                                    id="password"
-                                    name="password"
-                                    placeholder="Enter your password"
-                                    autocomplete="current-password"
+                            <label for="password">Password</label>
+                            <div class="input-field">
+                                <img src="../../assets/Icon/Password.svg" alt="" class="field-icon">
+                                <input 
+                                    type="password" 
+                                    id="password" 
+                                    name="password" 
+                                    placeholder="Enter your password" 
+                                    autocomplete="current-password" 
                                     required
                                 >
-
-                                <button
-                                    type="button"
-                                    class="toggle-password"
-                                    data-target="password"
-                                    aria-label="Tampilkan password"
-                                    aria-pressed="false"
-                                >
-
-                                    <img
-                                        src="../../assets/Icon/Mata.svg"
-                                        alt=""
-                                    >
-
+                                <button type="button" class="btn-toggle-eye" id="togglePassword" aria-label="Lihat Password">
+                                    <img src="../../assets/Icon/Mata.svg" alt="" class="eye-icon">
                                 </button>
-
                             </div>
-
                         </div>
-
 
                         <!-- Remember Me & Forgot Password -->
                         <div class="form-options">
-
-                            <label class="remember-option">
-
-                                <input
-                                    type="checkbox"
-                                    name="remember"
-                                    id="rememberMe"
-                                >
-
+                            <label class="remember-label" for="rememberMe">
+                                <input type="checkbox" name="remember" id="rememberMe">
                                 <span>Remember me</span>
-
                             </label>
-
-
-                            <a
-                                href="forgot-password.html"
-                                class="forgot-password"
-                            >
-                                Forgot password?
-                            </a>
-
+                            <a href="forgot-password.html" class="forgot-link">Forgot password?</a>
                         </div>
 
-
-                        <!-- Login Button -->
-                        <button
-                            type="submit"
-                            class="login-button"
-                        >
-
+                        <!-- Tombol Submit -->
+                        <button type="submit" class="btn-submit">
                             <span>Login</span>
-
-                            <span class="button-icon">
-
-                                <img
-                                    src="../../assets/Icon/Panah.svg"
-                                    alt=""
-                                >
-
-                            </span>
-
+                            <img src="../../assets/Icon/Panah.svg" alt="" class="submit-arrow">
                         </button>
 
+                        <!-- Footer Link Registrasi -->
+                        <div class="register-footer">
+                            <p>Don't have an account? <a href="register.html">Register</a></p>
+                        </div>
+
                     </form>
-
-
-                    <!-- Login Footer -->
-                    <footer class="login-footer">
-
-                        <p>
-                            Don't have an account?
-                            <a href="register.html">Register</a>
-                        </p>
-
-                    </footer>
-
                 </div>
+            </aside>
 
-            </section>
-
-        </div>
-
+        </section>
     </main>
 
+    <!-- Script Toggle Password Visibility -->
+    <script>
+        const toggleBtn = document.getElementById('togglePassword');
+        const passwordInput = document.getElementById('password');
 
-    <!-- JavaScript -->
-    <script src="../../js/auth/login.js"></script>
-
+        if (toggleBtn && passwordInput) {
+            toggleBtn.addEventListener('click', function () {
+                const isPassword = passwordInput.getAttribute('type') === 'password';
+                passwordInput.setAttribute('type', isPassword ? 'text' : 'password');
+                this.classList.toggle('active');
+            });
+        }
+    </script>
 </body>
-
 </html>
