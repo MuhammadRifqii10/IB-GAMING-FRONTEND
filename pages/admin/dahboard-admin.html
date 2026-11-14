@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Admin Dashboard IB Gaming"
+    >
+
+    <title>Admin Dashboard - IB Gaming</title>
+
+
+    <!-- =====================================================
+         GLOBAL CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="../../css/global.css"
+    >
+
+
+    <!-- =====================================================
+         ADMIN LAYOUT CSS
+         Sidebar, Header, Footer
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="../../css/admin/admin-layout.css"
+    >
+
+
+    <!-- =====================================================
+         DASHBOARD CSS
+         Khusus isi dashboard
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="../../css/admin/dashboard-admin.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<div class="admin-layout">
+
+
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside class="admin-sidebar">
+
+
+        <!-- =================================================
+             LOGO
+        ================================================== -->
+
+        <div class="admin-logo-wrapper">
+
+    <img
+        src="../../assets/Icon/Logo.svg"
+        alt="IB Gaming"
+        class="admin-logo"
+    >
+
+    <div class="admin-brand-text">
+
+        <p class="admin-brand-name">
+            IB GAMING
+        </p>
+
+        <p class="admin-brand-tagline">
+            PLAY · EAT · ENJOY
+        </p>
+
+    </div>
+
+</div>
+
+
+
+        <!-- =================================================
+             NAVIGATION
+        ================================================== -->
+
+        <nav
+            class="admin-nav"
+            aria-label="Navigasi Admin"
+        >
+
+
+            <!-- =================================================
+                 DASHBOARD
+            ================================================== -->
+
+            <div class="admin-nav-section">
+
+                <ul class="admin-nav-list">
+
+                    <li>
+
+                        <a
+                            href="dashboard.html"
+                            class="admin-nav-link active"
+                            aria-current="page"
+                        >
+
+                            <img
+                                src="../../assets/Icon/Home.svg"
+                                alt=""
+                                class="admin-nav-icon"
+                                aria-hidden="true"
+                            >
+
+                            <span class="admin-nav-text">
+                                Dashboard
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 OPERASIONAL PLAYSTATION
+            ================================================== -->
+
+            <div class="admin-nav-section">
+
+
+                <p class="admin-nav-section-title">
+                    Operasional PlayStation
+                </p>
+
+
+                <ul class="admin-nav-list">
+
+
+                    <!-- Sewa PS -->
+
+                    <li>
+
+                        <a
+                            href="sewa-ps.html"
+                            class="admin-nav-link"
+                        >
+
+                            <img
+                                src="../../assets/Icon/Game.svg"
+                                alt=""
+                                class="admin-nav-icon"
+                                aria-hidden="true"
+                            >
+
+                            <span class="admin-nav-text">
+                                Sewa PS
+                            </span>
+
+                        </a>
+
+                    </li>
+
+
+
+                    <!-- Booking PS -->
+
+                    <li>
+
+                        <a
+                            href="booking-ps.html"
+                            class="admin-nav-link"
+                        >
+
+                            <img
+                                src="../../assets/Icon/Keranjang.svg"
+                                alt=""
+                                class="admin-nav-icon"
+                                aria-hidden="true"
+                            >
+
+                            <span class="admin-nav-text">
+                                Booking PS
+                            </span>
+
+                        </a>
+
+                    </li>
+
+
+
+                    <!-- Kelola Unit PS -->
+
+                    <li>
+
+                        <a
+                            href="kelola-unit.html"
+                            class="admin-nav-link"
+                        >
+
+                            <img
+                                src="../../assets/Icon/TV.svg"
+                                alt=""
+                                class="admin-nav-icon"
+                                aria-hidden="true"
+                            >
+
+                            <span class="admin-nav-text">
+                                Kelola Unit PS
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 OPERASIONAL F&B
+            ================================================== -->
+
+            <div class="admin-nav-section">
+
+
+                <p class="admin-nav-section-title">
+                    Operasional F &amp; B
+                </p>
+
+
+                <ul class="admin-nav-list">
+
+
+                    <!-- Pesanan F&B -->
+
+                    <li>
+
+                        <a
+                            href="pesanan-fnb.html"
+                            class="admin-nav-link"
+                        >
+
+                            <img
+                                src="../../assets/Icon/FNB.svg"
+                                alt=""
+                                class="admin-nav-icon"
+                                aria-hidden="true"
+                            >
+
+                            <span class="admin-nav-text">
+                                Pesanan F &amp; B
+                            </span>
+
+                        </a>
+
+                    </li>
+
+
+
+                    <!-- Kelola Menu F&B -->
+
+                    <li>
+
+                        <a
+                            href="kelola-menu.html"
+                            class="admin-nav-link"
+                        >
+
+                            <img
+                                src="../../assets/Icon/Menu.svg"
+                                alt=""
+                                class="admin-nav-icon"
+                                aria-hidden="true"
+                            >
+
+                            <span class="admin-nav-text">
+                                Kelola Menu F &amp; B
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+
+
+        <!-- =================================================
+             LOGOUT
+        ================================================== -->
+
+        <div class="admin-sidebar-bottom">
+
+            <a
+                href="#"
+                class="admin-logout"
+            >
+
+                <img
+                    src="../../assets/Icon/Logout.svg"
+                    alt=""
+                    class="admin-logout-icon"
+                    aria-hidden="true"
+                >
+
+                <span class="admin-logout-text">
+                    Logout
+                </span>
+
+            </a>
+
+        </div>
+
+    </aside>
+
+
+
+                <!-- =====================================================
+                    MAIN AREA
+                ====================================================== -->
+
+                <div class="admin-main">
+
+
+
+                    <!-- =================================================
+                        HEADER
+                    ================================================== -->
+
+                <header class="admin-header">
+
+                <!-- SEARCH DI KIRI -->
+            <div class="admin-search-wrapper">
+                <img
+                    src="../../assets/Icon/Search.svg"
+                    alt="Search"
+                    class="admin-search-icon"
+                >
+
+                <input
+                    type="text"
+                    class="admin-search"
+                    placeholder="Cari menu, booking, pelanggan..."
+                >
+            </div>
+
+
+                <!-- NOTIFICATION + PROFILE DI KANAN -->
+                <div class="admin-header-right">
+
+                    <button
+                        type="button"
+                        class="admin-notification"
+                        aria-label="Notifikasi"
+                    >
+
+                        <a
+                href="notification.html"
+                class="admin-notification"
+                aria-label="Notifikasi"
+            >
+                <img
+                    src="../../assets/Icon/Notif.svg"
+                    alt="Notifikasi"
+                    class="admin-notification-icon"
+                >
+
+                <span class="admin-notification-badge"></span>
+            </a>
+
+                    </button>
+
+
+                    <div class="admin-profile">
+
+                        <img
+                            src="../../assets/Images/Elon.jpg"
+                            alt="Admin"
+                            class="admin-profile-image"
+                        >
+
+                        <div class="admin-profile-info">
+
+                            <p class="admin-profile-name">
+                                Admin
+                            </p>
+
+                            <p class="admin-profile-role">
+                                Administrator
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+
+                <main class="admin-content">
+
+                <!-- =========================================
+                    SUMMARY CARDS
+                ========================================== -->
+               <section class="dashboard-summary">
+
+    <!-- ==============================
+         SEWA PS
+    =============================== -->
+    <article class="summary-card">
+
+        <div class="summary-card-top">
+
+            <div class="summary-card-icon">
+                <img
+                    src="../../assets/Icon/Game.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+            </div>
+
+            <p class="summary-card-label">
+                Sewa PS
+            </p>
+
+        </div>
+
+        <div class="summary-card-value">
+            24
+        </div>
+
+        <p class="summary-card-period">
+            Hari ini
+        </p>
+
+    </article>
+
+
+    <!-- ==============================
+         BOOKING PS
+    =============================== -->
+    <article class="summary-card">
+
+        <div class="summary-card-top">
+
+            <div class="summary-card-icon">
+                <img
+                    src="../../assets/Icon/Keranjang.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+            </div>
+
+            <p class="summary-card-label">
+                Booking PS
+            </p>
+
+        </div>
+
+        <div class="summary-card-value">
+            18
+        </div>
+
+        <p class="summary-card-period">
+            Hari ini
+        </p>
+
+    </article>
+
+
+    <!-- ==============================
+         PESANAN F&B
+    =============================== -->
+    <article class="summary-card">
+
+        <div class="summary-card-top">
+
+            <div class="summary-card-icon">
+                <img
+                    src="../../assets/Icon/FNB.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+            </div>
+
+            <p class="summary-card-label">
+                Pesanan F&amp;B
+            </p>
+
+        </div>
+
+        <div class="summary-card-value">
+            32
+        </div>
+
+        <p class="summary-card-period">
+            Hari ini
+        </p>
+
+    </article>
+
+
+    <!-- ==============================
+         TOTAL PENDAPATAN
+    =============================== -->
+    <article class="summary-card summary-card-income">
+
+        <div class="summary-card-top">
+
+            <div class="summary-card-icon">
+                <img
+                    src="../../assets/Icon/Wallet.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+            </div>
+
+            <p class="summary-card-label">
+                Total Pendapatan
+            </p>
+
+        </div>
+
+        <div class="summary-card-income-value">
+            Rp 1.450.000
+        </div>
+
+        <p class="summary-card-period">
+            Bulan ini
+        </p>
+
+    </article>
+
+</section>
+
+
+                <!-- =========================================
+                    DASHBOARD GRID
+                ========================================== -->
+                <section class="dashboard-grid">
+
+
+                    <!-- =====================================
+                        STATUS UNIT PLAYSTATION
+                    ====================================== -->
+                    <article class="dashboard-panel unit-panel">
+
+                        <div class="panel-header">
+
+                            <div class="panel-title-wrapper">
+
+                                <img
+                                    src="../../assets/Icon/TV.svg"
+                                    alt=""
+                                    class="panel-title-icon"
+                                    aria-hidden="true"
+                                >
+
+                                <h2>
+                                    Status Unit PlayStation
+                                </h2>
+
+                            </div>
+
+
+                            <div class="unit-legend">
+
+                                <span class="legend-item">
+                                    <span class="legend-dot available"></span>
+                                    Tersedia
+                                </span>
+
+                                <span class="legend-item">
+                                    <span class="legend-dot occupied"></span>
+                                    Digunakan
+                                </span>
+
+                                <span class="legend-item">
+                                    <span class="legend-dot maintenance"></span>
+                                    Maintenance
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- UNIT GRID -->
+                        <div class="unit-grid">
+
+                            <!-- TV 01 -->
+                            <article class="unit-card available">
+                                <div class="unit-card-top">
+                                    <div>
+                                        <p class="unit-name">TV 01</p>
+                                        <p class="unit-console">PS4</p>
+                                    </div>
+                                </div>
+
+                                <div class="unit-status">
+                                    <span class="unit-status-dot"></span>
+                                    Tersedia
+                                </div>
+
+                                <div class="unit-footer">
+                                    <span>•</span>
+                                    <span class="unit-arrow">›</span>
+                                </div>
+                            </article>
+
+
+                            <!-- TV 02 -->
+                            <article class="unit-card occupied">
+                                <div class="unit-card-top">
+                                    <div>
+                                        <p class="unit-name">TV 02</p>
+                                        <p class="unit-console">PS4</p>
+                                    </div>
+                                </div>
+
+                                <div class="unit-status">
+                                    <span class="unit-status-dot"></span>
+                                    Digunakan
+                                </div>
+
+                                <div class="unit-footer">
+                                    <span>01:23:45</span>
+                                    <span class="unit-arrow">›</span>
+                                </div>
+                            </article>
+
+
+                            <!-- TV 03 -->
+                            <article class="unit-card available">
+                                <div class="unit-card-top">
+                                    <div>
+                                        <p class="unit-name">TV 03</p>
+                                        <p class="unit-console">PS4</p>
+                                    </div>
+                                </div>
+
+                                <div class="unit-status">
+                                    <span class="unit-status-dot"></span>
+                                    Tersedia
+                                </div>
+
+                                <div class="unit-footer">
+                                    <span>•</span>
+                                    <span class="unit-arrow">›</span>
+                                </div>
+                            </article>
+
+
+                            <!-- TV 04 -->
+                            <article class="unit-card occupied">
+                                <div class="unit-card-top">
+                                    <div>
+                                        <p class="unit-name">TV 04</p>
+                                        <p class="unit-console">PS4</p>
+                                    </div>
+                                </div>
+
+                                <div class="unit-status">
+                                    <span class="unit-status-dot"></span>
+                                    Digunakan
+                                </div>
+
+                                <div class="unit-footer">
+                                    <span>00:46:35</span>
+                                    <span class="unit-arrow">›</span>
+                                </div>
+                            </article>
+
+
+                            <!-- TV 05 -->
+                            <article class="unit-card occupied">
+                                <div class="unit-card-top">
+                                    <div>
+                                        <p class="unit-name">TV 05</p>
+                                        <p class="unit-console">PS4</p>
+                                    </div>
+                                </div>
+
+                                <div class="unit-status">
+                                    <span class="unit-status-dot"></span>
+                                    Digunakan
+                                </div>
+
+                                <div class="unit-footer">
+                                    <span>00:05:23</span>
+                                    <span class="unit-arrow">›</span>
+                                </div>
+                            </article>
+
+
+                            <!-- TV 06 -->
+                            <article class="unit-card available">
+                                <div class="unit-card-top">
+                                    <div>
+                                        <p class="unit-name">TV 06</p>
+                                        <p class="unit-console">PS4</p>
+                                    </div>
+                                </div>
+
+                                <div class="unit-status">
+                                    <span class="unit-status-dot"></span>
+                                    Tersedia
+                                </div>
+
+                                <div class="unit-footer">
+                                    <span>•</span>
+                                    <span class="unit-arrow">›</span>
+                                </div>
+                            </article>
+
+
+                            <!-- TV 07 -->
+                            <article class="unit-card maintenance">
+                                <div class="unit-card-top">
+                                    <div>
+                                        <p class="unit-name">TV 07</p>
+                                        <p class="unit-console">PS4</p>
+                                    </div>
+                                </div>
+
+                                <div class="unit-status">
+                                    <span class="unit-status-dot"></span>
+                                    Maintenance
+                                </div>
+
+                                <div class="unit-footer">
+                                    <span>•</span>
+                                    <span class="unit-arrow">›</span>
+                                </div>
+                            </article>
+
+
+                            <!-- TV 08 -->
+                            <article class="unit-card available">
+                                <div class="unit-card-top">
+                                    <div>
+                                        <p class="unit-name">TV 08</p>
+                                        <p class="unit-console">PS4</p>
+                                    </div>
+                                </div>
+
+                                <div class="unit-status">
+                                    <span class="unit-status-dot"></span>
+                                    Tersedia
+                                </div>
+
+                                <div class="unit-footer">
+                                    <span>•</span>
+                                    <span class="unit-arrow">›</span>
+                                </div>
+                            </article>
+
+
+                            <!-- TV 09 -->
+                            <article class="unit-card available">
+                                <div class="unit-card-top">
+                                    <div>
+                                        <p class="unit-name">TV 09</p>
+                                        <p class="unit-console">PS3</p>
+                                    </div>
+                                </div>
+
+                                <div class="unit-status">
+                                    <span class="unit-status-dot"></span>
+                                    Tersedia
+                                </div>
+
+                                <div class="unit-footer">
+                                    <span>•</span>
+                                    <span class="unit-arrow">›</span>
+                                </div>
+                            </article>
+
+
+                            <!-- TV 10 -->
+                            <article class="unit-card occupied">
+                                <div class="unit-card-top">
+                                    <div>
+                                        <p class="unit-name">TV 10</p>
+                                        <p class="unit-console">PS3</p>
+                                    </div>
+                                </div>
+
+                                <div class="unit-status">
+                                    <span class="unit-status-dot"></span>
+                                    Digunakan
+                                </div>
+
+                                <div class="unit-footer">
+                                    <span>01:12:54</span>
+                                    <span class="unit-arrow">›</span>
+                                </div>
+                            </article>
+
+
+                            <!-- TV 11 -->
+                            <article class="unit-card occupied">
+                                <div class="unit-card-top">
+                                    <div>
+                                        <p class="unit-name">TV 11</p>
+                                        <p class="unit-console">PS3</p>
+                                    </div>
+                                </div>
+
+                                <div class="unit-status">
+                                    <span class="unit-status-dot"></span>
+                                    Digunakan
+                                </div>
+
+                                <div class="unit-footer">
+                                    <span>01:27:24</span>
+                                    <span class="unit-arrow">›</span>
+                                </div>
+                            </article>
+
+
+                            <!-- TV 12 -->
+                            <article class="unit-card available">
+                                <div class="unit-card-top">
+                                    <div>
+                                        <p class="unit-name">TV 12</p>
+                                        <p class="unit-console">PS3</p>
+                                    </div>
+                                </div>
+
+                                <div class="unit-status">
+                                    <span class="unit-status-dot"></span>
+                                    Tersedia
+                                </div>
+
+                                <div class="unit-footer">
+                                    <span>•</span>
+                                    <span class="unit-arrow">›</span>
+                                </div>
+                            </article>
+
+
+                            <!-- TV 13 -->
+                            <article class="unit-card available">
+                                <div class="unit-card-top">
+                                    <div>
+                                        <p class="unit-name">TV 13</p>
+                                        <p class="unit-console">PS3</p>
+                                    </div>
+                                </div>
+
+                                <div class="unit-status">
+                                    <span class="unit-status-dot"></span>
+                                    Tersedia
+                                </div>
+
+                                <div class="unit-footer">
+                                    <span>•</span>
+                                    <span class="unit-arrow">›</span>
+                                </div>
+                            </article>
+
+
+                            <!-- TV 14 -->
+                            <article class="unit-card maintenance">
+                                <div class="unit-card-top">
+                                    <div>
+                                        <p class="unit-name">TV 14</p>
+                                        <p class="unit-console">PS3</p>
+                                    </div>
+                                </div>
+
+                                <div class="unit-status">
+                                    <span class="unit-status-dot"></span>
+                                    Maintenance
+                                </div>
+
+                                <div class="unit-footer">
+                                    <span>•</span>
+                                    <span class="unit-arrow">›</span>
+                                </div>
+                            </article>
+
+
+                            <!-- TV 15 -->
+                            <article class="unit-card available">
+                                <div class="unit-card-top">
+                                    <div>
+                                        <p class="unit-name">TV 15</p>
+                                        <p class="unit-console">PS3</p>
+                                    </div>
+                                </div>
+
+                                <div class="unit-status">
+                                    <span class="unit-status-dot"></span>
+                                    Tersedia
+                                </div>
+
+                                <div class="unit-footer">
+                                    <span>•</span>
+                                    <span class="unit-arrow">›</span>
+                                </div>
+                            </article>
+
+
+                            <!-- TV 16 -->
+                            <article class="unit-card occupied">
+                                <div class="unit-card-top">
+                                    <div>
+                                        <p class="unit-name">TV 16</p>
+                                        <p class="unit-console">PS3</p>
+                                    </div>
+                                </div>
+
+                                <div class="unit-status">
+                                    <span class="unit-status-dot"></span>
+                                    Digunakan
+                                </div>
+
+                                <div class="unit-footer">
+                                    <span>02:12:41</span>
+                                    <span class="unit-arrow">›</span>
+                                </div>
+                            </article>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =====================================
+                        RIGHT COLUMN
+                    ====================================== -->
+                    <div class="dashboard-side-column">
+
+
+                        <!-- =================================
+                            AKTIVITAS TERBARU
+                        ================================== -->
+                        <article class="dashboard-panel activity-panel">
+
+                            <div class="panel-header">
+                                <div class="panel-title-wrapper">
+
+                                    <span class="panel-title-symbol">◷</span>
+
+                                    <h2>
+                                        Aktivitas Terbaru
+                                    </h2>
+
+                                </div>
+                            </div>
+
+
+                            <div class="activity-list">
+
+                                <article class="activity-item">
+
+                                    <div class="activity-icon">
+                                        <img
+                                            src="../../assets/Icon/Keranjang.svg"
+                                            alt=""
+                                            aria-hidden="true"
+                                        >
+                                    </div>
+
+                                    <div class="activity-content">
+                                        <p class="activity-title">
+                                            Booking baru diterima
+                                        </p>
+
+                                        <p class="activity-time">
+                                            TV03 · 10:02
+                                        </p>
+                                    </div>
+
+                                    <span class="activity-status success">
+                                        Baru
+                                    </span>
+
+                                </article>
+
+
+                                <article class="activity-item">
+
+                                    <div class="activity-icon">
+                                        <img
+                                            src="../../assets/Icon/FNB.svg"
+                                            alt=""
+                                            aria-hidden="true"
+                                        >
+                                    </div>
+
+                                    <div class="activity-content">
+                                        <p class="activity-title">
+                                            Pesanan F&amp;B #26
+                                        </p>
+
+                                        <p class="activity-time">
+                                            10:01 · Rp 45.000
+                                        </p>
+                                    </div>
+
+                                    <span class="activity-status processing">
+                                        Selesai
+                                    </span>
+
+                                </article>
+
+
+                                <article class="activity-item">
+
+                                    <div class="activity-icon">
+                                        <img
+                                            src="../../assets/Icon/Game.svg"
+                                            alt=""
+                                            aria-hidden="true"
+                                        >
+                                    </div>
+
+                                    <div class="activity-content">
+                                        <p class="activity-title">
+                                            Sewa selesai
+                                        </p>
+
+                                        <p class="activity-time">
+                                            TV04 · 09:48
+                                        </p>
+                                    </div>
+
+                                    <span class="activity-status processing">
+                                        Selesai
+                                    </span>
+
+                                </article>
+
+
+                                <article class="activity-item">
+
+                                    <div class="activity-icon">
+                                        <img
+                                            src="../../assets/Icon/FNB.svg"
+                                            alt=""
+                                            aria-hidden="true"
+                                        >
+                                    </div>
+
+                                    <div class="activity-content">
+                                        <p class="activity-title">
+                                            Pesanan F&amp;B #25
+                                        </p>
+
+                                        <p class="activity-time">
+                                            09:42 · Rp 20.000
+                                        </p>
+                                    </div>
+
+                                    <span class="activity-status success">
+                                        Baru
+                                    </span>
+
+                                </article>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- =================================
+                            QUICK ACTIONS
+                        ================================== -->
+                        <article class="dashboard-panel quick-actions-panel">
+
+                            <div class="panel-header">
+                                <div class="panel-title-wrapper">
+
+                                    <span class="panel-title-symbol">✦</span>
+
+                                    <h2>
+                                        Quick Actions
+                                    </h2>
+
+                                </div>
+                            </div>
+
+
+                            <div class="quick-actions-grid">
+
+                                <a
+                                    href="sewa-ps.html"
+                                    class="quick-action"
+                                >
+                                    <img
+                                        src="../../assets/Icon/Game.svg"
+                                        alt=""
+                                        aria-hidden="true"
+                                    >
+
+                                    <span>
+                                        Sewa PS
+                                    </span>
+
+                                    <strong>›</strong>
+                                </a>
+
+
+                                <a
+                                    href="pesanan-fnb.html"
+                                    class="quick-action"
+                                >
+                                    <img
+                                        src="../../assets/Icon/FNB.svg"
+                                        alt=""
+                                        aria-hidden="true"
+                                    >
+
+                                    <span>
+                                        Pesanan F&amp;B
+                                    </span>
+
+                                    <strong>›</strong>
+                                </a>
+
+
+                                <a
+                                    href="booking-ps.html"
+                                    class="quick-action"
+                                >
+                                    <img
+                                        src="../../assets/Icon/Keranjang.svg"
+                                        alt=""
+                                        aria-hidden="true"
+                                    >
+
+                                    <span>
+                                        Booking PS
+                                    </span>
+
+                                    <strong>›</strong>
+                                </a>
+
+
+                                <a
+                                    href="kelola-menu.html"
+                                    class="quick-action"
+                                >
+                                    <img
+                                        src="../../assets/Icon/Menu.svg"
+                                        alt=""
+                                        aria-hidden="true"
+                                    >
+
+                                    <span>
+                                        Kelola F&amp;B
+                                    </span>
+
+                                    <strong>›</strong>
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </section>
+
+            </main>
+
+
+
+        <!-- =====================================================
+             FOOTER
+             TETAP MENGGUNAKAN ICON YANG SUDAH ADA
+        ====================================================== -->
+
+        <footer class="admin-footer">
+
+
+            <!-- =================================================
+                 PREMIUM EQUIPMENT
+            ================================================== -->
+
+            <article class="admin-footer-item">
+
+                <div class="admin-footer-icon">
+
+                    <img
+                        src="../../assets/Icon/Controller Icon.svg"
+                        alt=""
+                        aria-hidden="true"
+                    >
+
+                </div>
+
+
+                <div class="admin-footer-text">
+
+                    <p class="admin-footer-title">
+                        Premium Equipment
+                    </p>
+
+                    <p class="admin-footer-description">
+                        PlayStation terbaru &amp; berkualitas
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =================================================
+                 DELICIOUS FOOD & DRINKS
+            ================================================== -->
+
+            <article class="admin-footer-item">
+
+                <div class="admin-footer-icon">
+
+                    <img
+                        src="../../assets/Icon/FNB.svg"
+                        alt=""
+                        aria-hidden="true"
+                    >
+
+                </div>
+
+
+                <div class="admin-footer-text">
+
+                    <p class="admin-footer-title">
+                        Delicious Food &amp; Drinks
+                    </p>
+
+                    <p class="admin-footer-description">
+                        Pilihan menu terbaik
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =================================================
+                 COMFORTABLE SPACE
+            ================================================== -->
+
+            <article class="admin-footer-item">
+
+                <div class="admin-footer-icon">
+
+                    <img
+                        src="../../assets/Icon/Bintang.svg"
+                        alt=""
+                        aria-hidden="true"
+                    >
+
+                </div>
+
+
+                <div class="admin-footer-text">
+
+                    <p class="admin-footer-title">
+                        Comfortable Space
+                    </p>
+
+                    <p class="admin-footer-description">
+                        Suasana nyaman &amp; modern
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =================================================
+                 FRIENDLY SUPPORT
+            ================================================== -->
+
+            <article class="admin-footer-item">
+
+                <div class="admin-footer-icon">
+
+                    <img
+                        src="../../assets/Icon/People Icon.svg"
+                        alt=""
+                        aria-hidden="true"
+                    >
+
+                </div>
+
+
+                <div class="admin-footer-text">
+
+                    <p class="admin-footer-title">
+                        Friendly Support
+                    </p>
+
+                    <p class="admin-footer-description">
+                        Selalu siap membantu
+                    </p>
+
+                </div>
+
+            </article>
+
+
+        </footer>
+
+
+    </div>
+
+</div>
+
+
+</body>
+
+</html>
