@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Verifikasi Akun - Booking PS | IB Gaming</title>
+
+    <!-- GLOBAL CSS -->
+    <link rel="stylesheet" href="../../../css/global.css">
+
+    <!-- ADMIN LAYOUT -->
+    <link rel="stylesheet" href="../../../css/admin/admin-layout.css">
+
+    <link rel="stylesheet" href="../../../css/admin/booking/verifikasi-akun.css">
+</head>
+
+<body>
+
+    <div class="admin-layout">
+
+        <!-- =================================================
+             SIDEBAR
+        ================================================== -->
+       <aside class="admin-sidebar">
+
+
+    <!-- =================================================
+         LOGO
+    ================================================== -->
+
+    <div class="admin-logo-wrapper">
+
+        <img
+            src="../../../assets/Icon/Logo.svg"
+            alt="IB Gaming"
+            class="admin-logo"
+        >
+
+        <div class="admin-brand-text">
+
+            <p class="admin-brand-name">
+                IB GAMING
+            </p>
+
+            <p class="admin-brand-tagline">
+                PLAY · EAT · ENJOY
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================================
+         NAVIGATION
+    ================================================== -->
+
+    <nav
+        class="admin-nav"
+        aria-label="Navigasi Admin"
+    >
+
+
+        <!-- =================================================
+             DASHBOARD
+        ================================================== -->
+
+        <div class="admin-nav-section">
+
+            <ul class="admin-nav-list">
+
+                <li>
+
+                    <a
+                        href="../dashboard-admin.html"
+                        class="admin-nav-link"
+                    >
+
+                        <img
+                            src="../../../assets/Icon/Home.svg"
+                            alt=""
+                            class="admin-nav-icon"
+                            aria-hidden="true"
+                        >
+
+                        <span class="admin-nav-text">
+                            Dashboard
+                        </span>
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+
+
+        <!-- =================================================
+             OPERASIONAL PLAYSTATION
+        ================================================== -->
+
+        <div class="admin-nav-section">
+
+            <p class="admin-nav-section-title">
+                Operasional PlayStation
+            </p>
+
+            <ul class="admin-nav-list">
+
+
+                <!-- Sewa PS -->
+
+                <li>
+
+                    <a
+                        href="../sewa-ps.html"
+                        class="admin-nav-link"
+                    >
+
+                        <img
+                            src="../../../assets/Icon/Game.svg"
+                            alt=""
+                            class="admin-nav-icon"
+                            aria-hidden="true"
+                        >
+
+                        <span class="admin-nav-text">
+                            Sewa PS
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+
+                <!-- Booking PS - ACTIVE -->
+
+                <li>
+
+                    <a
+                        href="verifikasi-akun.html"
+                        class="admin-nav-link active"
+                        aria-current="page"
+                    >
+
+                        <img
+                            src="../../../assets/Icon/Keranjang.svg"
+                            alt=""
+                            class="admin-nav-icon"
+                            aria-hidden="true"
+                        >
+
+                        <span class="admin-nav-text">
+                            Booking PS
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+
+                <!-- Kelola Unit PS -->
+
+                <li>
+
+                    <a
+                        href="../kelola-unit.html"
+                        class="admin-nav-link"
+                    >
+
+                        <img
+                            src="../../../assets/Icon/TV.svg"
+                            alt=""
+                            class="admin-nav-icon"
+                            aria-hidden="true"
+                        >
+
+                        <span class="admin-nav-text">
+                            Kelola Unit PS
+                        </span>
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+
+
+        <!-- =================================================
+             OPERASIONAL F&B
+        ================================================== -->
+
+        <div class="admin-nav-section">
+
+            <p class="admin-nav-section-title">
+                Operasional F &amp; B
+            </p>
+
+            <ul class="admin-nav-list">
+
+
+                <!-- Pesanan F&B -->
+
+                <li>
+
+                    <a
+                        href="../pesanan-fnb.html"
+                        class="admin-nav-link"
+                    >
+
+                        <img
+                            src="../../../assets/Icon/FNB.svg"
+                            alt=""
+                            class="admin-nav-icon"
+                            aria-hidden="true"
+                        >
+
+                        <span class="admin-nav-text">
+                            Pesanan F &amp; B
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+
+                <!-- Kelola Menu F&B -->
+
+                <li>
+
+                    <a
+                        href="../kelola-menu.html"
+                        class="admin-nav-link"
+                    >
+
+                        <img
+                            src="../../../assets/Icon/Menu.svg"
+                            alt=""
+                            class="admin-nav-icon"
+                            aria-hidden="true"
+                        >
+
+                        <span class="admin-nav-text">
+                            Kelola Menu F &amp; B
+                        </span>
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =================================================
+         LOGOUT
+    ================================================== -->
+
+    <div class="admin-sidebar-bottom">
+
+        <a
+            href="#"
+            class="admin-logout"
+        >
+
+            <img
+                src="../../../assets/Icon/Logout.svg"
+                alt=""
+                class="admin-logout-icon"
+                aria-hidden="true"
+            >
+
+            <span class="admin-logout-text">
+                Logout
+            </span>
+
+        </a>
+
+    </div>
+
+</aside>
+
+
+        <!-- =================================================
+             MAIN
+        ================================================== -->
+        <div class="admin-main">
+
+
+            <!-- =================================================
+                 HEADER
+            ================================================== -->
+            <header class="admin-header">
+
+                <!-- SEARCH -->
+                <div class="admin-search-wrapper">
+                    <input
+                        type="text"
+                        class="admin-search"
+                        placeholder="Cari menu, booking, pelanggan..."
+                    >
+                </div>
+
+
+                <!-- HEADER RIGHT -->
+                <div class="admin-header-right">
+
+                    <!-- NOTIFICATION -->
+                    <a
+                        href="../notification.html"
+                        class="admin-notification"
+                        aria-label="Notifikasi"
+                    >
+                        <img
+                            src="../../../assets/Icon/Notif.svg"
+                            alt="Notifikasi"
+                            class="admin-notification-icon"
+                        >
+
+                        <span class="admin-notification-badge"></span>
+                    </a>
+
+
+                    <!-- PROFILE -->
+                    <div class="admin-profile">
+
+                        <img
+                            src="../../../assets/Images/Elon.jpg"
+                            alt="Admin"
+                            class="admin-profile-image"
+                        >
+
+                        <div class="admin-profile-info">
+                            <p class="admin-profile-name">Admin</p>
+                            <p class="admin-profile-role">Administrator</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- =================================================
+                 CONTENT
+            ================================================== -->
+           <main class="admin-content">
+
+    <!-- =================================================
+         PAGE HEADER
+    ================================================== -->
+
+                <section class="booking-page-header">
+
+                    <!-- BAGIAN KIRI -->
+                    <div class="booking-page-heading">
+
+                        <img
+                            src="../../../assets/Icon/Keranjang.svg"
+                            alt=""
+                            class="booking-page-heading-icon"
+                            aria-hidden="true"
+                        >
+
+                        <div class="booking-page-heading-text">
+
+                            <h1 class="booking-page-title">
+                                Booking PS - Verifikasi Akun
+                            </h1>
+
+                            <p class="booking-page-subtitle">
+                                Kelola pengajuan akun pelanggan untuk melakukan booking PlayStation
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- BAGIAN KANAN -->
+                    <div class="sewa-date-time">
+
+                        <div class="sewa-date">
+
+                            <span class="sewa-date-icon-wrapper">
+
+                                <img
+                                    src="../../../assets/Icon/Calendar.svg"
+                                    alt=""
+                                    class="sewa-calendar-icon"
+                                    aria-hidden="true"
+                                >
+
+                            </span>
+
+                            <span>
+                                Rabu, 8 Oktober 2025
+                            </span>
+
+                        </div>
+
+
+                        <div class="sewa-time">
+
+                            <img
+                                src="../../../assets/Icon/Timer.svg"
+                                alt=""
+                                class="sewa-time-icon"
+                                aria-hidden="true"
+                            >
+
+                            <span>
+                                14:32
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+    <!-- =================================================
+         VERIFICATION TABS
+    ================================================== -->
+                        <nav
+                            class="booking-verification-tabs"
+                            aria-label="Verifikasi Booking PS"
+                        >
+
+                            <a
+                                href="verifikasi-akun.html"
+                                class="booking-verification-tab active"
+                                aria-current="page"
+                            >
+
+                                <img
+                                    src="../../../assets/Icon/User.svg"
+                                    alt=""
+                                    aria-hidden="true"
+                                >
+
+                                <span>
+                                    Verifikasi Akun
+                                </span>
+
+                            </a>
+
+
+                            <a
+                                href="verifikasi-booking.html"
+                                class="booking-verification-tab"
+                            >
+
+                                <img
+                                    src="../../../assets/Icon/Keranjang.svg"
+                                    alt=""
+                                    aria-hidden="true"
+                                >
+
+                                <span>
+                                    Verifikasi Booking
+                                </span>
+
+                            </a>
+
+                        </nav>
+
+
+    <!-- =================================================
+         SUMMARY
+    ================================================== -->
+
+    <section
+        class="booking-summary-grid"
+        aria-label="Ringkasan verifikasi akun"
+    >
+
+
+        <!-- MENUNGGU VERIFIKASI -->
+
+        <article class="booking-summary-card pending">
+
+            <div class="booking-summary-icon">
+
+                <img
+                    src="../../../assets/Icon/User.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+
+            </div>
+
+            <div class="booking-summary-info">
+
+                <p class="booking-summary-title">
+                    Menunggu Verifikasi
+                </p>
+
+                <p class="booking-summary-number">
+                    5
+                </p>
+
+                <p class="booking-summary-description">
+                    Pengajuan baru
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- TERVERIFIKASI -->
+
+        <article class="booking-summary-card verified">
+
+            <div class="booking-summary-icon">
+
+                <img
+                    src="../../../assets/Icon/Centang.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+
+            </div>
+
+            <div class="booking-summary-info">
+
+                <p class="booking-summary-title">
+                    Terverifikasi
+                </p>
+
+                <p class="booking-summary-number">
+                    12
+                </p>
+
+                <p class="booking-summary-description">
+                    Akun telah disetujui
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- DITOLAK -->
+
+        <article class="booking-summary-card rejected">
+
+            <div class="booking-summary-icon">
+
+                <img
+                    src="../../../assets/Icon/Close.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+
+            </div>
+
+            <div class="booking-summary-info">
+
+                <p class="booking-summary-title">
+                    Ditolak
+                </p>
+
+                <p class="booking-summary-number">
+                    2
+                </p>
+
+                <p class="booking-summary-description">
+                    Pengajuan ditolak
+                </p>
+
+            </div>
+
+        </article>
+
+    </section>
+
+<section class="booking-account-table-card">
+
+    <!-- FILTER + SEARCH -->
+    <div class="booking-account-toolbar">
+
+        <div class="booking-account-filters">
+
+            <button
+                type="button"
+                class="booking-account-filter active"
+            >
+                Semua
+            </button>
+
+            <button
+                type="button"
+                class="booking-account-filter pending"
+            >
+                Menunggu Verifikasi
+                <span class="booking-account-filter-count">5</span>
+            </button>
+
+            <button
+                type="button"
+                class="booking-account-filter verified"
+            >
+                Terverifikasi
+                <span class="booking-account-filter-count">12</span>
+            </button>
+
+            <button
+                type="button"
+                class="booking-account-filter rejected"
+            >
+                Ditolak
+                <span class="booking-account-filter-count">2</span>
+            </button>
+
+        </div>
+
+
+        <!-- SEARCH BAR -->
+        <div class="booking-search-wrapper">
+            <input
+                type="search"
+                class="booking-account-search"
+                placeholder="Cari nama atau email..."
+                aria-label="Cari pengajuan akun"
+            >
+        </div>
+
+    </div>
+
+
+    <!-- TABLE -->
+    <div class="booking-account-table-wrapper">
+
+        <table class="booking-account-table">
+
+            <thead>
+                <tr>
+                    <th>ID User</th>
+                    <th>Nama Pelanggan</th>
+                    <th>Email</th>
+                    <th>No. Telepon</th>
+                    <th>Tanggal</th>
+                    <th>Status</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>#USR-01</td>
+                    <td>Kimi Antonelli</td>
+                    <td>kimi@gmail.com</td>
+                    <td>081234567890</td>
+                    <td>10 Okt 2026</td>
+
+                    <td>
+                        <span class="booking-account-status pending">
+                            Menunggu
+                        </span>
+                    </td>
+
+                    <td>
+                        <a href="#" class="booking-account-action">
+                            Detail
+                        </a>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>#USR-02</td>
+                    <td>Lyry Antonelli</td>
+                    <td>Lyry12@gmail.com</td>
+                    <td>083324567890</td>
+                    <td>10 Okt 2026</td>
+
+                    <td>
+                        <span class="booking-account-status verified">
+                            Terverifikasi
+                        </span>
+                    </td>
+
+                    <td>
+                        <a href="#" class="booking-account-action">
+                            Detail
+                        </a>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>#USR-03</td>
+                    <td>Maxi Antonelli</td>
+                    <td>Maxi34@gmail.com</td>
+                    <td>083527867890</td>
+                    <td>11 Okt 2026</td>
+
+                    <td>
+                        <span class="booking-account-status pending">
+                            Menunggu
+                        </span>
+                    </td>
+
+                    <td>
+                        <a href="#" class="booking-account-action">
+                            Detail
+                        </a>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>#USR-04</td>
+                    <td>Marcel Nestle</td>
+                    <td>Mrcl11@gmail.com</td>
+                    <td>083527867800</td>
+                    <td>11 Okt 2026</td>
+
+                    <td>
+                        <span class="booking-account-status rejected">
+                            Ditolak
+                        </span>
+                    </td>
+
+                    <td>
+                        <a href="#" class="booking-account-action">
+                            Detail
+                        </a>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>#USR-05</td>
+                    <td>Lucien Moreau</td>
+                    <td>Luluuu@gmail.com</td>
+                    <td>083527866589</td>
+                    <td>9 Okt 2026</td>
+
+                    <td>
+                        <span class="booking-account-status pending">
+                            Menunggu
+                        </span>
+                    </td>
+
+                    <td>
+                        <a href="#" class="booking-account-action">
+                            Detail
+                        </a>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>#USR-06</td>
+                    <td>Marco Bellini</td>
+                    <td>Marck@gmail.com</td>
+                    <td>083527890033</td>
+                    <td>9 Okt 2026</td>
+
+                    <td>
+                        <span class="booking-account-status verified">
+                            Terverifikasi
+                        </span>
+                    </td>
+
+                    <td>
+                        <a href="#" class="booking-account-action">
+                            Detail
+                        </a>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>#USR-07</td>
+                    <td>Leon Hartmann</td>
+                    <td>Leona24@gmail.com</td>
+                    <td>082327890033</td>
+                    <td>8 Okt 2026</td>
+
+                    <td>
+                        <span class="booking-account-status verified">
+                            Terverifikasi
+                        </span>
+                    </td>
+
+                    <td>
+                        <a href="#" class="booking-account-action">
+                            Detail
+                        </a>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>#USR-09</td>
+                    <td>Nikolai Frost</td>
+                    <td>Nikoii@gmail.com</td>
+                    <td>082337890033</td>
+                    <td>8 Okt 2026</td>
+
+                    <td>
+                        <span class="booking-account-status verified">
+                            Terverifikasi
+                        </span>
+                    </td>
+
+                    <td>
+                        <a href="#" class="booking-account-action">
+                            Detail
+                        </a>
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+</main>
+
+
+            <!-- =================================================
+                 FOOTER
+            ================================================== -->
+            <footer class="admin-footer">
+
+
+            <!-- Premium Equipment -->
+
+            <article class="admin-footer-item">
+
+                <div class="admin-footer-icon">
+
+                    <img
+                        src="../../../assets/Icon/Controller Icon.svg"
+                        alt=""
+                        aria-hidden="true"
+                    >
+
+                </div>
+
+
+                <div class="admin-footer-text">
+
+                    <p class="admin-footer-title">
+                        Premium Equipment
+                    </p>
+
+                    <p class="admin-footer-description">
+                        PlayStation terbaru &amp; berkualitas
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- Delicious Food & Drinks -->
+
+            <article class="admin-footer-item">
+
+                <div class="admin-footer-icon">
+
+                    <img
+                        src="../../../assets/Icon/FNB.svg"
+                        alt=""
+                        aria-hidden="true"
+                    >
+
+                </div>
+
+
+                <div class="admin-footer-text">
+
+                    <p class="admin-footer-title">
+                        Delicious Food &amp; Drinks
+                    </p>
+
+                    <p class="admin-footer-description">
+                        Pilihan menu terbaik
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- Comfortable Space -->
+
+            <article class="admin-footer-item">
+
+                <div class="admin-footer-icon">
+
+                    <img
+                        src="../../../assets/Icon/Bintang.svg"
+                        alt=""
+                        aria-hidden="true"
+                    >
+
+                </div>
+
+
+                <div class="admin-footer-text">
+
+                    <p class="admin-footer-title">
+                        Comfortable Space
+                    </p>
+
+                    <p class="admin-footer-description">
+                        Suasana nyaman &amp; modern
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- Friendly Support -->
+
+            <article class="admin-footer-item">
+
+                <div class="admin-footer-icon">
+
+                    <img
+                        src="../../../assets/Icon/People Icon.svg"
+                        alt=""
+                        aria-hidden="true"
+                    >
+
+                </div>
+
+
+                <div class="admin-footer-text">
+
+                    <p class="admin-footer-title">
+                        Friendly Support
+                    </p>
+
+                    <p class="admin-footer-description">
+                        Selalu siap membantu
+                    </p>
+
+                </div>
+
+            </article>
+
+
+        </footer>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,1422 @@
+/* =========================================================
+   SEWA PLAYSTATION
+   IB GAMING ADMIN
+   ========================================================= */
+
+
+/* =========================================================
+   PAGE CONTENT
+   ========================================================= */
+
+.sewa-ps-content {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   PAGE HEADING
+   ========================================================= */
+
+.sewa-page-heading {
+    width: 100%;
+    min-height: 104px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 12px 0 18px;
+    transform: translateY(-25px);
+}
+
+
+/* TITLE */
+
+.sewa-page-title-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.sewa-page-title-icon {
+    width: 42px;
+    height: 42px;
+
+    flex-shrink: 0;
+
+    object-fit: contain;
+}
+
+.sewa-page-title-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sewa-page-title-text h1 {
+    margin: 0;
+
+    color: #29231F;
+
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 600;
+
+    line-height: 1.2;
+}
+
+.sewa-page-title-text p {
+    margin-top: 4px;
+
+    color: #8F877E;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 400;
+
+    line-height: 1.3;
+}
+
+
+/* =========================================================
+   DATE & TIME
+   ========================================================= */
+
+.sewa-date-time {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    margin-top: 2px;
+}
+
+
+.sewa-date,
+.sewa-time {
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+
+    background: #FFFFFF;
+
+    border: 1px solid #E5DCD0;
+    border-radius: 10px;
+
+    color: #625A52;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 400;
+
+    white-space: nowrap;
+}
+
+
+/* DATE */
+
+.sewa-date {
+    gap: 9px;
+    padding: 0 12px 0 9px;
+}
+
+
+/* ICON WARP */
+
+.sewa-date-icon-wrapper {
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background: #FFF5EB;
+
+    border-radius: 50%;
+}
+
+
+.sewa-calendar-icon {
+    width: 17px;
+    height: 17px;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+
+/* TIME */
+
+.sewa-time {
+    gap: 8px;
+
+    padding: 0 12px;
+}
+
+
+.sewa-time-icon {
+    width: 17px;
+    height: 17px;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   SUMMARY
+   ========================================================= */
+
+.sewa-summary {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 1fr)
+        minmax(0, 1.5fr);
+
+    gap: 20px;
+    transform: translateY(-40px);
+    margin-bottom: 10px;
+}
+
+
+/* CARD */
+
+.sewa-summary-card {
+    width: 100%;
+    min-height: 110px;
+
+    padding: 15px 17px 13px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background: #FFFEFA;
+
+    border: 1px solid #E5DCD0;
+    border-radius: 10px;
+
+    box-sizing: border-box;
+}
+
+
+/* TOP */
+
+.sewa-summary-top {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+
+/* ICON WARP */
+
+.sewa-summary-icon {
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 10px;
+}
+
+
+/* ICON */
+
+.sewa-summary-icon img {
+    width: 22px;
+    height: 22px;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+
+/* SEWA AKTIF */
+
+.sewa-summary-icon-active {
+    background: #E5FBE7;
+}
+
+.sewa-summary-icon-active img {
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(72%)
+        sepia(19%)
+        saturate(1010%)
+        hue-rotate(79deg)
+        brightness(90%)
+        contrast(87%);
+}
+
+
+/* SEWA HARI INI */
+
+.sewa-summary-icon-today {
+    background: #E5F0FF;
+}
+
+.sewa-summary-icon-today img {
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(43%)
+        sepia(92%)
+        saturate(1358%)
+        hue-rotate(194deg)
+        brightness(91%)
+        contrast(93%);
+}
+
+
+/* TOTAL */
+
+.sewa-summary-icon-income {
+    background: #F5EBDD;
+}
+
+.sewa-summary-icon-income img {
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(59%)
+        sepia(22%)
+        saturate(1015%)
+        hue-rotate(354deg)
+        brightness(91%)
+        contrast(88%);
+}
+
+
+/* LABEL */
+
+.sewa-summary-label {
+    margin: 0;
+
+    color: #29231F;
+
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 500;
+
+    line-height: 1.2;
+}
+
+
+/* VALUE */
+
+.sewa-summary-value {
+    margin: 3px 0 0;
+
+    color: #111111;
+
+    font-family: var(--font-body);
+    font-size: 27px;
+    font-weight: 700;
+
+    line-height: 1;
+}
+
+
+/* INCOME VALUE */
+
+.sewa-summary-income-value {
+    margin: 3px 0 0;
+
+    color: #111111;
+
+    font-family: var(--font-body);
+    font-size: 25px;
+    font-weight: 700;
+
+    line-height: 1;
+}
+
+
+/* DESCRIPTION */
+
+.sewa-summary-description {
+    margin: 0 0 0 57px;
+
+    color: #958C82;
+
+    font-family: var(--font-body);
+    font-size: 8px;
+    font-weight: 400;
+
+    line-height: 1.2;
+}
+
+
+/* =========================================================
+   UNIT LAYOUT
+   ========================================================= */
+
+.sewa-unit-layout {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 240px;
+
+    gap: 14px;
+    transform: translateY(-25px);
+    align-items: start;
+}
+
+
+/* =========================================================
+   UNIT PANEL
+   ========================================================= */
+
+.sewa-unit-panel {
+    width: 900px;
+    height: 675px;
+
+    background: #FFFEFA;
+
+    border: 1px solid #E5DCD0;
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   PANEL HEADER
+   ========================================================= */
+
+.sewa-panel-header {
+    width: 100%;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 15px;
+
+    border-bottom: 1px solid #EEE6DB;
+}
+
+
+/* TITLE */
+
+.sewa-panel-title {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+
+/* TITLE ICON WARP */
+
+
+
+.sewa-panel-title h2 {
+    margin: 0;
+
+    color: #29231F;
+
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 500;
+
+    line-height: 1.2;
+}
+
+
+/* =========================================================
+   LEGEND
+   ========================================================= */
+
+/* =========================================================
+   STATUS LEGEND
+   ========================================================= */
+
+/* =========================================================
+   LEGEND - DOT
+   ========================================================= */
+
+.sewa-status-legend .sewa-status-dot.available {
+    width: 9px;
+    height: 9px;
+
+    display: inline-block;
+    flex-shrink: 0;
+
+    background: #35B968 !important;
+
+    border: none;
+
+    border-radius: 50%;
+}
+
+.sewa-status-legend .sewa-status-dot.occupied {
+    width: 9px;
+    height: 9px;
+
+    display: inline-block;
+    flex-shrink: 0;
+
+    background: #4B8BEA !important;
+
+    border: none;
+
+    border-radius: 50%;
+}
+
+
+   
+.sewa-status-legend {
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+}
+
+
+.sewa-legend-item {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 6px;
+
+    color: #766E65;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 400;
+
+    white-space: nowrap;
+}
+
+
+.sewa-unit-status .sewa-status-dot {
+    width: 8px;
+    height: 8px;
+
+    flex-shrink: 0;
+
+    background: transparent !important;
+
+    border: 1.5px solid #111111;
+
+    border-radius: 50%;
+
+    box-sizing: border-box;
+}
+
+
+/* AVAILABLE */
+
+.sewa-status-dot.available {
+    background: #35B968;
+}
+
+
+/* OCCUPIED */
+
+.sewa-status-dot.occupied {
+    background: #4B8BEA;
+}
+
+
+/* =========================================================
+   UNIT GRID
+   ========================================================= */
+
+.sewa-unit-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 180px);
+    grid-auto-rows: 110px;
+
+    column-gap:48px;
+    row-gap: 38px;
+
+    padding: 12px;
+
+    box-sizing: border-box;
+
+    justify-content: start;
+}
+
+
+/* =========================================================
+   UNIT CARD
+   ========================================================= */
+
+.sewa-unit-card {
+    width: 180px;
+    height: 124px;
+
+    padding: 10px 10px 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    box-sizing: border-box;
+
+    border: 1px solid transparent;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    cursor: pointer;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.sewa-unit-card:hover {
+     transform: translateY(-2px);
+    border-color: #B58A4A;
+    box-shadow: 0 4px 12px rgba(173, 126, 70, 0.10);
+}
+
+
+/* AVAILABLE CARD */
+
+.sewa-unit-card.available {
+    background: #E5FBE7;
+
+    border-color: #C8EACC;
+}
+
+
+/* OCCUPIED CARD */
+
+.sewa-unit-card.occupied {
+    background: #E6F0FF;
+
+    border-color: #CADDF7;
+}
+
+
+/* =========================================================
+   UNIT CARD TOP
+   ========================================================= */
+
+.sewa-unit-card-top {
+    width: 100%;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+
+/* UNIT NAME */
+
+.sewa-unit-card-top h3 {
+    margin: 0;
+
+    color: #29231F;
+
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 500;
+
+    line-height: 1.1;
+}
+
+
+/* CONSOLE */
+
+.sewa-unit-card-top p {
+    margin: 5px 0 0;
+
+    color: #665E56;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 400;
+
+    line-height: 1.1;
+}
+
+
+/* =========================================================
+   PC ICON
+   ========================================================= */
+
+.sewa-unit-console-icon {
+    width: 17px;
+    height: 17px;
+
+    display: block;
+
+    flex-shrink: 0;
+
+    object-fit: contain;
+
+    /* tetap mempertahankan warna asli */
+}
+
+
+/* =========================================================
+   UNIT STATUS
+   ========================================================= */
+
+.sewa-unit-status {
+    margin-top: 6px;
+
+    width: max-content;
+
+    min-height: 19px;
+
+    display: inline-flex;
+    align-items: center;
+
+    gap: 5px;
+
+    padding: 2px 7px;
+
+    border-radius: 8px;
+
+    color: #111111;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 400;
+
+    line-height: 1;
+}
+
+
+/* AVAILABLE STATUS */
+
+.sewa-unit-status.available {
+    background: #CFF3D4;
+}
+
+
+/* OCCUPIED STATUS */
+
+.sewa-unit-status.occupied {
+    background: #CFE2FF;
+}
+
+
+/* STATUS DOT DI DALAM CARD */
+
+.sewa-unit-status .sewa-status-dot {
+    width: 7px;
+    height: 7px;
+
+    background: #111111;
+}
+
+
+/* =========================================================
+   UNIT FOOTER
+   ========================================================= */
+
+.sewa-unit-footer {
+    width: 100%;
+
+    min-height: 42px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: stretch;
+    justify-content: flex-end;
+
+    gap: 6px;
+     margin-top: 6px;
+
+    color: #655D55;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 400;
+
+    line-height: 1;
+}
+
+
+
+/* =========================================================
+   DETAIL BUTTON
+   ========================================================= */
+
+.sewa-unit-detail-button {
+    width: 100%;
+    height: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 9px;
+
+    box-sizing: border-box;
+
+    border: none;
+    border-radius: 7px;
+
+    color: #29231F;
+
+    font-family: var(--font-body);
+    font-size: 8px;
+    font-weight: 500;
+
+    line-height: 1;
+}
+
+
+/* AVAILABLE BUTTON */
+
+.sewa-unit-detail-button.available {
+    background: #CFF3D4;
+}
+
+
+/* OCCUPIED BUTTON */
+
+.sewa-unit-detail-button.occupied {
+    background: #CFE2FF;
+}
+
+
+/* HOVER */
+
+.sewa-unit-detail-button:hover {
+    filter: brightness(0.97);
+
+    transform: translateY(-1px);
+}
+
+
+/* ARROW */
+.sewa-unit-detail-button img {
+    width: 9px;
+    height: 9px;
+
+    display: block;
+
+    flex-shrink: 0;
+
+    object-fit: contain;
+
+    transform: rotate(-90deg);
+}
+
+
+/* =========================================================
+   UNIT DETAIL PANEL
+   ========================================================= */
+
+/* =========================================================
+   UNIT DETAIL / UNIT DIPILIH
+   ========================================================= */
+
+.sewa-unit-detail {
+    width: 240px;
+    min-height: 250px;
+
+    padding: 14px;
+
+    box-sizing: border-box;
+
+    background: #FFFEFA;
+
+    border: 1px solid #E5DCD0;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-self: end;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.sewa-detail-header {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 9px;
+}
+
+.sewa-detail-badge {
+    color: #29231F;
+
+    font-family: var(--font-body);
+    font-size: 8px;
+    font-weight: 500;
+
+    line-height: 1.2;
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.sewa-detail-content {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    box-sizing: border-box;
+}
+
+
+/* ICON PC */
+
+.sewa-detail-console-icon {
+    width: 18px;
+    height: 18px;
+
+    margin-bottom: 7px;
+
+    object-fit: contain;
+
+    /* warna #B99053 */
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(64%)
+        sepia(29%)
+        saturate(690%)
+        hue-rotate(356deg)
+        brightness(91%)
+        contrast(86%);
+}
+
+
+/* TV 02 */
+
+.sewa-detail-content h2 {
+    margin: 0;
+
+    color: #29231F;
+
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 600;
+
+    line-height: 1.2;
+}
+
+
+/* PS 4 */
+
+.sewa-detail-console {
+    margin: 4px 0 0;
+
+    color: #8D857D;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 400;
+
+    line-height: 1.2;
+}
+
+
+/* RUANGAN */
+
+.sewa-detail-room {
+    margin: 2px 0 0;
+
+    color: #8D857D;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 400;
+
+    line-height: 1.2;
+}
+
+
+/* =========================================================
+   STATUS
+   ========================================================= */
+
+.sewa-detail-status {
+    width: 100%;
+    height: 42px;
+
+    margin-top: 10px;
+
+    padding: 0 10px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    border-radius: 7px;
+}
+
+.sewa-detail-status.available {
+    background: #E5FBE7;
+}
+
+
+/* DOT STATUS */
+
+.sewa-detail-status .sewa-status-dot {
+    width: 8px;
+    height: 8px;
+
+    flex-shrink: 0;
+
+    background: transparent;
+
+    border: 1.5px solid #111111;
+
+    border-radius: 50%;
+
+    box-sizing: border-box;
+}
+
+.sewa-detail-status span:last-child {
+    color: #29231F;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 500;
+
+    line-height: 1;
+}
+
+
+/* =========================================================
+   TIMER
+   ========================================================= */
+
+.sewa-detail-time {
+    margin: 8px 0 0;
+
+    color: #655D55;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 400;
+
+    line-height: 1.2;
+}
+
+
+/* =========================================================
+   BUTTON
+   ========================================================= */
+
+.sewa-new-button {
+    width: 100%;
+    height: 36px;
+
+    margin-top: auto;
+
+    padding: 0 10px;
+
+    box-sizing: border-box;
+
+    border: none;
+    border-radius: 7px;
+
+    background: #B58A4A;
+
+    color: #FFFFFF;
+
+    font-family: var(--font-body);
+    font-size: 9px;
+    font-weight: 600;
+
+    line-height: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.sewa-new-button:hover {
+    background: #98703B;
+
+    transform: translateY(-1px);
+}
+
+
+/* Jarak header → isi */
+.sewa-detail-header {
+    margin-bottom: 14px;
+}
+
+/* Jarak icon PC → TV 02 */
+.sewa-detail-console-icon {
+    margin-bottom: 10px;
+}
+
+/* Jarak TV 02 → PS 4 */
+.sewa-detail-console {
+    margin-top: 5px;
+}
+
+/* Jarak PS 4 → Ruangan 1 */
+.sewa-detail-room {
+    margin-top: 3px;
+}
+
+/* Jarak informasi unit → status */
+.sewa-detail-status {
+    margin-top: 14px;
+}
+
+/* Jarak status → timer */
+.sewa-detail-time {
+    margin-top: 10px;
+}
+
+/* Jarak timer → tombol */
+.sewa-new-button {
+    margin-top: 16px;
+}
+
+
+/* =========================================================
+   SEWA TERBARU
+   ========================================================= */
+
+/* =========================================================
+   SEWA TERBARU
+   ========================================================= */
+
+.sewa-recent-panel {
+    width: 100%;
+    box-sizing: border-box;
+
+    margin-top: 20px;
+    background: #FFFEFA;
+
+    border: 1px solid #E5DCD0;
+    border-radius: 10px;
+
+    overflow: hidden;
+    transform: translateY(-25px);
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.sewa-recent-header {
+    width: 100%;
+    min-height: 54px;
+
+    padding: 0 18px;
+
+    display: flex;
+    align-items: center;
+
+    box-sizing: border-box;
+
+    border-bottom: 1px solid #E8DED1;
+}
+
+.sewa-recent-title {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.sewa-recent-title img {
+    width: 18px;
+    height: 18px;
+
+    display: block;
+    object-fit: contain;
+}
+
+.sewa-recent-title h2 {
+    margin: 0;
+
+    color: #29231F;
+
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 500;
+
+    line-height: 1.2;
+}
+
+
+/* =========================================================
+   TABLE WRAPPER
+   ========================================================= */
+
+.sewa-table-wrapper {
+    width: 100%;
+    padding: 16px 16px 16px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   TABLE
+   ========================================================= */
+
+.sewa-table {
+    width: 100%;
+
+    border-collapse: separate;
+    border-spacing: 0;
+
+    overflow: hidden;
+
+    border: 1px solid #E5DCD0;
+    border-radius: 10px;
+
+    color: #29231F;
+
+    font-family: var(--font-body);
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   TABLE HEADER
+   ========================================================= */
+
+.sewa-table thead th {
+    height: 45px;
+
+    padding: 0 10px;
+
+    color: #29231F;
+
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 500;
+
+    text-align: center;
+    vertical-align: middle;
+
+    background: #FBF7F1;
+
+    border-bottom: 1px solid #E5DCD0;
+}
+
+
+/* =========================================================
+   TABLE BODY
+   ========================================================= */
+
+.sewa-table tbody td {
+    height: 48px;
+
+    padding: 0 10px;
+
+    color: #29231F;
+
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 400;
+
+    text-align: center;
+    vertical-align: middle;
+
+    border-bottom: 1px solid #E8DED1;
+}
+
+
+/* Hapus border pada baris terakhir */
+
+.sewa-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* =========================================================
+   STATUS
+   ========================================================= */
+
+.sewa-table-status {
+    min-width: 48px;
+    height: 24px;
+
+    padding: 0 9px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    border-radius: 6px;
+
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 500;
+
+    line-height: 1;
+}
+
+.sewa-table-status.active {
+    color: #27864D;
+    background: #E5F6E8;
+}
+
+.sewa-table-status.ended {
+    color: #756C63;
+    background: #F0ECE7;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1200px) {
+
+    .sewa-ps-content {
+        max-width: none;
+    }
+
+    .sewa-unit-grid {
+        grid-template-columns:
+            repeat(3, 180px);
+    }
+
+    .sewa-unit-layout {
+        grid-template-columns: minmax(0, 1fr) 180px;
+    }
+
+}
+
+
+@media (max-width: 950px) {
+
+    .sewa-page-heading {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .sewa-date-time {
+        margin-top: 0;
+    }
+
+    .sewa-summary {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sewa-summary-income {
+        grid-column: span 2;
+    }
+
+    .sewa-unit-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sewa-unit-detail {
+        width: 100%;
+    }
+
+    .sewa-unit-grid {
+        grid-template-columns:
+            repeat(3, 180px);
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .sewa-page-heading {
+        padding-top: 20px;
+    }
+
+    .sewa-page-title-text h1 {
+        font-size: 19px;
+    }
+
+    .sewa-page-title-text p {
+        font-size: 11px;
+    }
+
+    .sewa-page-title-icon {
+        width: 34px;
+        height: 34px;
+    }
+
+    .sewa-date-time {
+        width: 100%;
+    }
+
+    .sewa-date {
+        flex: 1;
+    }
+
+    .sewa-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .sewa-summary-income {
+        grid-column: auto;
+    }
+
+    .sewa-unit-grid {
+        grid-template-columns:
+            repeat(2, 180px);
+        justify-content: center;
+    }
+
+}
+
+
+@media (max-width: 430px) {
+
+    .sewa-unit-grid {
+        grid-template-columns: 180px;
+        justify-content: center;
+    }
+
+    .sewa-date-time {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .sewa-time {
+        justify-content: center;
+    }
+
+}
