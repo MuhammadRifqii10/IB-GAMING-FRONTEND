@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IB Gaming - Admin</title>
+
+    <!-- GLOBAL CSS -->
+    <link rel="stylesheet" href="../../css/global.css">
+
+    <!-- ADMIN LAYOUT -->
+    <link rel="stylesheet" href="../../css/admin/admin-layout.css">
+
+    <link rel="stylesheet" href="../../css/admin/pesanan-fnb.css">
+</head>
+
+<body>
+
+    <div class="admin-layout">
+
+        <!-- =================================================
+             SIDEBAR
+        ================================================== -->
+       <aside class="admin-sidebar">
+
+    <div class="admin-logo-wrapper">
+        <img src="../../assets/Icon/Logo.svg" alt="IB Gaming" class="admin-logo">
+
+        <div class="admin-brand-text">
+            <p class="admin-brand-name">IB GAMING</p>
+            <p class="admin-brand-tagline">PLAY · EAT · ENJOY</p>
+        </div>
+    </div>
+
+    <nav class="admin-nav" aria-label="Navigasi Admin">
+
+        <!-- Dashboard -->
+        <div class="admin-nav-section">
+            <ul class="admin-nav-list">
+                <li>
+                    <a href="dashboard-admin.html" class="admin-nav-link">
+                        <img 
+                            src="../../assets/Icon/Home.svg" 
+                            alt="" 
+                            class="admin-nav-icon" 
+                            aria-hidden="true"
+                        >
+                        <span class="admin-nav-text">Dashboard</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Operasional PlayStation -->
+        <div class="admin-nav-section">
+            <p class="admin-nav-section-title">
+                Operasional PlayStation
+            </p>
+
+            <ul class="admin-nav-list">
+
+                <li>
+                    <a href="sewa-ps.html" class="admin-nav-link">
+                        <img 
+                            src="../../assets/Icon/Game.svg" 
+                            alt="" 
+                            class="admin-nav-icon" 
+                            aria-hidden="true"
+                        >
+                        <span class="admin-nav-text">Sewa PS</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="booking/verifikasi-akun.html" class="admin-nav-link">
+                        <img 
+                            src="../../assets/Icon/Keranjang.svg" 
+                            alt="" 
+                            class="admin-nav-icon" 
+                            aria-hidden="true"
+                        >
+                        <span class="admin-nav-text">Booking PS</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="kelola-unit.html" class="admin-nav-link">
+                        <img 
+                            src="../../assets/Icon/TV.svg" 
+                            alt="" 
+                            class="admin-nav-icon" 
+                            aria-hidden="true"
+                        >
+                        <span class="admin-nav-text">Kelola Unit PS</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <!-- Operasional F & B -->
+        <div class="admin-nav-section">
+            <p class="admin-nav-section-title">
+                Operasional F &amp; B
+            </p>
+
+            <ul class="admin-nav-list">
+
+                <li>
+                    <a href="pesanan-fnb.html" class="admin-nav-link active" aria-current="page">
+                        <img 
+                            src="../../assets/Icon/FNB.svg" 
+                            alt="" 
+                            class="admin-nav-icon" 
+                            aria-hidden="true"
+                        >
+                        <span class="admin-nav-text">Pesanan F &amp; B</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="kelola-menu.html" class="admin-nav-link">
+                        <img 
+                            src="../../assets/Icon/Menu.svg" 
+                            alt="" 
+                            class="admin-nav-icon" 
+                            aria-hidden="true"
+                        >
+                        <span class="admin-nav-text">Kelola Menu F &amp; B</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+    </nav>
+
+    <!-- Logout -->
+    <div class="admin-sidebar-bottom">
+        <a href="#" class="admin-logout">
+            <img 
+                src="../../assets/Icon/Logout.svg" 
+                alt="" 
+                class="admin-logout-icon" 
+                aria-hidden="true"
+            >
+            <span class="admin-logout-text">Logout</span>
+        </a>
+    </div>
+
+</aside>
+
+
+        <!-- =================================================
+             MAIN
+        ================================================== -->
+        <div class="admin-main">
+
+
+            <!-- =================================================
+                 HEADER
+            ================================================== -->
+            <header class="admin-header">
+
+                <!-- SEARCH -->
+                <div class="admin-search-wrapper">
+
+                    <img
+                        src="../../assets/Icon/Search.svg"
+                        alt=""
+                        class="admin-search-icon"
+                    >
+
+                    <input
+                        type="text"
+                        class="admin-search"
+                        placeholder="Cari menu, booking, pelanggan..."
+                    >
+
+                </div>
+
+
+                <!-- HEADER RIGHT -->
+                <div class="admin-header-right">
+
+                    <!-- NOTIFICATION -->
+                    <a
+                        href="notification.html"
+                        class="admin-notification"
+                        aria-label="Notifikasi"
+                    >
+
+                        <img
+                            src="../../assets/Icon/Notif.svg"
+                            alt="Notifikasi"
+                            class="admin-notification-icon"
+                        >
+
+                        <span class="admin-notification-badge"></span>
+
+                    </a>
+
+
+                    <!-- PROFILE -->
+                    <div class="admin-profile">
+
+                        <img
+                            src="../../assets/Images/Elon.jpg"
+                            alt="Admin"
+                            class="admin-profile-image"
+                        >
+
+                        <div class="admin-profile-info">
+
+                            <p class="admin-profile-name">
+                                Admin
+                            </p>
+
+                            <p class="admin-profile-role">
+                                Administrator
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+           <!-- =========================================================
+     PESANAN F & B
+========================================================= -->
+
+<section class="pesanan-fnb-page">
+
+    <!-- =====================================================
+         PAGE HEADER
+    ====================================================== -->
+
+    <div class="pesanan-fnb-header">
+
+        <div class="pesanan-fnb-heading">
+
+            <img
+                src="../../assets/Icon/FNB.svg"
+                alt=""
+                class="pesanan-fnb-heading-icon"
+                aria-hidden="true"
+            >
+
+            <div class="pesanan-fnb-heading-text">
+
+                <h1 class="pesanan-fnb-title">
+                    Pesanan FNB
+                </h1>
+
+                <p class="pesanan-fnb-subtitle">
+                    Kelola pesanan makanan dan minuman dari pelanggan
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         MAIN ORDER CARD
+    ====================================================== -->
+
+    <section class="pesanan-fnb-card">
+
+
+        <!-- =================================================
+             FILTER TAB
+        ================================================== -->
+
+        <nav
+            class="pesanan-fnb-tabs"
+            aria-label="Filter pesanan"
+        >
+
+            <a
+                href="#"
+                class="pesanan-fnb-tab active"
+                aria-current="page"
+            >
+                Semua Pesanan
+            </a>
+
+            <a
+                href="#"
+                class="pesanan-fnb-tab"
+            >
+                Baru
+            </a>
+
+            <a
+                href="#"
+                class="pesanan-fnb-tab"
+            >
+                Diproses
+            </a>
+
+            <a
+                href="#"
+                class="pesanan-fnb-tab"
+            >
+                Selesai
+            </a>
+
+        </nav>
+
+
+        <!-- =================================================
+             SEARCH
+        ================================================== -->
+
+        <div class="pesanan-fnb-search-wrapper">
+
+            <img
+                src="../../assets/Icon/Search.svg"
+                alt=""
+                class="pesanan-fnb-search-icon"
+                aria-hidden="true"
+            >
+
+            <input
+                type="text"
+                class="pesanan-fnb-search"
+                placeholder="Cari Pesanan"
+            >
+
+        </div>
+
+
+        <!-- =================================================
+             TABLE
+        ================================================== -->
+
+        <div class="pesanan-fnb-table-wrapper">
+
+            <table class="pesanan-fnb-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID Pesanan</th>
+
+                        <th>Tanggal</th>
+
+                        <th>Waktu</th>
+
+                        <th>Pelanggan</th>
+
+                        <th>Meja / Unit</th>
+
+                        <th>Total</th>
+
+                        <th>Status</th>
+
+                        <th>Aksi</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <!-- FNB 17 -->
+
+                    <tr>
+
+                        <td>FNB-17</td>
+
+                        <td>10 Okt 2026</td>
+
+                        <td>14:32</td>
+
+                        <td>Kimi Antonelli</td>
+
+                        <td>TV 1</td>
+
+                        <td>Rp 62.000</td>
+
+                        <td>
+                            <span class="pesanan-status status-baru">
+                                Baru
+                            </span>
+                        </td>
+
+                        <td>
+                            <a
+                                href="pesanan-baru.html"
+                                class="pesanan-detail-button"
+                            >
+                                Lihat
+                            </a>
+                        </td>
+
+                    </tr>
+
+
+                    <!-- FNB 16 -->
+
+                    <tr>
+
+                        <td>FNB-16</td>
+
+                        <td>10 Okt 2026</td>
+
+                        <td>14:22</td>
+
+                        <td>Lyry Antonelli</td>
+
+                        <td>TV 2</td>
+
+                        <td>Rp 35.000</td>
+
+                        <td>
+                            <span class="pesanan-status status-baru">
+                                Baru
+                            </span>
+                        </td>
+
+                        <td>
+                            <a
+                                href="pesanan-baru.html"
+                                class="pesanan-detail-button"
+                            >
+                                Lihat
+                            </a>
+                        </td>
+
+                    </tr>
+
+
+                    <!-- FNB 15 -->
+
+                    <tr>
+
+                        <td>FNB-15</td>
+
+                        <td>10 Okt 2026</td>
+
+                        <td>14:12</td>
+
+                        <td>Maxi Antonelli</td>
+
+                        <td>TV 4</td>
+
+                        <td>Rp 28.000</td>
+
+                        <td>
+                            <span class="pesanan-status status-diproses">
+                                Diproses
+                            </span>
+                        </td>
+
+                        <td>
+                            <a
+                                href="pesanan-diproses.html"
+                                class="pesanan-detail-button"
+                            >
+                                Lihat
+                            </a>
+                        </td>
+
+                    </tr>
+
+
+                    <!-- FNB 14 -->
+
+                    <tr>
+
+                        <td>FNB-14</td>
+
+                        <td>10 Okt 2026</td>
+
+                        <td>13:58</td>
+
+                        <td>Marcel Nestle</td>
+
+                        <td>TV 5</td>
+
+                        <td>Rp 58.000</td>
+
+                        <td>
+                            <span class="pesanan-status status-diproses">
+                                Diproses
+                            </span>
+                        </td>
+
+                        <td>
+                            <a
+                                href="pesanan-diproses.html"
+                                class="pesanan-detail-button"
+                            >
+                                Lihat
+                            </a>
+                        </td>
+
+                    </tr>
+
+
+                    <!-- FNB 13 -->
+
+                    <tr>
+
+                        <td>FNB-13</td>
+
+                        <td>10 Okt 2026</td>
+
+                        <td>13:55</td>
+
+                        <td>Lucien Moreau</td>
+
+                        <td>TV 6</td>
+
+                        <td>Rp 41.000</td>
+
+                        <td>
+                            <span class="pesanan-status status-selesai">
+                                Selesai
+                            </span>
+                        </td>
+
+                        <td>
+                            <a
+                                href="pesanan-selesai.html"
+                                class="pesanan-detail-button"
+                            >
+                                Lihat
+                            </a>
+                        </td>
+
+                    </tr>
+
+
+                    <!-- FNB 12 -->
+
+                    <tr>
+
+                        <td>FNB-12</td>
+
+                        <td>10 Okt 2026</td>
+
+                        <td>13:52</td>
+
+                        <td>Lucien Moreau</td>
+
+                        <td>TV 6</td>
+
+                        <td>Rp 24.000</td>
+
+                        <td>
+                            <span class="pesanan-status status-selesai">
+                                Selesai
+                            </span>
+                        </td>
+
+                        <td>
+                            <a
+                                href="pesanan-selesai.html"
+                                class="pesanan-detail-button"
+                            >
+                                Lihat
+                            </a>
+                        </td>
+
+                    </tr>
+
+
+                    <!-- FNB 11 -->
+
+                    <tr>
+
+                        <td>FNB-11</td>
+
+                        <td>10 Okt 2026</td>
+
+                        <td>13:52</td>
+
+                        <td>Marco Bellini</td>
+
+                        <td>TV 8</td>
+
+                        <td>Rp 38.000</td>
+
+                        <td>
+                            <span class="pesanan-status status-selesai">
+                                Selesai
+                            </span>
+                        </td>
+
+                        <td>
+                            <a
+                                href="pesanan-selesai.html"
+                                class="pesanan-detail-button"
+                            >
+                                Lihat
+                            </a>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <!-- =================================================
+             PAGINATION
+        ================================================== -->
+
+        <div class="pesanan-fnb-pagination">
+
+            <button
+                type="button"
+                class="pesanan-pagination-button"
+                aria-label="Halaman sebelumnya"
+            >
+                <img
+                    src="../../assets/Icon/Arrow.svg"
+                    alt=""
+                    class="pesanan-pagination-arrow pagination-arrow-left"
+                    aria-hidden="true"
+                >
+            </button>
+
+
+            <button
+                type="button"
+                class="pesanan-pagination-button active"
+                aria-current="page"
+            >
+                1
+            </button>
+
+
+            <button
+                type="button"
+                class="pesanan-pagination-button"
+                aria-label="Halaman berikutnya"
+            >
+                <img
+                    src="../../assets/Icon/Arrow.svg"
+                    alt=""
+                    class="pesanan-pagination-arrow pagination-arrow-right"
+                    aria-hidden="true"
+                >
+            </button>
+
+        </div>
+
+    </section>
+
+</section>
+
+
+            <!-- =================================================
+                 FOOTER
+            ================================================== -->
+            <footer class="admin-footer">
+
+
+                <!-- Premium Equipment -->
+                <article class="admin-footer-item">
+
+                    <div class="admin-footer-icon">
+
+                        <img
+                            src="../../assets/Icon/Controller Icon.svg"
+                            alt=""
+                            aria-hidden="true"
+                        >
+
+                    </div>
+
+                    <div class="admin-footer-text">
+
+                        <p class="admin-footer-title">
+                            Premium Equipment
+                        </p>
+
+                        <p class="admin-footer-description">
+                            PlayStation terbaru &amp; berkualitas
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Delicious Food & Drinks -->
+                <article class="admin-footer-item">
+
+                    <div class="admin-footer-icon">
+
+                        <img
+                            src="../../assets/Icon/FNB.svg"
+                            alt=""
+                            aria-hidden="true"
+                        >
+
+                    </div>
+
+                    <div class="admin-footer-text">
+
+                        <p class="admin-footer-title">
+                            Delicious Food &amp; Drinks
+                        </p>
+
+                        <p class="admin-footer-description">
+                            Pilihan menu terbaik
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Comfortable Space -->
+                <article class="admin-footer-item">
+
+                    <div class="admin-footer-icon">
+
+                        <img
+                            src="../../assets/Icon/Bintang.svg"
+                            alt=""
+                            aria-hidden="true"
+                        >
+
+                    </div>
+
+                    <div class="admin-footer-text">
+
+                        <p class="admin-footer-title">
+                            Comfortable Space
+                        </p>
+
+                        <p class="admin-footer-description">
+                            Suasana nyaman &amp; modern
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Friendly Support -->
+                <article class="admin-footer-item">
+
+                    <div class="admin-footer-icon">
+
+                        <img
+                            src="../../assets/Icon/People Icon.svg"
+                            alt=""
+                            aria-hidden="true"
+                        >
+
+                    </div>
+
+                    <div class="admin-footer-text">
+
+                        <p class="admin-footer-title">
+                            Friendly Support
+                        </p>
+
+                        <p class="admin-footer-description">
+                            Selalu siap membantu
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+            </footer>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Detail Booking Terlambat - Booking PS | IB Gaming</title>
+
+    <!-- GLOBAL CSS -->
+    <link rel="stylesheet" href="../../../css/global.css">
+
+    <!-- ADMIN LAYOUT -->
+    <link rel="stylesheet" href="../../../css/admin/admin-layout.css">
+
+    <!-- DETAIL BOOKING TERLAMBAT -->
+    <link rel="stylesheet" href="../../../css/admin/booking/detail-booking-terlambat.css">
+</head>
+
+<body>
+
+    <div class="admin-layout">
+
+        <!-- =====================================================
+             SIDEBAR
+        ====================================================== -->
+        <aside class="admin-sidebar">
+
+            <div class="admin-logo-wrapper">
+                <img src="../../../assets/Icon/Logo.svg" alt="IB Gaming" class="admin-logo">
+                <div class="admin-brand-text">
+                    <p class="admin-brand-name">IB GAMING</p>
+                    <p class="admin-brand-tagline">PLAY · EAT · ENJOY</p>
+                </div>
+            </div>
+
+            <nav class="admin-nav" aria-label="Navigasi Admin">
+
+                <div class="admin-nav-section">
+                    <ul class="admin-nav-list">
+                        <li>
+                            <a href="../dashboard-admin.html" class="admin-nav-link">
+                                <img src="../../../assets/Icon/Home.svg" alt="" class="admin-nav-icon" aria-hidden="true">
+                                <span class="admin-nav-text">Dashboard</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="admin-nav-section">
+                    <p class="admin-nav-section-title">Operasional PlayStation</p>
+                    <ul class="admin-nav-list">
+                        <li>
+                            <a href="../sewa-ps.html" class="admin-nav-link">
+                                <img src="../../../assets/Icon/Game.svg" alt="" class="admin-nav-icon" aria-hidden="true">
+                                <span class="admin-nav-text">Sewa PS</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="verifikasi-booking.html" class="admin-nav-link active" aria-current="page">
+                                <img src="../../../assets/Icon/Keranjang.svg" alt="" class="admin-nav-icon" aria-hidden="true">
+                                <span class="admin-nav-text">Booking PS</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../kelola-unit.html" class="admin-nav-link">
+                                <img src="../../../assets/Icon/TV.svg" alt="" class="admin-nav-icon" aria-hidden="true">
+                                <span class="admin-nav-text">Kelola Unit PS</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="admin-nav-section">
+                    <p class="admin-nav-section-title">Operasional F &amp; B</p>
+                    <ul class="admin-nav-list">
+                        <li>
+                            <a href="../pesanan-fnb.html" class="admin-nav-link">
+                                <img src="../../../assets/Icon/FNB.svg" alt="" class="admin-nav-icon" aria-hidden="true">
+                                <span class="admin-nav-text">Pesanan F &amp; B</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../kelola-menu.html" class="admin-nav-link">
+                                <img src="../../../assets/Icon/Menu.svg" alt="" class="admin-nav-icon" aria-hidden="true">
+                                <span class="admin-nav-text">Kelola Menu F &amp; B</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+
+            <div class="admin-sidebar-bottom">
+                <a href="#" class="admin-logout">
+                    <img src="../../../assets/Icon/Logout.svg" alt="" class="admin-logout-icon" aria-hidden="true">
+                    <span class="admin-logout-text">Logout</span>
+                </a>
+            </div>
+
+        </aside>
+
+
+        <!-- =====================================================
+             MAIN AREA
+        ====================================================== -->
+        <div class="admin-main">
+
+            <!-- HEADER -->
+            <header class="admin-header">
+
+                <div class="admin-search-wrapper">
+                    <img src="../../../assets/Icon/Search.svg" alt="" class="admin-search-icon">
+                    <input type="text" class="admin-search" placeholder="Cari menu, booking, pelanggan...">
+                </div>
+
+                <div class="admin-header-right">
+
+                    <a href="../notification.html" class="admin-notification" aria-label="Notifikasi">
+                        <img src="../../../assets/Icon/Notif.svg" alt="Notifikasi" class="admin-notification-icon">
+                        <span class="admin-notification-badge"></span>
+                    </a>
+
+                    <div class="admin-profile">
+                        <img src="../../../assets/Images/Elon.jpg" alt="Admin" class="admin-profile-image">
+                        <div class="admin-profile-info">
+                            <p class="admin-profile-name">Admin</p>
+                            <p class="admin-profile-role">Administrator</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- CONTENT -->
+            <main class="admin-content booking-terlambat-main">
+
+                <!-- BREADCRUMB -->
+                <nav class="booking-terlambat-breadcrumb" aria-label="Breadcrumb">
+                    <a href="verifikasi-booking.html" class="booking-terlambat-breadcrumb-back" aria-label="Kembali ke Booking PS">
+                        <img src="../../../assets/Icon/Panah.svg" alt="" class="booking-terlambat-breadcrumb-back-icon" aria-hidden="true">
+                    </a>
+
+                    <a href="verifikasi-booking.html" class="booking-terlambat-breadcrumb-parent">Booking PS</a>
+
+                    <img src="../../../assets/Icon/Arrow.svg" alt="" class="booking-terlambat-breadcrumb-sep" aria-hidden="true">
+
+                    <span class="booking-terlambat-breadcrumb-current">Detail Verifikasi Booking</span>
+                </nav>
+
+
+                <!-- PAGE HEADER -->
+                <div class="booking-terlambat-heading">
+
+                    <div class="booking-terlambat-heading-left">
+                        <img src="../../../assets/Icon/Keranjang.svg" alt="" class="booking-terlambat-heading-icon" aria-hidden="true">
+                        <div class="booking-terlambat-heading-text">
+                            <h1 class="booking-terlambat-heading-title">Booking PS - Detail Terlambat</h1>
+                            <p class="booking-terlambat-heading-subtitle">Kelola Pengajuan Booking Playstation Pelanggan</p>
+                        </div>
+                    </div>
+
+                    <a href="verifikasi-booking.html" class="booking-terlambat-back-button">
+                        <img src="../../../assets/Icon/Panah.svg" alt="" class="booking-terlambat-back-icon" aria-hidden="true">
+                        <span>Kembali</span>
+                    </a>
+
+                </div>
+
+
+                <!-- STATUS BANNER -->
+                <section class="booking-terlambat-status-card" aria-label="Status Keterlambatan">
+                    <div class="booking-terlambat-status-banner">
+                        <span class="booking-terlambat-status-icon-wrap" aria-hidden="true">
+                            <img src="../../../assets/Icon/Timer.svg" alt="" class="booking-terlambat-status-icon">
+                        </span>
+                        <div class="booking-terlambat-status-text">
+                            <h2 class="booking-terlambat-status-title">Pengembalian Terlambat</h2>
+                            <p class="booking-terlambat-status-subtitle">Unit belum dikembalikan hingga melewati batas waktu pengembalian</p>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- CONTENT GRID (2 KOLOM) -->
+                <div class="booking-terlambat-grid">
+
+                    <!-- ===== KOLOM KIRI ===== -->
+                    <div class="booking-terlambat-col-left">
+
+                        <!-- CARD 1: INFORMASI BOOKING -->
+                        <section class="booking-terlambat-card booking-terlambat-info">
+
+                            <div class="booking-terlambat-card-header">
+                                <div class="booking-terlambat-card-title-group">
+                                    <img src="../../../assets/Icon/Keranjang.svg" alt="" class="booking-terlambat-card-icon" aria-hidden="true">
+                                    <h2 class="booking-terlambat-card-title">Informasi Booking</h2>
+                                </div>
+                            </div>
+
+                            <div class="booking-terlambat-info-list">
+
+                                <div class="booking-terlambat-info-row">
+                                    <span class="booking-terlambat-info-label">ID Booking</span>
+                                    <span class="booking-terlambat-info-colon">:</span>
+                                    <span class="booking-terlambat-info-value">BKG-01</span>
+                                </div>
+
+                                <div class="booking-terlambat-info-row">
+                                    <span class="booking-terlambat-info-label">Tanggal Pengajuan</span>
+                                    <span class="booking-terlambat-info-colon">:</span>
+                                    <span class="booking-terlambat-info-value">8 Okt 2026, 14:00</span>
+                                </div>
+
+                                <div class="booking-terlambat-info-row">
+                                    <span class="booking-terlambat-info-label">Estimasi Pengembalian</span>
+                                    <span class="booking-terlambat-info-colon">:</span>
+                                    <span class="booking-terlambat-info-value">9 Okt 2026, 14:00</span>
+                                </div>
+
+                                <div class="booking-terlambat-info-row">
+                                    <span class="booking-terlambat-info-label">Durasi</span>
+                                    <span class="booking-terlambat-info-colon">:</span>
+                                    <span class="booking-terlambat-info-value">1 Hari</span>
+                                </div>
+
+                                <div class="booking-terlambat-info-row">
+                                    <span class="booking-terlambat-info-label">Metode Pembayaran</span>
+                                    <span class="booking-terlambat-info-colon">:</span>
+                                    <span class="booking-terlambat-info-value">QRIS</span>
+                                </div>
+
+                            </div>
+
+                        </section>
+
+
+                        <!-- CARD 3: DATA PELANGGAN -->
+                        <section class="booking-terlambat-card booking-terlambat-customer">
+
+                            <div class="booking-terlambat-card-header">
+                                <div class="booking-terlambat-card-title-group">
+                                    <img src="../../../assets/Icon/User-gold.svg" alt="" class="booking-terlambat-card-icon" aria-hidden="true">
+                                    <h2 class="booking-terlambat-card-title">Data Pelanggan</h2>
+                                </div>
+                            </div>
+
+                            <div class="booking-terlambat-customer-body">
+                                <div class="booking-terlambat-customer-avatar" aria-hidden="true">
+                                    <img src="../../../assets/Icon/User.svg" alt="" class="booking-terlambat-customer-avatar-icon">
+                                </div>
+
+                                <div class="booking-terlambat-customer-details">
+                                    <p class="booking-terlambat-customer-id">USR-01</p>
+                                    <p class="booking-terlambat-customer-name">Kimi Antonelli</p>
+                                    <p class="booking-terlambat-customer-contact">Kimi@gmail.com</p>
+                                    <p class="booking-terlambat-customer-contact">081234567890</p>
+                                </div>
+                            </div>
+
+                        </section>
+
+                    </div>
+                    <!-- END KOLOM KIRI -->
+
+
+                    <!-- ===== KOLOM KANAN ===== -->
+                    <div class="booking-terlambat-col-right">
+
+                        <!-- CARD 2: UNIT YANG DISEWA -->
+                        <section class="booking-terlambat-card booking-terlambat-units">
+
+                            <div class="booking-terlambat-card-header">
+                                <div class="booking-terlambat-card-title-group">
+                                    <img src="../../../assets/Icon/Game.svg" alt="" class="booking-terlambat-card-icon" aria-hidden="true">
+                                    <h2 class="booking-terlambat-card-title">Unit yang di sewa</h2>
+                                </div>
+                            </div>
+
+                            <div class="booking-terlambat-unit-list">
+
+                                <article class="booking-terlambat-unit-item">
+                                    <img src="../../../assets/Images/PS4.png" alt="Playstation 4" class="booking-terlambat-unit-image">
+                                    <div class="booking-terlambat-unit-info">
+                                        <p class="booking-terlambat-unit-name">Playstation 4</p>
+                                        <p class="booking-terlambat-unit-subtitle">Console + 2 Stik</p>
+                                    </div>
+                                    <span class="booking-terlambat-unit-qty">1 Unit</span>
+                                </article>
+
+                                <article class="booking-terlambat-unit-item">
+                                    <img src="../../../assets/Images/Tv55.png" alt="TV 55 Inch" class="booking-terlambat-unit-image booking-terlambat-unit-image-tv">
+                                    <div class="booking-terlambat-unit-info">
+                                        <p class="booking-terlambat-unit-name">TV 55&rdquo;</p>
+                                    </div>
+                                    <span class="booking-terlambat-unit-qty">1 Unit</span>
+                                </article>
+
+                            </div>
+
+                        </section>
+
+
+                        <!-- CARD 4: RINCIAN BIAYA -->
+                        <section class="booking-terlambat-card booking-terlambat-cost">
+
+                            <div class="booking-terlambat-card-header">
+                                <div class="booking-terlambat-card-title-group">
+                                    <img src="../../../assets/Icon/Wallet.svg" alt="" class="booking-terlambat-card-icon" aria-hidden="true">
+                                    <h2 class="booking-terlambat-card-title">Rincian Biaya</h2>
+                                </div>
+                            </div>
+
+                            <div class="booking-terlambat-cost-list">
+                                <div class="booking-terlambat-cost-row">
+                                    <span class="booking-terlambat-cost-label">PS 4 (1 Hari)</span>
+                                    <span class="booking-terlambat-cost-value">Rp 30.000</span>
+                                </div>
+
+                                <div class="booking-terlambat-cost-row">
+                                    <span class="booking-terlambat-cost-label">TV 55 Inch (1 Hari)</span>
+                                    <span class="booking-terlambat-cost-value">Rp 40.000</span>
+                                </div>
+                            </div>
+
+                            <div class="booking-terlambat-cost-total">
+                                <span class="booking-terlambat-cost-total-label">Total Estimasi Biaya</span>
+                                <span class="booking-terlambat-cost-total-value">Rp 70.000</span>
+                            </div>
+
+                        </section>
+
+
+                        <!-- CARD 5: DENDA KETERLAMBATAN -->
+                        <section class="booking-terlambat-card booking-terlambat-fine">
+
+                            <div class="booking-terlambat-card-header">
+                                <div class="booking-terlambat-card-title-group">
+                                    <img src="../../../assets/Icon/Timer.svg" alt="" class="booking-terlambat-card-icon" aria-hidden="true">
+                                    <h2 class="booking-terlambat-card-title">Denda Keterlambatan</h2>
+                                </div>
+                            </div>
+
+                            <div class="booking-terlambat-fine-box">
+
+                                <div class="booking-terlambat-fine-rows">
+                                    <div class="booking-terlambat-fine-row">
+                                        <span class="booking-terlambat-fine-label">Lama Keterlambatan</span>
+                                        <span class="booking-terlambat-fine-colon">:</span>
+                                        <span class="booking-terlambat-fine-value">1 Hari</span>
+                                    </div>
+
+                                    <div class="booking-terlambat-fine-row">
+                                        <span class="booking-terlambat-fine-label">Biaya Denda / Hari</span>
+                                        <span class="booking-terlambat-fine-colon">:</span>
+                                        <span class="booking-terlambat-fine-value">Rp 30.000</span>
+                                    </div>
+                                </div>
+
+                                <div class="booking-terlambat-fine-total">
+                                    <span class="booking-terlambat-fine-total-label">Total Denda</span>
+                                    <span class="booking-terlambat-fine-total-value">30.000</span>
+                                </div>
+
+                            </div>
+
+                        </section>
+
+                    </div>
+                    <!-- END KOLOM KANAN -->
+
+                </div>
+                <!-- END GRID -->
+
+            </main>
+
+
+            <!-- FOOTER -->
+            <footer class="admin-footer">
+
+                <article class="admin-footer-item">
+                    <div class="admin-footer-icon">
+                        <img src="../../../assets/Icon/Controller Icon.svg" alt="" aria-hidden="true">
+                    </div>
+                    <div class="admin-footer-text">
+                        <p class="admin-footer-title">Premium Equipment</p>
+                        <p class="admin-footer-description">PlayStation terbaru &amp; berkualitas</p>
+                    </div>
+                </article>
+
+                <article class="admin-footer-item">
+                    <div class="admin-footer-icon">
+                        <img src="../../../assets/Icon/FNB.svg" alt="" aria-hidden="true">
+                    </div>
+                    <div class="admin-footer-text">
+                        <p class="admin-footer-title">Delicious Food &amp; Drinks</p>
+                        <p class="admin-footer-description">Pilihan menu terbaik</p>
+                    </div>
+                </article>
+
+                <article class="admin-footer-item">
+                    <div class="admin-footer-icon">
+                        <img src="../../../assets/Icon/Bintang.svg" alt="" aria-hidden="true">
+                    </div>
+                    <div class="admin-footer-text">
+                        <p class="admin-footer-title">Comfortable Space</p>
+                        <p class="admin-footer-description">Suasana nyaman &amp; modern</p>
+                    </div>
+                </article>
+
+                <article class="admin-footer-item">
+                    <div class="admin-footer-icon">
+                        <img src="../../../assets/Icon/People Icon.svg" alt="" aria-hidden="true">
+                    </div>
+                    <div class="admin-footer-text">
+                        <p class="admin-footer-title">Friendly Support</p>
+                        <p class="admin-footer-description">Selalu siap membantu</p>
+                    </div>
+                </article>
+
+            </footer>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+

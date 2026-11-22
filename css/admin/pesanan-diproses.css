@@ -1,0 +1,561 @@
+/* =========================================================
+   PESANAN DIPROSES — Detail Pesanan F & B
+   pesanan-diproses.css
+   Prefix: pesanan-diproses-
+   Tidak mengubah: global.css, admin-layout.css, pesanan-fnb.css
+========================================================= */
+
+
+/* =========================================================
+   MAIN CONTENT WRAPPER
+========================================================= */
+
+.pesanan-diproses-main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+/* =========================================================
+   TOP BAR: Breadcrumb + Tombol Kembali
+========================================================= */
+
+.pesanan-diproses-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pesanan-diproses-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.pesanan-diproses-breadcrumb-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.pesanan-diproses-breadcrumb-back-icon {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    opacity: 0.5;
+    transform: rotate(180deg);
+}
+
+.pesanan-diproses-breadcrumb-parent {
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 12px;
+    font-weight: 400;
+    color: #A69E93;
+    text-decoration: none;
+    transition: color 0.15s;
+}
+
+.pesanan-diproses-breadcrumb-parent:hover {
+    color: #B99053;
+}
+
+.pesanan-diproses-breadcrumb-sep {
+    width: 12px;
+    height: 12px;
+    object-fit: contain;
+    opacity: 0.4;
+}
+
+.pesanan-diproses-breadcrumb-current {
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 12px;
+    font-weight: 600;
+    color: #B99053;
+}
+
+/* Tombol Kembali */
+.pesanan-diproses-back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    height: 36px;
+    padding: 0 16px;
+
+    background: #FFFEFC;
+    border: 1px solid #B99053;
+    border-radius: 8px;
+
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 13px;
+    font-weight: 500;
+    color: #B99053;
+
+    text-decoration: none;
+    transition: background 0.15s ease;
+    white-space: nowrap;
+}
+
+.pesanan-diproses-back-btn:hover {
+    background: #F7EFE2;
+}
+
+.pesanan-diproses-back-icon {
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+    transform: rotate(180deg);
+    filter: invert(55%) sepia(60%) saturate(400%) hue-rotate(10deg) brightness(90%);
+}
+
+
+/* =========================================================
+   PAGE HEADING
+========================================================= */
+
+.pesanan-diproses-heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pesanan-diproses-heading-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    flex-shrink: 0;
+    opacity: 0.75;
+}
+
+.pesanan-diproses-heading-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.pesanan-diproses-heading-title {
+    margin: 0;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 16px;
+    font-weight: 600;
+    color: #29231F;
+    line-height: 20px;
+}
+
+.pesanan-diproses-heading-subtitle {
+    margin: 0;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 11px;
+    font-weight: 400;
+    color: #A69E93;
+    line-height: 15px;
+}
+
+
+/* =========================================================
+   STATUS BANNER: Pesanan Sedang Diproses (Biru)
+========================================================= */
+
+.pesanan-diproses-status-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    padding: 14px 20px;
+
+    background: #C9DEFF;
+    border-radius: 10px;
+
+    box-sizing: border-box;
+}
+
+.pesanan-diproses-banner-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+/* Icon circle biru */
+.pesanan-diproses-banner-icon-wrapper {
+    width: 46px;
+    height: 46px;
+    flex-shrink: 0;
+
+    background: #3B82F6;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pesanan-diproses-banner-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+.pesanan-diproses-banner-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.pesanan-diproses-banner-title {
+    margin: 0;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 14px;
+    font-weight: 700;
+    color: #3B82F6;
+    line-height: 18px;
+}
+
+.pesanan-diproses-banner-subtitle {
+    margin: 0;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 11px;
+    font-weight: 400;
+    color: #3B5DA0;
+    line-height: 15px;
+}
+
+/* Badge "Diproses" */
+.pesanan-diproses-banner-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 70px;
+    height: 24px;
+    padding: 0 12px;
+
+    background: #3B82F6;
+    border-radius: 5px;
+
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 12px;
+    font-weight: 600;
+    color: #FFFFFF;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   CONTENT GRID: 2 kolom
+========================================================= */
+
+.pesanan-diproses-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 20px;
+    align-items: start;
+}
+
+.pesanan-diproses-col-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pesanan-diproses-col-right {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+/* =========================================================
+   SHARED CARD BASE
+========================================================= */
+
+.pesanan-diproses-info-card,
+.pesanan-diproses-menu-card,
+.pesanan-diproses-payment-card,
+.pesanan-diproses-action-card {
+    background: #FFFEFA;
+    border-radius: 12px;
+    border: 1px solid #E8DDD3;
+    padding: 20px 24px;
+    box-sizing: border-box;
+}
+
+.pesanan-diproses-card-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.pesanan-diproses-card-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    opacity: 0.7;
+    flex-shrink: 0;
+}
+
+.pesanan-diproses-card-title {
+    margin: 0;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 14px;
+    font-weight: 700;
+    color: #29231F;
+    line-height: 18px;
+}
+
+
+/* =========================================================
+   CARD: INFORMASI PESANAN
+========================================================= */
+
+.pesanan-diproses-info-body {
+    display: flex;
+    align-items: flex-start;
+    gap: 0;
+}
+
+.pesanan-diproses-info-fields {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pesanan-diproses-field {
+    display: flex;
+    align-items: flex-start;
+    gap: 0;
+}
+
+.pesanan-diproses-field-label {
+    width: 130px;
+    flex-shrink: 0;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 12px;
+    font-weight: 400;
+    color: #A69E93;
+    line-height: 18px;
+}
+
+.pesanan-diproses-field-value {
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 12px;
+    font-weight: 500;
+    color: #29231F;
+    line-height: 18px;
+}
+
+/* Vertical divider */
+.pesanan-diproses-info-divider {
+    width: 1px;
+    align-self: stretch;
+    background: #D8CEC1;
+    margin: 0 24px;
+    flex-shrink: 0;
+}
+
+/* Catatan */
+.pesanan-diproses-info-notes {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 100px;
+}
+
+.pesanan-diproses-notes-value {
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 12px;
+    font-weight: 500;
+    color: #29231F;
+}
+
+
+/* =========================================================
+   CARD: RINCIAN MENU — Tabel
+========================================================= */
+
+.pesanan-diproses-table-wrapper {
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid #E8DDD3;
+}
+
+.pesanan-diproses-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 13px;
+}
+
+.pesanan-diproses-th {
+    background: #FBF5EF;
+    padding: 10px 14px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 600;
+    color: #29231F;
+    border-bottom: 1px solid #E8DDD3;
+    white-space: nowrap;
+}
+
+.pesanan-diproses-th--no       { width: 48px;  text-align: center; }
+.pesanan-diproses-th--menu     { }
+.pesanan-diproses-th--jumlah   { width: 80px;  text-align: center; }
+.pesanan-diproses-th--harga    { width: 100px; }
+.pesanan-diproses-th--subtotal { width: 110px; text-align: right;  }
+
+.pesanan-diproses-tr {
+    background: #FFFEFC;
+}
+
+.pesanan-diproses-tr:not(:last-child) {
+    border-bottom: 1px solid #E8DDD3;
+}
+
+.pesanan-diproses-td {
+    padding: 11px 14px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #29231F;
+    vertical-align: middle;
+}
+
+.pesanan-diproses-td--center { text-align: center; }
+.pesanan-diproses-td--right  { text-align: right; }
+
+.pesanan-diproses-tfoot-row {
+    background: #FBF5EF;
+    border-top: 1.5px solid #E8DDD3;
+}
+
+.pesanan-diproses-tfoot-label {
+    padding: 12px 14px;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 13px;
+    font-weight: 700;
+    color: #29231F;
+}
+
+.pesanan-diproses-tfoot-total {
+    padding: 12px 14px;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 14px;
+    font-weight: 700;
+    color: #29231F;
+    text-align: right;
+}
+
+
+/* =========================================================
+   CARD: STATUS PEMBAYARAN
+========================================================= */
+
+.pesanan-diproses-payment-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pesanan-diproses-payment-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+.pesanan-diproses-payment-label {
+    flex: 1;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 12px;
+    font-weight: 400;
+    color: #A69E93;
+    line-height: 18px;
+}
+
+.pesanan-diproses-payment-sep {
+    font-size: 12px;
+    color: #A69E93;
+    line-height: 18px;
+    flex-shrink: 0;
+}
+
+.pesanan-diproses-payment-value {
+    flex: 1;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 12px;
+    font-weight: 500;
+    color: #29231F;
+    line-height: 18px;
+}
+
+.pesanan-diproses-payment-value--total {
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   CARD: AKSI
+========================================================= */
+
+.pesanan-diproses-action-header {
+    margin-bottom: 14px;
+}
+
+.pesanan-diproses-action-title {
+    margin: 0 0 2px 0;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 14px;
+    font-weight: 700;
+    color: #29231F;
+}
+
+.pesanan-diproses-action-subtitle {
+    margin: 0;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 11px;
+    font-weight: 400;
+    color: #A69E93;
+}
+
+.pesanan-diproses-action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Tombol Selesaikan Pesanan */
+.pesanan-diproses-complete-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 40px;
+    padding: 0;
+
+    background: #B99053;
+    border: none;
+    border-radius: 10px;
+
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 13px;
+    font-weight: 600;
+    color: #FFFFFF;
+
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.15s ease;
+    box-sizing: border-box;
+}
+
+.pesanan-diproses-complete-button:hover {
+    background: #9A7338;
+}
+

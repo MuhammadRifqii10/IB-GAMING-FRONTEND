@@ -1,0 +1,911 @@
+/* =========================================================
+   KELOLA MENU F&B
+   Main Content Only
+========================================================= */
+
+
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+
+.kelola-menu-content {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 18px 20px 30px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   PAGE HEADER
+========================================================= */
+
+.kelola-menu-header {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+
+/* LEFT TITLE */
+
+.kelola-menu-title-wrapper {
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+}
+
+.kelola-menu-title-icon {
+    width: 42px;
+    height: 42px;
+
+    object-fit: contain;
+
+    flex-shrink: 0;
+}
+
+.kelola-menu-title-text {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1px;
+}
+
+.kelola-menu-title-text h1 {
+    margin: 0;
+
+    font-family: var(--font-body);
+
+    font-size: 16px;
+    font-weight: 600;
+
+    line-height: 1.2;
+
+    color: var(--text-primary);
+}
+
+.kelola-menu-title-text p {
+    margin: 0;
+
+    font-family: var(--font-body);
+
+    font-size: 10px;
+    font-weight: 400;
+
+    line-height: 1.3;
+
+    color: var(--text-muted);
+}
+
+
+/* =========================================================
+   TAMBAH MENU BUTTON
+========================================================= */
+
+.btn-tambah-menu {
+    height: 36px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+
+    padding: 0 13px;
+
+    background: #B58A4A;
+
+    border-radius: 7px;
+
+    color: #FFFFFF;
+
+    font-family: var(--font-body);
+
+    font-size: 14px;
+    font-weight: 500;
+
+    white-space: nowrap;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.btn-tambah-menu img {
+    width: 13px;
+    height: 13px;
+
+    object-fit: contain;
+}
+
+.btn-tambah-menu:hover {
+    background: #98703B;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   MAIN CARD
+========================================================= */
+
+.kelola-menu-card {
+    width: 100%;
+
+    background: #FBF8F4;
+
+    border: 1px solid #E8DDD3;
+
+    border-radius: 16px;
+
+    padding: 17px 16px 15px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   MENU TABS
+========================================================= */
+
+.kelola-menu-tabs {
+    display: flex;
+    align-items: center;
+
+    gap: 29px;
+
+    padding-left: 3px;
+
+    margin-bottom: 14px;
+}
+
+.kelola-menu-tab {
+    position: relative;
+
+    height: 32px;
+
+    padding: 0;
+
+    border: none;
+
+    background: transparent;
+
+    color: #29231F;
+
+    font-family: var(--font-body);
+
+    font-size: 14px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition:
+        color 0.2s ease;
+}
+
+.kelola-menu-tab::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+
+    bottom: -4px;
+
+    height: 1.5px;
+
+    background: transparent;
+
+    transition:
+        background-color 0.2s ease;
+}
+
+.kelola-menu-tab:hover {
+    color: #98703B;
+}
+
+.kelola-menu-tab.active {
+    color: #B58A4A;
+}
+
+.kelola-menu-tab.active::after {
+    background: #B58A4A;
+}
+
+
+/* =========================================================
+   FILTER ROW
+========================================================= */
+
+.kelola-menu-filter-row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 188px 162px;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 18px;
+
+}
+
+
+/* SEARCH */
+
+/* ================================
+   SEARCH MENU
+================================ */
+
+.kelola-menu-search-wrapper {
+    width: 100%;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 0 12px;
+
+    background: #FFFEFC;
+    border: 1px solid #E8DDD3;
+    border-radius: 7px;
+
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Saat input diklik */
+.kelola-menu-search-wrapper:focus-within {
+    border-color: #B99053;
+    box-shadow: 0 0 0 1px #B99053;
+}
+
+/* Icon Search */
+.kelola-menu-search-icon {
+    width: 12px;
+    height: 12px;
+
+    flex-shrink: 0;
+    object-fit: contain;
+
+    /* warna icon menjadi #B99053 */
+    filter: brightness(0) saturate(100%)
+            invert(57%)
+            sepia(24%)
+            saturate(850%)
+            hue-rotate(356deg)
+            brightness(88%)
+            contrast(90%);
+}
+
+/* Input */
+.kelola-menu-search {
+    width: 100%;
+    height: 100%;
+
+    padding: 0;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--text-primary);
+}
+
+/* Placeholder */
+.kelola-menu-search::placeholder {
+    color: #A69E93;
+}
+
+/* Hilangkan outline bawaan */
+.kelola-menu-search:focus {
+    outline: none;
+}
+
+
+
+
+/* CATEGORY */
+
+.kelola-menu-category {
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 10px;
+
+    background: #FFFEFC;
+
+    border: 1px solid #E8DDD3;
+
+    border-radius: 6px;
+
+    color: #A69E93;
+
+    font-family: var(--font-body);
+
+    font-size: 10px;
+    font-weight: 400;
+
+    cursor: pointer;
+
+    transition:
+        border-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.kelola-menu-category:hover {
+    border-color: #B58A4A;
+
+    color: #98703B;
+}
+
+.kelola-menu-category-arrow {
+    width: 10px;
+    height: 10px;
+
+    object-fit: contain;
+
+    transform: rotate(90deg);
+}
+
+
+/* =========================================================
+   TOTAL MENU
+========================================================= */
+
+.kelola-menu-total {
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 0 9px;
+
+    background: #FFFEFC;
+
+    border: 1px solid #E8DDD3;
+
+    border-radius: 7px;
+
+    box-sizing: border-box;
+}
+
+.kelola-menu-total-icon {
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #FFF5EB;
+
+    border-radius: 6px;
+
+    flex-shrink: 0;
+}
+
+.kelola-menu-total-icon img {
+    width: 16px;
+    height: 16px;
+
+    object-fit: contain;
+}
+
+.kelola-menu-total-text {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0;
+}
+
+.kelola-menu-total-text span {
+    font-family: var(--font-body);
+
+    font-size: 8px;
+    font-weight: 500;
+
+    line-height: 1.2;
+
+    color: #625A52;
+}
+
+.kelola-menu-total-text strong {
+    font-family: var(--font-body);
+
+    font-size: 12px;
+    font-weight: 600;
+
+    line-height: 1.2;
+
+    color: #29231F;
+}
+
+
+/* =========================================================
+   TABLE WRAPPER
+========================================================= */
+
+.kelola-menu-table-wrapper {
+    width: 100%;
+
+    background: #FFFEFC;
+
+    border: 1px solid #E8DDD3;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.kelola-menu-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    table-layout: fixed;
+
+    font-family: var(--font-body);
+
+    color: #29231F;
+}
+
+
+/* TABLE HEADER */
+
+.kelola-menu-table thead {
+    background: #FBF5EF;
+}
+
+.kelola-menu-table thead tr {
+    height: 38px;
+}
+
+.kelola-menu-table th {
+    padding: 0 8px;
+
+    border-bottom: 1px solid #E8DDD3;
+
+    color: #29231F;
+
+    font-family: var(--font-body);
+
+    font-size: 10px;
+    font-weight: 600;
+
+    text-align: center;
+
+    white-space: nowrap;
+}
+
+
+/* TABLE BODY */
+
+.kelola-menu-table tbody {
+    background: #FFFEFC;
+}
+
+.kelola-menu-table tbody tr {
+    height: 38px;
+
+    transition:
+        background-color 0.15s ease;
+}
+
+.kelola-menu-table tbody tr:hover {
+    background: #FCF8F2;
+}
+
+.kelola-menu-table td {
+    height: 38px;
+
+    padding: 0 8px;
+
+    border-bottom: 1px solid #E8DDD3;
+
+    font-family: var(--font-body);
+
+    font-size: 10px;
+    font-weight: 400;
+
+    text-align: center;
+
+    vertical-align: middle;
+
+    white-space: nowrap;
+}
+
+.kelola-menu-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* =========================================================
+   TABLE COLUMN WIDTH
+========================================================= */
+
+.kelola-menu-table .col-no {
+    width: 6%;
+}
+
+.kelola-menu-table .col-image {
+    width: 13%;
+}
+
+.kelola-menu-table .col-name {
+    width: 22%;
+}
+
+.kelola-menu-table .col-category {
+    width: 15%;
+}
+
+.kelola-menu-table .col-price {
+    width: 15%;
+}
+
+.kelola-menu-table .col-stock {
+    width: 12%;
+}
+
+.kelola-menu-table .col-action {
+    width: 17%;
+}
+
+
+/* =========================================================
+   MENU IMAGE
+========================================================= */
+
+.menu-image-wrapper {
+    width: 38px;
+    height: 30px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-image {
+    width: 34px;
+    height: 28px;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   MENU NAME
+========================================================= */
+
+.menu-name {
+    font-weight: 500 !important;
+}
+
+
+/* =========================================================
+   CATEGORY BADGE
+========================================================= */
+
+.menu-category {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 52px;
+    height: 18px;
+
+    padding: 0 6px;
+
+    border-radius: 4px;
+
+    font-family: var(--font-body);
+
+    font-size: 9px;
+    font-weight: 500;
+
+    line-height: 1;
+
+    box-sizing: border-box;
+}
+
+
+/* MAKANAN */
+
+.category-food {
+    background: #FFF0C7;
+
+    color: #9A6700;
+}
+
+
+/* MINUMAN */
+
+.category-drink {
+    background: #DCEBFF;
+
+    color: #3B6EA8;
+}
+
+
+/* =========================================================
+   STOCK
+========================================================= */
+
+.menu-stock {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 26px;
+    height: 18px;
+
+    padding: 0 6px;
+
+    border-radius: 4px;
+
+    font-family: var(--font-body);
+
+    font-size: 9px;
+    font-weight: 500;
+
+    box-sizing: border-box;
+}
+
+
+/* STOCK AVAILABLE */
+
+.stock-available {
+    background: #D6F5DD;
+
+    color: #248A43;
+}
+
+
+/* STOCK EMPTY */
+
+.stock-empty {
+    background: #FBE1E1;
+
+    color: #B91C1C;
+}
+
+
+/* =========================================================
+   ACTION
+========================================================= */
+
+.menu-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+}
+
+
+/* EDIT */
+
+.menu-action-edit,
+.menu-action-delete {
+    width: 20px;
+    height: 20px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 5px;
+
+    box-sizing: border-box;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.15s ease;
+}
+
+
+/* EDIT BUTTON */
+
+.menu-action-edit {
+    background: #FFFEFC;
+
+    border: 1px solid #B99053;
+}
+
+.menu-action-edit img {
+    width: 11px;
+    height: 11px;
+
+    object-fit: contain;
+}
+
+.menu-action-edit:hover {
+    background: #FFF4E6;
+
+    transform: translateY(-1px);
+}
+
+
+/* DELETE BUTTON */
+
+.menu-action-delete {
+    background: #FEE2E2;
+
+    border: 1px solid transparent;
+}
+
+.menu-action-delete img {
+    width: 11px;
+    height: 11px;
+
+    object-fit: contain;
+
+    /*
+       Memaksa warna icon Trash
+       menjadi B91C1C jika SVG
+       menggunakan warna hitam.
+    */
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(18%)
+        sepia(93%)
+        saturate(2785%)
+        hue-rotate(346deg)
+        brightness(85%)
+        contrast(98%);
+}
+
+.menu-action-delete:hover {
+    background: #FBCACA;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   PAGINATION
+========================================================= */
+
+.kelola-menu-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 5px;
+
+    padding: 8px 8px;
+}
+
+
+/* PAGINATION BUTTON */
+
+.pagination-button {
+    width: 30px;
+    height: 30px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border-radius: 5px;
+
+    font-family: var(--font-body);
+
+    font-size: 12px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+
+/* ARROW BUTTON */
+
+.pagination-prev,
+.pagination-next {
+    background: #FFFEFC;
+
+    border: 1px solid #B58A4A;
+}
+
+.pagination-prev img,
+.pagination-next img {
+    width: 10px;
+    height: 10px;
+
+    object-fit: contain;
+
+    /*
+       Warna panah menjadi B58A4A
+    */
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(58%)
+        sepia(26%)
+        saturate(790%)
+        hue-rotate(358deg)
+        brightness(88%)
+        contrast(88%);
+}
+
+
+/* PANAH KIRI */
+
+.pagination-prev img {
+    transform: rotate(90deg);
+}
+
+
+/* PANAH KANAN */
+
+.pagination-next img {
+    transform: rotate(-90deg);
+}
+
+
+/* HOVER ARROW */
+
+.pagination-prev:hover,
+.pagination-next:hover {
+    background: #FFF5EB;
+}
+
+
+/* NUMBER ACTIVE */
+
+.pagination-number.active {
+    background: #B58A4A;
+
+    border: 1px solid #B58A4A;
+
+    color: #FFFFFF;
+}
+
+
+/* =========================================================
+   FOCUS
+========================================================= */
+
+.kelola-menu-tab:focus-visible,
+.btn-tambah-menu:focus-visible,
+.kelola-menu-category:focus-visible,
+.pagination-button:focus-visible,
+.menu-action-edit:focus-visible,
+.menu-action-delete:focus-visible {
+    outline: 2px solid #B58A4A;
+
+    outline-offset: 2px;
+}

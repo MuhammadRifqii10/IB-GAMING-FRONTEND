@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Detail Pesanan Diproses F&B - Admin IB Gaming</title>
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="../../css/global.css">
+
+    <!-- Admin Layout CSS -->
+    <link rel="stylesheet" href="../../css/admin/admin-layout.css">
+
+    <!-- Pesanan Diproses CSS -->
+    <link rel="stylesheet" href="../../css/admin/pesanan-diproses.css">
+</head>
+
+<body>
+
+    <div class="admin-layout">
+
+        <!-- =====================================================
+             SIDEBAR
+        ====================================================== -->
+        <aside class="admin-sidebar">
+
+            <div class="admin-logo-wrapper">
+                <img src="../../assets/Icon/Logo.svg" alt="IB Gaming" class="admin-logo">
+                <div class="admin-brand-text">
+                    <p class="admin-brand-name">IB GAMING</p>
+                    <p class="admin-brand-tagline">PLAY · EAT · ENJOY</p>
+                </div>
+            </div>
+
+            <nav class="admin-nav" aria-label="Navigasi Admin">
+
+                <!-- Dashboard -->
+                <div class="admin-nav-section">
+                    <ul class="admin-nav-list">
+                        <li>
+                            <a href="dashboard-admin.html" class="admin-nav-link">
+                                <img src="../../assets/Icon/Home.svg" alt="" class="admin-nav-icon" aria-hidden="true">
+                                <span class="admin-nav-text">Dashboard</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Operasional PlayStation -->
+                <div class="admin-nav-section">
+                    <p class="admin-nav-section-title">Operasional PlayStation</p>
+                    <ul class="admin-nav-list">
+                        <li>
+                            <a href="sewa-ps.html" class="admin-nav-link">
+                                <img src="../../assets/Icon/Game.svg" alt="" class="admin-nav-icon" aria-hidden="true">
+                                <span class="admin-nav-text">Sewa PS</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="booking/verifikasi-akun.html" class="admin-nav-link">
+                                <img src="../../assets/Icon/Keranjang.svg" alt="" class="admin-nav-icon" aria-hidden="true">
+                                <span class="admin-nav-text">Booking PS</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="kelola-unit.html" class="admin-nav-link">
+                                <img src="../../assets/Icon/TV.svg" alt="" class="admin-nav-icon" aria-hidden="true">
+                                <span class="admin-nav-text">Kelola Unit PS</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Operasional F & B -->
+                <div class="admin-nav-section">
+                    <p class="admin-nav-section-title">Operasional F &amp; B</p>
+                    <ul class="admin-nav-list">
+                        <li>
+                            <a href="pesanan-fnb.html" class="admin-nav-link active" aria-current="page">
+                                <img src="../../assets/Icon/FNB.svg" alt="" class="admin-nav-icon" aria-hidden="true">
+                                <span class="admin-nav-text">Pesanan F &amp; B</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="kelola-menu.html" class="admin-nav-link">
+                                <img src="../../assets/Icon/Menu.svg" alt="" class="admin-nav-icon" aria-hidden="true">
+                                <span class="admin-nav-text">Kelola Menu F &amp; B</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+
+            <!-- Logout -->
+            <div class="admin-sidebar-bottom">
+                <a href="#" class="admin-logout">
+                    <img src="../../assets/Icon/Logout.svg" alt="" class="admin-logout-icon" aria-hidden="true">
+                    <span class="admin-logout-text">Logout</span>
+                </a>
+            </div>
+
+        </aside>
+
+
+        <!-- =====================================================
+             MAIN AREA
+        ====================================================== -->
+        <div class="admin-main">
+
+            <!-- HEADER -->
+            <header class="admin-header">
+
+                <div class="admin-search-wrapper">
+                    <img src="../../assets/Icon/Search.svg" alt="" class="admin-search-icon">
+                    <input
+                        type="text"
+                        class="admin-search"
+                        placeholder="Cari menu, booking, pelanggan..."
+                    >
+                </div>
+
+                <div class="admin-header-right">
+                    <a href="notification.html" class="admin-notification" aria-label="Notifikasi">
+                        <img src="../../assets/Icon/Notif.svg" alt="Notifikasi" class="admin-notification-icon">
+                        <span class="admin-notification-badge"></span>
+                    </a>
+                    <div class="admin-profile">
+                        <img src="../../assets/Images/Elon.jpg" alt="Admin" class="admin-profile-image">
+                        <div class="admin-profile-info">
+                            <p class="admin-profile-name">Admin</p>
+                            <p class="admin-profile-role">Administrator</p>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+
+
+            <!-- CONTENT -->
+            <main class="admin-content pesanan-diproses-main">
+
+                <!-- ============================================
+                     TOP BAR: Breadcrumb + Tombol Kembali
+                ============================================= -->
+                <div class="pesanan-diproses-topbar">
+
+                    <!-- Breadcrumb -->
+                    <nav class="pesanan-diproses-breadcrumb" aria-label="Breadcrumb">
+                        <a href="pesanan-fnb.html" class="pesanan-diproses-breadcrumb-back" aria-label="Kembali">
+                            <img
+                                src="../../assets/Icon/Panah.svg"
+                                alt=""
+                                class="pesanan-diproses-breadcrumb-back-icon"
+                                aria-hidden="true"
+                            >
+                        </a>
+
+                        <a href="pesanan-fnb.html" class="pesanan-diproses-breadcrumb-parent">
+                            Pesanan F &amp; B
+                        </a>
+
+                        <img
+                            src="../../assets/Icon/Arrow.svg"
+                            alt=""
+                            class="pesanan-diproses-breadcrumb-sep"
+                            aria-hidden="true"
+                        >
+
+                        <span class="pesanan-diproses-breadcrumb-current">
+                            Detail Pesanan F &amp; B
+                        </span>
+                    </nav>
+
+                    <!-- Tombol Kembali -->
+                    <a href="pesanan-fnb.html" class="pesanan-diproses-back-btn" id="btnKembali">
+                        <img
+                            src="../../assets/Icon/Panah.svg"
+                            alt=""
+                            class="pesanan-diproses-back-icon"
+                            aria-hidden="true"
+                        >
+                        Kembali
+                    </a>
+
+                </div>
+
+
+                <!-- ============================================
+                     PAGE HEADING
+                ============================================= -->
+                <div class="pesanan-diproses-heading">
+                    <img
+                        src="../../assets/Icon/FNB.svg"
+                        alt=""
+                        class="pesanan-diproses-heading-icon"
+                        aria-hidden="true"
+                    >
+                    <div class="pesanan-diproses-heading-text">
+                        <h1 class="pesanan-diproses-heading-title">Pesanan F &amp; B</h1>
+                        <p class="pesanan-diproses-heading-subtitle">Kelola pesanan makanan dan minuman dari pelanggan</p>
+                    </div>
+                </div>
+
+
+                <!-- ============================================
+                     STATUS BANNER: Pesanan Sedang Diproses
+                ============================================= -->
+                <div class="pesanan-diproses-status-banner">
+
+                    <div class="pesanan-diproses-banner-left">
+
+                        <div class="pesanan-diproses-banner-icon-wrapper">
+                            <img
+                                src="../../assets/Icon/FNB.svg"
+                                alt=""
+                                class="pesanan-diproses-banner-icon"
+                                aria-hidden="true"
+                            >
+                        </div>
+
+                        <div class="pesanan-diproses-banner-text">
+                            <p class="pesanan-diproses-banner-title">Pesanan Sedang Diproses</p>
+                            <p class="pesanan-diproses-banner-subtitle">Pesanan sudah dikonfirmasi dan sedang disiapkan</p>
+                        </div>
+
+                    </div>
+
+                    <span class="pesanan-diproses-banner-badge">Diproses</span>
+
+                </div>
+
+
+                <!-- ============================================
+                     CONTENT GRID: 2 kolom
+                ============================================= -->
+                <div class="pesanan-diproses-content-grid">
+
+
+                    <!-- ========================================
+                         KOLOM KIRI
+                    ========================================= -->
+                    <div class="pesanan-diproses-col-left">
+
+
+                        <!-- CARD: Informasi Pesanan -->
+                        <div class="pesanan-diproses-info-card">
+
+                            <div class="pesanan-diproses-card-header">
+                                <img
+                                    src="../../assets/Icon/Note.svg"
+                                    alt=""
+                                    class="pesanan-diproses-card-icon"
+                                    aria-hidden="true"
+                                >
+                                <h2 class="pesanan-diproses-card-title">Informasi Pesanan</h2>
+                            </div>
+
+                            <div class="pesanan-diproses-info-body">
+
+                                <!-- Field kiri -->
+                                <div class="pesanan-diproses-info-fields">
+
+                                    <div class="pesanan-diproses-field">
+                                        <span class="pesanan-diproses-field-label">ID Pesanan</span>
+                                        <span class="pesanan-diproses-field-value">FNB-15</span>
+                                    </div>
+
+                                    <div class="pesanan-diproses-field">
+                                        <span class="pesanan-diproses-field-label">Tanggal &amp; Waktu</span>
+                                        <span class="pesanan-diproses-field-value">10 Okt 2026, 14:06</span>
+                                    </div>
+
+                                    <div class="pesanan-diproses-field">
+                                        <span class="pesanan-diproses-field-label">Pelanggan</span>
+                                        <span class="pesanan-diproses-field-value">Maxi Antonelli</span>
+                                    </div>
+
+                                    <div class="pesanan-diproses-field">
+                                        <span class="pesanan-diproses-field-label">Meja / Unit</span>
+                                        <span class="pesanan-diproses-field-value">TV 3</span>
+                                    </div>
+
+                                </div>
+
+                                <!-- Vertical divider -->
+                                <div class="pesanan-diproses-info-divider" aria-hidden="true"></div>
+
+                                <!-- Catatan -->
+                                <div class="pesanan-diproses-info-notes">
+                                    <span class="pesanan-diproses-field-label">Catatan</span>
+                                    <span class="pesanan-diproses-notes-value">-</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- CARD: Rincian Menu -->
+                        <div class="pesanan-diproses-menu-card">
+
+                            <div class="pesanan-diproses-card-header">
+                                <img
+                                    src="../../assets/Icon/FNB.svg"
+                                    alt=""
+                                    class="pesanan-diproses-card-icon"
+                                    aria-hidden="true"
+                                >
+                                <h2 class="pesanan-diproses-card-title">Rincian Menu</h2>
+                            </div>
+
+                            <div class="pesanan-diproses-table-wrapper">
+                                <table class="pesanan-diproses-table">
+                                    <thead>
+                                        <tr>
+                                            <th class="pesanan-diproses-th pesanan-diproses-th--no">No</th>
+                                            <th class="pesanan-diproses-th pesanan-diproses-th--menu">Menu</th>
+                                            <th class="pesanan-diproses-th pesanan-diproses-th--jumlah">Jumlah</th>
+                                            <th class="pesanan-diproses-th pesanan-diproses-th--harga">Harga</th>
+                                            <th class="pesanan-diproses-th pesanan-diproses-th--subtotal">SubTotal</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="pesanan-diproses-tr">
+                                            <td class="pesanan-diproses-td pesanan-diproses-td--center">1</td>
+                                            <td class="pesanan-diproses-td">Indomie Goreng</td>
+                                            <td class="pesanan-diproses-td pesanan-diproses-td--center">4</td>
+                                            <td class="pesanan-diproses-td">Rp 5000</td>
+                                            <td class="pesanan-diproses-td pesanan-diproses-td--right">Rp 20.000</td>
+                                        </tr>
+                                        <tr class="pesanan-diproses-tr">
+                                            <td class="pesanan-diproses-td pesanan-diproses-td--center">2</td>
+                                            <td class="pesanan-diproses-td">Indomie Rendang</td>
+                                            <td class="pesanan-diproses-td pesanan-diproses-td--center">5</td>
+                                            <td class="pesanan-diproses-td">Rp 5000</td>
+                                            <td class="pesanan-diproses-td pesanan-diproses-td--right">Rp 25.000</td>
+                                        </tr>
+                                        <tr class="pesanan-diproses-tr">
+                                            <td class="pesanan-diproses-td pesanan-diproses-td--center">3</td>
+                                            <td class="pesanan-diproses-td">Le Mineral</td>
+                                            <td class="pesanan-diproses-td pesanan-diproses-td--center">6</td>
+                                            <td class="pesanan-diproses-td">Rp 3000</td>
+                                            <td class="pesanan-diproses-td pesanan-diproses-td--right">Rp 18.000</td>
+                                        </tr>
+                                        <tr class="pesanan-diproses-tr">
+                                            <td class="pesanan-diproses-td pesanan-diproses-td--center">4</td>
+                                            <td class="pesanan-diproses-td">Teh Pucuk</td>
+                                            <td class="pesanan-diproses-td pesanan-diproses-td--center">2</td>
+                                            <td class="pesanan-diproses-td">Rp 5000</td>
+                                            <td class="pesanan-diproses-td pesanan-diproses-td--right">Rp 10.000</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr class="pesanan-diproses-tfoot-row">
+                                            <td colspan="4" class="pesanan-diproses-tfoot-label">Total Pesanan</td>
+                                            <td class="pesanan-diproses-tfoot-total">Rp 73.000</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- END KOLOM KIRI -->
+
+
+                    <!-- ========================================
+                         KOLOM KANAN
+                    ========================================= -->
+                    <div class="pesanan-diproses-col-right">
+
+
+                        <!-- CARD: Status Pembayaran -->
+                        <div class="pesanan-diproses-payment-card">
+
+                            <div class="pesanan-diproses-card-header">
+                                <img
+                                    src="../../assets/Icon/Wallet.svg"
+                                    alt=""
+                                    class="pesanan-diproses-card-icon"
+                                    aria-hidden="true"
+                                >
+                                <h2 class="pesanan-diproses-card-title">Status Pembayaran</h2>
+                            </div>
+
+                            <div class="pesanan-diproses-payment-fields">
+
+                                <div class="pesanan-diproses-payment-row">
+                                    <span class="pesanan-diproses-payment-label">Metode Pembayaran</span>
+                                    <span class="pesanan-diproses-payment-sep">:</span>
+                                    <span class="pesanan-diproses-payment-value">QRIS</span>
+                                </div>
+
+                                <div class="pesanan-diproses-payment-row">
+                                    <span class="pesanan-diproses-payment-label">Status Pembayaran</span>
+                                    <span class="pesanan-diproses-payment-sep">:</span>
+                                    <span class="pesanan-diproses-payment-value">Berhasil</span>
+                                </div>
+
+                                <div class="pesanan-diproses-payment-row">
+                                    <span class="pesanan-diproses-payment-label">Total Pembayaran</span>
+                                    <span class="pesanan-diproses-payment-sep">:</span>
+                                    <span class="pesanan-diproses-payment-value pesanan-diproses-payment-value--total">Rp 73.000</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- CARD: Aksi -->
+                        <div class="pesanan-diproses-action-card">
+
+                            <div class="pesanan-diproses-action-header">
+                                <h2 class="pesanan-diproses-action-title">Aksi</h2>
+                                <p class="pesanan-diproses-action-subtitle">Pilih tindakan untuk pesanan ini</p>
+                            </div>
+
+                            <div class="pesanan-diproses-action-buttons">
+
+                                <a
+                                    href="pesanan-fnb.html"
+                                    class="pesanan-diproses-complete-button"
+                                    id="btnSelesaikan"
+                                >
+                                    Selesaikan Pesanan
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- END KOLOM KANAN -->
+
+                </div>
+                <!-- END CONTENT GRID -->
+
+            </main>
+
+
+            <!-- FOOTER -->
+            <footer class="admin-footer">
+
+                <article class="admin-footer-item">
+                    <div class="admin-footer-icon">
+                        <img src="../../assets/Icon/Controller Icon.svg" alt="" aria-hidden="true">
+                    </div>
+                    <div class="admin-footer-text">
+                        <p class="admin-footer-title">Premium Equipment</p>
+                        <p class="admin-footer-description">PlayStation terbaru &amp; berkualitas</p>
+                    </div>
+                </article>
+
+                <article class="admin-footer-item">
+                    <div class="admin-footer-icon">
+                        <img src="../../assets/Icon/FNB.svg" alt="" aria-hidden="true">
+                    </div>
+                    <div class="admin-footer-text">
+                        <p class="admin-footer-title">Delicious Food &amp; Drinks</p>
+                        <p class="admin-footer-description">Pilihan menu terbaik</p>
+                    </div>
+                </article>
+
+                <article class="admin-footer-item">
+                    <div class="admin-footer-icon">
+                        <img src="../../assets/Icon/Bintang.svg" alt="" aria-hidden="true">
+                    </div>
+                    <div class="admin-footer-text">
+                        <p class="admin-footer-title">Comfortable Space</p>
+                        <p class="admin-footer-description">Suasana nyaman &amp; modern</p>
+                    </div>
+                </article>
+
+                <article class="admin-footer-item">
+                    <div class="admin-footer-icon">
+                        <img src="../../assets/Icon/People Icon.svg" alt="" aria-hidden="true">
+                    </div>
+                    <div class="admin-footer-text">
+                        <p class="admin-footer-title">Friendly Support</p>
+                        <p class="admin-footer-description">Selalu siap membantu</p>
+                    </div>
+                </article>
+
+            </footer>
+
+        </div>
+
+    </div>
+
+    <script src="../../js/admin/pesanan-diproses.js"></script>
+
+</body>
+
+</html>
+

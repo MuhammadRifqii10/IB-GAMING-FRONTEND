@@ -1,0 +1,934 @@
+/* =========================================================
+   AKUN DITOLAK
+   IB GAMING - ADMIN BOOKING
+========================================================= */
+
+
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+
+.akun-ditolak-main {
+    width: 100%;
+    min-height: calc(100vh - 101px);
+    padding: 28px 40px 0;
+    background: var(--background-color);
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.akun-ditolak-breadcrumb {
+    width: 100%;
+    height: 24px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    margin-bottom: 10px;
+
+    color: #A69E93;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.akun-ditolak-breadcrumb-back {
+    width: 18px;
+    height: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+.akun-ditolak-breadcrumb-back img {
+    width: 14px;
+    height: 14px;
+
+    object-fit: contain;
+
+    transform: rotate(0deg);
+}
+
+.akun-ditolak-breadcrumb-arrow {
+    width: 10px;
+    height: 10px;
+
+    object-fit: contain;
+}
+
+.akun-ditolak-breadcrumb-current {
+    color: #B99053;
+}
+
+
+/* =========================================================
+   PAGE HEADING
+========================================================= */
+
+.akun-ditolak-heading {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 34px;
+}
+
+.akun-ditolak-heading-left {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+}
+
+.akun-ditolak-heading-icon {
+    width: 30px;
+    height: 30px;
+
+    object-fit: contain;
+
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(61%)
+        sepia(29%)
+        saturate(697%)
+        hue-rotate(356deg)
+        brightness(89%)
+        contrast(87%);
+}
+
+.akun-ditolak-heading h1 {
+    margin: 0;
+
+    color: #29231F;
+
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 500;
+
+    line-height: 1.2;
+}
+
+.akun-ditolak-heading p {
+    margin-top: 2px;
+
+    color: #B5AEA6;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 400;
+
+    line-height: 1.2;
+}
+
+
+/* =========================================================
+   BACK BUTTON
+========================================================= */
+
+.akun-ditolak-back-button {
+    width: 95px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    border: 1px solid #B99053;
+    border-radius: 8px;
+
+    background: #FFFEFC;
+
+    color: #B99053;
+
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 400;
+
+    transition:
+        background-color .2s ease,
+        color .2s ease;
+}
+
+.akun-ditolak-back-button img {
+    width: 13px;
+    height: 13px;
+
+    object-fit: contain;
+}
+
+.akun-ditolak-back-button:hover {
+    background: #B99053;
+    color: #FFFFFF;
+}
+
+.akun-ditolak-back-button:hover img {
+    filter: brightness(0) invert(1);
+}
+
+
+/* =========================================================
+   MAIN GRID
+========================================================= */
+
+.akun-ditolak-layout {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 225px;
+
+    gap: 18px;
+
+    align-items: start;
+}
+
+.akun-ditolak-left {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.akun-ditolak-right {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+/* =========================================================
+   VERIFICATION CARD
+========================================================= */
+
+.akun-ditolak-verification-card {
+    width: 100%;
+
+    padding: 18px;
+
+    background: #FFFEFC;
+
+    border: 1px solid #E5DCD0;
+    border-radius: 15px;
+}
+
+
+/* =========================================================
+   VERIFICATION HEADER
+========================================================= */
+
+.akun-ditolak-verification-header {
+    width: 100%;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    margin-bottom: 15px;
+}
+
+.akun-ditolak-user-info {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+}
+
+.akun-ditolak-calendar-wrapper {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #F8EEE3;
+
+    border-radius: 7px;
+
+    flex-shrink: 0;
+}
+
+.akun-ditolak-calendar-wrapper img {
+    width: 23px;
+    height: 23px;
+
+    object-fit: contain;
+
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(62%)
+        sepia(29%)
+        saturate(670%)
+        hue-rotate(356deg)
+        brightness(91%)
+        contrast(88%);
+}
+
+.akun-ditolak-user-info h2 {
+    margin: 0;
+
+    color: #29231F;
+
+    font-family: var(--font-body);
+    font-size: 20px;
+    font-weight: 500;
+
+    line-height: 1.2;
+}
+
+.akun-ditolak-user-info p {
+    margin-top: 3px;
+
+    color: #B5AEA6;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   STATUS BOX
+========================================================= */
+
+.akun-ditolak-status-box {
+    min-width: 184px;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+
+    column-gap: 6px;
+    row-gap: 4px;
+
+    padding: 9px 11px;
+
+    border: 1px solid #B99053;
+    border-radius: 9px;
+
+    background: #FFFEFC;
+}
+
+.akun-ditolak-status-box span {
+    color: #29231F;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.akun-ditolak-status-box strong {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 58px;
+    height: 22px;
+
+    padding: 0 9px;
+
+    background: #FBE8E8;
+
+    border-radius: 5px;
+
+    color: #D85C5C;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.akun-ditolak-status-box small {
+    grid-column: 1 / -1;
+
+    color: #B5AEA6;
+
+    font-family: var(--font-body);
+    font-size: 8px;
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   VERIFICATION TITLE
+========================================================= */
+
+.akun-ditolak-verification-title {
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    margin-bottom: 14px;
+}
+
+.akun-ditolak-verification-title > img {
+    width: 22px;
+    height: 22px;
+
+    object-fit: contain;
+
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(61%)
+        sepia(29%)
+        saturate(697%)
+        hue-rotate(356deg)
+        brightness(89%)
+        contrast(87%);
+}
+
+.akun-ditolak-verification-title h3 {
+    margin: 0;
+
+    color: #29231F;
+
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.akun-ditolak-verification-title p {
+    margin-top: 1px;
+
+    color: #B5AEA6;
+
+    font-family: var(--font-body);
+    font-size: 9px;
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   DOCUMENT GRID
+========================================================= */
+
+.akun-ditolak-document-grid {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 38px;
+}
+
+.akun-ditolak-document-card {
+    min-width: 0;
+
+    padding: 8px 10px 14px;
+
+    border: 1px solid #E5DCD0;
+    border-radius: 8px;
+
+    background: #FFFEFC;
+}
+
+
+/* =========================================================
+   DOCUMENT TITLE
+========================================================= */
+
+.akun-ditolak-document-title {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    margin-bottom: 8px;
+}
+
+.akun-ditolak-document-title img {
+    width: 15px;
+    height: 15px;
+
+    object-fit: contain;
+
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(61%)
+        sepia(29%)
+        saturate(697%)
+        hue-rotate(356deg)
+        brightness(89%)
+        contrast(87%);
+}
+
+.akun-ditolak-document-title span {
+    color: #29231F;
+
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   DOCUMENT PREVIEW
+========================================================= */
+
+.akun-ditolak-document-preview {
+    width: 100%;
+    height: 270px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 10px;
+}
+
+.akun-ditolak-document-preview img {
+    width: 275px;
+    max-width: 90%;
+    height: auto;
+
+    object-fit: contain;
+
+    opacity: 1;
+
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(61%)
+        sepia(29%)
+        saturate(697%)
+        hue-rotate(356deg)
+        brightness(89%)
+        contrast(87%);
+}
+
+
+/* =========================================================
+   DOCUMENT STATUS
+========================================================= */
+
+.akun-ditolak-document-status {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.akun-ditolak-invalid-button {
+    width: 100%;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    border: 1px solid #D85C5C;
+    border-radius: 5px;
+
+    background: #FBE8E8;
+
+    color: #D85C5C;
+
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 400;
+
+    cursor: default;
+}
+
+.akun-ditolak-invalid-icon {
+    width: 18px;
+    height: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.akun-ditolak-invalid-icon img {
+    width: 17px;
+    height: 17px;
+
+    object-fit: contain;
+
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(43%)
+        sepia(54%)
+        saturate(1045%)
+        hue-rotate(319deg)
+        brightness(93%)
+        contrast(89%);
+}
+
+
+/* =========================================================
+   ADMIN NOTE
+========================================================= */
+
+.akun-ditolak-note-card {
+    width: 100%;
+
+    padding: 14px 18px 16px;
+
+    background: #FFFEFC;
+
+    border: 1px solid #E5DCD0;
+    border-radius: 15px;
+}
+
+.akun-ditolak-note-title {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 8px;
+
+    color: #29231F;
+
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.akun-ditolak-note-title img {
+    width: 16px;
+    height: 16px;
+
+    object-fit: contain;
+
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(61%)
+        sepia(29%)
+        saturate(697%)
+        hue-rotate(356deg)
+        brightness(89%)
+        contrast(87%);
+}
+
+.akun-ditolak-note-textarea {
+    width: 100%;
+    height: 62px;
+
+    display: block;
+
+    padding: 9px 10px;
+
+    resize: none;
+
+    border: 1px solid #B9B2AA;
+    border-radius: 5px;
+
+    outline: none;
+
+    background: #FFFEFC;
+
+    color: #A69E93;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 400;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   INFORMATION CARD
+========================================================= */
+
+.akun-ditolak-information-card {
+    width: 100%;
+
+    padding: 12px 12px 14px;
+
+    background: #CFE2FF;
+
+    border-radius: 8px;
+}
+
+.akun-ditolak-information-title {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    margin-bottom: 9px;
+
+    color: #29231F;
+
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.akun-ditolak-information-title img {
+    width: 16px;
+    height: 16px;
+
+    object-fit: contain;
+}
+
+.akun-ditolak-information-card ul {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.akun-ditolak-information-card li {
+    position: relative;
+
+    padding-left: 14px;
+
+    color: #29231F;
+
+    font-family: var(--font-body);
+    font-size: 9px;
+    font-weight: 400;
+
+    line-height: 1.4;
+}
+
+.akun-ditolak-information-card li::before {
+    content: "";
+
+    position: absolute;
+
+    left: 1px;
+    top: 5px;
+
+    width: 5px;
+    height: 5px;
+
+    border-radius: 50%;
+
+    background: #000000;
+}
+
+
+/* =========================================================
+   CUSTOMER CARD
+========================================================= */
+
+.akun-ditolak-customer-card {
+    width: 100%;
+
+    padding: 12px;
+
+    background: #FFFEFC;
+
+    border: 1px solid #E5DCD0;
+    border-radius: 8px;
+}
+
+.akun-ditolak-customer-title {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid #E5DCD0;
+
+    color: #29231F;
+
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.akun-ditolak-customer-title img {
+    width: 15px;
+    height: 15px;
+
+    object-fit: contain;
+
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(61%)
+        sepia(29%)
+        saturate(697%)
+        hue-rotate(356deg)
+        brightness(89%)
+        contrast(87%);
+}
+
+
+/* =========================================================
+   CUSTOMER ROW
+========================================================= */
+
+.akun-ditolak-customer-row {
+    min-height: 34px;
+
+    display: grid;
+    grid-template-columns: 16px 50px minmax(0, 1fr);
+
+    align-items: center;
+
+    gap: 4px;
+
+    border-bottom: 1px solid #E5DCD0;
+
+    color: #29231F;
+
+    font-family: var(--font-body);
+    font-size: 9px;
+}
+
+.akun-ditolak-customer-row:last-child {
+    border-bottom: none;
+}
+
+.akun-ditolak-customer-row > img {
+    width: 13px;
+    height: 13px;
+
+    object-fit: contain;
+
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(61%)
+        sepia(29%)
+        saturate(697%)
+        hue-rotate(356deg)
+        brightness(89%)
+        contrast(87%);
+}
+
+.akun-ditolak-customer-row span {
+    color: #625A52;
+}
+
+.akun-ditolak-customer-row strong {
+    min-width: 0;
+
+    color: #29231F;
+
+    font-family: var(--font-body);
+    font-size: 9px;
+    font-weight: 400;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.akun-ditolak-back-button img {
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+
+    /* Warna #B99053 */
+    filter: brightness(0) saturate(100%)
+            invert(57%)
+            sepia(24%)
+            saturate(850%)
+            hue-rotate(356deg)
+            brightness(88%)
+            contrast(90%);
+
+    /* Default kanan → diputar menjadi kiri */
+    transform: rotate(180deg);
+}
+
+.akun-ditolak-back-button {
+    width: 95px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+
+    background: #FFFEFC;
+    border: 1px solid #B99053;
+    border-radius: 8px;
+
+    color: #B99053;
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 400;
+
+    text-decoration: none;
+}
+
+/* =========================================================
+   BREADCRUMB ICON
+========================================================= */
+
+/* Panah kiri - Panah.svg */
+.akun-ditolak-breadcrumb-back img {
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+
+    /* Warna #B99053 */
+    filter: brightness(0) saturate(100%)
+            invert(57%)
+            sepia(24%)
+            saturate(850%)
+            hue-rotate(356deg)
+            brightness(88%)
+            contrast(90%);
+
+    /* Default kanan → menjadi kiri */
+    transform: rotate(180deg);
+}
+
+
+/* Arrow kanan - Arrow.svg */
+.akun-ditolak-breadcrumb-arrow {
+    width: 12px;
+    height: 12px;
+    object-fit: contain;
+
+    /* Warna #B99053 */
+    filter: brightness(0) saturate(100%)
+            invert(57%)
+            sepia(24%)
+            saturate(850%)
+            hue-rotate(356deg)
+            brightness(88%)
+            contrast(90%);
+
+    /* Default bawah → menjadi kanan */
+    transform: rotate(-90deg);
+}
+
+
+/* =========================================================
+   FOOTER POSITION
+========================================================= */
+
+.admin-footer {
+    margin-top: 48px;
+}

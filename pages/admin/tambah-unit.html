@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tambah Unit PS - Admin IB Gaming</title>
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="../../css/global.css">
+
+    <!-- Admin Layout CSS -->
+    <link rel="stylesheet" href="../../css/admin/admin-layout.css">
+
+    <!-- Kelola Unit CSS (background) -->
+    <link rel="stylesheet" href="../../css/admin/kelola-unit.css">
+
+    <!-- Tambah Unit CSS (popup) -->
+    <link rel="stylesheet" href="../../css/admin/tambah-unit.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         BACKGROUND: HALAMAN KELOLA UNIT PS
+    ====================================================== -->
+    <div class="admin-layout">
+
+        <!-- =====================================================
+             SIDEBAR
+        ====================================================== -->
+        <aside class="admin-sidebar">
+
+            <div class="admin-logo-wrapper">
+                <img
+                    src="../../assets/Icon/Logo.svg"
+                    alt="IB Gaming"
+                    class="admin-logo"
+                >
+
+                <div class="admin-brand-text">
+                    <p class="admin-brand-name">IB GAMING</p>
+                    <p class="admin-brand-tagline">PLAY · EAT · ENJOY</p>
+                </div>
+            </div>
+
+
+            <nav class="admin-nav" aria-label="Navigasi Admin">
+
+                <!-- Dashboard -->
+                <div class="admin-nav-section">
+
+                    <ul class="admin-nav-list">
+
+                        <li>
+                            <a
+                                href="dashboard-admin.html"
+                                class="admin-nav-link"
+                            >
+                                <img
+                                    src="../../assets/Icon/Home.svg"
+                                    alt=""
+                                    class="admin-nav-icon"
+                                    aria-hidden="true"
+                                >
+
+                                <span class="admin-nav-text">
+                                    Dashboard
+                                </span>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Operasional PlayStation -->
+                <div class="admin-nav-section">
+
+                    <p class="admin-nav-section-title">
+                        Operasional PlayStation
+                    </p>
+
+                    <ul class="admin-nav-list">
+
+                        <!-- Sewa PS -->
+                        <li>
+                            <a
+                                href="sewa-ps.html"
+                                class="admin-nav-link"
+                            >
+                                <img
+                                    src="../../assets/Icon/Game.svg"
+                                    alt=""
+                                    class="admin-nav-icon"
+                                    aria-hidden="true"
+                                >
+
+                                <span class="admin-nav-text">
+                                    Sewa PS
+                                </span>
+                            </a>
+                        </li>
+
+
+                        <!-- Booking PS -->
+                        <li>
+                            <a
+                                href="booking/verifikasi-akun.html"
+                                class="admin-nav-link"
+                            >
+                                <img
+                                    src="../../assets/Icon/Keranjang.svg"
+                                    alt=""
+                                    class="admin-nav-icon"
+                                    aria-hidden="true"
+                                >
+
+                                <span class="admin-nav-text">
+                                    Booking PS
+                                </span>
+                            </a>
+                        </li>
+
+
+                        <!-- Kelola Unit PS -->
+                        <li>
+                            <a
+                                href="kelola-unit.html"
+                                class="admin-nav-link active"
+                                aria-current="page"
+                            >
+                                <img
+                                    src="../../assets/Icon/TV.svg"
+                                    alt=""
+                                    class="admin-nav-icon"
+                                    aria-hidden="true"
+                                >
+
+                                <span class="admin-nav-text">
+                                    Kelola Unit PS
+                                </span>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Operasional F & B -->
+                <div class="admin-nav-section">
+
+                    <p class="admin-nav-section-title">
+                        Operasional F &amp; B
+                    </p>
+
+                    <ul class="admin-nav-list">
+
+                        <!-- Pesanan F&B -->
+                        <li>
+                            <a
+                                href="pesanan-fnb.html"
+                                class="admin-nav-link"
+                            >
+                                <img
+                                    src="../../assets/Icon/FNB.svg"
+                                    alt=""
+                                    class="admin-nav-icon"
+                                    aria-hidden="true"
+                                >
+
+                                <span class="admin-nav-text">
+                                    Pesanan F &amp; B
+                                </span>
+                            </a>
+                        </li>
+
+
+                        <!-- Kelola Menu F&B -->
+                        <li>
+                            <a
+                                href="kelola-menu.html"
+                                class="admin-nav-link"
+                            >
+                                <img
+                                    src="../../assets/Icon/Menu.svg"
+                                    alt=""
+                                    class="admin-nav-icon"
+                                    aria-hidden="true"
+                                >
+
+                                <span class="admin-nav-text">
+                                    Kelola Menu F &amp; B
+                                </span>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </nav>
+
+
+            <!-- Logout -->
+            <div class="admin-sidebar-bottom">
+
+                <a href="#" class="admin-logout">
+
+                    <img
+                        src="../../assets/Icon/Logout.svg"
+                        alt=""
+                        class="admin-logout-icon"
+                        aria-hidden="true"
+                    >
+
+                    <span class="admin-logout-text">
+                        Logout
+                    </span>
+
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <!-- =====================================================
+             MAIN AREA
+        ====================================================== -->
+        <div class="admin-main">
+
+            <!-- =================================================
+                 HEADER
+            ================================================== -->
+            <header class="admin-header">
+
+                <div class="admin-search-wrapper">
+
+                    <img
+                        src="../../assets/Icon/Search.svg"
+                        alt=""
+                        class="admin-search-icon"
+                    >
+
+                    <input
+                        type="text"
+                        class="admin-search"
+                        placeholder="Cari menu, booking, pelanggan..."
+                    >
+
+                </div>
+
+
+                <div class="admin-header-right">
+
+                    <!-- Notification -->
+                    <a
+                        href="notification.html"
+                        class="admin-notification"
+                        aria-label="Notifikasi"
+                    >
+
+                        <img
+                            src="../../assets/Icon/Notif.svg"
+                            alt="Notifikasi"
+                            class="admin-notification-icon"
+                        >
+
+                        <span class="admin-notification-badge"></span>
+
+                    </a>
+
+
+                    <!-- Profile -->
+                    <div class="admin-profile">
+
+                        <img
+                            src="../../assets/Images/Elon.jpg"
+                            alt="Admin"
+                            class="admin-profile-image"
+                        >
+
+                        <div class="admin-profile-info">
+
+                            <p class="admin-profile-name">
+                                Admin
+                            </p>
+
+                            <p class="admin-profile-role">
+                                Administrator
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- =================================================
+                 CONTENT (background — tidak interaktif)
+            ================================================== -->
+            <main class="admin-content">
+
+                <!-- PAGE HEADER -->
+                <section class="unit-page-header">
+
+                    <div class="unit-page-title-wrapper">
+
+                        <img
+                            src="../../assets/Icon/TV.svg"
+                            alt=""
+                            class="unit-page-icon"
+                            aria-hidden="true"
+                        >
+
+                        <div class="unit-page-title-content">
+
+                            <h1 class="unit-page-title">
+                                Kelola Unit PlayStation
+                            </h1>
+
+                            <p class="unit-page-subtitle">
+                                Kelola Status dan Informasi Unit Playstation yang tersedia
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- TAMBAH UNIT -->
+                    <a
+                        href="tambah-unit.html"
+                        class="unit-add-button"
+                    >
+
+                        <img
+                            src="../../assets/Icon/Plus.svg"
+                            alt=""
+                            class="unit-add-icon"
+                            aria-hidden="true"
+                        >
+
+                        <span>
+                            Tambah Unit
+                        </span>
+
+                    </a>
+
+                </section>
+
+
+                <!-- =================================================
+                     UNIT GRID
+                ================================================== -->
+                <section class="unit-grid">
+
+                    <!-- TV 1 -->
+                    <article class="unit-card">
+
+                        <div class="unit-card-left">
+
+                            <div class="unit-playstation-wrapper">
+                                <img
+                                    src="../../assets/Icon/PlayStation Logo.svg"
+                                    alt="PlayStation"
+                                    class="unit-playstation-logo"
+                                >
+                            </div>
+
+                            <div class="unit-information">
+
+                                <div class="unit-name-row">
+                                    <h2 class="unit-name">TV 1</h2>
+                                    <span class="unit-status status-available">Tersedia</span>
+                                </div>
+
+                                <p class="unit-description">Unit dalam kondisi normal dan siap digunakan</p>
+
+                                <div class="unit-divider"></div>
+
+                                <div class="unit-specifications">
+                                    <div class="unit-spec">
+                                        <img src="../../assets/Icon/TV.svg" alt="" class="unit-spec-icon unit-tv-icon">
+                                        <span>TV 32"</span>
+                                    </div>
+                                    <div class="unit-spec">
+                                        <img src="../../assets/Icon/Game.svg" alt="" class="unit-spec-icon unit-game-icon">
+                                        <span>Stik 2</span>
+                                    </div>
+                                    <div class="unit-spec">
+                                        <img src="../../assets/Icon/PlayStation Logo.svg" alt="" class="unit-spec-icon unit-ps-icon">
+                                        <span>PS 4</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="unit-card-actions">
+                            <a href="edit-unit.html" class="unit-edit-button">
+                                <img src="../../assets/Icon/Edit.svg" alt="" class="unit-edit-icon">
+                                <span>Edit</span>
+                            </a>
+                            <a href="hapus-unit.html" class="unit-delete-button">
+                                <img src="../../assets/Icon/Trash.svg" alt="" class="unit-delete-icon">
+                                <span>Hapus</span>
+                            </a>
+                        </div>
+
+                    </article>
+
+
+                    <!-- TV 2 -->
+                    <article class="unit-card">
+
+                        <div class="unit-card-left">
+
+                            <div class="unit-playstation-wrapper">
+                                <img
+                                    src="../../assets/Icon/PlayStation Logo.svg"
+                                    alt="PlayStation"
+                                    class="unit-playstation-logo"
+                                >
+                            </div>
+
+                            <div class="unit-information">
+
+                                <div class="unit-name-row">
+                                    <h2 class="unit-name">TV 2</h2>
+                                    <span class="unit-status status-damaged">Stik Rusak</span>
+                                </div>
+
+                                <p class="unit-description">Stik Mengalami Kerusakan</p>
+
+                                <div class="unit-divider"></div>
+
+                                <div class="unit-specifications">
+                                    <div class="unit-spec">
+                                        <img src="../../assets/Icon/TV.svg" alt="" class="unit-spec-icon unit-tv-icon">
+                                        <span>TV 32"</span>
+                                    </div>
+                                    <div class="unit-spec">
+                                        <img src="../../assets/Icon/Game.svg" alt="" class="unit-spec-icon unit-game-icon">
+                                        <span>Stik 1</span>
+                                    </div>
+                                    <div class="unit-spec">
+                                        <img src="../../assets/Icon/PlayStation Logo.svg" alt="" class="unit-spec-icon unit-ps-icon">
+                                        <span>PS 4</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="unit-card-actions">
+                            <a href="edit-unit.html" class="unit-edit-button">
+                                <img src="../../assets/Icon/Edit.svg" alt="" class="unit-edit-icon">
+                                <span>Edit</span>
+                            </a>
+                            <a href="hapus-unit.html" class="unit-delete-button">
+                                <img src="../../assets/Icon/Trash.svg" alt="" class="unit-delete-icon">
+                                <span>Hapus</span>
+                            </a>
+                        </div>
+
+                    </article>
+
+
+                    <!-- TV 3 -->
+                    <article class="unit-card">
+
+                        <div class="unit-card-left">
+
+                            <div class="unit-playstation-wrapper">
+                                <img
+                                    src="../../assets/Icon/PlayStation Logo.svg"
+                                    alt="PlayStation"
+                                    class="unit-playstation-logo"
+                                >
+                            </div>
+
+                            <div class="unit-information">
+
+                                <div class="unit-name-row">
+                                    <h2 class="unit-name">TV 3</h2>
+                                    <span class="unit-status status-damaged">PS Rusak</span>
+                                </div>
+
+                                <p class="unit-description">Unit PS mengalami kerusakan</p>
+
+                                <div class="unit-divider"></div>
+
+                                <div class="unit-specifications">
+                                    <div class="unit-spec">
+                                        <img src="../../assets/Icon/TV.svg" alt="" class="unit-spec-icon unit-tv-icon">
+                                        <span>TV 32"</span>
+                                    </div>
+                                    <div class="unit-spec">
+                                        <img src="../../assets/Icon/Game.svg" alt="" class="unit-spec-icon unit-game-icon">
+                                        <span>Stik 2</span>
+                                    </div>
+                                    <div class="unit-spec">
+                                        <img src="../../assets/Icon/PlayStation Logo.svg" alt="" class="unit-spec-icon unit-ps-icon">
+                                        <span>PS 3</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="unit-card-actions">
+                            <a href="edit-unit.html" class="unit-edit-button">
+                                <img src="../../assets/Icon/Edit.svg" alt="" class="unit-edit-icon">
+                                <span>Edit</span>
+                            </a>
+                            <a href="hapus-unit.html" class="unit-delete-button">
+                                <img src="../../assets/Icon/Trash.svg" alt="" class="unit-delete-icon">
+                                <span>Hapus</span>
+                            </a>
+                        </div>
+
+                    </article>
+
+
+                    <!-- TV 4 -->
+                    <article class="unit-card">
+
+                        <div class="unit-card-left">
+
+                            <div class="unit-playstation-wrapper">
+                                <img
+                                    src="../../assets/Icon/PlayStation Logo.svg"
+                                    alt="PlayStation"
+                                    class="unit-playstation-logo"
+                                >
+                            </div>
+
+                            <div class="unit-information">
+
+                                <div class="unit-name-row">
+                                    <h2 class="unit-name">TV 4</h2>
+                                    <span class="unit-status status-damaged">TV Rusak</span>
+                                </div>
+
+                                <p class="unit-description">TV tidak dapat digunakan</p>
+
+                                <div class="unit-divider"></div>
+
+                                <div class="unit-specifications">
+                                    <div class="unit-spec">
+                                        <img src="../../assets/Icon/TV.svg" alt="" class="unit-spec-icon unit-tv-icon">
+                                        <span>TV 32"</span>
+                                    </div>
+                                    <div class="unit-spec">
+                                        <img src="../../assets/Icon/Game.svg" alt="" class="unit-spec-icon unit-game-icon">
+                                        <span>Stik 1</span>
+                                    </div>
+                                    <div class="unit-spec">
+                                        <img src="../../assets/Icon/PlayStation Logo.svg" alt="" class="unit-spec-icon unit-ps-icon">
+                                        <span>PS 4</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="unit-card-actions">
+                            <a href="edit-unit.html" class="unit-edit-button">
+                                <img src="../../assets/Icon/Edit.svg" alt="" class="unit-edit-icon">
+                                <span>Edit</span>
+                            </a>
+                            <a href="hapus-unit.html" class="unit-delete-button">
+                                <img src="../../assets/Icon/Trash.svg" alt="" class="unit-delete-icon">
+                                <span>Hapus</span>
+                            </a>
+                        </div>
+
+                    </article>
+
+
+                    <!-- TV 7 -->
+                    <article class="unit-card">
+
+                        <div class="unit-card-left">
+
+                            <div class="unit-playstation-wrapper">
+                                <img
+                                    src="../../assets/Icon/PlayStation Logo.svg"
+                                    alt="PlayStation"
+                                    class="unit-playstation-logo"
+                                >
+                            </div>
+
+                            <div class="unit-information">
+
+                                <div class="unit-name-row">
+                                    <h2 class="unit-name">TV 7</h2>
+                                    <span class="unit-status status-used">Digunakan</span>
+                                </div>
+
+                                <p class="unit-description">Unit sedang di Booking</p>
+
+                                <div class="unit-divider"></div>
+
+                                <div class="unit-specifications">
+                                    <div class="unit-spec">
+                                        <img src="../../assets/Icon/TV.svg" alt="" class="unit-spec-icon unit-tv-icon">
+                                        <span>TV 32"</span>
+                                    </div>
+                                    <div class="unit-spec">
+                                        <img src="../../assets/Icon/Game.svg" alt="" class="unit-spec-icon unit-game-icon">
+                                        <span>Stik 2</span>
+                                    </div>
+                                    <div class="unit-spec">
+                                        <img src="../../assets/Icon/PlayStation Logo.svg" alt="" class="unit-spec-icon unit-ps-icon">
+                                        <span>PS 4</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="unit-card-actions">
+                            <a href="edit-unit.html" class="unit-edit-button">
+                                <img src="../../assets/Icon/Edit.svg" alt="" class="unit-edit-icon">
+                                <span>Edit</span>
+                            </a>
+                            <a href="hapus-unit.html" class="unit-delete-button">
+                                <img src="../../assets/Icon/Trash.svg" alt="" class="unit-delete-icon">
+                                <span>Hapus</span>
+                            </a>
+                        </div>
+
+                    </article>
+
+
+                    <!-- TV 8 -->
+                    <article class="unit-card">
+
+                        <div class="unit-card-left">
+
+                            <div class="unit-playstation-wrapper">
+                                <img
+                                    src="../../assets/Icon/PlayStation Logo.svg"
+                                    alt="PlayStation"
+                                    class="unit-playstation-logo"
+                                >
+                            </div>
+
+                            <div class="unit-information">
+
+                                <div class="unit-name-row">
+                                    <h2 class="unit-name">TV 8</h2>
+                                    <span class="unit-status status-available">Tersedia</span>
+                                </div>
+
+                                <p class="unit-description">Unit dalam kondisi normal dan siap digunakan</p>
+
+                                <div class="unit-divider"></div>
+
+                                <div class="unit-specifications">
+                                    <div class="unit-spec">
+                                        <img src="../../assets/Icon/TV.svg" alt="" class="unit-spec-icon unit-tv-icon">
+                                        <span>TV 32"</span>
+                                    </div>
+                                    <div class="unit-spec">
+                                        <img src="../../assets/Icon/Game.svg" alt="" class="unit-spec-icon unit-game-icon">
+                                        <span>Stik 1</span>
+                                    </div>
+                                    <div class="unit-spec">
+                                        <img src="../../assets/Icon/PlayStation Logo.svg" alt="" class="unit-spec-icon unit-ps-icon">
+                                        <span>PS 3</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="unit-card-actions">
+                            <a href="edit-unit.html" class="unit-edit-button">
+                                <img src="../../assets/Icon/Edit.svg" alt="" class="unit-edit-icon">
+                                <span>Edit</span>
+                            </a>
+                            <a href="hapus-unit.html" class="unit-delete-button">
+                                <img src="../../assets/Icon/Trash.svg" alt="" class="unit-delete-icon">
+                                <span>Hapus</span>
+                            </a>
+                        </div>
+
+                    </article>
+
+                </section>
+
+            </main>
+
+
+            <!-- =================================================
+                 FOOTER
+            ================================================== -->
+            <footer class="admin-footer">
+
+                <!-- Premium Equipment -->
+                <article class="admin-footer-item">
+                    <div class="admin-footer-icon">
+                        <img src="../../assets/Icon/Controller Icon.svg" alt="" aria-hidden="true">
+                    </div>
+                    <div class="admin-footer-text">
+                        <p class="admin-footer-title">Premium Equipment</p>
+                        <p class="admin-footer-description">PlayStation terbaru &amp; berkualitas</p>
+                    </div>
+                </article>
+
+                <!-- Delicious Food & Drinks -->
+                <article class="admin-footer-item">
+                    <div class="admin-footer-icon">
+                        <img src="../../assets/Icon/FNB.svg" alt="" aria-hidden="true">
+                    </div>
+                    <div class="admin-footer-text">
+                        <p class="admin-footer-title">Delicious Food &amp; Drinks</p>
+                        <p class="admin-footer-description">Pilihan menu terbaik</p>
+                    </div>
+                </article>
+
+                <!-- Comfortable Space -->
+                <article class="admin-footer-item">
+                    <div class="admin-footer-icon">
+                        <img src="../../assets/Icon/Bintang.svg" alt="" aria-hidden="true">
+                    </div>
+                    <div class="admin-footer-text">
+                        <p class="admin-footer-title">Comfortable Space</p>
+                        <p class="admin-footer-description">Suasana nyaman &amp; modern</p>
+                    </div>
+                </article>
+
+                <!-- Friendly Support -->
+                <article class="admin-footer-item">
+                    <div class="admin-footer-icon">
+                        <img src="../../assets/Icon/People Icon.svg" alt="" aria-hidden="true">
+                    </div>
+                    <div class="admin-footer-text">
+                        <p class="admin-footer-title">Friendly Support</p>
+                        <p class="admin-footer-description">Selalu siap membantu</p>
+                    </div>
+                </article>
+
+            </footer>
+
+        </div>
+
+    </div>
+    <!-- END BACKGROUND -->
+
+
+    <!-- =====================================================
+         OVERLAY + POPUP TAMBAH UNIT
+    ====================================================== -->
+    <div class="tambah-unit-overlay" id="tambahUnitOverlay">
+
+        <div class="tambah-unit-popup" role="dialog" aria-modal="true" aria-labelledby="tambahUnitTitle">
+
+            <!-- POPUP HEADER -->
+            <div class="tambah-unit-header">
+
+                <div class="tambah-unit-header-left">
+
+                    <div class="tambah-unit-header-icon-wrapper">
+                        <img
+                            src="../../assets/Icon/TV.svg"
+                            alt=""
+                            class="tambah-unit-header-icon"
+                            aria-hidden="true"
+                        >
+                    </div>
+
+                    <div class="tambah-unit-header-text">
+                        <h2 class="tambah-unit-title" id="tambahUnitTitle">
+                            Tambah Unit PS
+                        </h2>
+                        <p class="tambah-unit-subtitle">
+                            Tambahkan Unit PlayStation baru ke dalam sistem
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- CLOSE BUTTON -->
+                <button
+                    type="button"
+                    class="tambah-unit-close"
+                    id="tambahUnitClose"
+                    aria-label="Tutup popup"
+                    onclick="window.location.href='kelola-unit.html'"
+                >
+                    <img
+                        src="../../assets/Icon/Close.svg"
+                        alt="Tutup"
+                        class="tambah-unit-close-icon"
+                    >
+                </button>
+
+            </div>
+
+
+            <!-- POPUP FORM -->
+            <form class="tambah-unit-form" id="tambahUnitForm" action="#" method="post">
+
+                <!-- ROW 1: Nama Unit + Jenis PlayStation -->
+                <div class="tambah-unit-row">
+
+                    <!-- Nama Unit -->
+                    <div class="tambah-unit-form-group">
+                        <label class="tambah-unit-label" for="namaUnit">
+                            Nama Unit
+                        </label>
+                        <div class="tambah-unit-input-wrapper">
+                            <input
+                                type="text"
+                                id="namaUnit"
+                                name="namaUnit"
+                                class="tambah-unit-input"
+                                placeholder="Contoh TV 9"
+                            >
+                        </div>
+                    </div>
+
+                    <!-- Jenis PlayStation -->
+                    <div class="tambah-unit-form-group">
+                        <label class="tambah-unit-label" for="jenisPlaystation">
+                            Jenis PlayStation
+                        </label>
+                        <div class="tambah-unit-input-wrapper tambah-unit-select-wrapper">
+                            <img
+                                src="../../assets/Icon/PlayStation Logo.svg"
+                                alt=""
+                                class="tambah-unit-field-icon"
+                                aria-hidden="true"
+                            >
+                            <select
+                                id="jenisPlaystation"
+                                name="jenisPlaystation"
+                                class="tambah-unit-select"
+                            >
+                                <option value="" disabled selected>PlayStation 4</option>
+                                <option value="PS3">PS 3</option>
+                                <option value="PS4">PS 4</option>
+                                <option value="PS5">PS 5</option>
+                            </select>
+                            <img
+                                src="../../assets/Icon/Panah.svg"
+                                alt=""
+                                class="tambah-unit-select-arrow"
+                                aria-hidden="true"
+                            >
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- ROW 2: Jumlah Stik + Ukuran TV -->
+                <div class="tambah-unit-row">
+
+                    <!-- Jumlah Stik -->
+                    <div class="tambah-unit-form-group">
+                        <label class="tambah-unit-label" for="jumlahStik">
+                            Jumlah Stik
+                        </label>
+                        <div class="tambah-unit-input-wrapper tambah-unit-select-wrapper">
+                            <img
+                                src="../../assets/Icon/Game.svg"
+                                alt=""
+                                class="tambah-unit-field-icon"
+                                aria-hidden="true"
+                            >
+                            <select
+                                id="jumlahStik"
+                                name="jumlahStik"
+                                class="tambah-unit-select"
+                            >
+                                <option value="" disabled selected>2 Stik</option>
+                                <option value="1">1 Stik</option>
+                                <option value="2">2 Stik</option>
+                                <option value="3">3 Stik</option>
+                                <option value="4">4 Stik</option>
+                            </select>
+                            <img
+                                src="../../assets/Icon/Panah.svg"
+                                alt=""
+                                class="tambah-unit-select-arrow"
+                                aria-hidden="true"
+                            >
+                        </div>
+                    </div>
+
+                    <!-- Ukuran TV -->
+                    <div class="tambah-unit-form-group">
+                        <label class="tambah-unit-label" for="ukuranTV">
+                            Ukuran TV
+                        </label>
+                        <div class="tambah-unit-input-wrapper tambah-unit-select-wrapper">
+                            <img
+                                src="../../assets/Icon/TV.svg"
+                                alt=""
+                                class="tambah-unit-field-icon"
+                                aria-hidden="true"
+                            >
+                            <select
+                                id="ukuranTV"
+                                name="ukuranTV"
+                                class="tambah-unit-select"
+                            >
+                                <option value="" disabled selected>35"</option>
+                                <option value="24">24"</option>
+                                <option value="32">32"</option>
+                                <option value="35">35"</option>
+                                <option value="40">40"</option>
+                            </select>
+                            <img
+                                src="../../assets/Icon/Panah.svg"
+                                alt=""
+                                class="tambah-unit-select-arrow"
+                                aria-hidden="true"
+                            >
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- ROW 3: Status Unit -->
+                <div class="tambah-unit-form-group tambah-unit-form-group--full">
+                    <label class="tambah-unit-label">
+                        Status Unit
+                    </label>
+
+                    <div class="tambah-unit-status-group">
+
+                        <!-- Tersedia -->
+                        <label class="tambah-unit-status-option tambah-unit-status-option--active" for="statusTersedia">
+                            <input
+                                type="radio"
+                                id="statusTersedia"
+                                name="statusUnit"
+                                value="tersedia"
+                                class="tambah-unit-radio"
+                                checked
+                            >
+                            <span class="tambah-unit-radio-custom"></span>
+                            <span class="tambah-unit-status-label-text">
+                                <span class="tambah-unit-status-name">Tersedia</span>
+                                <span class="tambah-unit-status-desc">Siap digunakan</span>
+                            </span>
+                        </label>
+
+                        <!-- Digunakan -->
+                        <label class="tambah-unit-status-option" for="statusDigunakan">
+                            <input
+                                type="radio"
+                                id="statusDigunakan"
+                                name="statusUnit"
+                                value="digunakan"
+                                class="tambah-unit-radio"
+                            >
+                            <span class="tambah-unit-radio-custom"></span>
+                            <span class="tambah-unit-status-label-text">
+                                <span class="tambah-unit-status-name">Digunakan</span>
+                                <span class="tambah-unit-status-desc">Sedang Digunakan</span>
+                            </span>
+                        </label>
+
+                        <!-- Rusak / Maintenance -->
+                        <label class="tambah-unit-status-option" for="statusMaintenance">
+                            <input
+                                type="radio"
+                                id="statusMaintenance"
+                                name="statusUnit"
+                                value="maintenance"
+                                class="tambah-unit-radio"
+                            >
+                            <span class="tambah-unit-radio-custom"></span>
+                            <span class="tambah-unit-status-label-text">
+                                <span class="tambah-unit-status-name">Rusak</span>
+                                <span class="tambah-unit-status-desc">Tidak dapat digunakan</span>
+                            </span>
+                        </label>
+
+                    </div>
+                </div>
+
+
+                <!-- ACTION BUTTONS -->
+                <div class="tambah-unit-actions">
+
+                    <a
+                        href="kelola-unit.html"
+                        class="tambah-unit-cancel"
+                        id="tambahUnitBatal"
+                    >
+                        Batal
+                    </a>
+
+                    <a href="kelola-unit.html" class="tambah-unit-submit">
+                        Simpan Unit
+                    </a>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+    <!-- END OVERLAY + POPUP -->
+
+    <!-- JavaScript -->
+    <script src="../../js/admin/tambah-unit.js"></script>
+
+</body>
+
+</html>
+

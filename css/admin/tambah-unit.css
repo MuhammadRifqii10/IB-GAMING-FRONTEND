@@ -1,0 +1,493 @@
+/* =========================================================
+   TAMBAH UNIT PLAYSTATION
+   Popup CSS — tambah-unit.css
+   Prefix: tambah-unit-
+   Tidak mengubah: global.css, admin-layout.css, kelola-unit.css
+========================================================= */
+
+
+/* =========================================================
+   OVERLAY
+   Full-screen dark transparent layer di atas background
+========================================================= */
+
+.tambah-unit-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.48);
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* =========================================================
+   POPUP CONTAINER
+========================================================= */
+
+.tambah-unit-popup {
+    width: 480px;
+    background: #FFFEFA;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18), 0 4px 16px rgba(0, 0, 0, 0.10);
+
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   POPUP HEADER
+========================================================= */
+
+.tambah-unit-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 24px 16px 24px;
+
+    border-bottom: 1px solid #E5DCD0;
+}
+
+.tambah-unit-header-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Icon wrapper — kotak emas kecil mirip desain Figma */
+.tambah-unit-header-icon-wrapper {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+
+    background: #B99053;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tambah-unit-header-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    filter: brightness(0) invert(1); /* putih */
+}
+
+.tambah-unit-header-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.tambah-unit-title {
+    margin: 0;
+
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+
+    color: #29231F;
+}
+
+.tambah-unit-subtitle {
+    margin: 0;
+
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 15px;
+
+    color: #857D74;
+}
+
+/* Close button */
+.tambah-unit-close {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: transparent;
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+.tambah-unit-close:hover {
+    background: #F7F1E8;
+}
+
+.tambah-unit-close-icon {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.tambah-unit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    padding: 20px 24px 24px 24px;
+}
+
+/* Two-column row */
+.tambah-unit-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+/* Form group */
+.tambah-unit-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.tambah-unit-form-group--full {
+    grid-column: 1 / -1;
+}
+
+/* Label */
+.tambah-unit-label {
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    color: #29231F;
+}
+
+
+/* =========================================================
+   INPUT WRAPPER
+========================================================= */
+
+.tambah-unit-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Text input */
+.tambah-unit-input {
+    width: 100%;
+    height: 38px;
+
+    padding: 0 12px;
+
+    background: #FFFFFF;
+    border: 1px solid #E5DCD0;
+    border-radius: 8px;
+
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 13px;
+    font-weight: 400;
+    color: #29231F;
+
+    outline: none;
+    transition: border-color 0.15s ease;
+    box-sizing: border-box;
+}
+
+.tambah-unit-input::placeholder {
+    color: #A09890;
+}
+
+.tambah-unit-input:focus {
+    border-color: #B99053;
+    box-shadow: 0 0 0 2px rgba(185, 144, 83, 0.15);
+}
+
+
+/* =========================================================
+   SELECT WRAPPER
+========================================================= */
+
+.tambah-unit-select-wrapper {
+    position: relative;
+}
+
+/* Left icon inside select/input */
+.tambah-unit-field-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+
+    pointer-events: none;
+    z-index: 1;
+
+    opacity: 0.65;
+}
+
+/* Arrow icon on the right */
+.tambah-unit-select-arrow {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 12px;
+    height: 12px;
+    object-fit: contain;
+
+    pointer-events: none;
+    z-index: 1;
+
+    opacity: 0.5;
+}
+
+/* Select element */
+.tambah-unit-select {
+    width: 100%;
+    height: 38px;
+
+    padding: 0 32px 0 32px;
+
+    background: #FFFFFF;
+    border: 1px solid #E5DCD0;
+    border-radius: 8px;
+
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 13px;
+    font-weight: 400;
+    color: #29231F;
+
+    appearance: none;
+    -webkit-appearance: none;
+
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.15s ease;
+    box-sizing: border-box;
+}
+
+.tambah-unit-select:focus {
+    border-color: #B99053;
+    box-shadow: 0 0 0 2px rgba(185, 144, 83, 0.15);
+}
+
+.tambah-unit-select option {
+    color: #29231F;
+}
+
+
+/* =========================================================
+   STATUS UNIT — Radio Group
+========================================================= */
+
+.tambah-unit-status-group {
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+}
+
+/* Setiap opsi status */
+.tambah-unit-status-option {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 10px 12px;
+
+    background: #FFFFFF;
+    border: 1.5px solid #E5DCD0;
+    border-radius: 10px;
+
+    cursor: pointer;
+    transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.tambah-unit-status-option:hover {
+    border-color: #B99053;
+    background: #FDFAF5;
+}
+
+/* Opsi yang dipilih / aktif */
+.tambah-unit-status-option--active,
+.tambah-unit-status-option:has(.tambah-unit-radio:checked) {
+    border-color: #4CAF50;
+    background: #F0FDF4;
+}
+
+/* Hidden native radio */
+.tambah-unit-radio {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+}
+
+/* Custom radio circle */
+.tambah-unit-radio-custom {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+
+    border: 2px solid #D0C9C0;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: border-color 0.15s ease;
+}
+
+/* Inner dot when checked */
+.tambah-unit-radio:checked + .tambah-unit-radio-custom {
+    border-color: #4CAF50;
+    background: #FFFFFF;
+    box-shadow: inset 0 0 0 4px #4CAF50;
+}
+
+.tambah-unit-status-label-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.tambah-unit-status-name {
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 12px;
+    font-weight: 600;
+    color: #29231F;
+    line-height: 16px;
+}
+
+.tambah-unit-status-desc {
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 10px;
+    font-weight: 400;
+    color: #857D74;
+    line-height: 14px;
+}
+
+/* Digunakan state (orange-ish) */
+.tambah-unit-status-option:has(#statusDigunakan:checked) {
+    border-color: #E9A825;
+    background: #FFFBEE;
+}
+
+.tambah-unit-status-option:has(#statusDigunakan:checked) .tambah-unit-radio-custom {
+    border-color: #E9A825;
+    box-shadow: inset 0 0 0 4px #E9A825;
+}
+
+/* Rusak / Maintenance state (red) */
+.tambah-unit-status-option:has(#statusMaintenance:checked) {
+    border-color: #E53535;
+    background: #FFF5F5;
+}
+
+.tambah-unit-status-option:has(#statusMaintenance:checked) .tambah-unit-radio-custom {
+    border-color: #E53535;
+    box-shadow: inset 0 0 0 4px #E53535;
+}
+
+
+/* =========================================================
+   ACTION BUTTONS
+========================================================= */
+
+.tambah-unit-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+
+    padding-top: 4px;
+}
+
+/* Tombol Batal */
+.tambah-unit-cancel {
+    height: 38px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 20px;
+
+    background: #FFFFFF;
+    border: 1.5px solid #E5DCD0;
+    border-radius: 8px;
+
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 13px;
+    font-weight: 500;
+    color: #29231F;
+
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.tambah-unit-cancel:hover {
+    background: #F7F1E8;
+    border-color: #C5B89A;
+}
+
+/* Tombol Simpan Unit */
+.tambah-unit-submit,
+a.tambah-unit-submit {
+    height: 38px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 22px;
+
+    background: #B99053;
+    border: 1.5px solid #B99053;
+    border-radius: 8px;
+
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 13px;
+    font-weight: 600;
+    color: #FFFFFF;
+
+    cursor: pointer;
+    transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.tambah-unit-submit:hover {
+    background: #A07840;
+    border-color: #A07840;
+}
+

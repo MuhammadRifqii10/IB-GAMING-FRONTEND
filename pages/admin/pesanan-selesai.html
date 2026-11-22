@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Detail Pesanan Selesai F&B - Admin IB Gaming</title>
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="../../css/global.css">
+
+    <!-- Admin Layout CSS -->
+    <link rel="stylesheet" href="../../css/admin/admin-layout.css">
+
+    <!-- Pesanan Selesai CSS -->
+    <link rel="stylesheet" href="../../css/admin/pesanan-selesai.css">
+</head>
+
+<body>
+
+    <div class="admin-layout">
+
+        <!-- SIDEBAR -->
+        <aside class="admin-sidebar">
+
+            <div class="admin-logo-wrapper">
+                <img src="../../assets/Icon/Logo.svg" alt="IB Gaming" class="admin-logo">
+                <div class="admin-brand-text">
+                    <p class="admin-brand-name">IB GAMING</p>
+                    <p class="admin-brand-tagline">PLAY · EAT · ENJOY</p>
+                </div>
+            </div>
+
+            <nav class="admin-nav" aria-label="Navigasi Admin">
+
+                <div class="admin-nav-section">
+                    <ul class="admin-nav-list">
+                        <li>
+                            <a href="dashboard-admin.html" class="admin-nav-link">
+                                <img src="../../assets/Icon/Home.svg" alt="" class="admin-nav-icon" aria-hidden="true">
+                                <span class="admin-nav-text">Dashboard</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="admin-nav-section">
+                    <p class="admin-nav-section-title">Operasional PlayStation</p>
+                    <ul class="admin-nav-list">
+                        <li>
+                            <a href="sewa-ps.html" class="admin-nav-link">
+                                <img src="../../assets/Icon/Game.svg" alt="" class="admin-nav-icon" aria-hidden="true">
+                                <span class="admin-nav-text">Sewa PS</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="booking/verifikasi-akun.html" class="admin-nav-link">
+                                <img src="../../assets/Icon/Keranjang.svg" alt="" class="admin-nav-icon" aria-hidden="true">
+                                <span class="admin-nav-text">Booking PS</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="kelola-unit.html" class="admin-nav-link">
+                                <img src="../../assets/Icon/TV.svg" alt="" class="admin-nav-icon" aria-hidden="true">
+                                <span class="admin-nav-text">Kelola Unit PS</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="admin-nav-section">
+                    <p class="admin-nav-section-title">Operasional F &amp; B</p>
+                    <ul class="admin-nav-list">
+                        <li>
+                            <a href="pesanan-fnb.html" class="admin-nav-link active" aria-current="page">
+                                <img src="../../assets/Icon/FNB.svg" alt="" class="admin-nav-icon" aria-hidden="true">
+                                <span class="admin-nav-text">Pesanan F &amp; B</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="kelola-menu.html" class="admin-nav-link">
+                                <img src="../../assets/Icon/Menu.svg" alt="" class="admin-nav-icon" aria-hidden="true">
+                                <span class="admin-nav-text">Kelola Menu F &amp; B</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+
+            <div class="admin-sidebar-bottom">
+                <a href="#" class="admin-logout">
+                    <img src="../../assets/Icon/Logout.svg" alt="" class="admin-logout-icon" aria-hidden="true">
+                    <span class="admin-logout-text">Logout</span>
+                </a>
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN AREA -->
+        <div class="admin-main">
+
+            <!-- HEADER -->
+            <header class="admin-header">
+
+                <div class="admin-search-wrapper">
+                    <img src="../../assets/Icon/Search.svg" alt="" class="admin-search-icon">
+                    <input
+                        type="text"
+                        class="admin-search"
+                        placeholder="Cari menu, booking, pelanggan..."
+                    >
+                </div>
+
+                <div class="admin-header-right">
+                    <a href="notification.html" class="admin-notification" aria-label="Notifikasi">
+                        <img src="../../assets/Icon/Notif.svg" alt="Notifikasi" class="admin-notification-icon">
+                        <span class="admin-notification-badge"></span>
+                    </a>
+                    <div class="admin-profile">
+                        <img src="../../assets/Images/Elon.jpg" alt="Admin" class="admin-profile-image">
+                        <div class="admin-profile-info">
+                            <p class="admin-profile-name">Admin</p>
+                            <p class="admin-profile-role">Administrator</p>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+
+
+            <!-- CONTENT -->
+            <main class="admin-content pesanan-selesai-main">
+
+                <!-- TOP BAR -->
+                <div class="pesanan-selesai-topbar">
+
+                    <nav class="pesanan-selesai-breadcrumb" aria-label="Breadcrumb">
+                        <a href="pesanan-fnb.html" class="pesanan-selesai-breadcrumb-back" aria-label="Kembali">
+                            <img src="../../assets/Icon/Panah.svg" alt="" class="pesanan-selesai-breadcrumb-back-icon" aria-hidden="true">
+                        </a>
+
+                        <a href="pesanan-fnb.html" class="pesanan-selesai-breadcrumb-parent">Pesanan F &amp; B</a>
+
+                        <img src="../../assets/Icon/Arrow.svg" alt="" class="pesanan-selesai-breadcrumb-sep" aria-hidden="true">
+
+                        <span class="pesanan-selesai-breadcrumb-current">Detail Pesanan F &amp; B</span>
+                    </nav>
+
+                    <a href="pesanan-fnb.html" class="pesanan-selesai-back-btn" id="btnKembali">
+                        <img src="../../assets/Icon/Panah.svg" alt="" class="pesanan-selesai-back-icon" aria-hidden="true">
+                        Kembali
+                    </a>
+
+                </div>
+
+
+                <!-- PAGE HEADING -->
+                <div class="pesanan-selesai-heading">
+                    <img src="../../assets/Icon/FNB.svg" alt="" class="pesanan-selesai-heading-icon" aria-hidden="true">
+                    <div class="pesanan-selesai-heading-text">
+                        <h1 class="pesanan-selesai-heading-title">Pesanan F &amp; B</h1>
+                        <p class="pesanan-selesai-heading-subtitle">Kelola pesanan makanan dan minuman dari pelanggan</p>
+                    </div>
+                </div>
+
+
+                <!-- STATUS BANNER: Selesai -->
+                <div class="pesanan-selesai-status-banner">
+
+                    <div class="pesanan-selesai-banner-left">
+
+                        <div class="pesanan-selesai-banner-icon-wrapper pesanan-selesai-status-icon">
+                            <img src="../../assets/Icon/FNB.svg" alt="" class="pesanan-selesai-banner-icon" aria-hidden="true">
+                        </div>
+
+                        <div class="pesanan-selesai-banner-text">
+                            <p class="pesanan-selesai-banner-title">Pesanan Selesai</p>
+                            <p class="pesanan-selesai-banner-subtitle">Pesanan sudah di konfirmasi dan sedang disiapkan</p>
+                        </div>
+
+                    </div>
+
+                    <span class="pesanan-selesai-banner-badge">Selesai</span>
+
+                </div>
+
+
+                <!-- CONTENT GRID -->
+                <div class="pesanan-selesai-info-grid">
+
+                    <!-- KOLOM KIRI -->
+                    <div class="pesanan-selesai-col-left">
+
+                        <!-- Informasi Pesanan -->
+                        <div class="pesanan-selesai-info-card">
+
+                            <div class="pesanan-selesai-card-header">
+                                <img src="../../assets/Icon/Note.svg" alt="" class="pesanan-selesai-card-icon" aria-hidden="true">
+                                <h2 class="pesanan-selesai-card-title">Informasi Pesanan</h2>
+                            </div>
+
+                            <div class="pesanan-selesai-info-body">
+
+                                <div class="pesanan-selesai-info-fields">
+
+                                    <div class="pesanan-selesai-field">
+                                        <span class="pesanan-selesai-field-label">ID Pesanan</span>
+                                        <span class="pesanan-selesai-field-value">FNB-17</span>
+                                    </div>
+
+                                    <div class="pesanan-selesai-field">
+                                        <span class="pesanan-selesai-field-label">Tanggal &amp; Waktu</span>
+                                        <span class="pesanan-selesai-field-value">10 Okt 2026, 14:10</span>
+                                    </div>
+
+                                    <div class="pesanan-selesai-field">
+                                        <span class="pesanan-selesai-field-label">Pelanggan</span>
+                                        <span class="pesanan-selesai-field-value">Kimi Antonelli</span>
+                                    </div>
+
+                                    <div class="pesanan-selesai-field">
+                                        <span class="pesanan-selesai-field-label">Meja / Unit</span>
+                                        <span class="pesanan-selesai-field-value">TV 1</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="pesanan-selesai-info-divider" aria-hidden="true"></div>
+
+                                <div class="pesanan-selesai-info-notes">
+                                    <span class="pesanan-selesai-field-label">Catatan</span>
+                                    <span class="pesanan-selesai-notes-value">-</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Rincian Menu -->
+                        <div class="pesanan-selesai-menu-card">
+
+                            <div class="pesanan-selesai-card-header">
+                                <img src="../../assets/Icon/FNB.svg" alt="" class="pesanan-selesai-card-icon" aria-hidden="true">
+                                <h2 class="pesanan-selesai-card-title">Rincian Menu</h2>
+                            </div>
+
+                            <div class="pesanan-selesai-table-wrapper">
+                                <table class="pesanan-selesai-table">
+                                    <thead>
+                                        <tr>
+                                            <th class="pesanan-selesai-th pesanan-selesai-th--no">No</th>
+                                            <th class="pesanan-selesai-th pesanan-selesai-th--menu">Menu</th>
+                                            <th class="pesanan-selesai-th pesanan-selesai-th--jumlah">Jumlah</th>
+                                            <th class="pesanan-selesai-th pesanan-selesai-th--harga">Harga</th>
+                                            <th class="pesanan-selesai-th pesanan-selesai-th--subtotal">SubTotal</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="pesanan-selesai-tr">
+                                            <td class="pesanan-selesai-td pesanan-selesai-td--center">1</td>
+                                            <td class="pesanan-selesai-td">Indomie Goreng</td>
+                                            <td class="pesanan-selesai-td pesanan-selesai-td--center">4</td>
+                                            <td class="pesanan-selesai-td">Rp 5000</td>
+                                            <td class="pesanan-selesai-td pesanan-selesai-td--right">Rp 20.000</td>
+                                        </tr>
+                                        <tr class="pesanan-selesai-tr">
+                                            <td class="pesanan-selesai-td pesanan-selesai-td--center">2</td>
+                                            <td class="pesanan-selesai-td">Indomie Rendang</td>
+                                            <td class="pesanan-selesai-td pesanan-selesai-td--center">5</td>
+                                            <td class="pesanan-selesai-td">Rp 5000</td>
+                                            <td class="pesanan-selesai-td pesanan-selesai-td--right">Rp 25.000</td>
+                                        </tr>
+                                        <tr class="pesanan-selesai-tr">
+                                            <td class="pesanan-selesai-td pesanan-selesai-td--center">3</td>
+                                            <td class="pesanan-selesai-td">Le Mineral</td>
+                                            <td class="pesanan-selesai-td pesanan-selesai-td--center">6</td>
+                                            <td class="pesanan-selesai-td">Rp 3000</td>
+                                            <td class="pesanan-selesai-td pesanan-selesai-td--right">Rp 18.000</td>
+                                        </tr>
+                                        <tr class="pesanan-selesai-tr">
+                                            <td class="pesanan-selesai-td pesanan-selesai-td--center">4</td>
+                                            <td class="pesanan-selesai-td">Teh Pucuk</td>
+                                            <td class="pesanan-selesai-td pesanan-selesai-td--center">2</td>
+                                            <td class="pesanan-selesai-td">Rp 5000</td>
+                                            <td class="pesanan-selesai-td pesanan-selesai-td--right">Rp 10.000</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr class="pesanan-selesai-tfoot-row">
+                                            <td colspan="4" class="pesanan-selesai-tfoot-label">Total Pesanan</td>
+                                            <td class="pesanan-selesai-tfoot-total">Rp 73.000</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- KOLOM KANAN -->
+                    <div class="pesanan-selesai-col-right">
+
+                        <!-- Status Pembayaran -->
+                        <div class="pesanan-selesai-payment-card">
+
+                            <div class="pesanan-selesai-card-header">
+                                <img src="../../assets/Icon/Wallet.svg" alt="" class="pesanan-selesai-card-icon" aria-hidden="true">
+                                <h2 class="pesanan-selesai-card-title">Status Pembayaran</h2>
+                            </div>
+
+                            <div class="pesanan-selesai-payment-fields">
+
+                                <div class="pesanan-selesai-payment-row">
+                                    <span class="pesanan-selesai-payment-label">Metode Pembayaran</span>
+                                    <span class="pesanan-selesai-payment-sep">:</span>
+                                    <span class="pesanan-selesai-payment-value">QRIS</span>
+                                </div>
+
+                                <div class="pesanan-selesai-payment-row">
+                                    <span class="pesanan-selesai-payment-label">Status Pembayaran</span>
+                                    <span class="pesanan-selesai-payment-sep">:</span>
+                                    <span class="pesanan-selesai-payment-value">Berhasil</span>
+                                </div>
+
+                                <div class="pesanan-selesai-payment-row">
+                                    <span class="pesanan-selesai-payment-label">Total Pembayaran</span>
+                                    <span class="pesanan-selesai-payment-sep">:</span>
+                                    <span class="pesanan-selesai-payment-value">Rp 73.000</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Informasi Penyelesaian -->
+                        <div class="pesanan-selesai-completion-card">
+
+                            <h2 class="pesanan-selesai-completion-title">Informasi Penyelesaian</h2>
+
+                            <div class="pesanan-selesai-completion-rows">
+
+                                <div class="pesanan-selesai-completion-row">
+                                    <span class="pesanan-selesai-completion-label">Waktu Selesai</span>
+                                    <span class="pesanan-selesai-completion-sep">:</span>
+                                    <span class="pesanan-selesai-completion-value">10 Okt 2026, 14:06</span>
+                                </div>
+
+                                <div class="pesanan-selesai-completion-row">
+                                    <span class="pesanan-selesai-completion-label">Dicatat Oleh</span>
+                                    <span class="pesanan-selesai-completion-sep">:</span>
+                                    <span class="pesanan-selesai-completion-value">Admin</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </main>
+
+
+            <!-- FOOTER -->
+            <footer class="admin-footer">
+
+                <article class="admin-footer-item">
+                    <div class="admin-footer-icon">
+                        <img src="../../assets/Icon/Controller Icon.svg" alt="" aria-hidden="true">
+                    </div>
+                    <div class="admin-footer-text">
+                        <p class="admin-footer-title">Premium Equipment</p>
+                        <p class="admin-footer-description">PlayStation terbaru &amp; berkualitas</p>
+                    </div>
+                </article>
+
+                <article class="admin-footer-item">
+                    <div class="admin-footer-icon">
+                        <img src="../../assets/Icon/FNB.svg" alt="" aria-hidden="true">
+                    </div>
+                    <div class="admin-footer-text">
+                        <p class="admin-footer-title">Delicious Food &amp; Drinks</p>
+                        <p class="admin-footer-description">Pilihan menu terbaik</p>
+                    </div>
+                </article>
+
+                <article class="admin-footer-item">
+                    <div class="admin-footer-icon">
+                        <img src="../../assets/Icon/Bintang.svg" alt="" aria-hidden="true">
+                    </div>
+                    <div class="admin-footer-text">
+                        <p class="admin-footer-title">Comfortable Space</p>
+                        <p class="admin-footer-description">Suasana nyaman &amp; modern</p>
+                    </div>
+                </article>
+
+                <article class="admin-footer-item">
+                    <div class="admin-footer-icon">
+                        <img src="../../assets/Icon/People Icon.svg" alt="" aria-hidden="true">
+                    </div>
+                    <div class="admin-footer-text">
+                        <p class="admin-footer-title">Friendly Support</p>
+                        <p class="admin-footer-description">Selalu siap membantu</p>
+                    </div>
+                </article>
+
+            </footer>
+
+        </div>
+
+    </div>
+
+    <script src="../../js/admin/pesanan-selesai.js"></script>
+
+</body>
+
+</html>
+

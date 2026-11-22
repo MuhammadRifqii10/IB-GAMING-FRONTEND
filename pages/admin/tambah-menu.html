@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tambah Menu F&B - Admin IB Gaming</title>
+
+    <!-- GLOBAL CSS -->
+    <link rel="stylesheet" href="../../css/global.css">
+
+    <!-- ADMIN LAYOUT -->
+    <link rel="stylesheet" href="../../css/admin/admin-layout.css">
+
+    <!-- KELOLA MENU (background) -->
+    <link rel="stylesheet" href="../../css/admin/kelola-menu.css">
+
+    <!-- TAMBAH MENU (popup) -->
+    <link rel="stylesheet" href="../../css/admin/tambah-menu.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         BACKGROUND: HALAMAN KELOLA MENU F&B
+    ====================================================== -->
+    <div class="admin-layout">
+
+        <aside class="admin-sidebar">
+
+            <div class="admin-logo-wrapper">
+                <img src="../../assets/Icon/Logo.svg" alt="IB Gaming" class="admin-logo">
+                <div class="admin-brand-text">
+                    <p class="admin-brand-name">IB GAMING</p>
+                    <p class="admin-brand-tagline">PLAY · EAT · ENJOY</p>
+                </div>
+            </div>
+
+            <nav class="admin-nav" aria-label="Navigasi Admin">
+
+                <div class="admin-nav-section">
+                    <ul class="admin-nav-list">
+                        <li>
+                            <a href="dashboard-admin.html" class="admin-nav-link">
+                                <img src="../../assets/Icon/Home.svg" alt="" class="admin-nav-icon" aria-hidden="true">
+                                <span class="admin-nav-text">Dashboard</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="admin-nav-section">
+                    <p class="admin-nav-section-title">Operasional PlayStation</p>
+                    <ul class="admin-nav-list">
+                        <li>
+                            <a href="sewa-ps.html" class="admin-nav-link">
+                                <img src="../../assets/Icon/Game.svg" alt="" class="admin-nav-icon" aria-hidden="true">
+                                <span class="admin-nav-text">Sewa PS</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="booking/verifikasi-akun.html" class="admin-nav-link">
+                                <img src="../../assets/Icon/Keranjang.svg" alt="" class="admin-nav-icon" aria-hidden="true">
+                                <span class="admin-nav-text">Booking PS</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="kelola-unit.html" class="admin-nav-link">
+                                <img src="../../assets/Icon/TV.svg" alt="" class="admin-nav-icon" aria-hidden="true">
+                                <span class="admin-nav-text">Kelola Unit PS</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="admin-nav-section">
+                    <p class="admin-nav-section-title">Operasional F &amp; B</p>
+                    <ul class="admin-nav-list">
+                        <li>
+                            <a href="pesanan-fnb.html" class="admin-nav-link">
+                                <img src="../../assets/Icon/FNB.svg" alt="" class="admin-nav-icon" aria-hidden="true">
+                                <span class="admin-nav-text">Pesanan F &amp; B</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="kelola-menu.html" class="admin-nav-link active" aria-current="page">
+                                <img src="../../assets/Icon/Menu.svg" alt="" class="admin-nav-icon" aria-hidden="true">
+                                <span class="admin-nav-text">Kelola Menu F &amp; B</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+
+            <div class="admin-sidebar-bottom">
+                <a href="#" class="admin-logout">
+                    <img src="../../assets/Icon/Logout.svg" alt="" class="admin-logout-icon" aria-hidden="true">
+                    <span class="admin-logout-text">Logout</span>
+                </a>
+            </div>
+
+        </aside>
+
+
+        <div class="admin-main">
+
+            <header class="admin-header">
+
+                <div class="admin-search-wrapper">
+                    <img src="../../assets/Icon/Search.svg" alt="" class="admin-search-icon">
+                    <input type="text" class="admin-search" placeholder="Cari menu, booking, pelanggan...">
+                </div>
+
+                <div class="admin-header-right">
+
+                    <a href="notification.html" class="admin-notification" aria-label="Notifikasi">
+                        <img src="../../assets/Icon/Notif.svg" alt="Notifikasi" class="admin-notification-icon">
+                        <span class="admin-notification-badge"></span>
+                    </a>
+
+                    <div class="admin-profile">
+                        <img src="../../assets/Images/Elon.jpg" alt="Admin" class="admin-profile-image">
+                        <div class="admin-profile-info">
+                            <p class="admin-profile-name">Admin</p>
+                            <p class="admin-profile-role">Administrator</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <main class="admin-content kelola-menu-content">
+
+                <section class="kelola-menu-header">
+
+                    <div class="kelola-menu-title-wrapper">
+                        <img src="../../assets/Icon/FNB.svg" alt="" class="kelola-menu-title-icon" aria-hidden="true">
+
+                        <div class="kelola-menu-title-text">
+                            <h1>Kelola Menu F N B</h1>
+                            <p>Atur data menu makanan dan minuman</p>
+                        </div>
+                    </div>
+
+                    <a href="tambah-menu.html" class="btn-tambah-menu">
+                        <img src="../../assets/Icon/Plus.svg" alt="" aria-hidden="true">
+                        <span>Tambah Menu</span>
+                    </a>
+
+                </section>
+
+
+                <section class="kelola-menu-card">
+
+                    <nav class="kelola-menu-tabs" aria-label="Filter menu">
+                        <button type="button" class="kelola-menu-tab active" data-filter="semua">Semua Menu</button>
+                        <button type="button" class="kelola-menu-tab" data-filter="makanan">Makanan</button>
+                        <button type="button" class="kelola-menu-tab" data-filter="minuman">Minuman</button>
+                    </nav>
+
+
+                    <div class="kelola-menu-filter-row">
+
+                        <div class="kelola-menu-search-wrapper">
+                            <img src="../../assets/Icon/Search.svg" alt="" class="kelola-menu-search-icon" aria-hidden="true">
+                            <input type="text" class="kelola-menu-search" placeholder="Cari menu..." aria-label="Cari menu">
+                        </div>
+
+                        <button type="button" class="kelola-menu-category">
+                            <span>Pilih Kategori</span>
+                            <img src="../../assets/Icon/Panah.svg" alt="" class="kelola-menu-category-arrow" aria-hidden="true">
+                        </button>
+
+                        <div class="kelola-menu-total">
+                            <div class="kelola-menu-total-icon">
+                                <img src="../../assets/Icon/FNB.svg" alt="" aria-hidden="true">
+                            </div>
+                            <div class="kelola-menu-total-text">
+                                <span>Total Menu</span>
+                                <strong>12</strong>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="kelola-menu-table-wrapper">
+
+                        <table class="kelola-menu-table">
+
+                            <thead>
+                                <tr>
+                                    <th class="col-no">No</th>
+                                    <th class="col-image">Gambar</th>
+                                    <th class="col-name">Nama Menu</th>
+                                    <th class="col-category">Kategori</th>
+                                    <th class="col-price">Harga</th>
+                                    <th class="col-stock">Stok</th>
+                                    <th class="col-action">Aksi</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td><div class="menu-image-wrapper"><img src="../../assets/Images/Indomie-Goreng.png" alt="Indomie Goreng" class="menu-image"></div></td>
+                                    <td class="menu-name">Indomie Goreng</td>
+                                    <td><span class="menu-category category-food">Makanan</span></td>
+                                    <td>Rp 5.000</td>
+                                    <td><span class="menu-stock stock-available">15</span></td>
+                                    <td>
+                                        <div class="menu-action">
+                                            <a href="edit-menu.html" class="menu-action-edit" aria-label="Edit Indomie Goreng"><img src="../../assets/Icon/Edit.svg" alt=""></a>
+                                            <a href="hapus-menu.html" class="menu-action-delete" aria-label="Hapus Indomie Goreng"><img src="../../assets/Icon/Trash.svg" alt=""></a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2</td>
+                                    <td><div class="menu-image-wrapper"><img src="../../assets/Images/Indomie-Rendang.png" alt="Indomie Rendang" class="menu-image"></div></td>
+                                    <td class="menu-name">Indomie Rendang</td>
+                                    <td><span class="menu-category category-food">Makanan</span></td>
+                                    <td>Rp 6.000</td>
+                                    <td><span class="menu-stock stock-available">20</span></td>
+                                    <td>
+                                        <div class="menu-action">
+                                            <a href="edit-menu.html" class="menu-action-edit"><img src="../../assets/Icon/Edit.svg" alt=""></a>
+                                            <a href="hapus-menu.html" class="menu-action-delete"><img src="../../assets/Icon/Trash.svg" alt=""></a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>3</td>
+                                    <td><div class="menu-image-wrapper"><img src="../../assets/Images/Indomie-Cabeijo.png" alt="Indomie Cabe Ijo" class="menu-image"></div></td>
+                                    <td class="menu-name">Indomie Cabe Ijo</td>
+                                    <td><span class="menu-category category-food">Makanan</span></td>
+                                    <td>Rp 6.000</td>
+                                    <td><span class="menu-stock stock-available">10</span></td>
+                                    <td>
+                                        <div class="menu-action">
+                                            <a href="edit-menu.html" class="menu-action-edit"><img src="../../assets/Icon/Edit.svg" alt=""></a>
+                                            <a href="hapus-menu.html" class="menu-action-delete"><img src="../../assets/Icon/Trash.svg" alt=""></a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>4</td>
+                                    <td><div class="menu-image-wrapper"><img src="../../assets/Images/Le-Mineral.png" alt="Le Mineral" class="menu-image"></div></td>
+                                    <td class="menu-name">Le Mineral</td>
+                                    <td><span class="menu-category category-drink">Minuman</span></td>
+                                    <td>Rp 6.000</td>
+                                    <td><span class="menu-stock stock-available">30</span></td>
+                                    <td>
+                                        <div class="menu-action">
+                                            <a href="edit-menu.html" class="menu-action-edit"><img src="../../assets/Icon/Edit.svg" alt=""></a>
+                                            <a href="hapus-menu.html" class="menu-action-delete"><img src="../../assets/Icon/Trash.svg" alt=""></a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>5</td>
+                                    <td><div class="menu-image-wrapper"><img src="../../assets/Images/Teh-Pucuk.png" alt="Teh Pucuk" class="menu-image"></div></td>
+                                    <td class="menu-name">Teh Pucuk</td>
+                                    <td><span class="menu-category category-drink">Minuman</span></td>
+                                    <td>Rp 5.000</td>
+                                    <td><span class="menu-stock stock-available">20</span></td>
+                                    <td>
+                                        <div class="menu-action">
+                                            <a href="edit-menu.html" class="menu-action-edit"><img src="../../assets/Icon/Edit.svg" alt=""></a>
+                                            <a href="hapus-menu.html" class="menu-action-delete"><img src="../../assets/Icon/Trash.svg" alt=""></a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>6</td>
+                                    <td><div class="menu-image-wrapper"><img src="../../assets/Images/Good-Day.png" alt="Good Day" class="menu-image"></div></td>
+                                    <td class="menu-name">Good Day CPC</td>
+                                    <td><span class="menu-category category-drink">Minuman</span></td>
+                                    <td>Rp 5.000</td>
+                                    <td><span class="menu-stock stock-empty">0</span></td>
+                                    <td>
+                                        <div class="menu-action">
+                                            <a href="edit-menu.html" class="menu-action-edit"><img src="../../assets/Icon/Edit.svg" alt=""></a>
+                                            <a href="hapus-menu.html" class="menu-action-delete"><img src="../../assets/Icon/Trash.svg" alt=""></a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>7</td>
+                                    <td><div class="menu-image-wrapper"><img src="../../assets/Images/Pop-Mie-1.png" alt="Pop Mie" class="menu-image"></div></td>
+                                    <td class="menu-name">Pop Mie</td>
+                                    <td><span class="menu-category category-food">Makanan</span></td>
+                                    <td>Rp 8.000</td>
+                                    <td><span class="menu-stock stock-empty">0</span></td>
+                                    <td>
+                                        <div class="menu-action">
+                                            <a href="edit-menu.html" class="menu-action-edit"><img src="../../assets/Icon/Edit.svg" alt=""></a>
+                                            <a href="hapus-menu.html" class="menu-action-delete"><img src="../../assets/Icon/Trash.svg" alt=""></a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>8</td>
+                                    <td><div class="menu-image-wrapper"><img src="../../assets/Images/Pop-Mie-2.png" alt="Pop Mie 2" class="menu-image"></div></td>
+                                    <td class="menu-name">Pop Mie</td>
+                                    <td><span class="menu-category category-food">Makanan</span></td>
+                                    <td>Rp 8.000</td>
+                                    <td><span class="menu-stock stock-available">10</span></td>
+                                    <td>
+                                        <div class="menu-action">
+                                            <a href="edit-menu.html" class="menu-action-edit"><img src="../../assets/Icon/Edit.svg" alt=""></a>
+                                            <a href="hapus-menu.html" class="menu-action-delete"><img src="../../assets/Icon/Trash.svg" alt=""></a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+
+                        <div class="kelola-menu-pagination">
+
+                            <button type="button" class="pagination-button pagination-prev" aria-label="Halaman sebelumnya">
+                                <img src="../../assets/Icon/Arrow.svg" alt="">
+                            </button>
+
+                            <button type="button" class="pagination-button pagination-number active">1</button>
+
+                            <button type="button" class="pagination-button pagination-next" aria-label="Halaman berikutnya">
+                                <img src="../../assets/Icon/Arrow.svg" alt="">
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </main>
+
+
+            <footer class="admin-footer">
+
+                <article class="admin-footer-item">
+                    <div class="admin-footer-icon">
+                        <img src="../../assets/Icon/Controller Icon.svg" alt="" aria-hidden="true">
+                    </div>
+                    <div class="admin-footer-text">
+                        <p class="admin-footer-title">Premium Equipment</p>
+                        <p class="admin-footer-description">PlayStation terbaru &amp; berkualitas</p>
+                    </div>
+                </article>
+
+                <article class="admin-footer-item">
+                    <div class="admin-footer-icon">
+                        <img src="../../assets/Icon/FNB.svg" alt="" aria-hidden="true">
+                    </div>
+                    <div class="admin-footer-text">
+                        <p class="admin-footer-title">Delicious Food &amp; Drinks</p>
+                        <p class="admin-footer-description">Pilihan menu terbaik</p>
+                    </div>
+                </article>
+
+                <article class="admin-footer-item">
+                    <div class="admin-footer-icon">
+                        <img src="../../assets/Icon/Bintang.svg" alt="" aria-hidden="true">
+                    </div>
+                    <div class="admin-footer-text">
+                        <p class="admin-footer-title">Comfortable Space</p>
+                        <p class="admin-footer-description">Suasana nyaman &amp; modern</p>
+                    </div>
+                </article>
+
+                <article class="admin-footer-item">
+                    <div class="admin-footer-icon">
+                        <img src="../../assets/Icon/People Icon.svg" alt="" aria-hidden="true">
+                    </div>
+                    <div class="admin-footer-text">
+                        <p class="admin-footer-title">Friendly Support</p>
+                        <p class="admin-footer-description">Selalu siap membantu</p>
+                    </div>
+                </article>
+
+            </footer>
+
+        </div>
+
+    </div>
+    <!-- END BACKGROUND -->
+
+
+    <!-- =====================================================
+         OVERLAY + POPUP TAMBAH MENU
+    ====================================================== -->
+    <div class="tambah-menu-overlay" id="tambahMenuOverlay">
+
+        <div class="tambah-menu-popup" role="dialog" aria-modal="true" aria-labelledby="tambahMenuTitle">
+
+            <!-- HEADER -->
+            <div class="tambah-menu-header">
+
+                <div class="tambah-menu-header-icon">
+                    <img src="../../assets/Icon/Menu.svg" alt="" class="tambah-menu-header-icon-img" aria-hidden="true">
+                </div>
+
+                <div class="tambah-menu-header-text">
+                    <h2 class="tambah-menu-title" id="tambahMenuTitle">Tambah Menu F &amp; B</h2>
+                    <p class="tambah-menu-subtitle">Tambahkan makanan atau minuman baru ke dalam sistem</p>
+                </div>
+
+                <button type="button" class="tambah-menu-close" id="tambahMenuClose" aria-label="Tutup popup">
+                    <img src="../../assets/Icon/Close.svg" alt="Tutup" class="tambah-menu-close-icon">
+                </button>
+
+            </div>
+
+
+            <!-- FORM -->
+            <form class="tambah-menu-form" id="tambahMenuForm" action="#" method="post">
+
+                <div class="tambah-menu-form-row">
+
+                    <div class="tambah-menu-form-group">
+                        <label class="tambah-menu-label" for="tambahMenuNama">Nama Menu</label>
+                        <input type="text" id="tambahMenuNama" name="namaMenu" class="tambah-menu-input" placeholder="Contoh: Indomie Goreng">
+                    </div>
+
+                    <div class="tambah-menu-form-group">
+                        <label class="tambah-menu-label" for="tambahMenuKategori">Kategori</label>
+                        <div class="tambah-menu-select-wrapper">
+                            <select id="tambahMenuKategori" name="kategori" class="tambah-menu-select">
+                                <option value="makanan" selected>Makanan</option>
+                                <option value="minuman">Minuman</option>
+                            </select>
+                            <img src="../../assets/Icon/Arrow.svg" alt="" class="tambah-menu-select-arrow" aria-hidden="true">
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="tambah-menu-form-row">
+
+                    <div class="tambah-menu-form-group">
+                        <label class="tambah-menu-label" for="tambahMenuHarga">Harga</label>
+                        <div class="tambah-menu-price-wrapper">
+                            <span class="tambah-menu-price-prefix">RP</span>
+                            <input type="number" id="tambahMenuHarga" name="harga" class="tambah-menu-price-input" placeholder="Contoh: 25000" min="0">
+                        </div>
+                    </div>
+
+                    <div class="tambah-menu-form-group">
+                        <label class="tambah-menu-label" for="tambahMenuStok">Stok</label>
+                        <input type="number" id="tambahMenuStok" name="stok" class="tambah-menu-input" placeholder="Contoh: 10" min="0">
+                    </div>
+
+                </div>
+
+
+                <div class="tambah-menu-form-group">
+                    <span class="tambah-menu-label">Gambar Menu</span>
+
+                    <label class="tambah-menu-upload" id="tambahMenuUpload" for="tambahMenuGambar">
+
+                        <input type="file" id="tambahMenuGambar" name="gambar" class="tambah-menu-file-input" accept="image/png, image/jpeg">
+
+                        <img src="../../assets/Icon/Camera.svg" alt="" class="tambah-menu-upload-icon" aria-hidden="true">
+
+                        <span class="tambah-menu-upload-title" id="tambahMenuUploadTitle">Klik / Seret untuk upload Gambar</span>
+                        <span class="tambah-menu-upload-hint">Format : JPG, PNG, (Maks 2MB)</span>
+
+                        <img src="" alt="Preview gambar" class="tambah-menu-upload-preview" id="tambahMenuPreview" hidden>
+
+                    </label>
+                </div>
+
+
+                <!-- ACTIONS -->
+                <div class="tambah-menu-actions">
+                    <a href="kelola-menu.html" class="tambah-menu-cancel" id="tambahMenuBatal">Batal</a>
+                    <button type="submit" class="tambah-menu-submit">Simpan Menu</button>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+    <!-- END OVERLAY + POPUP -->
+
+    <script src="../../js/admin/tambah-menu.js"></script>
+
+</body>
+
+</html>
+

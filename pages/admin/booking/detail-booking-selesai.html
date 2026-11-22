@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Detail Booking Selesai - Booking PS | IB Gaming</title>
+
+    <!-- GLOBAL CSS -->
+    <link rel="stylesheet" href="../../../css/global.css">
+
+    <!-- ADMIN LAYOUT -->
+    <link rel="stylesheet" href="../../../css/admin/admin-layout.css">
+
+    <!-- DETAIL BOOKING SELESAI -->
+    <link rel="stylesheet" href="../../../css/admin/booking/detail-booking-selesai.css">
+</head>
+
+<body>
+
+    <div class="admin-layout">
+
+        <!-- =====================================================
+             SIDEBAR
+        ====================================================== -->
+        <aside class="admin-sidebar">
+
+            <div class="admin-logo-wrapper">
+                <img src="../../../assets/Icon/Logo.svg" alt="IB Gaming" class="admin-logo">
+                <div class="admin-brand-text">
+                    <p class="admin-brand-name">IB GAMING</p>
+                    <p class="admin-brand-tagline">PLAY · EAT · ENJOY</p>
+                </div>
+            </div>
+
+            <nav class="admin-nav" aria-label="Navigasi Admin">
+
+                <div class="admin-nav-section">
+                    <ul class="admin-nav-list">
+                        <li>
+                            <a href="../dashboard-admin.html" class="admin-nav-link">
+                                <img src="../../../assets/Icon/Home.svg" alt="" class="admin-nav-icon" aria-hidden="true">
+                                <span class="admin-nav-text">Dashboard</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="admin-nav-section">
+                    <p class="admin-nav-section-title">Operasional PlayStation</p>
+                    <ul class="admin-nav-list">
+                        <li>
+                            <a href="../sewa-ps.html" class="admin-nav-link">
+                                <img src="../../../assets/Icon/Game.svg" alt="" class="admin-nav-icon" aria-hidden="true">
+                                <span class="admin-nav-text">Sewa PS</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="verifikasi-booking.html" class="admin-nav-link active" aria-current="page">
+                                <img src="../../../assets/Icon/Keranjang.svg" alt="" class="admin-nav-icon" aria-hidden="true">
+                                <span class="admin-nav-text">Booking PS</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../kelola-unit.html" class="admin-nav-link">
+                                <img src="../../../assets/Icon/TV.svg" alt="" class="admin-nav-icon" aria-hidden="true">
+                                <span class="admin-nav-text">Kelola Unit PS</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="admin-nav-section">
+                    <p class="admin-nav-section-title">Operasional F &amp; B</p>
+                    <ul class="admin-nav-list">
+                        <li>
+                            <a href="../pesanan-fnb.html" class="admin-nav-link">
+                                <img src="../../../assets/Icon/FNB.svg" alt="" class="admin-nav-icon" aria-hidden="true">
+                                <span class="admin-nav-text">Pesanan F &amp; B</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../kelola-menu.html" class="admin-nav-link">
+                                <img src="../../../assets/Icon/Menu.svg" alt="" class="admin-nav-icon" aria-hidden="true">
+                                <span class="admin-nav-text">Kelola Menu F &amp; B</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+
+            <div class="admin-sidebar-bottom">
+                <a href="#" class="admin-logout">
+                    <img src="../../../assets/Icon/Logout.svg" alt="" class="admin-logout-icon" aria-hidden="true">
+                    <span class="admin-logout-text">Logout</span>
+                </a>
+            </div>
+
+        </aside>
+
+
+        <!-- =====================================================
+             MAIN AREA
+        ====================================================== -->
+        <div class="admin-main">
+
+            <!-- HEADER -->
+            <header class="admin-header">
+
+                <div class="admin-search-wrapper">
+                    <img src="../../../assets/Icon/Search.svg" alt="" class="admin-search-icon">
+                    <input type="text" class="admin-search" placeholder="Cari menu, booking, pelanggan...">
+                </div>
+
+                <div class="admin-header-right">
+
+                    <a href="../notification.html" class="admin-notification" aria-label="Notifikasi">
+                        <img src="../../../assets/Icon/Notif.svg" alt="Notifikasi" class="admin-notification-icon">
+                        <span class="admin-notification-badge"></span>
+                    </a>
+
+                    <div class="admin-profile">
+                        <img src="../../../assets/Images/Elon.jpg" alt="Admin" class="admin-profile-image">
+                        <div class="admin-profile-info">
+                            <p class="admin-profile-name">Admin</p>
+                            <p class="admin-profile-role">Administrator</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- CONTENT -->
+            <main class="admin-content detail-booking-selesai-main">
+
+                <!-- BREADCRUMB -->
+                <nav class="detail-booking-selesai-breadcrumb" aria-label="Breadcrumb">
+                    <a href="verifikasi-booking.html" class="detail-booking-selesai-breadcrumb-back" aria-label="Kembali ke Booking PS">
+                        <img src="../../../assets/Icon/Panah.svg" alt="" class="detail-booking-selesai-breadcrumb-back-icon" aria-hidden="true">
+                    </a>
+
+                    <a href="verifikasi-booking.html" class="detail-booking-selesai-breadcrumb-parent">Booking PS</a>
+
+                    <img src="../../../assets/Icon/Arrow.svg" alt="" class="detail-booking-selesai-breadcrumb-sep" aria-hidden="true">
+
+                    <span class="detail-booking-selesai-breadcrumb-current">Detail Verifikasi Booking</span>
+                </nav>
+
+
+                <!-- PAGE HEADER -->
+                <div class="detail-booking-selesai-heading">
+
+                    <div class="detail-booking-selesai-heading-left">
+                        <img src="../../../assets/Icon/Keranjang.svg" alt="" class="detail-booking-selesai-heading-icon" aria-hidden="true">
+                        <div class="detail-booking-selesai-heading-text">
+                            <h1 class="detail-booking-selesai-heading-title">Booking PS - Detail Booking Selesai</h1>
+                            <p class="detail-booking-selesai-heading-subtitle">Kelola Pengajuan Booking Playstation Pelanggan</p>
+                        </div>
+                    </div>
+
+                    <a href="verifikasi-booking.html" class="detail-booking-selesai-back-button">
+                        <img src="../../../assets/Icon/Panah.svg" alt="" class="detail-booking-selesai-back-icon" aria-hidden="true">
+                        <span>Kembali</span>
+                    </a>
+
+                </div>
+
+
+                <!-- STATUS BANNER -->
+                <section class="detail-booking-selesai-status-card" aria-label="Status Booking Selesai">
+                    <div class="detail-booking-selesai-status-banner">
+                        <img src="../../../assets/Icon/Game.svg" alt="" class="detail-booking-selesai-status-icon" aria-hidden="true">
+                        <div class="detail-booking-selesai-status-text">
+                            <h2 class="detail-booking-selesai-status-title">Booking Selesai</h2>
+                            <p class="detail-booking-selesai-status-subtitle">Booking ini telah selesai pada 8 Okt 2026, 14:00</p>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- CONTENT GRID (2 KOLOM) -->
+                <div class="detail-booking-selesai-grid">
+
+                    <!-- ===== KOLOM KIRI ===== -->
+                    <div class="detail-booking-selesai-col-left">
+
+                        <!-- CARD 1: INFORMASI BOOKING -->
+                        <section class="detail-booking-selesai-card detail-booking-selesai-info">
+
+                            <div class="detail-booking-selesai-card-header">
+                                <div class="detail-booking-selesai-card-title-group">
+                                    <img src="../../../assets/Icon/Keranjang.svg" alt="" class="detail-booking-selesai-card-icon" aria-hidden="true">
+                                    <h2 class="detail-booking-selesai-card-title">Informasi Booking</h2>
+                                </div>
+                            </div>
+
+                            <div class="detail-booking-selesai-info-list">
+
+                                <div class="detail-booking-selesai-info-row">
+                                    <span class="detail-booking-selesai-info-label">ID Booking</span>
+                                    <span class="detail-booking-selesai-info-colon">:</span>
+                                    <span class="detail-booking-selesai-info-value">BKG-01</span>
+                                </div>
+
+                                <div class="detail-booking-selesai-info-row">
+                                    <span class="detail-booking-selesai-info-label">Tanggal Pengajuan</span>
+                                    <span class="detail-booking-selesai-info-colon">:</span>
+                                    <span class="detail-booking-selesai-info-value">8 Okt 2026, 14:00</span>
+                                </div>
+
+                                <div class="detail-booking-selesai-info-row">
+                                    <span class="detail-booking-selesai-info-label">Estimasi Pengembalian</span>
+                                    <span class="detail-booking-selesai-info-colon">:</span>
+                                    <span class="detail-booking-selesai-info-value">9 Okt 2026, 14:00</span>
+                                </div>
+
+                                <div class="detail-booking-selesai-info-row">
+                                    <span class="detail-booking-selesai-info-label">Durasi</span>
+                                    <span class="detail-booking-selesai-info-colon">:</span>
+                                    <span class="detail-booking-selesai-info-value">1 Hari</span>
+                                </div>
+
+                                <div class="detail-booking-selesai-info-row">
+                                    <span class="detail-booking-selesai-info-label">Metode Pembayaran</span>
+                                    <span class="detail-booking-selesai-info-colon">:</span>
+                                    <span class="detail-booking-selesai-info-value">QRIS</span>
+                                </div>
+
+                            </div>
+
+                        </section>
+
+
+                        <!-- CARD 3: DATA PELANGGAN -->
+                        <section class="detail-booking-selesai-card detail-booking-selesai-customer">
+
+                            <div class="detail-booking-selesai-card-header">
+                                <div class="detail-booking-selesai-card-title-group">
+                                    <img src="../../../assets/Icon/User-gold.svg" alt="" class="detail-booking-selesai-card-icon" aria-hidden="true">
+                                    <h2 class="detail-booking-selesai-card-title">Data Pelanggan</h2>
+                                </div>
+                            </div>
+
+                            <div class="detail-booking-selesai-customer-body">
+                                <div class="detail-booking-selesai-customer-avatar" aria-hidden="true">
+                                    <img src="../../../assets/Icon/User.svg" alt="" class="detail-booking-selesai-customer-avatar-icon">
+                                </div>
+
+                                <div class="detail-booking-selesai-customer-details">
+                                    <p class="detail-booking-selesai-customer-id">USR-01</p>
+                                    <p class="detail-booking-selesai-customer-name">Kimi Antonelli</p>
+                                    <p class="detail-booking-selesai-customer-contact">Kimi@gmail.com</p>
+                                    <p class="detail-booking-selesai-customer-contact">081234567890</p>
+                                </div>
+                            </div>
+
+                        </section>
+
+                    </div>
+                    <!-- END KOLOM KIRI -->
+
+
+                    <!-- ===== KOLOM KANAN ===== -->
+                    <div class="detail-booking-selesai-col-right">
+
+                        <!-- CARD 2: UNIT YANG DISEWA -->
+                        <section class="detail-booking-selesai-card detail-booking-selesai-units">
+
+                            <div class="detail-booking-selesai-card-header">
+                                <div class="detail-booking-selesai-card-title-group">
+                                    <img src="../../../assets/Icon/Game.svg" alt="" class="detail-booking-selesai-card-icon" aria-hidden="true">
+                                    <h2 class="detail-booking-selesai-card-title">Unit yang di sewa</h2>
+                                </div>
+                            </div>
+
+                            <div class="detail-booking-selesai-unit-list">
+
+                                <article class="detail-booking-selesai-unit-item">
+                                    <img src="../../../assets/Images/PS4.png" alt="Playstation 4" class="detail-booking-selesai-unit-image">
+                                    <div class="detail-booking-selesai-unit-info">
+                                        <p class="detail-booking-selesai-unit-name">Playstation 4</p>
+                                        <p class="detail-booking-selesai-unit-subtitle">Console + 2 Stik</p>
+                                    </div>
+                                    <span class="detail-booking-selesai-unit-qty">1 Unit</span>
+                                </article>
+
+                                <article class="detail-booking-selesai-unit-item">
+                                    <img src="../../../assets/Images/Tv55.png" alt="TV 55 Inch" class="detail-booking-selesai-unit-image detail-booking-selesai-unit-image-tv">
+                                    <div class="detail-booking-selesai-unit-info">
+                                        <p class="detail-booking-selesai-unit-name">TV 55&rdquo;</p>
+                                    </div>
+                                    <span class="detail-booking-selesai-unit-qty">1 Unit</span>
+                                </article>
+
+                            </div>
+
+                        </section>
+
+
+                        <!-- CARD 4: RINCIAN BIAYA -->
+                        <section class="detail-booking-selesai-card detail-booking-selesai-cost">
+
+                            <div class="detail-booking-selesai-card-header">
+                                <div class="detail-booking-selesai-card-title-group">
+                                    <img src="../../../assets/Icon/Wallet.svg" alt="" class="detail-booking-selesai-card-icon" aria-hidden="true">
+                                    <h2 class="detail-booking-selesai-card-title">Rincian Biaya</h2>
+                                </div>
+                            </div>
+
+                            <div class="detail-booking-selesai-cost-list">
+                                <div class="detail-booking-selesai-cost-row">
+                                    <span class="detail-booking-selesai-cost-label">PS 4 (1 Hari)</span>
+                                    <span class="detail-booking-selesai-cost-value">Rp 30.000</span>
+                                </div>
+
+                                <div class="detail-booking-selesai-cost-row">
+                                    <span class="detail-booking-selesai-cost-label">TV 55 Inch (1 Hari)</span>
+                                    <span class="detail-booking-selesai-cost-value">Rp 40.000</span>
+                                </div>
+                            </div>
+
+                            <div class="detail-booking-selesai-cost-total">
+                                <span class="detail-booking-selesai-cost-total-label">Total Pembayaran</span>
+                                <span class="detail-booking-selesai-cost-total-value">Rp 70.000</span>
+                            </div>
+
+                        </section>
+
+                    </div>
+                    <!-- END KOLOM KANAN -->
+
+                </div>
+                <!-- END GRID -->
+
+            </main>
+
+
+            <!-- FOOTER -->
+            <footer class="admin-footer">
+
+                <article class="admin-footer-item">
+                    <div class="admin-footer-icon">
+                        <img src="../../../assets/Icon/Controller Icon.svg" alt="" aria-hidden="true">
+                    </div>
+                    <div class="admin-footer-text">
+                        <p class="admin-footer-title">Premium Equipment</p>
+                        <p class="admin-footer-description">PlayStation terbaru &amp; berkualitas</p>
+                    </div>
+                </article>
+
+                <article class="admin-footer-item">
+                    <div class="admin-footer-icon">
+                        <img src="../../../assets/Icon/FNB.svg" alt="" aria-hidden="true">
+                    </div>
+                    <div class="admin-footer-text">
+                        <p class="admin-footer-title">Delicious Food &amp; Drinks</p>
+                        <p class="admin-footer-description">Pilihan menu terbaik</p>
+                    </div>
+                </article>
+
+                <article class="admin-footer-item">
+                    <div class="admin-footer-icon">
+                        <img src="../../../assets/Icon/Bintang.svg" alt="" aria-hidden="true">
+                    </div>
+                    <div class="admin-footer-text">
+                        <p class="admin-footer-title">Comfortable Space</p>
+                        <p class="admin-footer-description">Suasana nyaman &amp; modern</p>
+                    </div>
+                </article>
+
+                <article class="admin-footer-item">
+                    <div class="admin-footer-icon">
+                        <img src="../../../assets/Icon/People Icon.svg" alt="" aria-hidden="true">
+                    </div>
+                    <div class="admin-footer-text">
+                        <p class="admin-footer-title">Friendly Support</p>
+                        <p class="admin-footer-description">Selalu siap membantu</p>
+                    </div>
+                </article>
+
+            </footer>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+

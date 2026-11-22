@@ -1,0 +1,767 @@
+/* =========================================================
+   MENUNGGU VERIFIKASI — Detail Verifikasi Akun (Booking PS)
+   Prefix: menunggu-verifikasi-
+   Tidak mengubah: global.css, admin-layout.css
+
+   Catatan warna ikon (filter pada <img>, bukan CSS mask,
+   karena mask diblokir browser pada file://):
+   - gold  #B99053 : brightness(0) saturate(100%) invert(41%) sepia(95%) saturate(408%) hue-rotate(353deg) brightness(140%) contrast(45%)
+   - green #67BA6F : brightness(0) saturate(100%) invert(81%) sepia(64%) saturate(552%) hue-rotate(60deg) brightness(99%) contrast(47%)
+   - white         : brightness(0) invert(1)
+========================================================= */
+
+.menunggu-verifikasi-main {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding-top: 22px;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.menunggu-verifikasi-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.menunggu-verifikasi-breadcrumb-back {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.menunggu-verifikasi-breadcrumb-back-icon {
+    width: 12px;
+    height: 10px;
+    object-fit: contain;
+    transform: rotate(180deg);
+    opacity: 0.7;
+    filter: brightness(0) saturate(100%) invert(41%) sepia(95%) saturate(408%) hue-rotate(353deg) brightness(140%) contrast(45%);
+}
+
+.menunggu-verifikasi-breadcrumb-parent,
+.menunggu-verifikasi-breadcrumb-current {
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    text-decoration: none;
+}
+
+.menunggu-verifikasi-breadcrumb-parent {
+    color: #857D74;
+}
+
+.menunggu-verifikasi-breadcrumb-parent:hover {
+    color: #B99053;
+}
+
+.menunggu-verifikasi-breadcrumb-current {
+    color: #B99053;
+}
+
+.menunggu-verifikasi-breadcrumb-sep {
+    width: 9px;
+    height: 5px;
+    object-fit: contain;
+    transform: rotate(-90deg);
+    opacity: 0.45;
+}
+
+
+/* =========================================================
+   PAGE HEADER
+========================================================= */
+
+.menunggu-verifikasi-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6px 0 14px;
+}
+
+.menunggu-verifikasi-heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menunggu-verifikasi-heading-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.menunggu-verifikasi-heading-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.menunggu-verifikasi-heading-title {
+    margin: 0;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #29231F;
+}
+
+.menunggu-verifikasi-heading-subtitle {
+    margin: 0;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 12px;
+    color: #A69E93;
+}
+
+.menunggu-verifikasi-back-button {
+    width: 100px;
+    height: 40px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+
+    background: #FFFEFC;
+    border: 1px solid #B99053;
+    border-radius: 8px;
+    box-sizing: border-box;
+
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 12px;
+    font-weight: 500;
+    color: #B99053;
+    text-decoration: none;
+    transition: background 0.15s ease;
+}
+
+.menunggu-verifikasi-back-button:hover {
+    background: #F7EFE2;
+}
+
+.menunggu-verifikasi-back-icon {
+    width: 13px;
+    height: 10px;
+    object-fit: contain;
+    transform: rotate(180deg);
+    filter: brightness(0) saturate(100%) invert(41%) sepia(95%) saturate(408%) hue-rotate(353deg) brightness(140%) contrast(45%);
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.menunggu-verifikasi-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 245px;
+    column-gap: 20px;
+    align-items: start;
+}
+
+.menunggu-verifikasi-col-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 0;
+}
+
+.menunggu-verifikasi-col-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* =========================================================
+   CARD UTAMA
+========================================================= */
+
+.menunggu-verifikasi-card {
+    padding: 14px 24px 26px 14px;
+
+    background: #FAF6EF;
+    border: 1px solid #E5DCD0;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.menunggu-verifikasi-card-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.menunggu-verifikasi-card-id {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menunggu-verifikasi-card-id-icon {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+
+    background: #F5E9DC;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menunggu-verifikasi-card-id-icon img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.menunggu-verifikasi-card-id-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.menunggu-verifikasi-card-id-title {
+    margin: 0;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #29231F;
+}
+
+.menunggu-verifikasi-card-id-date {
+    margin: 0;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 12px;
+    color: #A69E93;
+}
+
+.menunggu-verifikasi-status {
+    margin-top: 2px;
+    padding: 3px 8px;
+
+    background: #FFE7B3;
+    border-radius: 5px;
+
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 9px;
+    font-weight: 500;
+    line-height: 12px;
+    color: #29231F;
+    white-space: nowrap;
+}
+
+
+/* Heading section di dalam card utama */
+.menunggu-verifikasi-section-heading {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 14px 0 12px 4px;
+}
+
+.menunggu-verifikasi-section-icon {
+    width: 14px;
+    height: 11px;
+    object-fit: contain;
+    flex-shrink: 0;
+    filter: brightness(0) saturate(100%) invert(41%) sepia(95%) saturate(408%) hue-rotate(353deg) brightness(140%) contrast(45%);
+}
+
+.menunggu-verifikasi-section-title {
+    margin: 0;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 15px;
+    color: #29231F;
+}
+
+.menunggu-verifikasi-section-subtitle {
+    margin: 0;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 11px;
+    color: #A69E93;
+}
+
+
+/* =========================================================
+   DOKUMEN
+========================================================= */
+
+.menunggu-verifikasi-documents {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 364px));
+    column-gap: 45px;
+    justify-content: start;
+}
+
+.menunggu-verifikasi-document {
+    min-height: 420px;
+    padding: 12px 16px 18px;
+
+    background: #FFFEFC;
+    border: 1px solid #E8DDD3;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.menunggu-verifikasi-document-title {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 15px;
+    color: #29231F;
+}
+
+.menunggu-verifikasi-document-title-icon {
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+    filter: brightness(0) saturate(100%) invert(41%) sepia(95%) saturate(408%) hue-rotate(353deg) brightness(140%) contrast(45%);
+}
+
+.menunggu-verifikasi-document-preview {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menunggu-verifikasi-document-image {
+    width: 210px;
+    height: 210px;
+    object-fit: contain;
+    /* Id.svg berwarna krem pucat -> diubah ke gold agar terlihat seperti desain */
+    filter: brightness(0) saturate(100%) invert(41%) sepia(95%) saturate(408%) hue-rotate(353deg) brightness(140%) contrast(45%);
+}
+
+.menunggu-verifikasi-document-actions {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+
+
+/* =========================================================
+   TOMBOL VALID / TIDAK VALID
+========================================================= */
+
+.menunggu-verifikasi-button {
+    width: 135px;
+    height: 38px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: opacity 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.menunggu-verifikasi-button-icon {
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+}
+
+/* Tidak Valid */
+.menunggu-verifikasi-button--invalid {
+    background: #FDE8E8;
+    border-color: #D85C5C;
+    color: #C91C1C;
+}
+
+/* Valid */
+.menunggu-verifikasi-button--valid {
+    background: #E5FBE7;
+    border-color: #67BA6F;
+    color: #249B4B;
+}
+
+/* State dipilih */
+.menunggu-verifikasi-button--invalid.is-active {
+    background: #FDE2E2;
+    border-width: 2px;
+    box-shadow: 0 0 0 3px rgba(216, 92, 92, 0.18);
+    font-weight: 600;
+}
+
+.menunggu-verifikasi-button--valid.is-active {
+    background: #D5F6D8;
+    border-width: 2px;
+    box-shadow: 0 0 0 3px rgba(103, 186, 111, 0.22);
+    font-weight: 600;
+}
+
+/* State tidak dipilih (setelah salah satu dipilih) */
+.menunggu-verifikasi-button.is-inactive {
+    opacity: 0.4;
+    box-shadow: none;
+}
+
+.menunggu-verifikasi-button:hover:not(.is-active) {
+    opacity: 1;
+}
+
+/* Lingkaran centang (Valid / Verifikasi Akun) */
+.menunggu-verifikasi-check-circle {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+
+    border: 1.5px solid #67BA6F;
+    border-radius: 50%;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menunggu-verifikasi-check-circle img {
+    width: 8px;
+    height: 6px;
+    object-fit: contain;
+    filter: brightness(0) saturate(100%) invert(81%) sepia(64%) saturate(552%) hue-rotate(60deg) brightness(99%) contrast(47%);
+}
+
+.menunggu-verifikasi-check-circle--white {
+    width: 18px;
+    height: 18px;
+    border-color: #FFFFFF;
+}
+
+.menunggu-verifikasi-check-circle--white img {
+    width: 9px;
+    height: 7px;
+    filter: brightness(0) invert(1);
+}
+
+
+/* =========================================================
+   CATATAN ADMIN
+========================================================= */
+
+.menunggu-verifikasi-notes {
+    padding: 12px 22px 18px 12px;
+
+    background: #FAF6EF;
+    border: 1px solid #E5DCD0;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.menunggu-verifikasi-notes-heading {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 8px;
+}
+
+.menunggu-verifikasi-notes-icon {
+    width: 13px;
+    height: 13px;
+    object-fit: contain;
+    filter: brightness(0) saturate(100%) invert(41%) sepia(95%) saturate(408%) hue-rotate(353deg) brightness(140%) contrast(45%);
+}
+
+.menunggu-verifikasi-notes-title {
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 12px;
+    color: #29231F;
+}
+
+.menunggu-verifikasi-notes-input {
+    display: block;
+    width: calc(100% - 4px);
+    height: 58px;
+    margin-left: 4px;
+    padding: 8px 10px;
+
+    background: #FFFEFC;
+    border: 1px solid #BDB5AC;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: none;
+    outline: none;
+
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 12px;
+    color: #29231F;
+}
+
+.menunggu-verifikasi-notes-input::placeholder {
+    color: #A69E93;
+}
+
+.menunggu-verifikasi-notes-input:focus {
+    border-color: #B99053;
+}
+
+
+/* =========================================================
+   INFORMASI TAMBAHAN (biru)
+========================================================= */
+
+.menunggu-verifikasi-info {
+    padding: 8px 12px 14px;
+
+    background: #C9DAFF;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.menunggu-verifikasi-info-heading {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 6px;
+}
+
+.menunggu-verifikasi-info-icon {
+    width: 11px;
+    height: 11px;
+    flex-shrink: 0;
+
+    border: 1px solid #29231F;
+    border-radius: 50%;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 7px;
+    font-weight: 700;
+    line-height: 1;
+    color: #29231F;
+}
+
+.menunggu-verifikasi-info-title {
+    margin: 0;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 14px;
+    color: #29231F;
+}
+
+.menunggu-verifikasi-info-list {
+    margin: 0;
+    padding-left: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menunggu-verifikasi-info-list li {
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 13px;
+    color: #29231F;
+}
+
+.menunggu-verifikasi-info-list li::marker {
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   DATA PELANGGAN
+========================================================= */
+
+.menunggu-verifikasi-customer {
+    padding: 10px 14px 14px;
+
+    background: #FBF8F4;
+    border: 1px solid #E5DCD0;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.menunggu-verifikasi-customer-heading {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #E8DDD3;
+}
+
+.menunggu-verifikasi-customer-heading-icon {
+    width: 13px;
+    height: 13px;
+    object-fit: contain;
+    filter: brightness(0) saturate(100%) invert(41%) sepia(95%) saturate(408%) hue-rotate(353deg) brightness(140%) contrast(45%);
+}
+
+.menunggu-verifikasi-customer-title {
+    margin: 0;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 12px;
+    color: #29231F;
+}
+
+.menunggu-verifikasi-customer-row {
+    display: grid;
+    grid-template-columns: 62px 1fr;
+    align-items: center;
+    padding: 7px 0;
+    border-bottom: 1px solid #E8DDD3;
+}
+
+.menunggu-verifikasi-customer-row:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.menunggu-verifikasi-customer-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 9px;
+    font-weight: 400;
+    color: #29231F;
+}
+
+.menunggu-verifikasi-customer-icon {
+    width: 11px;
+    height: 11px;
+    object-fit: contain;
+}
+
+.menunggu-verifikasi-customer-value {
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 9px;
+    font-weight: 400;
+    color: #29231F;
+}
+
+
+/* =========================================================
+   AKSI VERIFIKASI
+========================================================= */
+
+.menunggu-verifikasi-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+
+    margin: 14px 0 0;
+    padding: 20px 40px 20px 18px;
+
+    background: #FFFEFC;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.menunggu-verifikasi-action-message {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.menunggu-verifikasi-action-icon {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+
+    border: 2px solid #29231F;
+    border-radius: 50%;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1;
+    color: #29231F;
+}
+
+.menunggu-verifikasi-action-text {
+    margin: 0;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #857D74;
+}
+
+.menunggu-verifikasi-action-button {
+    width: 300px;
+    height: 48px;
+    flex-shrink: 0;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background: #B99053;
+    border: none;
+    border-radius: 10px;
+
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 13px;
+    font-weight: 600;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.menunggu-verifikasi-action-button:hover {
+    background: #A67F45;
+}
+
+/* Feedback saat diklik (diatur dari JS) */
+.menunggu-verifikasi-action-button.is-clicked {
+    background: #9A7338;
+    transform: scale(0.98);
+}
+

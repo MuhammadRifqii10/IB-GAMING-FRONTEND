@@ -1,0 +1,583 @@
+/* =========================================================
+   AKUN DISETUJUI — Detail Verifikasi Akun Disetujui (Booking PS)
+   Prefix: akun-disetujui-
+   Tidak mengubah: global.css, admin-layout.css
+========================================================= */
+
+.akun-disetujui-main {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding-top: 22px;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.akun-disetujui-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.akun-disetujui-breadcrumb-back {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.akun-disetujui-breadcrumb-back-icon {
+    width: 12px;
+    height: 10px;
+    object-fit: contain;
+    transform: rotate(180deg);
+    opacity: 0.7;
+    filter: brightness(0) saturate(100%) invert(41%) sepia(95%) saturate(408%) hue-rotate(353deg) brightness(140%) contrast(45%);
+}
+
+.akun-disetujui-breadcrumb-parent,
+.akun-disetujui-breadcrumb-current {
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    text-decoration: none;
+}
+
+.akun-disetujui-breadcrumb-parent {
+    color: #857D74;
+}
+
+.akun-disetujui-breadcrumb-parent:hover {
+    color: #B99053;
+}
+
+.akun-disetujui-breadcrumb-current {
+    color: #B99053;
+}
+
+.akun-disetujui-breadcrumb-sep {
+    width: 9px;
+    height: 5px;
+    object-fit: contain;
+    transform: rotate(-90deg);
+    opacity: 0.45;
+}
+
+
+/* =========================================================
+   PAGE HEADER
+========================================================= */
+
+.akun-disetujui-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6px 0 14px;
+}
+
+.akun-disetujui-heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.akun-disetujui-heading-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.akun-disetujui-heading-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.akun-disetujui-heading-title {
+    margin: 0;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #29231F;
+}
+
+.akun-disetujui-heading-subtitle {
+    margin: 0;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 12px;
+    color: #A69E93;
+}
+
+.akun-disetujui-back-button {
+    width: 95px;
+    height: 38px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+
+    background: #FFFEFC;
+    border: 1px solid #B99053;
+    border-radius: 8px;
+    box-sizing: border-box;
+
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 12px;
+    font-weight: 500;
+    color: #B99053;
+    text-decoration: none;
+    transition: background 0.15s ease;
+}
+
+.akun-disetujui-back-button:hover {
+    background: #F7EFE2;
+}
+
+.akun-disetujui-back-icon {
+    width: 13px;
+    height: 10px;
+    object-fit: contain;
+    transform: rotate(180deg);
+    filter: brightness(0) saturate(100%) invert(41%) sepia(95%) saturate(408%) hue-rotate(353deg) brightness(140%) contrast(45%);
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.akun-disetujui-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 245px;
+    column-gap: 20px;
+    align-items: start;
+}
+
+.akun-disetujui-col-left {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.akun-disetujui-col-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* =========================================================
+   CARD UTAMA
+========================================================= */
+
+.akun-disetujui-card {
+    padding: 16px 24px 26px 16px;
+
+    background: #FFFEFC;
+    border: 1px solid #E5DCD0;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.akun-disetujui-card-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.akun-disetujui-card-id {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.akun-disetujui-card-id-icon {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+
+    background: #F3E8DF;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.akun-disetujui-card-id-icon img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.akun-disetujui-card-id-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.akun-disetujui-card-id-title {
+    margin: 0;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #29231F;
+}
+
+.akun-disetujui-card-id-date {
+    margin: 0;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 12px;
+    color: #A69E93;
+}
+
+
+/* STATUS VERIFIKASI CARD (kanan atas) */
+.akun-disetujui-status {
+    min-width: 190px;
+    padding: 9px 12px;
+
+    background: #FBF8F4;
+    border: 1px solid #B58A4A;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.akun-disetujui-status-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.akun-disetujui-status-label {
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 14px;
+    color: #29231F;
+}
+
+.akun-disetujui-status-badge {
+    padding: 2px 10px;
+
+    background: #E5F6E8;
+    border-radius: 5px;
+
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 15px;
+    color: #249B4B;
+    white-space: nowrap;
+}
+
+.akun-disetujui-status-note {
+    margin: 0;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 12px;
+    color: #A69E93;
+}
+
+
+/* Heading section di dalam card utama */
+.akun-disetujui-section-heading {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 14px 0 12px 4px;
+}
+
+.akun-disetujui-section-icon {
+    width: 14px;
+    height: 11px;
+    object-fit: contain;
+    flex-shrink: 0;
+    filter: brightness(0) saturate(100%) invert(41%) sepia(95%) saturate(408%) hue-rotate(353deg) brightness(140%) contrast(45%);
+}
+
+.akun-disetujui-section-title {
+    margin: 0;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 15px;
+    color: #29231F;
+}
+
+.akun-disetujui-section-subtitle {
+    margin: 0;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 11px;
+    color: #A69E93;
+}
+
+
+/* =========================================================
+   DOKUMEN
+========================================================= */
+
+.akun-disetujui-documents {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 364px));
+    column-gap: 45px;
+    justify-content: start;
+}
+
+.akun-disetujui-document {
+    min-height: 420px;
+    padding: 12px 16px 18px;
+
+    background: #FFFEFC;
+    border: 1px solid #E5DCD0;
+    border-radius: 8px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.akun-disetujui-document-title {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 15px;
+    color: #29231F;
+}
+
+.akun-disetujui-document-title-icon {
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+    filter: brightness(0) saturate(100%) invert(41%) sepia(95%) saturate(408%) hue-rotate(353deg) brightness(140%) contrast(45%);
+}
+
+.akun-disetujui-document-preview {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.akun-disetujui-document-image {
+    width: 210px;
+    height: 210px;
+    object-fit: contain;
+    filter: brightness(0) saturate(100%) invert(41%) sepia(95%) saturate(408%) hue-rotate(353deg) brightness(140%) contrast(45%);
+}
+
+
+/* STATUS VALID (non-interaktif) */
+.akun-disetujui-document-status {
+    width: 88%;
+    height: 40px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    background: #E5F6E8;
+    border: 1px solid #67BA6F;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 14px;
+    font-weight: 500;
+    color: #67BA6F;
+}
+
+.akun-disetujui-check-circle {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+
+    border: 1.5px solid #67BA6F;
+    border-radius: 50%;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.akun-disetujui-check-circle img {
+    width: 9px;
+    height: 7px;
+    object-fit: contain;
+    filter: brightness(0) saturate(100%) invert(81%) sepia(64%) saturate(552%) hue-rotate(60deg) brightness(99%) contrast(47%);
+}
+
+
+/* =========================================================
+   INFORMASI TAMBAHAN (biru)
+========================================================= */
+
+.akun-disetujui-information {
+    padding: 8px 12px 14px;
+
+    background: #C9DEFF;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.akun-disetujui-information-heading {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 6px;
+}
+
+.akun-disetujui-information-icon {
+    width: 11px;
+    height: 11px;
+    flex-shrink: 0;
+
+    border: 1px solid #29231F;
+    border-radius: 50%;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 7px;
+    font-weight: 700;
+    line-height: 1;
+    color: #29231F;
+}
+
+.akun-disetujui-information-title {
+    margin: 0;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 14px;
+    color: #29231F;
+}
+
+.akun-disetujui-information-list {
+    margin: 0;
+    padding-left: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.akun-disetujui-information-list li {
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 13px;
+    color: #29231F;
+}
+
+.akun-disetujui-information-list li::marker {
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   DATA PELANGGAN
+========================================================= */
+
+.akun-disetujui-customer {
+    padding: 10px 14px 14px;
+
+    background: #FBF8F4;
+    border: 1px solid #E5DCD0;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.akun-disetujui-customer-heading {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #E8DDD3;
+}
+
+.akun-disetujui-customer-heading-icon {
+    width: 13px;
+    height: 13px;
+    object-fit: contain;
+    filter: brightness(0) saturate(100%) invert(41%) sepia(95%) saturate(408%) hue-rotate(353deg) brightness(140%) contrast(45%);
+}
+
+.akun-disetujui-customer-title {
+    margin: 0;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 12px;
+    color: #29231F;
+}
+
+.akun-disetujui-customer-row {
+    display: grid;
+    grid-template-columns: 62px 1fr;
+    align-items: center;
+    padding: 7px 0;
+    border-bottom: 1px solid #E8DDD3;
+}
+
+.akun-disetujui-customer-row:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.akun-disetujui-customer-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 9px;
+    font-weight: 400;
+    color: #29231F;
+}
+
+.akun-disetujui-customer-icon {
+    width: 11px;
+    height: 11px;
+    object-fit: contain;
+}
+
+.akun-disetujui-customer-value {
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 9px;
+    font-weight: 400;
+    color: #29231F;
+}
+

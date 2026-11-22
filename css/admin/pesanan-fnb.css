@@ -1,0 +1,609 @@
+/* =========================================================
+   PESANAN F & B
+   CONTENT ONLY
+========================================================= */
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.pesanan-fnb-page {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   PAGE HEADER
+========================================================= */
+
+.pesanan-fnb-header {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.pesanan-fnb-heading {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.pesanan-fnb-heading-icon {
+    width: 32px;
+    height: 32px;
+
+    display: block;
+
+    object-fit: contain;
+
+    flex-shrink: 0;
+}
+
+.pesanan-fnb-heading-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pesanan-fnb-title {
+    margin: 0;
+
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 600;
+
+    line-height: 20px;
+
+    color: #29231F;
+}
+
+.pesanan-fnb-subtitle {
+    margin: 1px 0 0;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 400;
+
+    line-height: 14px;
+
+    color: #A69E93;
+}
+
+
+/* =========================================================
+   MAIN CARD
+========================================================= */
+
+.pesanan-fnb-card {
+    width: 100%;
+
+    min-height: 450px;
+
+    padding: 18px 20px 16px;
+
+    background: #FBF8F4;
+
+    border: 1px solid #E8DDD3;
+    border-radius: 16px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   TABS
+========================================================= */
+
+.pesanan-fnb-tabs {
+    width: 100%;
+
+    display: flex;
+    align-items: flex-end;
+
+    gap: 40px;
+
+    margin-bottom: 16px;
+
+    padding-left: 2px;
+}
+
+.pesanan-fnb-tab {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 38px;
+
+    padding: 0 2px;
+
+    color: #29231F;
+
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 400;
+
+    line-height: 1;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    transition:
+        color 0.2s ease;
+}
+
+.pesanan-fnb-tab::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+
+    bottom: -1px;
+
+    height: 1px;
+
+    background: transparent;
+
+    transition:
+        background-color 0.2s ease;
+}
+
+.pesanan-fnb-tab:hover {
+    color: #98703B;
+}
+
+.pesanan-fnb-tab.active {
+    color: #B58A4A;
+}
+
+.pesanan-fnb-tab.active::after {
+    background: #B58A4A;
+}
+
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+.pesanan-fnb-search-wrapper {
+    width: 100%;
+    height: 38px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 10px;
+
+    background: #FFFEFC;
+
+    border: 1px solid #E8DDD3;
+    border-radius: 7px;
+
+    box-sizing: border-box;
+}
+
+.pesanan-fnb-search-icon {
+    position: absolute;
+
+    left: 12px;
+
+    width: 12px;
+    height: 12px;
+
+    display: block;
+
+    object-fit: contain;
+
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(55%)
+        sepia(30%)
+        saturate(700%)
+        hue-rotate(359deg)
+        brightness(92%)
+        contrast(88%);
+}
+
+.pesanan-fnb-search {
+    width: 100%;
+    height: 100%;
+
+    padding: 0 12px 0 32px;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: #29231F;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 400;
+
+    box-sizing: border-box;
+}
+
+.pesanan-fnb-search::placeholder {
+    color: #A69E93;
+    opacity: 1;
+}
+
+
+/* =========================================================
+   TABLE WRAPPER
+========================================================= */
+
+.pesanan-fnb-table-wrapper {
+    width: 100%;
+
+    overflow: hidden;
+
+    border-radius: 20px 20px 0 0;
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.pesanan-fnb-table {
+    width: 100%;
+
+    border-collapse: separate;
+    border-spacing: 0;
+
+    table-layout: fixed;
+
+    font-family: var(--font-body);
+}
+
+
+/* =========================================================
+   TABLE HEADER
+========================================================= */
+
+.pesanan-fnb-table thead th {
+    height: 42px;
+
+    padding: 0 10px;
+
+    background: #FBF5EF;
+
+    border-top: 1px solid #E8DDD3;
+    border-bottom: 1px solid #E8DDD3;
+
+    color: #29231F;
+
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 500;
+
+    line-height: 1;
+
+    text-align: center;
+
+    white-space: nowrap;
+}
+
+.pesanan-fnb-table thead th:first-child {
+    border-left: 1px solid #E8DDD3;
+
+    border-top-left-radius: 20px;
+}
+
+.pesanan-fnb-table thead th:last-child {
+    border-right: 1px solid #E8DDD3;
+
+    border-top-right-radius: 20px;
+}
+
+
+/* =========================================================
+   TABLE BODY
+========================================================= */
+
+.pesanan-fnb-table tbody td {
+    height: 44px;
+
+    padding: 0 10px;
+
+    background: #FFFEFC;
+
+    border-bottom: 1px solid #E8DDD3;
+
+    color: #29231F;
+
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 400;
+
+    line-height: 1;
+
+    text-align: center;
+
+    white-space: nowrap;
+}
+
+.pesanan-fnb-table tbody td:first-child {
+    border-left: 1px solid #E8DDD3;
+}
+
+.pesanan-fnb-table tbody td:last-child {
+    border-right: 1px solid #E8DDD3;
+}
+
+
+/* =========================================================
+   COLUMN WIDTH
+========================================================= */
+
+.pesanan-fnb-table th:nth-child(1),
+.pesanan-fnb-table td:nth-child(1) {
+    width: 11%;
+}
+
+.pesanan-fnb-table th:nth-child(2),
+.pesanan-fnb-table td:nth-child(2) {
+    width: 11%;
+}
+
+.pesanan-fnb-table th:nth-child(3),
+.pesanan-fnb-table td:nth-child(3) {
+    width: 8%;
+}
+
+.pesanan-fnb-table th:nth-child(4),
+.pesanan-fnb-table td:nth-child(4) {
+    width: 17%;
+}
+
+.pesanan-fnb-table th:nth-child(5),
+.pesanan-fnb-table td:nth-child(5) {
+    width: 13%;
+}
+
+.pesanan-fnb-table th:nth-child(6),
+.pesanan-fnb-table td:nth-child(6) {
+    width: 13%;
+}
+
+.pesanan-fnb-table th:nth-child(7),
+.pesanan-fnb-table td:nth-child(7) {
+    width: 10%;
+}
+
+.pesanan-fnb-table th:nth-child(8),
+.pesanan-fnb-table td:nth-child(8) {
+    width: 10%;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.pesanan-status {
+    width: 60px;
+    height: 20px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 5px;
+
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 400;
+
+    line-height: 1;
+
+    text-align: center;
+
+    white-space: nowrap;
+
+    box-sizing: border-box;
+}
+
+
+/* BARU */
+
+.status-baru {
+    background: #FFF0C9;
+    color: #B57B17;
+}
+
+
+/* DIPROSES */
+
+.status-diproses {
+    background: #DCEAFF;
+    color: #3671C9;
+}
+
+
+/* SELESAI */
+
+.status-selesai {
+    background: #E5F6E8;
+    color: #3D9950;
+}
+
+
+/* =========================================================
+   BUTTON LIHAT
+========================================================= */
+
+.pesanan-detail-button {
+    width: 60px;
+    height: 20px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 3px;
+
+    background: #F3E8DF;
+
+    border: 1px solid #F3E8DF;
+    border-radius: 5px;
+
+    color: #625A52;
+
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 400;
+
+    line-height: 1;
+
+    text-decoration: none;
+
+    box-sizing: border-box;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.pesanan-detail-button:hover {
+    background: #E8D8CA;
+
+    color: #4F463E;
+}
+
+.pesanan-detail-arrow {
+    font-size: 13px;
+    line-height: 1;
+}
+
+
+/* =========================================================
+   PAGINATION
+========================================================= */
+
+.pesanan-fnb-pagination {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 5px;
+
+    margin-top: 9px;
+}
+
+
+/* =========================================================
+   PAGINATION BUTTON
+========================================================= */
+
+.pesanan-pagination-button {
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    background: #FFFEFC;
+
+    border: 1px solid #B58A4A;
+    border-radius: 5px;
+
+    color: #B58A4A;
+
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 500;
+
+    line-height: 1;
+
+    box-sizing: border-box;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.pesanan-pagination-button:hover {
+    background: #F7EBDD;
+}
+
+
+/* =========================================================
+   PAGINATION ACTIVE
+========================================================= */
+
+.pesanan-pagination-button.active {
+    background: #B58A4A;
+
+    border-color: #B58A4A;
+
+    color: #FFFFFF;
+}
+
+.pesanan-pagination-button.active:hover {
+    background: #98703B;
+
+    border-color: #98703B;
+}
+
+
+/* =========================================================
+   ARROW
+========================================================= */
+
+.pesanan-pagination-arrow {
+    width: 12px;
+    height: 12px;
+
+    display: block;
+    object-fit: contain;
+
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(55%)
+        sepia(29%)
+        saturate(687%)
+        hue-rotate(359deg)
+        brightness(90%)
+        contrast(87%);
+}
+
+
+/* PANAH KE KIRI */
+.pagination-arrow-left {
+    transform: rotate(90deg);
+}
+
+
+/* PANAH KE KANAN */
+.pagination-arrow-right {
+    transform: rotate(-90deg);
+}

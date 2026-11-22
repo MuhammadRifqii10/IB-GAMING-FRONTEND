@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Detail Verifikasi (Disetujui) - Booking PS | IB Gaming</title>
+
+    <!-- GLOBAL CSS -->
+    <link rel="stylesheet" href="../../../css/global.css">
+
+    <!-- ADMIN LAYOUT -->
+    <link rel="stylesheet" href="../../../css/admin/admin-layout.css">
+
+    <!-- AKUN DISETUJUI -->
+    <link rel="stylesheet" href="../../../css/admin/booking/akun-disetujui.css">
+</head>
+
+<body>
+
+    <div class="admin-layout">
+
+        <!-- =====================================================
+             SIDEBAR
+        ====================================================== -->
+        <aside class="admin-sidebar">
+
+            <div class="admin-logo-wrapper">
+                <img src="../../../assets/Icon/Logo.svg" alt="IB Gaming" class="admin-logo">
+                <div class="admin-brand-text">
+                    <p class="admin-brand-name">IB GAMING</p>
+                    <p class="admin-brand-tagline">PLAY · EAT · ENJOY</p>
+                </div>
+            </div>
+
+            <nav class="admin-nav" aria-label="Navigasi Admin">
+
+                <div class="admin-nav-section">
+                    <ul class="admin-nav-list">
+                        <li>
+                            <a href="../dashboard-admin.html" class="admin-nav-link">
+                                <img src="../../../assets/Icon/Home.svg" alt="" class="admin-nav-icon" aria-hidden="true">
+                                <span class="admin-nav-text">Dashboard</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="admin-nav-section">
+                    <p class="admin-nav-section-title">Operasional PlayStation</p>
+                    <ul class="admin-nav-list">
+                        <li>
+                            <a href="../sewa-ps.html" class="admin-nav-link">
+                                <img src="../../../assets/Icon/Game.svg" alt="" class="admin-nav-icon" aria-hidden="true">
+                                <span class="admin-nav-text">Sewa PS</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="verifikasi-akun.html" class="admin-nav-link active" aria-current="page">
+                                <img src="../../../assets/Icon/Keranjang.svg" alt="" class="admin-nav-icon" aria-hidden="true">
+                                <span class="admin-nav-text">Booking PS</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../kelola-unit.html" class="admin-nav-link">
+                                <img src="../../../assets/Icon/TV.svg" alt="" class="admin-nav-icon" aria-hidden="true">
+                                <span class="admin-nav-text">Kelola Unit PS</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="admin-nav-section">
+                    <p class="admin-nav-section-title">Operasional F &amp; B</p>
+                    <ul class="admin-nav-list">
+                        <li>
+                            <a href="../pesanan-fnb.html" class="admin-nav-link">
+                                <img src="../../../assets/Icon/FNB.svg" alt="" class="admin-nav-icon" aria-hidden="true">
+                                <span class="admin-nav-text">Pesanan F &amp; B</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../kelola-menu.html" class="admin-nav-link">
+                                <img src="../../../assets/Icon/Menu.svg" alt="" class="admin-nav-icon" aria-hidden="true">
+                                <span class="admin-nav-text">Kelola Menu F &amp; B</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+
+            <div class="admin-sidebar-bottom">
+                <a href="#" class="admin-logout">
+                    <img src="../../../assets/Icon/Logout.svg" alt="" class="admin-logout-icon" aria-hidden="true">
+                    <span class="admin-logout-text">Logout</span>
+                </a>
+            </div>
+
+        </aside>
+
+
+        <!-- =====================================================
+             MAIN AREA
+        ====================================================== -->
+        <div class="admin-main">
+
+            <!-- HEADER -->
+            <header class="admin-header">
+
+                <div class="admin-search-wrapper">
+                    <img src="../../../assets/Icon/Search.svg" alt="" class="admin-search-icon">
+                    <input type="text" class="admin-search" placeholder="Cari menu, booking, pelanggan...">
+                </div>
+
+                <div class="admin-header-right">
+
+                    <a href="../notification.html" class="admin-notification" aria-label="Notifikasi">
+                        <img src="../../../assets/Icon/Notif.svg" alt="Notifikasi" class="admin-notification-icon">
+                        <span class="admin-notification-badge"></span>
+                    </a>
+
+                    <div class="admin-profile">
+                        <img src="../../../assets/Images/Elon.jpg" alt="Admin" class="admin-profile-image">
+                        <div class="admin-profile-info">
+                            <p class="admin-profile-name">Admin</p>
+                            <p class="admin-profile-role">Administrator</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- CONTENT -->
+            <main class="admin-content akun-disetujui-main">
+
+                <!-- BREADCRUMB -->
+                <nav class="akun-disetujui-breadcrumb" aria-label="Breadcrumb">
+                    <a href="verifikasi-akun.html" class="akun-disetujui-breadcrumb-back" aria-label="Kembali ke Booking PS">
+                        <img src="../../../assets/Icon/Panah.svg" alt="" class="akun-disetujui-breadcrumb-back-icon" aria-hidden="true">
+                    </a>
+
+                    <a href="verifikasi-akun.html" class="akun-disetujui-breadcrumb-parent">Booking PS</a>
+
+                    <img src="../../../assets/Icon/Arrow.svg" alt="" class="akun-disetujui-breadcrumb-sep" aria-hidden="true">
+
+                    <span class="akun-disetujui-breadcrumb-current">Detail Akun Disetujui</span>
+                </nav>
+
+
+                <!-- PAGE HEADER -->
+                <div class="akun-disetujui-header">
+
+                    <div class="akun-disetujui-heading">
+                        <img src="../../../assets/Icon/Keranjang.svg" alt="" class="akun-disetujui-heading-icon" aria-hidden="true">
+                        <div class="akun-disetujui-heading-text">
+                            <h1 class="akun-disetujui-heading-title">Detail Verifikasi (Disetujui)</h1>
+                            <p class="akun-disetujui-heading-subtitle">Informasi Pengajuan Booking PlayStation</p>
+                        </div>
+                    </div>
+
+                    <a href="verifikasi-akun.html" class="akun-disetujui-back-button" id="akunDisetujuiKembali">
+                        <img src="../../../assets/Icon/Panah.svg" alt="" class="akun-disetujui-back-icon" aria-hidden="true">
+                        <span>Kembali</span>
+                    </a>
+
+                </div>
+
+
+                <!-- CONTENT GRID -->
+                <div class="akun-disetujui-grid">
+
+                    <!-- ===== KOLOM KIRI ===== -->
+                    <div class="akun-disetujui-col-left">
+
+                        <!-- CARD UTAMA -->
+                        <section class="akun-disetujui-card">
+
+                            <div class="akun-disetujui-card-top">
+
+                                <div class="akun-disetujui-card-id">
+
+                                    <div class="akun-disetujui-card-id-icon">
+                                        <img src="../../../assets/Icon/Calendar.svg" alt="" aria-hidden="true">
+                                    </div>
+
+                                    <div class="akun-disetujui-card-id-text">
+                                        <h2 class="akun-disetujui-card-id-title">#USR-02</h2>
+                                        <p class="akun-disetujui-card-id-date">Diajukan Pada 10 Okt 2026, 09:15</p>
+                                    </div>
+
+                                </div>
+
+                                <!-- STATUS VERIFIKASI CARD -->
+                                <div class="akun-disetujui-status">
+                                    <div class="akun-disetujui-status-row">
+                                        <span class="akun-disetujui-status-label">Status Verifikasi:</span>
+                                        <span class="akun-disetujui-status-badge">Disetujui</span>
+                                    </div>
+                                    <p class="akun-disetujui-status-note">Akun telah di Setujui oleh Admin</p>
+                                </div>
+
+                            </div>
+
+
+                            <div class="akun-disetujui-section-heading">
+                                <img src="../../../assets/Icon/Centang.svg" alt="" class="akun-disetujui-section-icon" aria-hidden="true">
+                                <div>
+                                    <h3 class="akun-disetujui-section-title">Verifikasi Data Diri Pelanggan</h3>
+                                    <p class="akun-disetujui-section-subtitle">Periksa data diri dan dokumen yang diunggah oleh Pelanggan</p>
+                                </div>
+                            </div>
+
+
+                            <!-- DUA DOKUMEN -->
+                            <div class="akun-disetujui-documents">
+
+                                <!-- Foto Identitas -->
+                                <article class="akun-disetujui-document">
+
+                                    <div class="akun-disetujui-document-title">
+                                        <img src="../../../assets/Icon/Id.svg" alt="" class="akun-disetujui-document-title-icon" aria-hidden="true">
+                                        <span>Foto Identitas</span>
+                                    </div>
+
+                                    <div class="akun-disetujui-document-preview">
+                                        <img src="../../../assets/Icon/Id.svg" alt="Placeholder foto identitas" class="akun-disetujui-document-image">
+                                    </div>
+
+                                    <div class="akun-disetujui-document-status" aria-label="Status dokumen: Valid">
+                                        <span>Valid</span>
+                                        <span class="akun-disetujui-check-circle" aria-hidden="true">
+                                            <img src="../../../assets/Icon/Centang.svg" alt="">
+                                        </span>
+                                    </div>
+
+                                </article>
+
+                                <!-- Foto Diri -->
+                                <article class="akun-disetujui-document">
+
+                                    <div class="akun-disetujui-document-title">
+                                        <img src="../../../assets/Icon/Id.svg" alt="" class="akun-disetujui-document-title-icon" aria-hidden="true">
+                                        <span>Foto Diri</span>
+                                    </div>
+
+                                    <div class="akun-disetujui-document-preview">
+                                        <img src="../../../assets/Icon/Id.svg" alt="Placeholder foto diri" class="akun-disetujui-document-image">
+                                    </div>
+
+                                    <div class="akun-disetujui-document-status" aria-label="Status dokumen: Valid">
+                                        <span>Valid</span>
+                                        <span class="akun-disetujui-check-circle" aria-hidden="true">
+                                            <img src="../../../assets/Icon/Centang.svg" alt="">
+                                        </span>
+                                    </div>
+
+                                </article>
+
+                            </div>
+
+                        </section>
+
+                    </div>
+                    <!-- END KOLOM KIRI -->
+
+
+                    <!-- ===== KOLOM KANAN ===== -->
+                    <aside class="akun-disetujui-col-right">
+
+                        <!-- INFORMASI TAMBAHAN -->
+                        <section class="akun-disetujui-information">
+
+                            <div class="akun-disetujui-information-heading">
+                                <span class="akun-disetujui-information-icon" aria-hidden="true">i</span>
+                                <h3 class="akun-disetujui-information-title">Informasi Tambahan</h3>
+                            </div>
+
+                            <ul class="akun-disetujui-information-list">
+                                <li>Pastikan foto Identitas jelas dan sesuai dengan data yang diisi</li>
+                                <li>Pastikan foto wajah jelas dan sama dengan identitas yang diisi</li>
+                                <li>Jika data tidak valid, pilih tombol tolak dan berikan alasan</li>
+                            </ul>
+
+                        </section>
+
+
+                        <!-- DATA PELANGGAN -->
+                        <section class="akun-disetujui-customer">
+
+                            <div class="akun-disetujui-customer-heading">
+                                <img src="../../../assets/Icon/User.svg" alt="" class="akun-disetujui-customer-heading-icon" aria-hidden="true">
+                                <h3 class="akun-disetujui-customer-title">Data Pelanggan</h3>
+                            </div>
+
+                            <div class="akun-disetujui-customer-row">
+                                <span class="akun-disetujui-customer-label">
+                                    <img src="../../../assets/Icon/User.svg" alt="" class="akun-disetujui-customer-icon" aria-hidden="true">
+                                    Nama
+                                </span>
+                                <span class="akun-disetujui-customer-value">Lyry Antonelli</span>
+                            </div>
+
+                            <div class="akun-disetujui-customer-row">
+                                <span class="akun-disetujui-customer-label">
+                                    <img src="../../../assets/Icon/Telpon.svg" alt="" class="akun-disetujui-customer-icon" aria-hidden="true">
+                                    No. Hp
+                                </span>
+                                <span class="akun-disetujui-customer-value">083324567890</span>
+                            </div>
+
+                            <div class="akun-disetujui-customer-row">
+                                <span class="akun-disetujui-customer-label">
+                                    <img src="../../../assets/Icon/Email.svg" alt="" class="akun-disetujui-customer-icon" aria-hidden="true">
+                                    Email
+                                </span>
+                                <span class="akun-disetujui-customer-value">Lyry12@gmail.com</span>
+                            </div>
+
+                        </section>
+
+                    </aside>
+                    <!-- END KOLOM KANAN -->
+
+                </div>
+                <!-- END GRID -->
+
+            </main>
+
+
+            <!-- FOOTER -->
+            <footer class="admin-footer">
+
+                <article class="admin-footer-item">
+                    <div class="admin-footer-icon">
+                        <img src="../../../assets/Icon/Controller Icon.svg" alt="" aria-hidden="true">
+                    </div>
+                    <div class="admin-footer-text">
+                        <p class="admin-footer-title">Premium Equipment</p>
+                        <p class="admin-footer-description">PlayStation terbaru &amp; berkualitas</p>
+                    </div>
+                </article>
+
+                <article class="admin-footer-item">
+                    <div class="admin-footer-icon">
+                        <img src="../../../assets/Icon/FNB.svg" alt="" aria-hidden="true">
+                    </div>
+                    <div class="admin-footer-text">
+                        <p class="admin-footer-title">Delicious Food &amp; Drinks</p>
+                        <p class="admin-footer-description">Pilihan menu terbaik</p>
+                    </div>
+                </article>
+
+                <article class="admin-footer-item">
+                    <div class="admin-footer-icon">
+                        <img src="../../../assets/Icon/Bintang.svg" alt="" aria-hidden="true">
+                    </div>
+                    <div class="admin-footer-text">
+                        <p class="admin-footer-title">Comfortable Space</p>
+                        <p class="admin-footer-description">Suasana nyaman &amp; modern</p>
+                    </div>
+                </article>
+
+                <article class="admin-footer-item">
+                    <div class="admin-footer-icon">
+                        <img src="../../../assets/Icon/People Icon.svg" alt="" aria-hidden="true">
+                    </div>
+                    <div class="admin-footer-text">
+                        <p class="admin-footer-title">Friendly Support</p>
+                        <p class="admin-footer-description">Selalu siap membantu</p>
+                    </div>
+                </article>
+
+            </footer>
+
+        </div>
+
+    </div>
+
+    <script src="../../../js/admin/booking/akun-disetujui.js"></script>
+
+</body>
+
+</html>
+

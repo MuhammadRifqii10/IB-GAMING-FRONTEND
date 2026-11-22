@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Detail Verifikasi Ditolak - IB Gaming</title>
+
+    <!-- GLOBAL CSS -->
+    <link rel="stylesheet" href="../../../css/global.css">
+
+    <!-- ADMIN LAYOUT -->
+    <link rel="stylesheet" href="../../../css/admin/admin-layout.css">
+
+    <!-- PAGE CSS -->
+    <link rel="stylesheet" href="../../../css/admin/booking/akun-ditolak.css">
+</head>
+
+<body>
+
+    <div class="admin-layout">
+
+        <!-- =====================================================
+             SIDEBAR
+        ====================================================== -->
+       <aside class="admin-sidebar">
+
+
+    <!-- =================================================
+         LOGO
+    ================================================== -->
+
+    <div class="admin-logo-wrapper">
+
+        <img
+            src="../../../assets/Icon/Logo.svg"
+            alt="IB Gaming"
+            class="admin-logo"
+        >
+
+        <div class="admin-brand-text">
+
+            <p class="admin-brand-name">
+                IB GAMING
+            </p>
+
+            <p class="admin-brand-tagline">
+                PLAY · EAT · ENJOY
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================================
+         NAVIGATION
+    ================================================== -->
+
+    <nav
+        class="admin-nav"
+        aria-label="Navigasi Admin"
+    >
+
+
+        <!-- =================================================
+             DASHBOARD
+        ================================================== -->
+
+        <div class="admin-nav-section">
+
+            <ul class="admin-nav-list">
+
+                <li>
+
+                    <a
+                        href="../dashboard-admin.html"
+                        class="admin-nav-link"
+                    >
+
+                        <img
+                            src="../../../assets/Icon/Home.svg"
+                            alt=""
+                            class="admin-nav-icon"
+                            aria-hidden="true"
+                        >
+
+                        <span class="admin-nav-text">
+                            Dashboard
+                        </span>
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+
+
+        <!-- =================================================
+             OPERASIONAL PLAYSTATION
+        ================================================== -->
+
+        <div class="admin-nav-section">
+
+            <p class="admin-nav-section-title">
+                Operasional PlayStation
+            </p>
+
+            <ul class="admin-nav-list">
+
+
+                <!-- Sewa PS -->
+
+                <li>
+
+                    <a
+                        href="../sewa-ps.html"
+                        class="admin-nav-link"
+                    >
+
+                        <img
+                            src="../../../assets/Icon/Game.svg"
+                            alt=""
+                            class="admin-nav-icon"
+                            aria-hidden="true"
+                        >
+
+                        <span class="admin-nav-text">
+                            Sewa PS
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+
+                <!-- Booking PS - ACTIVE -->
+
+                <li>
+
+                    <a
+                        href="verifikasi-akun.html"
+                        class="admin-nav-link active"
+                        aria-current="page"
+                    >
+
+                        <img
+                            src="../../../assets/Icon/Keranjang.svg"
+                            alt=""
+                            class="admin-nav-icon"
+                            aria-hidden="true"
+                        >
+
+                        <span class="admin-nav-text">
+                            Booking PS
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+
+                <!-- Kelola Unit PS -->
+
+                <li>
+
+                    <a
+                        href="../kelola-unit.html"
+                        class="admin-nav-link"
+                    >
+
+                        <img
+                            src="../../../assets/Icon/TV.svg"
+                            alt=""
+                            class="admin-nav-icon"
+                            aria-hidden="true"
+                        >
+
+                        <span class="admin-nav-text">
+                            Kelola Unit PS
+                        </span>
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+
+
+        <!-- =================================================
+             OPERASIONAL F&B
+        ================================================== -->
+
+        <div class="admin-nav-section">
+
+            <p class="admin-nav-section-title">
+                Operasional F &amp; B
+            </p>
+
+            <ul class="admin-nav-list">
+
+
+                <!-- Pesanan F&B -->
+
+                <li>
+
+                    <a
+                        href="../pesanan-fnb.html"
+                        class="admin-nav-link"
+                    >
+
+                        <img
+                            src="../../../assets/Icon/FNB.svg"
+                            alt=""
+                            class="admin-nav-icon"
+                            aria-hidden="true"
+                        >
+
+                        <span class="admin-nav-text">
+                            Pesanan F &amp; B
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+
+                <!-- Kelola Menu F&B -->
+
+                <li>
+
+                    <a
+                        href="../kelola-menu.html"
+                        class="admin-nav-link"
+                    >
+
+                        <img
+                            src="../../../assets/Icon/Menu.svg"
+                            alt=""
+                            class="admin-nav-icon"
+                            aria-hidden="true"
+                        >
+
+                        <span class="admin-nav-text">
+                            Kelola Menu F &amp; B
+                        </span>
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =================================================
+         LOGOUT
+    ================================================== -->
+
+    <div class="admin-sidebar-bottom">
+
+        <a
+            href="#"
+            class="admin-logout"
+        >
+
+            <img
+                src="../../../assets/Icon/Logout.svg"
+                alt=""
+                class="admin-logout-icon"
+                aria-hidden="true"
+            >
+
+            <span class="admin-logout-text">
+                Logout
+            </span>
+
+        </a>
+
+    </div>
+
+</aside>
+
+
+        <!-- =====================================================
+             MAIN AREA
+        ====================================================== -->
+        <div class="admin-main">
+
+            <!-- =================================================
+                 HEADER
+            ================================================== -->
+            <header class="admin-header">
+
+                <div class="admin-search-wrapper">
+
+                    <img
+                        src="../../../assets/Icon/Search.svg"
+                        alt=""
+                        class="admin-search-icon"
+                    >
+
+                    <input
+                        type="text"
+                        class="admin-search"
+                        placeholder="Cari menu, booking, pelanggan....."
+                    >
+
+                </div>
+
+                <div class="admin-header-right">
+
+                    <a
+                        href="../notification.html"
+                        class="admin-notification"
+                        aria-label="Notifikasi"
+                    >
+                        <img
+                            src="../../../assets/Icon/Notif.svg"
+                            alt="Notifikasi"
+                            class="admin-notification-icon"
+                        >
+
+                        <span class="admin-notification-badge"></span>
+                    </a>
+
+                    <div class="admin-profile">
+
+                        <img
+                            src="../../../assets/Images/Elon.jpg"
+                            alt="Admin"
+                            class="admin-profile-image"
+                        >
+
+                        <div class="admin-profile-info">
+
+                            <p class="admin-profile-name">
+                                Admin
+                            </p>
+
+                            <p class="admin-profile-role">
+                                Administrator
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- =================================================
+                 CONTENT
+            ================================================== -->
+            <main class="akun-ditolak-main">
+
+                <!-- BREADCRUMB -->
+                <div class="akun-ditolak-breadcrumb">
+
+                    <a
+                        href="verifikasi-akun.html"
+                        class="akun-ditolak-breadcrumb-back"
+                    >
+                        <img
+                            src="../../../assets/Icon/Panah.svg"
+                            alt=""
+                        >
+                    </a>
+
+                    <span>Booking PS</span>
+
+                    <img
+                        src="../../../assets/Icon/Arrow.svg"
+                        alt=""
+                        class="akun-ditolak-breadcrumb-arrow"
+                    >
+
+                    <span class="akun-ditolak-breadcrumb-current">
+                        Detail Akun Ditolak
+                    </span>
+
+                </div>
+
+
+                <!-- PAGE HEADING -->
+                <div class="akun-ditolak-heading">
+
+                    <div class="akun-ditolak-heading-left">
+
+                        <img
+                            src="../../../assets/Icon/Keranjang.svg"
+                            alt=""
+                            class="akun-ditolak-heading-icon"
+                        >
+
+                        <div>
+
+                            <h1>
+                                Detail Verifikasi (Ditolak)
+                            </h1>
+
+                            <p>
+                                Informasi Pengajuan Booking PlayStation
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                        <a
+                            href="verifikasi-akun.html"
+                            class="akun-ditolak-back-button"
+                        >
+
+                            <img
+                                src="../../../assets/Icon/Panah.svg"
+                                alt=""
+                            >
+
+                            <span>Kembali</span>
+
+                        </a>
+
+                </div>
+
+
+                <!-- =================================================
+                     CONTENT GRID
+                ================================================== -->
+                <div class="akun-ditolak-layout">
+
+                    <!-- =============================================
+                         LEFT CONTENT
+                    ============================================== -->
+                    <div class="akun-ditolak-left">
+
+
+                        <!-- =========================================
+                             VERIFICATION CARD
+                        ========================================== -->
+                        <section class="akun-ditolak-verification-card">
+
+                            <!-- TOP INFORMATION -->
+                            <div class="akun-ditolak-verification-header">
+
+                                <div class="akun-ditolak-user-info">
+
+                                    <div class="akun-ditolak-calendar-wrapper">
+
+                                        <img
+                                            src="../../../assets/Icon/Calendar.svg"
+                                            alt=""
+                                        >
+
+                                    </div>
+
+                                    <div>
+
+                                        <h2>#USR-04</h2>
+
+                                        <p>
+                                            Diajukan Pada 08 Okt 2026, 09:15
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- STATUS -->
+                                <div class="akun-ditolak-status-box">
+
+                                    <span>
+                                        Status Verifikasi:
+                                    </span>
+
+                                    <strong>
+                                        Ditolak
+                                    </strong>
+
+                                    <small>
+                                        Akun ditolak oleh Admin
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- VERIFICATION TITLE -->
+                            <div class="akun-ditolak-verification-title">
+
+                                <img
+                                    src="../../../assets/Icon/Centang.svg"
+                                    alt=""
+                                >
+
+                                <div>
+
+                                    <h3>
+                                        Verifikasi Data Diri Pelanggan
+                                    </h3>
+
+                                    <p>
+                                        Periksa data diri dan dokumen yang
+                                        diunggah oleh Pelanggan
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- DOCUMENT GRID -->
+                            <div class="akun-ditolak-document-grid">
+
+
+                                <!-- FOTO IDENTITAS -->
+                                <div class="akun-ditolak-document-card">
+
+                                    <div class="akun-ditolak-document-title">
+
+                                        <img
+                                            src="../../../assets/Icon/Id.svg"
+                                            alt=""
+                                        >
+
+                                        <span>
+                                            Foto Identitas
+                                        </span>
+
+                                    </div>
+
+
+                                    <div class="akun-ditolak-document-preview">
+
+                                        <img
+                                            src="../../../assets/Icon/Id.svg"
+                                            alt="Foto Identitas"
+                                        >
+
+                                    </div>
+
+
+                                    <div class="akun-ditolak-document-status">
+
+                                        <button
+                                            type="button"
+                                            class="akun-ditolak-invalid-button"
+                                        >
+
+                                            <span class="akun-ditolak-invalid-icon">
+                                                <img
+                                                    src="../../../assets/Icon/Close.svg"
+                                                    alt=""
+                                                >
+                                            </span>
+
+                                            <span>
+                                                Tidak Valid
+                                            </span>
+
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- FOTO DIRI -->
+                                <div class="akun-ditolak-document-card">
+
+                                    <div class="akun-ditolak-document-title">
+
+                                        <img
+                                            src="../../../assets/Icon/Id.svg"
+                                            alt=""
+                                        >
+
+                                        <span>
+                                            Foto Diri
+                                        </span>
+
+                                    </div>
+
+
+                                    <div class="akun-ditolak-document-preview">
+
+                                        <img
+                                            src="../../../assets/Icon/Id.svg"
+                                            alt="Foto Diri"
+                                        >
+
+                                    </div>
+
+
+                                    <div class="akun-ditolak-document-status">
+
+                                        <button
+                                            type="button"
+                                            class="akun-ditolak-invalid-button"
+                                        >
+
+                                            <span class="akun-ditolak-invalid-icon">
+                                                <img
+                                                    src="../../../assets/Icon/Close.svg"
+                                                    alt=""
+                                                >
+                                            </span>
+
+                                            <span>
+                                                Tidak Valid
+                                            </span>
+
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </section>
+
+
+                        <!-- =========================================
+                             CATATAN ADMIN
+                        ========================================== -->
+                        <section class="akun-ditolak-note-card">
+
+                            <div class="akun-ditolak-note-title">
+
+                                <img
+                                    src="../../../assets/Icon/Note.svg"
+                                    alt=""
+                                >
+
+                                <span>
+                                    Catatan Admin (Jika Ditolak)
+                                </span>
+
+                            </div>
+
+                            <textarea
+                                class="akun-ditolak-note-textarea"
+                                readonly
+                            >Foto ktp tidak sama dengan foto muka, Mohon Upload ulang foto dengan jelas dan serasi</textarea>
+
+                        </section>
+
+                    </div>
+
+
+                    <!-- =============================================
+                         RIGHT SIDEBAR
+                    ============================================== -->
+                    <aside class="akun-ditolak-right">
+
+
+                        <!-- INFORMASI TAMBAHAN -->
+                        <section class="akun-ditolak-information-card">
+
+                            <div class="akun-ditolak-information-title">
+
+
+                                <span>
+                                    Informasi Tambahan
+                                </span>
+
+                            </div>
+
+
+                            <ul>
+
+                                <li>
+                                    Pastikan foto identitas jelas dan
+                                    sesuai dengan data yang diisi
+                                </li>
+
+                                <li>
+                                    Pastikan foto wajah jelas dan sama
+                                    dengan identitas yang diisi
+                                </li>
+
+                                <li>
+                                    Jika data tidak valid, pilih tombol
+                                    tolak dan berikan alasan
+                                </li>
+
+                            </ul>
+
+                        </section>
+
+
+                        <!-- DATA PELANGGAN -->
+                        <section class="akun-ditolak-customer-card">
+
+                            <div class="akun-ditolak-customer-title">
+
+                                <img
+                                    src="../../../assets/Icon/User.svg"
+                                    alt=""
+                                >
+
+                                <span>
+                                    Data Pelanggan
+                                </span>
+
+                            </div>
+
+
+                            <div class="akun-ditolak-customer-row">
+
+                                <img
+                                    src="../../../assets/Icon/User.svg"
+                                    alt=""
+                                >
+
+                                <span>
+                                    Nama
+                                </span>
+
+                                <strong>
+                                    Marcel Nestle
+                                </strong>
+
+                            </div>
+
+
+                            <div class="akun-ditolak-customer-row">
+
+                                <img
+                                    src="../../../assets/Icon/Telpon.svg"
+                                    alt=""
+                                >
+
+                                <span>
+                                    No. Hp
+                                </span>
+
+                                <strong>
+                                    081234567890
+                                </strong>
+
+                            </div>
+
+
+                            <div class="akun-ditolak-customer-row">
+
+                                <img
+                                    src="../../../assets/Icon/Email.svg"
+                                    alt=""
+                                >
+
+                                <span>
+                                    Email
+                                </span>
+
+                                <strong>
+                                    Mrcll1@gmail.com
+                                </strong>
+
+                            </div>
+
+                        </section>
+
+                    </aside>
+
+                </div>
+
+            </main>
+
+
+            <!-- =================================================
+                 FOOTER
+            ================================================== -->
+            <footer class="admin-footer">
+
+
+            <!-- Premium Equipment -->
+
+            <article class="admin-footer-item">
+
+                <div class="admin-footer-icon">
+
+                    <img
+                        src="../../../assets/Icon/Controller Icon.svg"
+                        alt=""
+                        aria-hidden="true"
+                    >
+
+                </div>
+
+
+                <div class="admin-footer-text">
+
+                    <p class="admin-footer-title">
+                        Premium Equipment
+                    </p>
+
+                    <p class="admin-footer-description">
+                        PlayStation terbaru &amp; berkualitas
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- Delicious Food & Drinks -->
+
+            <article class="admin-footer-item">
+
+                <div class="admin-footer-icon">
+
+                    <img
+                        src="../../../assets/Icon/FNB.svg"
+                        alt=""
+                        aria-hidden="true"
+                    >
+
+                </div>
+
+
+                <div class="admin-footer-text">
+
+                    <p class="admin-footer-title">
+                        Delicious Food &amp; Drinks
+                    </p>
+
+                    <p class="admin-footer-description">
+                        Pilihan menu terbaik
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- Comfortable Space -->
+
+            <article class="admin-footer-item">
+
+                <div class="admin-footer-icon">
+
+                    <img
+                        src="../../../assets/Icon/Bintang.svg"
+                        alt=""
+                        aria-hidden="true"
+                    >
+
+                </div>
+
+
+                <div class="admin-footer-text">
+
+                    <p class="admin-footer-title">
+                        Comfortable Space
+                    </p>
+
+                    <p class="admin-footer-description">
+                        Suasana nyaman &amp; modern
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- Friendly Support -->
+
+            <article class="admin-footer-item">
+
+                <div class="admin-footer-icon">
+
+                    <img
+                        src="../../../assets/Icon/People Icon.svg"
+                        alt=""
+                        aria-hidden="true"
+                    >
+
+                </div>
+
+
+                <div class="admin-footer-text">
+
+                    <p class="admin-footer-title">
+                        Friendly Support
+                    </p>
+
+                    <p class="admin-footer-description">
+                        Selalu siap membantu
+                    </p>
+
+                </div>
+
+            </article>
+
+
+        </footer>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

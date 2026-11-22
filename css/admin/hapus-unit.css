@@ -1,0 +1,346 @@
+/* =========================================================
+   HAPUS UNIT PLAYSTATION
+   Popup CSS — hapus-unit.css
+   Prefix: hapus-unit-
+   Tidak mengubah: global.css, admin-layout.css, kelola-unit.css
+========================================================= */
+
+
+/* =========================================================
+   OVERLAY
+========================================================= */
+
+.hapus-unit-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.48);
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* =========================================================
+   POPUP CONTAINER
+========================================================= */
+
+.hapus-unit-popup {
+    position: relative;
+
+    width: 485px;
+
+    background: #FFFEFC;
+    border-radius: 20px;
+    box-shadow:
+        0 24px 64px rgba(0, 0, 0, 0.16),
+        0 4px 20px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 32px 32px 28px 32px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CLOSE BUTTON
+   Pojok kanan atas popup
+========================================================= */
+
+.hapus-unit-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: transparent;
+    border: none;
+    border-radius: 6px;
+    padding: 0;
+
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+.hapus-unit-close:hover {
+    background: #F5EFE6;
+}
+
+.hapus-unit-close-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+
+    /* Warna gold sesuai desain */
+    filter: invert(55%) sepia(60%) saturate(400%) hue-rotate(10deg) brightness(90%);
+}
+
+
+/* =========================================================
+   TRASH / DELETE ICON
+   Lingkaran merah muda besar di atas popup
+========================================================= */
+
+.hapus-unit-delete-icon-wrapper {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+
+    background: #FDE2E2;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+}
+
+.hapus-unit-delete-icon {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+
+    /* Warna merah sesuai #C91C1C */
+    filter: invert(14%) sepia(90%) saturate(4000%) hue-rotate(348deg) brightness(85%);
+}
+
+
+/* =========================================================
+   JUDUL
+========================================================= */
+
+.hapus-unit-title {
+    margin: 0 0 10px 0;
+
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+
+    color: #111111;
+    text-align: center;
+}
+
+
+/* =========================================================
+   DESKRIPSI
+========================================================= */
+
+.hapus-unit-description {
+    margin: 0 0 20px 0;
+
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.6;
+
+    color: #A69E93;
+    text-align: center;
+}
+
+
+/* =========================================================
+   INFORMASI UNIT
+   Card info unit yang akan dihapus
+========================================================= */
+
+.hapus-unit-info {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    width: 100%;
+
+    background: #F8F3EB;
+    border-radius: 10px;
+
+    padding: 14px 16px;
+    margin-bottom: 24px;
+
+    box-sizing: border-box;
+    min-height: 90px;
+}
+
+
+/* Icon PlayStation di dalam card */
+.hapus-unit-unit-icon {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+
+    background: #B99053;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hapus-unit-unit-icon-img {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+
+/* Konten teks di kanan icon */
+.hapus-unit-unit-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    min-width: 0;
+}
+
+.hapus-unit-unit-title {
+    margin: 0;
+
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+
+    color: #29231F;
+}
+
+.hapus-unit-unit-description {
+    margin: 0;
+
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+
+    color: #A69E93;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* Spesifikasi unit */
+.hapus-unit-specs {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 4px;
+}
+
+.hapus-unit-spec {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.hapus-unit-spec-icon {
+    width: 13px;
+    height: 13px;
+    object-fit: contain;
+    opacity: 0.7;
+    flex-shrink: 0;
+}
+
+.hapus-unit-spec span {
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 10px;
+    font-weight: 400;
+    color: #29231F;
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   ACTION BUTTONS
+========================================================= */
+
+.hapus-unit-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    width: 100%;
+}
+
+/* Tombol Batal */
+.hapus-unit-cancel {
+    min-width: 150px;
+    height: 40px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 24px;
+
+    background: #FFFEFC;
+    border: 1px solid #B99053;
+    border-radius: 6px;
+
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 13px;
+    font-weight: 500;
+    color: #29231F;
+
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.15s ease, border-color 0.15s ease;
+    box-sizing: border-box;
+}
+
+.hapus-unit-cancel:hover {
+    background: #F7EFE2;
+    border-color: #9A7338;
+}
+
+/* Tombol Hapus */
+.hapus-unit-confirm {
+    min-width: 150px;
+    height: 40px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 24px;
+
+    background: #C91C1C;
+    border: 1px solid #C91C1C;
+    border-radius: 6px;
+
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 13px;
+    font-weight: 600;
+    color: #FFFFFF;
+
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.15s ease, border-color 0.15s ease;
+    box-sizing: border-box;
+}
+
+.hapus-unit-confirm:hover {
+    background: #A81515;
+    border-color: #A81515;
+}
+

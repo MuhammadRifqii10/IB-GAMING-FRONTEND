@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Detail Verifikasi (Menunggu) - Booking PS | IB Gaming</title>
+
+    <!-- GLOBAL CSS -->
+    <link rel="stylesheet" href="../../../css/global.css">
+
+    <!-- ADMIN LAYOUT -->
+    <link rel="stylesheet" href="../../../css/admin/admin-layout.css">
+
+    <!-- MENUNGGU VERIFIKASI -->
+    <link rel="stylesheet" href="../../../css/admin/booking/menunggu-verifikasi.css">
+</head>
+
+<body>
+
+    <div class="admin-layout">
+
+        <!-- =====================================================
+             SIDEBAR
+        ====================================================== -->
+        <aside class="admin-sidebar">
+
+            <div class="admin-logo-wrapper">
+                <img src="../../../assets/Icon/Logo.svg" alt="IB Gaming" class="admin-logo">
+                <div class="admin-brand-text">
+                    <p class="admin-brand-name">IB GAMING</p>
+                    <p class="admin-brand-tagline">PLAY · EAT · ENJOY</p>
+                </div>
+            </div>
+
+            <nav class="admin-nav" aria-label="Navigasi Admin">
+
+                <div class="admin-nav-section">
+                    <ul class="admin-nav-list">
+                        <li>
+                            <a href="../dashboard-admin.html" class="admin-nav-link">
+                                <img src="../../../assets/Icon/Home.svg" alt="" class="admin-nav-icon" aria-hidden="true">
+                                <span class="admin-nav-text">Dashboard</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="admin-nav-section">
+                    <p class="admin-nav-section-title">Operasional PlayStation</p>
+                    <ul class="admin-nav-list">
+                        <li>
+                            <a href="../sewa-ps.html" class="admin-nav-link">
+                                <img src="../../../assets/Icon/Game.svg" alt="" class="admin-nav-icon" aria-hidden="true">
+                                <span class="admin-nav-text">Sewa PS</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="verifikasi-akun.html" class="admin-nav-link active" aria-current="page">
+                                <img src="../../../assets/Icon/Keranjang.svg" alt="" class="admin-nav-icon" aria-hidden="true">
+                                <span class="admin-nav-text">Booking PS</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../kelola-unit.html" class="admin-nav-link">
+                                <img src="../../../assets/Icon/TV.svg" alt="" class="admin-nav-icon" aria-hidden="true">
+                                <span class="admin-nav-text">Kelola Unit PS</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="admin-nav-section">
+                    <p class="admin-nav-section-title">Operasional F &amp; B</p>
+                    <ul class="admin-nav-list">
+                        <li>
+                            <a href="../pesanan-fnb.html" class="admin-nav-link">
+                                <img src="../../../assets/Icon/FNB.svg" alt="" class="admin-nav-icon" aria-hidden="true">
+                                <span class="admin-nav-text">Pesanan F &amp; B</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../kelola-menu.html" class="admin-nav-link">
+                                <img src="../../../assets/Icon/Menu.svg" alt="" class="admin-nav-icon" aria-hidden="true">
+                                <span class="admin-nav-text">Kelola Menu F &amp; B</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+
+            <div class="admin-sidebar-bottom">
+                <a href="#" class="admin-logout">
+                    <img src="../../../assets/Icon/Logout.svg" alt="" class="admin-logout-icon" aria-hidden="true">
+                    <span class="admin-logout-text">Logout</span>
+                </a>
+            </div>
+
+        </aside>
+
+
+        <!-- =====================================================
+             MAIN AREA
+        ====================================================== -->
+        <div class="admin-main">
+
+            <!-- HEADER -->
+            <header class="admin-header">
+
+                <div class="admin-search-wrapper">
+                    <img src="../../../assets/Icon/Search.svg" alt="" class="admin-search-icon">
+                    <input type="text" class="admin-search" placeholder="Cari menu, booking, pelanggan...">
+                </div>
+
+                <div class="admin-header-right">
+
+                    <a href="../notification.html" class="admin-notification" aria-label="Notifikasi">
+                        <img src="../../../assets/Icon/Notif.svg" alt="Notifikasi" class="admin-notification-icon">
+                        <span class="admin-notification-badge"></span>
+                    </a>
+
+                    <div class="admin-profile">
+                        <img src="../../../assets/Images/Elon.jpg" alt="Admin" class="admin-profile-image">
+                        <div class="admin-profile-info">
+                            <p class="admin-profile-name">Admin</p>
+                            <p class="admin-profile-role">Administrator</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- CONTENT -->
+            <main class="admin-content menunggu-verifikasi-main">
+
+                <!-- BREADCRUMB -->
+                <nav class="menunggu-verifikasi-breadcrumb" aria-label="Breadcrumb">
+                    <a href="verifikasi-akun.html" class="menunggu-verifikasi-breadcrumb-back" aria-label="Kembali ke Booking PS">
+                        <img src="../../../assets/Icon/Panah.svg" alt="" class="menunggu-verifikasi-breadcrumb-back-icon" aria-hidden="true">
+                    </a>
+
+                    <a href="verifikasi-akun.html" class="menunggu-verifikasi-breadcrumb-parent">Booking PS</a>
+
+                    <img src="../../../assets/Icon/Arrow.svg" alt="" class="menunggu-verifikasi-breadcrumb-sep" aria-hidden="true">
+
+                    <span class="menunggu-verifikasi-breadcrumb-current">Detail Verifikasi Akun</span>
+                </nav>
+
+
+                <!-- PAGE HEADER -->
+                <div class="menunggu-verifikasi-header">
+
+                    <div class="menunggu-verifikasi-heading">
+                        <img src="../../../assets/Icon/Keranjang.svg" alt="" class="menunggu-verifikasi-heading-icon" aria-hidden="true">
+                        <div class="menunggu-verifikasi-heading-text">
+                            <h1 class="menunggu-verifikasi-heading-title">Detail Verifikasi (Menunggu)</h1>
+                            <p class="menunggu-verifikasi-heading-subtitle">Informasi Pengajuan Booking PlayStation</p>
+                        </div>
+                    </div>
+
+                    <a href="verifikasi-akun.html" class="menunggu-verifikasi-back-button" id="menungguVerifikasiKembali">
+                        <img src="../../../assets/Icon/Panah.svg" alt="" class="menunggu-verifikasi-back-icon" aria-hidden="true">
+                        <span>Kembali</span>
+                    </a>
+
+                </div>
+
+
+                <!-- CONTENT GRID -->
+                <div class="menunggu-verifikasi-grid">
+
+                    <!-- ===== KOLOM KIRI ===== -->
+                    <div class="menunggu-verifikasi-col-left">
+
+                        <!-- CARD UTAMA -->
+                        <section class="menunggu-verifikasi-card">
+
+                            <div class="menunggu-verifikasi-card-top">
+
+                                <div class="menunggu-verifikasi-card-id">
+
+                                    <div class="menunggu-verifikasi-card-id-icon">
+                                        <img src="../../../assets/Icon/Calendar.svg" alt="" aria-hidden="true">
+                                    </div>
+
+                                    <div class="menunggu-verifikasi-card-id-text">
+                                        <h2 class="menunggu-verifikasi-card-id-title">#USR-01</h2>
+                                        <p class="menunggu-verifikasi-card-id-date">Diajukan Pada 08 Okt 2026, 09:15</p>
+                                    </div>
+
+                                </div>
+
+                                <span class="menunggu-verifikasi-status">Menunggu Verifikasi Data Diri</span>
+
+                            </div>
+
+
+                            <div class="menunggu-verifikasi-section-heading">
+                                <img src="../../../assets/Icon/Centang.svg" alt="" class="menunggu-verifikasi-section-icon" aria-hidden="true">
+                                <div>
+                                    <h3 class="menunggu-verifikasi-section-title">Verifikasi Data Diri Pelanggan</h3>
+                                    <p class="menunggu-verifikasi-section-subtitle">Periksa data diri dan dokumen yang diunggah oleh Pelanggan</p>
+                                </div>
+                            </div>
+
+
+                            <!-- DUA DOKUMEN -->
+                            <div class="menunggu-verifikasi-documents">
+
+                                <!-- Foto Identitas -->
+                                <article class="menunggu-verifikasi-document" data-document="identitas">
+
+                                    <div class="menunggu-verifikasi-document-title">
+                                        <img src="../../../assets/Icon/Id.svg" alt="" class="menunggu-verifikasi-document-title-icon" aria-hidden="true">
+                                        <span>Foto Identitas</span>
+                                    </div>
+
+                                    <div class="menunggu-verifikasi-document-preview">
+                                        <img src="../../../assets/Icon/Id.svg" alt="Placeholder foto identitas" class="menunggu-verifikasi-document-image">
+                                    </div>
+
+                                    <div class="menunggu-verifikasi-document-actions">
+
+                                        <button type="button" class="menunggu-verifikasi-button menunggu-verifikasi-button--invalid" data-value="invalid" aria-pressed="false">
+                                            <img src="../../../assets/Icon/Close.svg" alt="" class="menunggu-verifikasi-button-icon" aria-hidden="true">
+                                            <span>Tidak Valid</span>
+                                        </button>
+
+                                        <button type="button" class="menunggu-verifikasi-button menunggu-verifikasi-button--valid" data-value="valid" aria-pressed="false">
+                                            <span class="menunggu-verifikasi-check-circle" aria-hidden="true">
+                                                <img src="../../../assets/Icon/Centang.svg" alt="">
+                                            </span>
+                                            <span>Valid</span>
+                                        </button>
+
+                                    </div>
+
+                                </article>
+
+                                <!-- Foto Diri -->
+                                <article class="menunggu-verifikasi-document" data-document="diri">
+
+                                    <div class="menunggu-verifikasi-document-title">
+                                        <img src="../../../assets/Icon/Id.svg" alt="" class="menunggu-verifikasi-document-title-icon" aria-hidden="true">
+                                        <span>Foto Diri</span>
+                                    </div>
+
+                                    <div class="menunggu-verifikasi-document-preview">
+                                        <img src="../../../assets/Icon/Id.svg" alt="Placeholder foto diri" class="menunggu-verifikasi-document-image">
+                                    </div>
+
+                                    <div class="menunggu-verifikasi-document-actions">
+
+                                        <button type="button" class="menunggu-verifikasi-button menunggu-verifikasi-button--invalid" data-value="invalid" aria-pressed="false">
+                                            <img src="../../../assets/Icon/Close.svg" alt="" class="menunggu-verifikasi-button-icon" aria-hidden="true">
+                                            <span>Tidak Valid</span>
+                                        </button>
+
+                                        <button type="button" class="menunggu-verifikasi-button menunggu-verifikasi-button--valid" data-value="valid" aria-pressed="false">
+                                            <span class="menunggu-verifikasi-check-circle" aria-hidden="true">
+                                                <img src="../../../assets/Icon/Centang.svg" alt="">
+                                            </span>
+                                            <span>Valid</span>
+                                        </button>
+
+                                    </div>
+
+                                </article>
+
+                            </div>
+
+                        </section>
+
+
+                        <!-- CATATAN ADMIN -->
+                        <section class="menunggu-verifikasi-notes">
+
+                            <div class="menunggu-verifikasi-notes-heading">
+                                <img src="../../../assets/Icon/Note.svg" alt="" class="menunggu-verifikasi-notes-icon" aria-hidden="true">
+                                <label for="menungguVerifikasiCatatan" class="menunggu-verifikasi-notes-title">Catatan Admin (Jika Ditolak)</label>
+                            </div>
+
+                            <textarea
+                                id="menungguVerifikasiCatatan"
+                                class="menunggu-verifikasi-notes-input"
+                                placeholder="Tulis alasan Penolakan..."
+                            ></textarea>
+
+                        </section>
+
+                    </div>
+                    <!-- END KOLOM KIRI -->
+
+
+                    <!-- ===== KOLOM KANAN ===== -->
+                    <aside class="menunggu-verifikasi-col-right">
+
+                        <!-- INFORMASI TAMBAHAN -->
+                        <section class="menunggu-verifikasi-info">
+
+                            <div class="menunggu-verifikasi-info-heading">
+                                <span class="menunggu-verifikasi-info-icon" aria-hidden="true">i</span>
+                                <h3 class="menunggu-verifikasi-info-title">Informasi Tambahan</h3>
+                            </div>
+
+                            <ul class="menunggu-verifikasi-info-list">
+                                <li>Pastikan foto Identitas jelas dan sesuai dengan data yang diisi</li>
+                                <li>Pastikan foto wajah jelas dan sama dengan identitas yang diisi</li>
+                                <li>Jika data tidak valid, pilih tombol tolak dan berikan alasan</li>
+                            </ul>
+
+                        </section>
+
+
+                        <!-- DATA PELANGGAN -->
+                        <section class="menunggu-verifikasi-customer">
+
+                            <div class="menunggu-verifikasi-customer-heading">
+                                <img src="../../../assets/Icon/User.svg" alt="" class="menunggu-verifikasi-customer-heading-icon" aria-hidden="true">
+                                <h3 class="menunggu-verifikasi-customer-title">Data Pelanggan</h3>
+                            </div>
+
+                            <div class="menunggu-verifikasi-customer-row">
+                                <span class="menunggu-verifikasi-customer-label">
+                                    <img src="../../../assets/Icon/User.svg" alt="" class="menunggu-verifikasi-customer-icon" aria-hidden="true">
+                                    Nama
+                                </span>
+                                <span class="menunggu-verifikasi-customer-value">Kimi Antonelli</span>
+                            </div>
+
+                            <div class="menunggu-verifikasi-customer-row">
+                                <span class="menunggu-verifikasi-customer-label">
+                                    <img src="../../../assets/Icon/Telpon.svg" alt="" class="menunggu-verifikasi-customer-icon" aria-hidden="true">
+                                    No. Hp
+                                </span>
+                                <span class="menunggu-verifikasi-customer-value">081234567890</span>
+                            </div>
+
+                            <div class="menunggu-verifikasi-customer-row">
+                                <span class="menunggu-verifikasi-customer-label">
+                                    <img src="../../../assets/Icon/Email.svg" alt="" class="menunggu-verifikasi-customer-icon" aria-hidden="true">
+                                    Email
+                                </span>
+                                <span class="menunggu-verifikasi-customer-value">Kimi@gmail.com</span>
+                            </div>
+
+                        </section>
+
+                    </aside>
+                    <!-- END KOLOM KANAN -->
+
+                </div>
+                <!-- END GRID -->
+
+
+                <!-- AKSI VERIFIKASI -->
+                <section class="menunggu-verifikasi-action">
+
+                    <div class="menunggu-verifikasi-action-message">
+                        <span class="menunggu-verifikasi-action-icon" aria-hidden="true">!</span>
+                        <p class="menunggu-verifikasi-action-text">
+                            Pastikan semua dokumen valid sebelum memverifikasi akun.<br>
+                            Jika ada dokumen yang tidak valid, pilih status Tidak Valid dan isi alasan di Catatan Admin
+                        </p>
+                    </div>
+
+                    <a href="/pages/admin/booking/verifikasi-akun.html" class="menunggu-verifikasi-action-button">
+                        <span class="menunggu-verifikasi-check-circle menunggu-verifikasi-check-circle--white" aria-hidden="true">
+                            <img src="../../../assets/Icon/Centang.svg" alt="">
+                        </span>
+                        <span>Verifikasi Akun</span>
+                    </a>
+
+                </section>
+
+            </main>
+
+
+            <!-- FOOTER -->
+            <footer class="admin-footer">
+
+                <article class="admin-footer-item">
+                    <div class="admin-footer-icon">
+                        <img src="../../../assets/Icon/Controller Icon.svg" alt="" aria-hidden="true">
+                    </div>
+                    <div class="admin-footer-text">
+                        <p class="admin-footer-title">Premium Equipment</p>
+                        <p class="admin-footer-description">PlayStation terbaru &amp; berkualitas</p>
+                    </div>
+                </article>
+
+                <article class="admin-footer-item">
+                    <div class="admin-footer-icon">
+                        <img src="../../../assets/Icon/FNB.svg" alt="" aria-hidden="true">
+                    </div>
+                    <div class="admin-footer-text">
+                        <p class="admin-footer-title">Delicious Food &amp; Drinks</p>
+                        <p class="admin-footer-description">Pilihan menu terbaik</p>
+                    </div>
+                </article>
+
+                <article class="admin-footer-item">
+                    <div class="admin-footer-icon">
+                        <img src="../../../assets/Icon/Bintang.svg" alt="" aria-hidden="true">
+                    </div>
+                    <div class="admin-footer-text">
+                        <p class="admin-footer-title">Comfortable Space</p>
+                        <p class="admin-footer-description">Suasana nyaman &amp; modern</p>
+                    </div>
+                </article>
+
+                <article class="admin-footer-item">
+                    <div class="admin-footer-icon">
+                        <img src="../../../assets/Icon/People Icon.svg" alt="" aria-hidden="true">
+                    </div>
+                    <div class="admin-footer-text">
+                        <p class="admin-footer-title">Friendly Support</p>
+                        <p class="admin-footer-description">Selalu siap membantu</p>
+                    </div>
+                </article>
+
+            </footer>
+
+        </div>
+
+    </div>
+
+    <script src="../../../js/admin/booking/menunggu-verifikasi.js"></script>
+
+</body>
+
+</html>
+

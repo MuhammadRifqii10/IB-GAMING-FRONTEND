@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IB Gaming - Admin</title>
+
+    <!-- GLOBAL CSS -->
+    <link rel="stylesheet" href="../../css/global.css">
+
+    <!-- ADMIN LAYOUT -->
+    <link rel="stylesheet" href="../../css/admin/admin-layout.css">
+
+    <link rel="stylesheet" href="../../css/admin/sewa-tersedia.css">
+</head>
+
+<body>
+
+    <div class="admin-layout">
+
+        <!-- =================================================
+             SIDEBAR
+        ================================================== -->
+        <aside class="admin-sidebar">
+
+
+        <!-- LOGO -->
+
+        <div class="admin-logo-wrapper">
+
+            <img
+                src="../../assets/Icon/Logo.svg"
+                alt="IB Gaming"
+                class="admin-logo"
+            >
+
+            <div class="admin-brand-text">
+
+                <p class="admin-brand-name">
+                    IB GAMING
+                </p>
+
+                <p class="admin-brand-tagline">
+                    PLAY · EAT · ENJOY
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+
+        <nav
+            class="admin-nav"
+            aria-label="Navigasi Admin"
+        >
+
+
+            <!-- DASHBOARD -->
+
+            <div class="admin-nav-section">
+
+                <ul class="admin-nav-list">
+
+                    <li>
+
+                        <a
+                            href="dashboard-admin.html"
+                            class="admin-nav-link"
+                        >
+
+                            <img
+                                src="../../assets/Icon/Home.svg"
+                                alt=""
+                                class="admin-nav-icon"
+                                aria-hidden="true"
+                            >
+
+                            <span class="admin-nav-text">
+                                Dashboard
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- OPERASIONAL PLAYSTATION -->
+
+            <div class="admin-nav-section">
+
+                <p class="admin-nav-section-title">
+                    Operasional PlayStation
+                </p>
+
+
+                <ul class="admin-nav-list">
+
+
+                    <!-- Sewa PS - ACTIVE -->
+
+                    <li>
+
+                        <a
+                            href="sewa-ps.html"
+                            class="admin-nav-link active"
+                            aria-current="page"
+                        >
+
+                            <img
+                                src="../../assets/Icon/Game.svg"
+                                alt=""
+                                class="admin-nav-icon"
+                                aria-hidden="true"
+                            >
+
+                            <span class="admin-nav-text">
+                                Sewa PS
+                            </span>
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- Booking PS -->
+
+                    <li>
+
+                        <a
+                            href="booking/verifikasi-akun.html"
+                            class="admin-nav-link"
+                        >
+
+                            <img
+                                src="../../assets/Icon/Keranjang.svg"
+                                alt=""
+                                class="admin-nav-icon"
+                                aria-hidden="true"
+                            >
+
+                            <span class="admin-nav-text">
+                                Booking PS
+                            </span>
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- Kelola Unit PS -->
+
+                    <li>
+
+                        <a
+                            href="kelola-unit.html"
+                            class="admin-nav-link"
+                        >
+
+                            <img
+                                src="../../assets/Icon/TV.svg"
+                                alt=""
+                                class="admin-nav-icon"
+                                aria-hidden="true"
+                            >
+
+                            <span class="admin-nav-text">
+                                Kelola Unit PS
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- OPERASIONAL F&B -->
+
+            <div class="admin-nav-section">
+
+                <p class="admin-nav-section-title">
+                    Operasional F &amp; B
+                </p>
+
+
+                <ul class="admin-nav-list">
+
+
+                    <!-- Pesanan F&B -->
+
+                    <li>
+
+                        <a
+                            href="pesanan-fnb.html"
+                            class="admin-nav-link"
+                        >
+
+                            <img
+                                src="../../assets/Icon/FNB.svg"
+                                alt=""
+                                class="admin-nav-icon"
+                                aria-hidden="true"
+                            >
+
+                            <span class="admin-nav-text">
+                                Pesanan F &amp; B
+                            </span>
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- Kelola Menu F&B -->
+
+                    <li>
+
+                        <a
+                            href="kelola-menu.html"
+                            class="admin-nav-link"
+                        >
+
+                            <img
+                                src="../../assets/Icon/Menu.svg"
+                                alt=""
+                                class="admin-nav-icon"
+                                aria-hidden="true"
+                            >
+
+                            <span class="admin-nav-text">
+                                Kelola Menu F &amp; B
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+
+        <!-- LOGOUT -->
+
+        <div class="admin-sidebar-bottom">
+
+            <a
+                href="#"
+                class="admin-logout"
+            >
+
+                <img
+                    src="../../assets/Icon/Logout.svg"
+                    alt=""
+                    class="admin-logout-icon"
+                    aria-hidden="true"
+                >
+
+                <span class="admin-logout-text">
+                    Logout
+                </span>
+
+            </a>
+
+        </div>
+
+    </aside>
+
+
+        <!-- =================================================
+             MAIN
+        ================================================== -->
+        <div class="admin-main">
+
+
+            <!-- =================================================
+                 HEADER
+            ================================================== -->
+            <header class="admin-header">
+
+                <!-- SEARCH -->
+                <div class="admin-search-wrapper">
+
+                    <img
+                        src="../../assets/Icon/Search.svg"
+                        alt=""
+                        class="admin-search-icon"
+                    >
+
+                    <input
+                        type="text"
+                        class="admin-search"
+                        placeholder="Cari menu, booking, pelanggan..."
+                    >
+
+                </div>
+
+
+                <!-- HEADER RIGHT -->
+                <div class="admin-header-right">
+
+                    <!-- NOTIFICATION -->
+                    <a
+                        href="notification.html"
+                        class="admin-notification"
+                        aria-label="Notifikasi"
+                    >
+
+                        <img
+                            src="../../assets/Icon/Notif.svg"
+                            alt="Notifikasi"
+                            class="admin-notification-icon"
+                        >
+
+                        <span class="admin-notification-badge"></span>
+
+                    </a>
+
+
+                    <!-- PROFILE -->
+                    <div class="admin-profile">
+
+                        <img
+                            src="../../assets/Images/Elon.jpg"
+                            alt="Admin"
+                            class="admin-profile-image"
+                        >
+
+                        <div class="admin-profile-info">
+
+                            <p class="admin-profile-name">
+                                Admin
+                            </p>
+
+                            <p class="admin-profile-role">
+                                Administrator
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- =================================================
+                 CONTENT
+                 
+                 KONTEN HALAMAN DITARUH DI SINI
+            ================================================== -->
+          <main class="sewa-detail-main">
+
+    <!-- =========================
+         PAGE HEADING
+    ========================== -->
+    <div class="sewa-detail-heading">
+
+        <!-- KIRI -->
+        <div class="sewa-detail-heading-left">
+
+            <img
+                src="../../assets/Icon/Game.svg"
+                alt=""
+                class="sewa-detail-heading-icon"
+            >
+
+            <div class="sewa-detail-heading-text">
+                <h1>Detail Sewa PlayStation</h1>
+                <p>Informasi Lengkap Penyewaan PlayStation</p>
+            </div>
+
+        </div>
+
+
+        <!-- KANAN -->
+        <a href="sewa-ps.html" class="sewa-detail-back-button">
+
+            <img
+                src="../../assets/Icon/Panah.svg"
+                alt=""
+                class="sewa-detail-back-icon"
+            >
+
+            <span>Kembali</span>
+
+        </a>
+
+    </div>
+
+
+    <!-- =========================
+         BREADCRUMB
+    ========================== -->
+    <div class="sewa-detail-breadcrumb">
+
+        <a href="sewa-ps.html" class="sewa-breadcrumb-back">
+            <img
+                src="../../assets/Icon/Panah.svg"
+                alt=""
+                class="sewa-breadcrumb-back-icon"
+            >
+        </a>
+
+        <a href="sewa-ps.html" class="sewa-breadcrumb-text">
+            Sewa PS
+        </a>
+
+        <img
+            src="../../assets/Icon/Arrow.svg"
+            alt=""
+            class="sewa-breadcrumb-arrow"
+        >
+
+        <span class="sewa-breadcrumb-current">
+            Detail Sewa Tersedia
+        </span>
+
+    </div>
+
+
+    <!-- =========================
+         DETAIL CONTAINER
+    ========================== -->
+    <section class="sewa-detail-container">
+
+
+        <!-- =========================
+             INFORMASI ATAS
+        ========================== -->
+        <div class="sewa-detail-top">
+
+
+            <!-- =========================
+                 INFORMASI PELANGGAN
+            ========================== -->
+            <div class="sewa-info-card sewa-customer-card">
+
+                <div class="sewa-card-title">
+
+                    <img
+                        src="../../assets/Icon/User.svg"
+                        alt=""
+                        class="sewa-card-title-icon"
+                    >
+
+                    <h2>Informasi Pelanggan</h2>
+
+                </div>
+
+
+                <!-- NAMA PELANGGAN -->
+                <div class="sewa-form-group">
+
+                    <label for="namaPelanggan">
+                        Nama Pelanggan
+                    </label>
+
+                    <div class="sewa-input-wrapper">
+
+                        <img
+                            src="../../assets/Icon/User.svg"
+                            alt=""
+                            class="sewa-input-icon"
+                        >
+
+                        <input
+                            type="text"
+                            id="namaPelanggan"
+                            name="namaPelanggan"
+                            placeholder="Masukan Nama Pelanggan"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- NO TELEPON -->
+                <div class="sewa-form-group">
+
+                    <label for="noTelepon">
+                        No Telepon
+                    </label>
+
+                    <div class="sewa-input-wrapper">
+
+                        <img
+                            src="../../assets/Icon/Telpon.svg"
+                            alt=""
+                            class="sewa-input-icon"
+                        >
+
+                        <input
+                            type="tel"
+                            id="noTelepon"
+                            name="noTelepon"
+                            placeholder="08XX-XXXX-XXX"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 INFORMASI UNIT PS
+            ========================== -->
+            <div class="sewa-info-card sewa-unit-card">
+
+                <div class="sewa-card-title">
+
+                    <img
+                        src="../../assets/Icon/TV.svg"
+                        alt=""
+                        class="sewa-card-title-icon"
+                    >
+
+                    <h2>Informasi Unit Ps</h2>
+
+                </div>
+
+
+                <div class="sewa-unit-row">
+
+                    <span>TV</span>
+
+                    <span>TV 2</span>
+
+                </div>
+
+
+                <div class="sewa-unit-row">
+
+                    <span>Jenis Unit</span>
+
+                    <div class="sewa-select-display">
+
+                        <span>Ps 4</span>
+
+                        <img
+                            src="../../assets/Icon/Arrow.svg"
+                            alt=""
+                            class="sewa-select-arrow"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             DETAIL SEWA
+        ========================== -->
+        <div class="sewa-info-card sewa-rental-card">
+
+            <div class="sewa-card-title">
+
+                <img
+                    src="../../assets/Icon/Note.svg"
+                    alt=""
+                    class="sewa-card-title-icon"
+                >
+
+                <h2>Detail Sewa</h2>
+
+            </div>
+
+
+            <div class="sewa-rental-content">
+
+
+                <!-- =========================
+                     KOLOM KIRI
+                ========================== -->
+                <div class="sewa-rental-column">
+
+
+                    <!-- ID TRANSAKSI -->
+                    <div class="sewa-detail-row">
+
+                        <label for="idTransaksi">
+                            ID Transaksi
+                        </label>
+
+                        <input
+                            type="text"
+                            id="idTransaksi"
+                            name="idTransaksi"
+                            value="TRX-0018"
+                            readonly
+                        >
+
+                    </div>
+
+
+                    <!-- TANGGAL SEWA -->
+                    <div class="sewa-detail-row">
+
+                        <label for="tanggalSewa">
+                            Tanggal Sewa
+                        </label>
+
+                        <input
+                            type="text"
+                            id="tanggalSewa"
+                            name="tanggalSewa"
+                            value="31 Okt 2026"
+                            readonly
+                        >
+
+                    </div>
+
+
+                    <!-- JAM MULAI -->
+                    <div class="sewa-detail-row">
+
+                        <label for="jamMulai">
+                            Jam Mulai
+                        </label>
+
+                        <input
+                            type="text"
+                            id="jamMulai"
+                            name="jamMulai"
+                            value="14.00"
+                            readonly
+                        >
+
+                    </div>
+
+
+                    <!-- ESTIMASI SELESAI -->
+                    <div class="sewa-detail-row">
+
+                        <label for="estimasiSelesai">
+                            Estimasi Selesai
+                        </label>
+
+                        <input
+                            type="text"
+                            id="estimasiSelesai"
+                            name="estimasiSelesai"
+                            value="16.00"
+                            readonly
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================
+                     PEMBATAS
+                ========================== -->
+                <div class="sewa-rental-divider"></div>
+
+
+                <!-- =========================
+                     KOLOM KANAN
+                ========================== -->
+                <div class="sewa-rental-column">
+
+
+                    <!-- DURASI -->
+                    <div class="sewa-detail-row">
+
+                        <label for="durasi">
+                            Durasi
+                        </label>
+
+                        <div class="sewa-select-display sewa-duration-select">
+
+                            <span>2 Jam</span>
+
+                            <img
+                                src="../../assets/Icon/Arrow.svg"
+                                alt=""
+                                class="sewa-select-arrow"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- HARGA PER JAM -->
+                    <div class="sewa-detail-row">
+
+                        <label for="hargaPerJam">
+                            Harga Per Jam
+                        </label>
+
+                        <input
+                            type="text"
+                            id="hargaPerJam"
+                            name="hargaPerJam"
+                            value="Rp 8.000"
+                            readonly
+                        >
+
+                    </div>
+
+
+                    <!-- TOTAL -->
+                    <div class="sewa-detail-row">
+
+                        <label for="total">
+                            Total
+                        </label>
+
+                        <input
+                            type="text"
+                            id="total"
+                            name="total"
+                            value="Rp 16.000"
+                            readonly
+                        >
+
+                    </div>
+
+
+                    <!-- =========================
+                         METODE PEMBAYARAN
+                    ========================== -->
+                    <div class="sewa-detail-row sewa-payment-row">
+
+                        <span class="sewa-payment-label">
+                            Metode Pembayaran
+                        </span>
+
+
+                        <div class="sewa-payment-options">
+
+
+                            <!-- TUNAI -->
+                            <button
+                                type="button"
+                                class="sewa-payment-option active"
+                                data-payment="tunai"
+                            >
+
+                                <span class="sewa-radio active"></span>
+
+                                <span>Tunai</span>
+
+                            </button>
+
+
+                            <!-- QRIS -->
+                            <button
+                                type="button"
+                                class="sewa-payment-option"
+                                data-payment="qris"
+                            >
+
+                                <span class="sewa-radio"></span>
+
+                                <span>QRIS</span>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             AKSI
+        ========================== -->
+        <div class="sewa-info-card sewa-action-card">
+
+            <div class="sewa-card-title sewa-action-title">
+
+                <h2>Aksi</h2>
+
+            </div>
+
+            <a href="sewa-ps.html" class="sewa-start-button">
+                Mulai Sesi Sewa
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+            <!-- =================================================
+                 FOOTER
+            ================================================== -->
+            <footer class="admin-footer">
+
+
+                <!-- Premium Equipment -->
+                <article class="admin-footer-item">
+
+                    <div class="admin-footer-icon">
+
+                        <img
+                            src="../../assets/Icon/Controller Icon.svg"
+                            alt=""
+                            aria-hidden="true"
+                        >
+
+                    </div>
+
+                    <div class="admin-footer-text">
+
+                        <p class="admin-footer-title">
+                            Premium Equipment
+                        </p>
+
+                        <p class="admin-footer-description">
+                            PlayStation terbaru &amp; berkualitas
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Delicious Food & Drinks -->
+                <article class="admin-footer-item">
+
+                    <div class="admin-footer-icon">
+
+                        <img
+                            src="../../assets/Icon/FNB.svg"
+                            alt=""
+                            aria-hidden="true"
+                        >
+
+                    </div>
+
+                    <div class="admin-footer-text">
+
+                        <p class="admin-footer-title">
+                            Delicious Food &amp; Drinks
+                        </p>
+
+                        <p class="admin-footer-description">
+                            Pilihan menu terbaik
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Comfortable Space -->
+                <article class="admin-footer-item">
+
+                    <div class="admin-footer-icon">
+
+                        <img
+                            src="../../assets/Icon/Bintang.svg"
+                            alt=""
+                            aria-hidden="true"
+                        >
+
+                    </div>
+
+                    <div class="admin-footer-text">
+
+                        <p class="admin-footer-title">
+                            Comfortable Space
+                        </p>
+
+                        <p class="admin-footer-description">
+                            Suasana nyaman &amp; modern
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Friendly Support -->
+                <article class="admin-footer-item">
+
+                    <div class="admin-footer-icon">
+
+                        <img
+                            src="../../assets/Icon/People Icon.svg"
+                            alt=""
+                            aria-hidden="true"
+                        >
+
+                    </div>
+
+                    <div class="admin-footer-text">
+
+                        <p class="admin-footer-title">
+                            Friendly Support
+                        </p>
+
+                        <p class="admin-footer-description">
+                            Selalu siap membantu
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+            </footer>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

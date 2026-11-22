@@ -1,0 +1,846 @@
+/* =========================================================
+   SEWA DIGUNAKAN
+   Detail Sewa PlayStation Aktif
+========================================================= */
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.sewa-digunakan-main {
+    width: 100%;
+    min-height: calc(100vh - 101px);
+    padding: 22px 38px 70px;
+    background: var(--background-color);
+}
+
+
+/* =========================================================
+   PAGE HEADING
+========================================================= */
+
+.sewa-digunakan-heading {
+    width: 100%;
+    min-height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+}
+
+
+.sewa-digunakan-heading-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.sewa-digunakan-heading-icon {
+    width: 29px;
+    height: 29px;
+
+    display: block;
+    object-fit: contain;
+
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(57%)
+        sepia(34%)
+        saturate(650%)
+        hue-rotate(357deg)
+        brightness(91%)
+        contrast(89%);
+}
+
+
+.sewa-digunakan-heading-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.sewa-digunakan-heading-text h1 {
+    margin: 0;
+
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 500;
+
+    line-height: 1.2;
+
+    color: var(--text-primary);
+}
+
+
+.sewa-digunakan-heading-text p {
+    margin: 1px 0 0;
+
+    font-family: var(--font-body);
+    font-size: 9px;
+    font-weight: 400;
+
+    line-height: 1.2;
+
+    color: #A69E93;
+}
+
+
+/* =========================================================
+   BUTTON KEMBALI
+========================================================= */
+
+.sewa-digunakan-back-button {
+    width: 85px;
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    background: #FFFEFC;
+
+    border: 1px solid #B99053;
+    border-radius: 8px;
+
+    color: #B99053;
+
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 500;
+
+    text-decoration: none;
+
+    flex-shrink: 0;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+
+.sewa-digunakan-back-button:hover {
+    background: #B99053;
+    color: #FFFFFF;
+}
+
+
+.sewa-digunakan-back-icon {
+    width: 12px;
+    height: 12px;
+
+    object-fit: contain;
+
+    transform: rotate(180deg);
+
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(57%)
+        sepia(34%)
+        saturate(650%)
+        hue-rotate(357deg)
+        brightness(91%)
+        contrast(89%);
+}
+
+
+.sewa-digunakan-back-button:hover .sewa-digunakan-back-icon {
+    filter: brightness(0) invert(1);
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.sewa-digunakan-breadcrumb {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+
+.sewa-digunakan-breadcrumb-back {
+    width: 16px;
+    height: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+
+.sewa-digunakan-breadcrumb-back-icon {
+    width: 12px;
+    height: 12px;
+
+    object-fit: contain;
+    transform: rotate(180deg);
+
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(57%)
+        sepia(34%)
+        saturate(650%)
+        hue-rotate(357deg)
+        brightness(91%)
+        contrast(89%);
+}
+
+
+.sewa-digunakan-breadcrumb-text {
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 400;
+
+    color: #A69E93;
+
+    text-decoration: none;
+}
+
+
+.sewa-digunakan-breadcrumb-arrow {
+    width: 8px;
+    height: 8px;
+
+    object-fit: contain;
+    transform: rotate(-90deg);
+
+
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(67%)
+        sepia(13%)
+        saturate(440%)
+        hue-rotate(354deg)
+        brightness(91%)
+        contrast(86%);
+}
+
+
+.sewa-digunakan-breadcrumb-current {
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 400;
+
+    color: #B99053;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.sewa-digunakan-container {
+    width: 100%;
+
+    padding: 26px 30px 28px;
+
+    background: #FBF8F4;
+
+    border: 1px solid #E5DCD0;
+    border-radius: 15px;
+}
+
+
+/* =========================================================
+   STATUS GRID
+========================================================= */
+
+.sewa-digunakan-status-grid {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 12px;
+
+    margin-bottom: 12px;
+}
+
+
+/* =========================================================
+   SESSION CARD
+========================================================= */
+
+.sewa-session-card {
+    min-height: 92px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 15px 18px;
+
+    background: #FFFEFC;
+
+    border: 1px solid #E5DCD0;
+    border-radius: 10px;
+}
+
+
+.sewa-session-icon-wrapper,
+.sewa-time-icon-wrapper {
+    width: 56px;
+    height: 56px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 10px;
+}
+
+
+/* =========================================================
+   GAME ICON
+========================================================= */
+
+.sewa-session-icon-wrapper {
+    background: #CFE2FF;
+}
+
+
+.sewa-session-icon {
+    width: 36px;
+    height: 36px;
+
+    display: block;
+
+    object-fit: contain;
+
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(48%)
+        sepia(97%)
+        saturate(2197%)
+        hue-rotate(205deg)
+        brightness(102%)
+        contrast(98%);
+}
+
+
+/* =========================================================
+   TIMER ICON
+========================================================= */
+
+.sewa-time-icon-wrapper {
+    background: #FFE7B3;
+}
+
+
+.sewa-time-icon {
+    width: 36px;
+    height: 36px;
+
+    display: block;
+
+    object-fit: contain;
+
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(57%)
+        sepia(34%)
+        saturate(650%)
+        hue-rotate(357deg)
+        brightness(91%)
+        contrast(89%);
+}
+
+
+/* =========================================================
+   SESSION CONTENT
+========================================================= */
+
+.sewa-session-content {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+.sewa-session-label {
+    margin: 0;
+
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 500;
+
+    line-height: 1.2;
+
+    color: #29231F;
+}
+
+
+.sewa-session-status {
+    margin: 3px 0 0;
+
+    font-family: var(--font-body);
+    font-size: 18px;
+    font-weight: 600;
+
+    line-height: 1.2;
+
+    color: #3B82F6;
+}
+
+
+.sewa-session-description {
+    margin: 3px 0 0;
+
+    font-family: var(--font-body);
+    font-size: 8px;
+    font-weight: 400;
+
+    line-height: 1.2;
+
+    color: #A69E93;
+}
+
+
+.sewa-session-time {
+    margin: 3px 0 0;
+
+    font-family: var(--font-body);
+    font-size: 18px;
+    font-weight: 600;
+
+    line-height: 1.2;
+
+    color: #29231F;
+}
+
+
+/* =========================================================
+   CUSTOMER & UNIT GRID
+========================================================= */
+
+.sewa-digunakan-info-grid {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 12px;
+
+    margin-bottom: 12px;
+}
+
+
+/* =========================================================
+   GENERAL CARD
+========================================================= */
+
+.sewa-digunakan-card {
+    background: #FFFEFC;
+
+    border: 1px solid #E5DCD0;
+    border-radius: 10px;
+}
+
+
+/* =========================================================
+   CARD TITLE
+========================================================= */
+
+.sewa-used-card-title {
+    display: flex;
+    align-items: center;
+
+    gap: 6px;
+}
+
+
+.sewa-used-card-title-icon {
+    width: 18px;
+    height: 18px;
+
+    display: block;
+
+    object-fit: contain;
+
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(57%)
+        sepia(34%)
+        saturate(650%)
+        hue-rotate(357deg)
+        brightness(91%)
+        contrast(89%);
+}
+
+
+.sewa-used-card-title h2 {
+    margin: 0;
+
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 600;
+
+    line-height: 1.2;
+
+    color: #29231F;
+}
+
+
+/* =========================================================
+   CUSTOMER CARD
+========================================================= */
+
+.sewa-customer-used-card {
+    min-height: 116px;
+
+    padding: 14px 16px;
+}
+
+
+.sewa-customer-information {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 14px;
+}
+
+
+.sewa-customer-avatar {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background: #FFF0D0;
+
+    border-radius: 50%;
+}
+
+
+.sewa-customer-avatar img {
+    width: 17px;
+    height: 17px;
+
+    object-fit: contain;
+
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(57%)
+        sepia(34%)
+        saturate(650%)
+        hue-rotate(357deg)
+        brightness(91%)
+        contrast(89%);
+}
+
+
+.sewa-customer-data {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.sewa-customer-name {
+    margin: 0;
+
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 500;
+
+    line-height: 1.2;
+
+    color: #29231F;
+}
+
+
+.sewa-customer-phone {
+    margin: 3px 0 0;
+
+    font-family: var(--font-body);
+    font-size: 9px;
+    font-weight: 400;
+
+    line-height: 1.2;
+
+    color: #A69E93;
+}
+
+
+/* =========================================================
+   UNIT CARD
+========================================================= */
+
+.sewa-unit-used-card {
+    min-height: 116px;
+
+    padding: 14px 16px;
+}
+
+
+.sewa-used-unit-row {
+    width: 100%;
+
+    min-height: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 10px;
+
+    border-bottom: 1px solid #E8DDD3;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 400;
+
+    color: #29231F;
+}
+
+
+.sewa-unit-used-card .sewa-used-card-title {
+    margin-bottom: 9px;
+}
+
+
+.sewa-used-unit-value {
+    width: 145px;
+    height: 22px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 9px;
+
+    background: #FFFEFC;
+
+    border: 1px solid #E5DCD0;
+    border-radius: 5px;
+
+    font-family: var(--font-body);
+    font-size: 9px;
+    font-weight: 400;
+
+    color: #29231F;
+}
+
+
+/* =========================================================
+   DETAIL SEWA
+========================================================= */
+
+.sewa-used-rental-card {
+    width: 100%;
+
+    min-height: 174px;
+
+    padding: 14px 16px;
+}
+
+
+.sewa-used-rental-title {
+    width: 100%;
+
+    margin-bottom: 12px;
+}
+
+
+.sewa-used-rental-title h2 {
+    margin: 0;
+
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 600;
+
+    line-height: 1.2;
+
+    color: #29231F;
+}
+
+
+/* =========================================================
+   RENTAL CONTENT
+========================================================= */
+
+.sewa-used-rental-content {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 1px minmax(0, 1fr);
+
+    column-gap: 30px;
+
+    min-height: 100px;
+}
+
+
+.sewa-used-rental-column {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.sewa-used-rental-divider {
+    width: 1px;
+
+    height: 100%;
+
+    background: #E5DCD0;
+}
+
+
+/* =========================================================
+   DETAIL ROW
+========================================================= */
+
+.sewa-used-detail-row {
+    width: 100%;
+
+    min-height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    border-bottom: 1px solid #E5DCD0;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 400;
+
+    color: #29231F;
+}
+
+
+.sewa-used-detail-row:last-child {
+    border-bottom: none;
+}
+
+
+.sewa-used-detail-row > span:last-child {
+    text-align: right;
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   PAYMENT STATUS
+========================================================= */
+
+.sewa-payment-status {
+    color: #29231F;
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.sewa-digunakan-actions {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 68px;
+
+    margin-top: 18px;
+}
+
+
+.sewa-add-duration-button,
+.sewa-end-session-button {
+    width: 100%;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 7px;
+
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+/* TAMBAH DURASI */
+
+.sewa-add-duration-button {
+    background: #FFFEFC;
+
+    border: 1px solid #B99053;
+
+    color: #B99053;
+}
+
+
+.sewa-add-duration-button:hover {
+    background: #B99053;
+    color: #FFFFFF;
+
+    transform: translateY(-1px);
+}
+
+
+/* AKHIRI SESI */
+
+.sewa-end-session-button {
+    background: #B99053;
+
+    border: 1px solid #B99053;
+
+    color: #FFFFFF;
+}
+
+
+.sewa-end-session-button:hover {
+    background: #9F793F;
+    border-color: #9F793F;
+
+    transform: translateY(-1px);
+}

@@ -1,0 +1,626 @@
+/* =========================================================
+   DETAIL VERIFIKASI BOOKING — Booking PS
+   Prefix: verifikasi-booking-
+   Tidak mengubah: global.css, admin-layout.css
+========================================================= */
+
+.verifikasi-booking-main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.verifikasi-booking-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.verifikasi-booking-breadcrumb-back {
+    width: 16px;
+    height: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.verifikasi-booking-breadcrumb-back-icon {
+    width: 12px;
+    height: 10px;
+    object-fit: contain;
+    transform: rotate(180deg);
+    opacity: 0.75;
+    filter: brightness(0) saturate(100%) invert(41%) sepia(95%) saturate(408%) hue-rotate(353deg) brightness(140%) contrast(45%);
+}
+
+.verifikasi-booking-breadcrumb-parent,
+.verifikasi-booking-breadcrumb-current {
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    text-decoration: none;
+}
+
+.verifikasi-booking-breadcrumb-parent {
+    color: #A8A29E;
+}
+
+.verifikasi-booking-breadcrumb-parent:hover {
+    color: #B99053;
+}
+
+.verifikasi-booking-breadcrumb-current {
+    color: #B99053;
+}
+
+.verifikasi-booking-breadcrumb-sep {
+    width: 9px;
+    height: 5px;
+    object-fit: contain;
+    transform: rotate(-90deg);
+    filter: brightness(0) saturate(100%) invert(41%) sepia(95%) saturate(408%) hue-rotate(353deg) brightness(140%) contrast(45%);
+}
+
+
+/* =========================================================
+   PAGE HEADER
+========================================================= */
+
+.verifikasi-booking-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2px;
+}
+
+.verifikasi-booking-heading-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.verifikasi-booking-heading-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.verifikasi-booking-heading-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.verifikasi-booking-heading-title {
+    margin: 0;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #29231F;
+}
+
+.verifikasi-booking-heading-subtitle {
+    margin: 0;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 13px;
+    color: #A69E93;
+}
+
+.verifikasi-booking-back-button {
+    width: 100px;
+    height: 39px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    background: #FFFEFC;
+    border: 1px solid #B99053;
+    border-radius: 8px;
+    box-sizing: border-box;
+
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 13px;
+    font-weight: 500;
+    color: #B99053;
+    text-decoration: none;
+    transition: background 0.15s ease;
+}
+
+.verifikasi-booking-back-button:hover {
+    background: #F7EFE2;
+}
+
+.verifikasi-booking-back-icon {
+    width: 13px;
+    height: 10px;
+    object-fit: contain;
+    transform: rotate(180deg);
+    filter: brightness(0) saturate(100%) invert(41%) sepia(95%) saturate(408%) hue-rotate(353deg) brightness(140%) contrast(45%);
+}
+
+
+/* =========================================================
+   GRID 2 KOLOM
+========================================================= */
+
+.verifikasi-booking-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 513fr) minmax(0, 533fr);
+    column-gap: 30px;
+    align-items: start;
+}
+
+.verifikasi-booking-col-left,
+.verifikasi-booking-col-right {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    min-width: 0;
+}
+
+
+/* =========================================================
+   BASE CARD
+========================================================= */
+
+.verifikasi-booking-card {
+    padding: 18px 20px 22px 18px;
+    background: #FFFEFA;
+    border: 1px solid #E5DCD0;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.verifikasi-booking-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.verifikasi-booking-card-title-group {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.verifikasi-booking-card-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.verifikasi-booking-icon-gold {
+    filter: brightness(0) saturate(100%) invert(41%) sepia(95%) saturate(408%) hue-rotate(353deg) brightness(140%) contrast(45%);
+}
+
+.verifikasi-booking-card-title {
+    margin: 0;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #29231F;
+}
+
+
+/* =========================================================
+   CARD 1 — INFORMASI BOOKING
+========================================================= */
+
+.verifikasi-booking-info {
+    min-height: 244px;
+}
+
+.verifikasi-booking-status-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 12px;
+
+    background: #FFE7B3;
+    border-radius: 5px;
+
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 15px;
+    color: #29231F;
+    white-space: nowrap;
+}
+
+.verifikasi-booking-info-list {
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.verifikasi-booking-info-row {
+    display: grid;
+    grid-template-columns: 142px 14px minmax(0, 1fr);
+    align-items: center;
+
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #29231F;
+}
+
+.verifikasi-booking-info-label {
+    color: #29231F;
+}
+
+.verifikasi-booking-info-colon {
+    color: #29231F;
+    text-align: center;
+}
+
+.verifikasi-booking-info-value {
+    color: #29231F;
+}
+
+
+/* =========================================================
+   CARD 2 — UNIT YANG DISEWA
+========================================================= */
+
+.verifikasi-booking-units {
+    min-height: 244px;
+    padding-right: 24px;
+}
+
+.verifikasi-booking-unit-list {
+    margin-top: 20px;
+    padding-left: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.verifikasi-booking-unit-item {
+    height: 72px;
+    padding: 10px 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    background: #FFFFFF;
+    border: 1px solid #C5BCB2;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.verifikasi-booking-unit-image {
+    width: 72px;
+    height: 48px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.verifikasi-booking-unit-image-tv {
+    width: 78px;
+    height: 52px;
+}
+
+.verifikasi-booking-unit-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    min-width: 0;
+}
+
+.verifikasi-booking-unit-name {
+    margin: 0;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #29231F;
+}
+
+.verifikasi-booking-unit-subtitle {
+    margin: 0;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 13px;
+    color: #A8A29E;
+}
+
+.verifikasi-booking-unit-qty {
+    margin-left: auto;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #29231F;
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   CARD 3 — DATA PELANGGAN
+========================================================= */
+
+.verifikasi-booking-customer {
+    min-height: 150px;
+}
+
+.verifikasi-booking-customer-body {
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.verifikasi-booking-customer-avatar {
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    background: #B99053;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.verifikasi-booking-customer-avatar-icon {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+.verifikasi-booking-customer-details {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.verifikasi-booking-customer-id {
+    margin: 0;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #29231F;
+}
+
+.verifikasi-booking-customer-name {
+    margin: 0;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #29231F;
+}
+
+.verifikasi-booking-customer-contact {
+    margin: 0;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #A8A29E;
+}
+
+
+/* =========================================================
+   CARD 4 — RINCIAN BIAYA
+========================================================= */
+
+.verifikasi-booking-cost {
+    min-height: 179px;
+}
+
+.verifikasi-booking-cost-list {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.verifikasi-booking-cost-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #29231F;
+}
+
+.verifikasi-booking-cost-value {
+    white-space: nowrap;
+}
+
+.verifikasi-booking-cost-total {
+    margin-top: 20px;
+    height: 39px;
+    padding: 0 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+
+    background: #F4ECDF;
+    border-radius: 7px;
+    box-sizing: border-box;
+
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    color: #B58A4A;
+}
+
+
+/* =========================================================
+   CARD 5 — BUKTI PEMBAYARAN
+========================================================= */
+
+.verifikasi-booking-payment {
+    min-height: 150px;
+}
+
+.verifikasi-booking-payment-box {
+    margin-top: 14px;
+    margin-left: 16px;
+    margin-right: 12px;
+    min-height: 86px;
+    padding: 16px 24px;
+
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    background: #C8F0CD;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.verifikasi-booking-payment-check {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 2.5px solid #67BA6F;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.verifikasi-booking-payment-check-icon {
+    width: 15px;
+    height: 12px;
+    object-fit: contain;
+    filter: brightness(0) saturate(100%) invert(81%) sepia(64%) saturate(552%) hue-rotate(60deg) brightness(99%) contrast(47%);
+}
+
+.verifikasi-booking-payment-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.verifikasi-booking-payment-title {
+    margin: 0;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    color: #29231F;
+}
+
+.verifikasi-booking-payment-desc {
+    margin: 0;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #29231F;
+}
+
+
+/* =========================================================
+   ACTION BUTTONS
+========================================================= */
+
+.verifikasi-booking-action {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: minmax(0, 513fr) minmax(0, 533fr);
+    column-gap: 30px;
+}
+
+.verifikasi-booking-reject-button,
+.verifikasi-booking-approve-button {
+    height: 58px;
+    border-radius: 8px;
+    box-sizing: border-box;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    cursor: pointer;
+    transition: background 0.15s ease, opacity 0.15s ease;
+}
+
+.verifikasi-booking-reject-button {
+    background: #FDE0E0;
+    border: 1px solid #C61D1D;
+    color: #C61D1D;
+}
+
+.verifikasi-booking-reject-button:hover {
+    background: #FBD0D0;
+}
+
+.verifikasi-booking-reject-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.verifikasi-booking-approve-button {
+    background: #B99053;
+    border: 1px solid #B99053;
+    color: #FFFFFF;
+}
+
+.verifikasi-booking-approve-button:hover {
+    background: #AD7E46;
+}
+
+.verifikasi-booking-approve-icon-wrap {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2.5px solid #FFFFFF;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.verifikasi-booking-approve-icon {
+    width: 14px;
+    height: 11px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+

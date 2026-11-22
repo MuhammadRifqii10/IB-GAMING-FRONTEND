@@ -1,0 +1,600 @@
+/* =========================================================
+   PESANAN BARU — Detail Pesanan F & B
+   pesanan-baru.css
+   Prefix: pesanan-baru-
+   Tidak mengubah: global.css, admin-layout.css, pesanan-fnb.css
+========================================================= */
+
+
+/* =========================================================
+   MAIN CONTENT WRAPPER
+========================================================= */
+
+.pesanan-baru-main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+/* =========================================================
+   TOP BAR: Breadcrumb + Tombol Kembali
+========================================================= */
+
+.pesanan-baru-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Breadcrumb */
+.pesanan-baru-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.pesanan-baru-breadcrumb-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.pesanan-baru-breadcrumb-back-icon {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    opacity: 0.5;
+    /* rotate ke kiri */
+    transform: rotate(180deg);
+}
+
+.pesanan-baru-breadcrumb-parent {
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 12px;
+    font-weight: 400;
+    color: #A69E93;
+    text-decoration: none;
+    transition: color 0.15s;
+}
+
+.pesanan-baru-breadcrumb-parent:hover {
+    color: #B99053;
+}
+
+.pesanan-baru-breadcrumb-sep {
+    width: 12px;
+    height: 12px;
+    object-fit: contain;
+    opacity: 0.4;
+}
+
+.pesanan-baru-breadcrumb-current {
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 12px;
+    font-weight: 600;
+    color: #B99053;
+}
+
+/* Tombol Kembali */
+.pesanan-baru-back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    height: 36px;
+    padding: 0 16px;
+
+    background: #FFFEFC;
+    border: 1px solid #B99053;
+    border-radius: 8px;
+
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 13px;
+    font-weight: 500;
+    color: #B99053;
+
+    text-decoration: none;
+    transition: background 0.15s ease;
+    white-space: nowrap;
+}
+
+.pesanan-baru-back-btn:hover {
+    background: #F7EFE2;
+}
+
+.pesanan-baru-back-icon {
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+    transform: rotate(180deg);
+    /* warna gold */
+    filter: invert(55%) sepia(60%) saturate(400%) hue-rotate(10deg) brightness(90%);
+}
+
+
+/* =========================================================
+   PAGE HEADING
+========================================================= */
+
+.pesanan-baru-heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pesanan-baru-heading-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    flex-shrink: 0;
+    opacity: 0.75;
+}
+
+.pesanan-baru-heading-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.pesanan-baru-heading-title {
+    margin: 0;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 16px;
+    font-weight: 600;
+    color: #29231F;
+    line-height: 20px;
+}
+
+.pesanan-baru-heading-subtitle {
+    margin: 0;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 11px;
+    font-weight: 400;
+    color: #A69E93;
+    line-height: 15px;
+}
+
+
+/* =========================================================
+   STATUS BANNER: Pesanan Baru
+========================================================= */
+
+.pesanan-baru-status-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    padding: 14px 20px;
+
+    background: #FFE7B3;
+    border-radius: 10px;
+
+    box-sizing: border-box;
+}
+
+.pesanan-baru-banner-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+/* Icon wrapper golden circle */
+.pesanan-baru-banner-icon-wrapper {
+    width: 46px;
+    height: 46px;
+    flex-shrink: 0;
+
+    background: #B99053;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pesanan-baru-banner-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+.pesanan-baru-banner-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.pesanan-baru-banner-title {
+    margin: 0;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 14px;
+    font-weight: 700;
+    color: #29231F;
+    line-height: 18px;
+}
+
+.pesanan-baru-banner-subtitle {
+    margin: 0;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 11px;
+    font-weight: 400;
+    color: #6B5A3E;
+    line-height: 15px;
+}
+
+/* Badge "Baru" */
+.pesanan-baru-banner-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 60px;
+    height: 24px;
+    padding: 0 12px;
+
+    background: #E9A825;
+    border-radius: 5px;
+
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 12px;
+    font-weight: 600;
+    color: #29231F;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   CONTENT GRID: 2 kolom
+========================================================= */
+
+.pesanan-baru-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 20px;
+
+    align-items: start;
+}
+
+.pesanan-baru-col-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pesanan-baru-col-right {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+/* =========================================================
+   SHARED CARD BASE
+========================================================= */
+
+.pesanan-baru-info-card,
+.pesanan-baru-menu-card,
+.pesanan-baru-payment-card,
+.pesanan-baru-action-card {
+    background: #FFFEFA;
+    border-radius: 12px;
+    border: 1px solid #E8DDD3;
+    padding: 20px 24px;
+    box-sizing: border-box;
+}
+
+/* Card header (icon + judul) */
+.pesanan-baru-card-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.pesanan-baru-card-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    opacity: 0.7;
+    flex-shrink: 0;
+}
+
+.pesanan-baru-card-title {
+    margin: 0;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 14px;
+    font-weight: 700;
+    color: #29231F;
+    line-height: 18px;
+}
+
+
+/* =========================================================
+   CARD: INFORMASI PESANAN
+========================================================= */
+
+.pesanan-baru-info-body {
+    display: flex;
+    align-items: flex-start;
+    gap: 0;
+}
+
+/* Kolom field kiri */
+.pesanan-baru-info-fields {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pesanan-baru-field {
+    display: flex;
+    align-items: flex-start;
+    gap: 0;
+}
+
+.pesanan-baru-field-label {
+    width: 130px;
+    flex-shrink: 0;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 12px;
+    font-weight: 400;
+    color: #A69E93;
+    line-height: 18px;
+}
+
+.pesanan-baru-field-value {
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 12px;
+    font-weight: 500;
+    color: #29231F;
+    line-height: 18px;
+}
+
+/* Vertical divider */
+.pesanan-baru-info-divider {
+    width: 1px;
+    align-self: stretch;
+    background: #D8CEC1;
+    margin: 0 24px;
+    flex-shrink: 0;
+}
+
+/* Catatan */
+.pesanan-baru-info-notes {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 100px;
+}
+
+.pesanan-baru-notes-value {
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 12px;
+    font-weight: 500;
+    color: #29231F;
+}
+
+
+/* =========================================================
+   CARD: RINCIAN MENU — Tabel
+========================================================= */
+
+.pesanan-baru-table-wrapper {
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid #E8DDD3;
+}
+
+.pesanan-baru-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 13px;
+}
+
+/* THEAD */
+.pesanan-baru-th {
+    background: #FBF5EF;
+    padding: 10px 14px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 600;
+    color: #29231F;
+    border-bottom: 1px solid #E8DDD3;
+    white-space: nowrap;
+}
+
+.pesanan-baru-th--no     { width: 48px; text-align: center; }
+.pesanan-baru-th--menu   { }
+.pesanan-baru-th--jumlah { width: 80px; text-align: center; }
+.pesanan-baru-th--harga  { width: 100px; }
+.pesanan-baru-th--subtotal { width: 110px; text-align: right; }
+
+/* TBODY rows */
+.pesanan-baru-tr {
+    background: #FFFEFC;
+}
+
+.pesanan-baru-tr:not(:last-child) {
+    border-bottom: 1px solid #E8DDD3;
+}
+
+.pesanan-baru-td {
+    padding: 11px 14px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #29231F;
+    vertical-align: middle;
+}
+
+.pesanan-baru-td--center { text-align: center; }
+.pesanan-baru-td--right  { text-align: right; }
+
+/* TFOOT */
+.pesanan-baru-tfoot-row {
+    background: #FBF5EF;
+    border-top: 1.5px solid #E8DDD3;
+}
+
+.pesanan-baru-tfoot-label {
+    padding: 12px 14px;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 13px;
+    font-weight: 700;
+    color: #29231F;
+}
+
+.pesanan-baru-tfoot-total {
+    padding: 12px 14px;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 14px;
+    font-weight: 700;
+    color: #29231F;
+    text-align: right;
+}
+
+
+/* =========================================================
+   CARD: STATUS PEMBAYARAN
+========================================================= */
+
+.pesanan-baru-payment-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pesanan-baru-payment-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+.pesanan-baru-payment-label {
+    flex: 1;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 12px;
+    font-weight: 400;
+    color: #A69E93;
+    line-height: 18px;
+}
+
+.pesanan-baru-payment-sep {
+    font-size: 12px;
+    color: #A69E93;
+    line-height: 18px;
+    flex-shrink: 0;
+}
+
+.pesanan-baru-payment-value {
+    flex: 1;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 12px;
+    font-weight: 500;
+    color: #29231F;
+    line-height: 18px;
+}
+
+.pesanan-baru-payment-value--total {
+    font-weight: 700;
+    color: #29231F;
+}
+
+
+/* =========================================================
+   CARD: AKSI
+========================================================= */
+
+.pesanan-baru-action-header {
+    margin-bottom: 14px;
+}
+
+.pesanan-baru-action-title {
+    margin: 0 0 2px 0;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 14px;
+    font-weight: 700;
+    color: #29231F;
+}
+
+.pesanan-baru-action-subtitle {
+    margin: 0;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 11px;
+    font-weight: 400;
+    color: #A69E93;
+}
+
+.pesanan-baru-action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Tombol Konfirmasi Pesanan */
+.pesanan-baru-confirm-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 40px;
+    padding: 0;
+
+    background: #B99053;
+    border: none;
+    border-radius: 10px;
+
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 13px;
+    font-weight: 600;
+    color: #FFFFFF;
+
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.15s ease;
+    box-sizing: border-box;
+}
+
+.pesanan-baru-confirm-button:hover {
+    background: #9A7338;
+}
+
+/* Tombol Tolak Pesanan */
+.pesanan-baru-reject-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 40px;
+    padding: 0;
+
+    background: #FDE2E2;
+    border: 1px solid #D85C5C;
+    border-radius: 10px;
+
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 13px;
+    font-weight: 600;
+    color: #C91C1C;
+
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.15s ease;
+    box-sizing: border-box;
+}
+
+.pesanan-baru-reject-button:hover {
+    background: #FCCFCF;
+}
+
